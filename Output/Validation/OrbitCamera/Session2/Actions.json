@@ -1,0 +1,166 @@
+[
+  {
+    "action": "tab_to_ui",
+    "kind": "key_down",
+    "clock": 15563.484,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "tab_to_ui",
+    "kind": "key_up",
+    "clock": 15563.718,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "head_view",
+    "kind": "click",
+    "clock": 15565.359,
+    "foreground": 13765558,
+    "position": [
+      130,
+      494
+    ]
+  },
+  {
+    "action": "head_mouse_begin",
+    "kind": "mark",
+    "clock": 15580.984,
+    "foreground": 13765558
+  },
+  {
+    "action": "head_mouse_end",
+    "kind": "mark",
+    "clock": 15581.703,
+    "foreground": 13765558
+  },
+  {
+    "action": "head_Tab",
+    "kind": "key_down",
+    "clock": 15581.718,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "head_Tab",
+    "kind": "key_up",
+    "clock": 15581.953,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "third_view",
+    "kind": "click",
+    "clock": 15583.609,
+    "foreground": 13765558,
+    "position": [
+      300,
+      494
+    ]
+  },
+  {
+    "action": "video_open",
+    "kind": "click",
+    "clock": 15585.453,
+    "foreground": 13765558,
+    "position": [
+      288,
+      938
+    ]
+  },
+  {
+    "action": "modal_Tab",
+    "kind": "key_down",
+    "clock": 15603.859,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "modal_Tab",
+    "kind": "key_up",
+    "clock": 15604.093,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "modal_mouse_begin",
+    "kind": "mark",
+    "clock": 15604.5,
+    "foreground": 13765558
+  },
+  {
+    "action": "modal_mouse_end",
+    "kind": "mark",
+    "clock": 15605.171,
+    "foreground": 13765558
+  },
+  {
+    "action": "video_close",
+    "kind": "click",
+    "clock": 15606.406,
+    "foreground": 13765558,
+    "position": [
+      1414,
+      196
+    ]
+  },
+  {
+    "action": "after_video_ui_begin",
+    "kind": "mark",
+    "clock": 15607.015,
+    "foreground": 13765558
+  },
+  {
+    "action": "after_video_ui_end",
+    "kind": "mark",
+    "clock": 15607.718,
+    "foreground": 13765558
+  },
+  {
+    "action": "reenter",
+    "kind": "key_down",
+    "clock": 15608.484,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "reenter",
+    "kind": "key_up",
+    "clock": 15608.718,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "orbit_after_video_begin",
+    "kind": "mark",
+    "clock": 15609.125,
+    "foreground": 13765558
+  },
+  {
+    "action": "orbit_after_video_end",
+    "kind": "mark",
+    "clock": 15609.859,
+    "foreground": 13765558
+  },
+  {
+    "action": "home_after_video",
+    "kind": "key_down",
+    "clock": 15609.859,
+    "foreground": 13765558,
+    "key": "home"
+  },
+  {
+    "action": "home_after_video",
+    "kind": "key_up",
+    "clock": 15610.109,
+    "foreground": 13765558,
+    "key": "home"
+  },
+  {
+    "action": "part2_end",
+    "kind": "mark",
+    "clock": 15611.296,
+    "foreground": 13765558
+  }
+]

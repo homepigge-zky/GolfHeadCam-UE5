@@ -1,0 +1,90 @@
+{
+  "blueprints": [
+    {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer.BP_GolfGolfer",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ResetPose",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "PlaySwing",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ApplyCameraMode",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "TogglePause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ],
+      "node_count": 73
+    },
+    {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD.BP_GolfHUD",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ],
+      "node_count": 9
+    },
+    {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfGameMode.BP_GolfGameMode",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ],
+      "node_count": 3
+    }
+  ],
+  "runtime_logic": "native Blueprint K2 graphs",
+  "animation": "native AnimSequence, 4 seconds, 60 fps",
+  "map": "/Game/GolfHeadCam/Maps/L_GolfPractice.L_GolfPractice",
+  "runtime_python_required": false,
+  "runtime_cpp_module_required": false,
+  "packaging_tested": false,
+  "map_check": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "reopened_project_verified": true,
+  "reopened_controls_verified": true,
+  "comment_node_guids_resaved_after_reload": true
+}

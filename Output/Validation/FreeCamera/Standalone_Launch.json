@@ -1,0 +1,18 @@
+{
+  "copy": "<PROJECT_DIR>\\Saved\\FreeCameraSmoke_20261016\\GolfHeadCam",
+  "core_file_count": 281,
+  "hash_mismatches": [],
+  "pid": 45200,
+  "launch_args": [
+    "<UE_ROOT>/Engine/Binaries/Win64/UnrealEditor.exe",
+    "<PROJECT_DIR>\\Saved\\FreeCameraSmoke_20261016\\GolfHeadCam\\GolfHeadCam.uproject",
+    "-game",
+    "-windowed",
+    "-ResX=1600",
+    "-ResY=900",
+    "-NoSplash",
+    "-NoSound"
+  ],
+  "authoring_bridge": false,
+  "native_game_test_not_packaged_exe": true
+}

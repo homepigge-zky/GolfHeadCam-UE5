@@ -1,0 +1,354 @@
+[
+  {
+    "action": "auto_start_idle_begin",
+    "kind": "mark",
+    "clock": 15276.671,
+    "foreground": 13765558
+  },
+  {
+    "action": "auto_start_idle_end",
+    "kind": "mark",
+    "clock": 15278.187,
+    "foreground": 13765558
+  },
+  {
+    "action": "mouse_orbit_yaw_begin",
+    "kind": "mark",
+    "clock": 15278.937,
+    "foreground": 13765558
+  },
+  {
+    "action": "mouse_orbit_yaw_end",
+    "kind": "mark",
+    "clock": 15280.031,
+    "foreground": 13765558
+  },
+  {
+    "action": "mouse_orbit_pitch_begin",
+    "kind": "mark",
+    "clock": 15280.062,
+    "foreground": 13765558
+  },
+  {
+    "action": "mouse_orbit_pitch_end",
+    "kind": "mark",
+    "clock": 15280.968,
+    "foreground": 13765558
+  },
+  {
+    "action": "tab_to_ui",
+    "kind": "key_down",
+    "clock": 15281.75,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "tab_to_ui",
+    "kind": "key_up",
+    "clock": 15281.984,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "ui_mouse_begin",
+    "kind": "mark",
+    "clock": 15282.406,
+    "foreground": 13765558
+  },
+  {
+    "action": "ui_mouse_end",
+    "kind": "mark",
+    "clock": 15283.625,
+    "foreground": 13765558
+  },
+  {
+    "action": "play",
+    "kind": "click",
+    "clock": 15284.109,
+    "foreground": 13765558,
+    "position": [
+      102,
+      379
+    ]
+  },
+  {
+    "action": "direct_W_playing",
+    "kind": "key_down",
+    "clock": 15284.453,
+    "foreground": 13765558,
+    "key": "w"
+  },
+  {
+    "action": "direct_W_playing",
+    "kind": "key_up",
+    "clock": 15284.953,
+    "foreground": 13765558,
+    "key": "w"
+  },
+  {
+    "action": "pause",
+    "kind": "click",
+    "clock": 15285.687,
+    "foreground": 13765558,
+    "position": [
+      216,
+      379
+    ]
+  },
+  {
+    "action": "tab_to_orbit",
+    "kind": "key_down",
+    "clock": 15287.109,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "tab_to_orbit",
+    "kind": "key_up",
+    "clock": 15287.359,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "recapture_idle_begin",
+    "kind": "mark",
+    "clock": 15287.656,
+    "foreground": 13765558
+  },
+  {
+    "action": "recapture_idle_end",
+    "kind": "mark",
+    "clock": 15288.468,
+    "foreground": 13765558
+  },
+  {
+    "action": "orbit_after_reentry_begin",
+    "kind": "mark",
+    "clock": 15288.484,
+    "foreground": 13765558
+  },
+  {
+    "action": "orbit_after_reentry_end",
+    "kind": "mark",
+    "clock": 15289.39,
+    "foreground": 13765558
+  },
+  {
+    "action": "home",
+    "kind": "key_down",
+    "clock": 15289.39,
+    "foreground": 13765558,
+    "key": "home"
+  },
+  {
+    "action": "home",
+    "kind": "key_up",
+    "clock": 15289.64,
+    "foreground": 13765558,
+    "key": "home"
+  },
+  {
+    "action": "tab_to_ui2",
+    "kind": "key_down",
+    "clock": 15290.968,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "tab_to_ui2",
+    "kind": "key_up",
+    "clock": 15291.203,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "head_view",
+    "kind": "click",
+    "clock": 15292.078,
+    "foreground": 13765558,
+    "position": [
+      130,
+      494
+    ]
+  },
+  {
+    "action": "head_mouse_begin",
+    "kind": "mark",
+    "clock": 15292.593,
+    "foreground": 13765558
+  },
+  {
+    "action": "head_mouse_end",
+    "kind": "mark",
+    "clock": 15293.312,
+    "foreground": 13765558
+  },
+  {
+    "action": "head_Tab",
+    "kind": "key_down",
+    "clock": 15293.328,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "head_Tab",
+    "kind": "key_up",
+    "clock": 15293.562,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "third_view",
+    "kind": "click",
+    "clock": 15294.437,
+    "foreground": 13765558,
+    "position": [
+      300,
+      494
+    ]
+  },
+  {
+    "action": "video_open",
+    "kind": "click",
+    "clock": 15295.421,
+    "foreground": 13765558,
+    "position": [
+      288,
+      938
+    ]
+  },
+  {
+    "action": "modal_Tab",
+    "kind": "key_down",
+    "clock": 15296.437,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "modal_Tab",
+    "kind": "key_up",
+    "clock": 15296.671,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "modal_mouse_begin",
+    "kind": "mark",
+    "clock": 15297.078,
+    "foreground": 13765558
+  },
+  {
+    "action": "modal_mouse_end",
+    "kind": "mark",
+    "clock": 15297.75,
+    "foreground": 13765558
+  },
+  {
+    "action": "video_close",
+    "kind": "click",
+    "clock": 15298.234,
+    "foreground": 13765558,
+    "position": [
+      1414,
+      196
+    ]
+  },
+  {
+    "action": "reenter",
+    "kind": "key_down",
+    "clock": 15298.734,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "reenter",
+    "kind": "key_up",
+    "clock": 15298.984,
+    "foreground": 13765558,
+    "key": "tab"
+  },
+  {
+    "action": "orbit_after_video_begin",
+    "kind": "mark",
+    "clock": 15299.39,
+    "foreground": 13765558
+  },
+  {
+    "action": "orbit_after_video_end",
+    "kind": "mark",
+    "clock": 15300.109,
+    "foreground": 13765558
+  },
+  {
+    "action": "home_after_video",
+    "kind": "key_down",
+    "clock": 15300.125,
+    "foreground": 13765558,
+    "key": "home"
+  },
+  {
+    "action": "home_after_video",
+    "kind": "key_up",
+    "clock": 15300.359,
+    "foreground": 13765558,
+    "key": "home"
+  },
+  {
+    "action": "part1_end",
+    "kind": "mark",
+    "clock": 15301.546,
+    "foreground": 13765558
+  },
+  {
+    "action": "stop_pie",
+    "kind": "key_down",
+    "clock": 15318.296,
+    "foreground": 13765558,
+    "key": "esc"
+  },
+  {
+    "action": "stop_pie",
+    "kind": "key_up",
+    "clock": 15318.531,
+    "foreground": 13765558,
+    "key": "esc"
+  },
+  {
+    "action": "second_start_idle_begin",
+    "kind": "mark",
+    "clock": 15321.39,
+    "foreground": 13765558
+  },
+  {
+    "action": "second_start_idle_end",
+    "kind": "mark",
+    "clock": 15322.89,
+    "foreground": 13765558
+  },
+  {
+    "action": "second_start_orbit_begin",
+    "kind": "mark",
+    "clock": 15323.687,
+    "foreground": 13765558
+  },
+  {
+    "action": "second_start_orbit_end",
+    "kind": "mark",
+    "clock": 15324.468,
+    "foreground": 13765558
+  },
+  {
+    "action": "second_home",
+    "kind": "key_down",
+    "clock": 15324.468,
+    "foreground": 13765558,
+    "key": "home"
+  },
+  {
+    "action": "second_home",
+    "kind": "key_up",
+    "clock": 15324.718,
+    "foreground": 13765558,
+    "key": "home"
+  }
+]

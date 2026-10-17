@@ -1,0 +1,149 @@
+【GitHub 公开交付版说明｜2026-10-17】
+本仓库按要求不收录任何视频文件，也不收录主视频逐帧渲染序列。
+下文中“视频已交付”“完整压缩包”等描述属于本地完整交付或历史验证范围，并不表示视频在此仓库中。
+报告、PPT 和原始验收清单保留基础版范围；当前功能以 README.md、公开交付说明及 RealtimeTrajectory 验证记录为准。
+已保存视频回放需自行补回 Content/Movies/GolfHead.mp4 和 GolfThird.mp4；工程实时运行不依赖这两段视频。
+文档和验证记录中的本机路径已用 <PROJECT_DIR>、<UE_ROOT>、<AUTHOR_HOME>、<AUTHOR_TEMP> 代称。
+
+GolfHeadCam｜资产来源、运行依赖与迁移
+交付说明更新｜2026-10-17（原基础版：2026-10-16）。包含原生可编辑工程、媒体、文档与验证证据。
+
+一、引擎与必要插件
+
+开发与验证目标为 Unreal Engine 5.8.3，GolfHeadCam.uproject 的 EngineAssociation 为 5.8。
+本机引擎位置：<UE_ROOT>。换机器后不需要保持这个引擎安装路径；需安装兼容引擎版本。
+没有自定义 C++ 游戏模块，不需要为了运行本项目额外编译工程 C++。
+
+uproject 显式启用的 Epic 引擎内置插件：
+  MovieRenderPipeline：Movie Render Queue、输出预设／队列、PNG 和原生 H.264 MP4 导出所需。
+  ElectraPlayer：相机控制台内两段已保存 MP4 的原生解码与播放。
+  GameplayStateTree：从官方模板保留的内置插件依赖。
+  ModelingToolsEditorMode：从模板保留，仅 Editor 平台目标启用。
+MovieRenderPipeline 和 ElectraPlayer 的内置依赖由 UE 插件依赖机制启用。
+UMG、Media/MediaAssets 是引擎内置界面与媒体框架模块，不是需要另购或下载的外部插件。
+本项目未引入外部插件、第三方动作包、外部运行库或另购 Marketplace/Fab 内容。
+
+PythonScriptPlugin 和编辑器作者脚本只在资产制作阶段临时使用，不是游戏运行或界面重渲染的依赖。
+正式重渲染使用保存的 Level Sequence、MRQ 配置与队列，可完全通过 UE 编辑器界面完成。
+H.264 MP4 编码使用 UE5.8 原生 MovieRenderPipelineMP4Encoder；无需单独安装 FFmpeg 才能使用该预设。
+
+二、资产来源与自行实现边界
+
+Epic 官方 Third Person Blueprint 模板：
+  人物 SKM_Manny_Simple、相关骨架及模板动画／输入／关卡资源。
+  原模板目录 Characters、ThirdPerson、Input、LevelPrototyping 等继续保留，便于依赖完整和继续开发。
+  模板原地图仍为 /Game/ThirdPerson/Lvl_ThirdPerson。
+  这些是 Epic 提供的资源，不能表述成全部原创建模或真人动作捕捉数据。
+
+本工程实现并保存的原生资产：
+  BP_GolfGolfer：操作、挥杆播放、头骨／手骨附着、相机选择、球轨迹、电影模式和镜头开关。
+  BP_GolfHUD：运行时创建原生子界面 WBP_GolfCameraConsole 并加入视口。
+  BP_GolfGameMode、BP_GolfRenderGameMode：交互／导出模式，导出模式不显示控制台。
+  UI/WBP_CameraControl：父 Widget Blueprint，保留可编辑 UMG 布局、相机／镜头按钮和独立视频回放逻辑。
+  UI/WBP_GolfCameraConsole：真实继承 WBP_CameraControl 的子 Widget Blueprint，作为当前运行界面入口。
+  UI/Media/MP_SavedGolf、MT_SavedGolf：原生播放器和媒体纹理。
+  UI/Media/MS_GolfHead、MS_GolfThird、M_UI_SavedGolf：相对路径媒体源和原生 UI 显示材质。
+  AS_GolfSwing：设定关键姿势后生成并烘焙的 4 秒骨骼动作。
+  L_GolfPractice：简化练习场、摆位和灯光。
+  球杆、练习垫、球、靶标：UE BasicShapes 简单几何体及项目自建材质。
+  M_HeadLensDistortion：Brown–Conrady 8 次逆映射展开的原生材质图，无 Custom HLSL。
+  M_CalibrationGrid：原生材质节点绘制的网格。
+  MI_HeadLens_Barrel、MI_HeadLens_Pincushion：桶形／枕形原生材质实例，复用原畸变材质图。
+  Content/Movies/GolfHead.mp4、GolfThird.mp4：原正式视频的便携副本，不是新增录制。
+  LS_Golf_HeadCamera、LS_Golf_ThirdPerson：使用相同动作时间轨的双视角序列。
+  LS_Calibration_*：四条固定姿态、固定相机的畸变对照序列。
+  MRQ_Golf_1080p60、Q_GolfViews：原生导出预设与队列。
+
+AI／作者工具的角色：辅助阅读要求、查询引擎源码／API、编排并生成原生蓝图／动画／材质／序列资产、
+整理验证记录和文档。临时 Python 用于编辑器制作资产，不在游戏运行时执行，也不替代蓝图运行逻辑。
+素材和引擎的使用、再分发须遵守各自适用的 Unreal Engine 许可条款；本说明不改变其原有许可。
+
+三、目录与迁移
+
+运行工程必须保留：
+  GolfHeadCam.uproject
+  Config/
+  Content/（必须完整保留，包括模板人物、UI/Media、两种 MI 及其依赖）
+  Content/Movies/（原生 File Media Source 使用相对路径读取的两段 MP4）
+
+交付说明与成果：
+  README.txt、Docs/
+  Deliverables/（正式报告、演示讲解材料、最终验收清单）
+  Output/FirstPerson/、Output/ThirdPerson/（正式 MP4；本地原工程另保留每视角 360 张逐帧 PNG）
+  Output/Validation/Calibration/（四张正式镜头对照 PNG）
+  Output/Validation/（基础版运行记录、参数、镜头对照、独立副本按键检查等验证证据）
+  Output/Validation/UI/（历史相机控制台版的运行、资产和干净副本验证记录）
+  Output/Validation/IntegratedConsole/（本次集成控制台的验证记录，范围以各份记录为准）
+
+不需要把引擎安装、DerivedDataCache、Intermediate、Saved 中的大体积缓存、临时作者脚本环境作为运行依赖。
+源工作工程可以保留这些缓存；整理交付副本时只排除可重新生成的内容，不能按目录名称猜测删除 Content 资产。
+不要只复制 Content/GolfHeadCam，因为该目录仍引用模板人物骨架、网格体和引擎 BasicShapes。
+
+迁移步骤
+1. 完整解压工程到可写目录，路径尽量简短；确认 uproject、Config 和 Content 同级。
+2. 用 UE5.8.3 打开 GolfHeadCam.uproject；如果首次关联未建立，选择合适的引擎版本。
+3. 等待资源与着色器加载，打开 L_GolfPractice，运行后直接点击左下控制台“播放”。
+   检查暂停／继续、双视角、四种镜头预设、网格，以及两段已保存视频的显示与暂停；原快捷键保留。
+4. 在 MRQ 中载入 Q_GolfViews，确认地图、序列、预设与输出目录可解析。
+5. 输出目录使用 {project_dir}，跟随新工程位置，不依赖原机器的 D: 盘目录。
+
+当前交付包完整路径：<PROJECT_DIR>_集成控制台版.zip
+旧 GolfHeadCam_自由相机版.zip 为上一版历史包，不包含本次集成控制台更新。
+更早的 GolfHeadCam_相机控制台版.zip 和基础版 GolfHeadCam_完整交付.zip 也保留，分别对应各自版本记录。
+当前交付包保留完整 Content（含 Movies 和 UI）、Config、uproject、Docs、README、Deliverables、原正式 MP4 与各版本验证证据。
+压缩包不收录两视角共 720 张主视频逐帧 PNG；这些帧图保留在本地原工程，可用 MRQ 重新生成。
+交付包为可编辑 UE 工程，需要已安装的兼容引擎；没有制作或验证独立 EXE，也不包含 UE 引擎。
+
+基础版干净副本运行验证
+Standalone_Validation.json 属于基础版，记录当时源工程与副本 271 个核心文件的哈希比较，差异数为 0。
+副本通过 UnrealEditor.exe <副本>/GolfHeadCam.uproject -game -windowed -ResX=1280 -ResY=720 -NoSplash 启动。
+未启用作者 bridge，未传入运行时 Python 脚本。准备、播放、暂停／恢复、视角切换、重播、
+网格开关、畸变开关、第三视角隐藏网格和收杆共 9 项实际检查通过，证据位于 Output/Validation/Standalone/。
+该基础版结果验证当时核心资产副本在已安装引擎中的独立游戏运行。
+
+历史相机控制台版验证
+Output/Validation/UI/UI_Asset_Validation.json：WBP_CameraControl、BP_GolfHUD、BP_GolfGolfer
+三个新增或修改蓝图均为 0 错误、0 警告，媒体源使用 ./Movies/GolfHead.mp4、./Movies/GolfThird.mp4。
+UI_Validation.json：37 项 UI 检查通过、0 失败、0 未观察。
+UI_Standalone_Validation.json：干净副本 281 个核心文件哈希一致，未启用作者 bridge、未提供作者脚本参数，
+通过原生 UnrealEditor -game 实际检查双视频显示／播放／暂停、控制台与关闭返回暂停场景。
+上述基础版和历史相机控制台版的独立游戏验证都不是 cook 或打包 EXE 测试。
+
+四、明确的简化假设
+
+挥杆为简化关键姿势演示；球按初速度、重力和场景碰撞实时飞行、弹跳及滑动减速。击球时刻与初速度可调，不计算杆头碰撞冲量、空气阻力或自旋升力。
+头戴相机采用固定骨骼局部安装；没有额外头戴设备的软组织晃动或独立稳定器模型。
+镜头内参和畸变系数为仿真假设；没有宣称实物标定、真实曝光噪声、滚动快门或光学色差的准确再现。
+记录中的数学残差、编辑器轨迹检查和最终渲染图像检查是不同验证层次，不能互相替代。
+
+五、自由第三人称相机升级
+
+原自由相机版在 BP_GolfGolfer 和父界面 WBP_CameraControl 增加 F 切换及右键导航，全部为原生蓝图。
+只改变 ThirdCamera 组件，不修改动画播放时钟或头戴安装关系；没有新增插件依赖。
+该版历史记录见 Output/Validation/FreeCamera；本次集成控制台记录见 Output/Validation/IntegratedConsole。
+操作与参数见 Docs/自由第三人称相机说明.txt。旧版 ZIP 均保留，当前包为 GolfHeadCam_集成控制台版.zip。
+
+[球轨迹可视化说明 BEGIN]
+实时球飞行与历史轨迹（2026-10-17）
+
+运行后先按 T 开启轨迹，或按 Tab 显示鼠标后点击“显示实时轨迹（T）”。轨迹默认关闭。
+击球前没有预览曲线；球飞到哪里，金色轨迹就延伸到哪里，落地弹跳和滑动也会记录。
+轨迹读取 GolfBall 每帧的实际世界位置，不用发射参数预先生成整条曲线。
+隐藏轨迹只改变显示，后台继续记录本次击球；再次显示能看到已飞过的部分。重新开始／复位时清空旧轨迹。
+轨迹线半径默认 0.8 cm，最多保留 2048 段；超出时移除最早一段。线段本身无碰撞。
+球使用原生 ProjectileMovementComponent，根据初速度、世界重力、场景碰撞、反弹和摩擦实时更新。
+播放／暂停同时控制挥杆和球；即使四秒挥杆结束后球仍在运动，也能在界面暂停、继续，继续不会重发一球。
+打开视频面板会暂停球并隐藏轨迹；关闭后保持暂停。已有 MP4 仍是先前版本，不是本次实时运动的录像。
+鼠标环绕、Tab、WASDQE、Home 和人物骨骼附着保持原有作用，不因轨迹开关改变。
+实现保存在原生蓝图、运动组件、ISM 和材质中，没有自定义运行时 Python 或 C++。
+当前验收见 Output/Validation/RealtimeTrajectory；以前 BallTrajectory 的预测路径检查仅是历史记录。
+[球轨迹可视化说明 END]
+
+[肩后相机直接导航说明 BEGIN]
+肩后机位与鼠标环绕参数（2026-10-17）
+
+启动机位相对角色根位置 (-65,-240,170) cm，旋转 (Pitch=-14,Yaw=85,Roll=0)°，水平 FOV=80°；首次接管鼠标保持该画面。
+鼠标默认围绕角色根部局部 (0,0,115) cm 的上身参考点环绕；人物整体位置和朝向不随相机输入改变，挥杆动画可独立播放。
+Tab 显示鼠标以操作界面，再按 Tab 返回环绕；WASDQE、Shift 和 Home 保留。头戴、视频及电影模式不接受环绕输入。
+机位调整不改变动画时间、暂停状态、球运动或轨迹开关；既有报告、MP4 与历史验收数字保留原范围。
+[肩后相机直接导航说明 END]

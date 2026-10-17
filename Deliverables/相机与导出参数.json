@@ -1,0 +1,256 @@
+{
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "project": "GolfHeadCam.uproject",
+  "map": "/Game/GolfHeadCam/Maps/L_GolfPractice",
+  "world_units": "centimeters",
+  "character_axes": {
+    "forward": "+Y",
+    "shot_direction": "+X",
+    "up": "+Z"
+  },
+  "components": {
+    "HeadCamera": {
+      "parent": "GolferMesh",
+      "socket": "head",
+      "relative_location_cm": [
+        9.614950532938053,
+        8.458884456543545,
+        5.477513074225726e-07
+      ],
+      "relative_rotation_pitch_yaw_roll_deg": [
+        -2.2829312303462258e-06,
+        134.99995440003718,
+        -89.9999976903485
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "fov_degrees": 100.0,
+      "aspect_ratio": 1.7777777910232544,
+      "constrain_aspect_ratio": true,
+      "postprocess_blend_weight": 0.0,
+      "use_pawn_control_rotation": false
+    },
+    "CalibrationBoard": {
+      "parent": "HeadCamera",
+      "socket": "None",
+      "relative_location_cm": [
+        100.0,
+        0.0,
+        0.0
+      ],
+      "relative_rotation_pitch_yaw_roll_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.35,
+        2.4,
+        1.0
+      ]
+    },
+    "ClubRoot": {
+      "parent": "GolferMesh",
+      "socket": "hand_r",
+      "relative_location_cm": [
+        -5.0,
+        4.0,
+        0.0
+      ],
+      "relative_rotation_pitch_yaw_roll_deg": [
+        0.0,
+        90.0,
+        -85.82955932617188
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "ThirdCamera": {
+      "parent": "DefaultSceneRoot",
+      "socket": "None",
+      "relative_location_cm": [
+        400.0,
+        480.0,
+        230.0
+      ],
+      "relative_rotation_pitch_yaw_roll_deg": [
+        -10.813510887319586,
+        -131.63353933657018,
+        -1.9130548511914918e-07
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "fov_degrees": 60.0,
+      "aspect_ratio": 1.7777777910232544,
+      "constrain_aspect_ratio": true,
+      "postprocess_blend_weight": 1.0,
+      "use_pawn_control_rotation": false
+    },
+    "GolfBall": {
+      "parent": "DefaultSceneRoot",
+      "socket": "None",
+      "relative_location_cm": [
+        7.777501,
+        95.5553086419753,
+        2.135
+      ],
+      "relative_rotation_pitch_yaw_roll_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.0427,
+        0.0427,
+        0.0427
+      ]
+    }
+  },
+  "head_camera_intrinsics": {
+    "calibration_source": "Assumed simulation parameters, not measured camera calibration.",
+    "resolution_pixels": [
+      1920,
+      1080
+    ],
+    "horizontal_fov_degrees": 100,
+    "vertical_fov_degrees": 67.67274797076357,
+    "K_edge_coordinate": [
+      [
+        805.5356459301888,
+        0,
+        960.0
+      ],
+      [
+        0,
+        805.5356459301888,
+        540.0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "pixel_coordinate_convention": "Continuous edge coordinates; pixel centers at (col+0.5,row+0.5). Top-left image corner (0,0); x right, y down.",
+    "K_opencv_integer_center_coordinate": [
+      [
+        805.5356459301888,
+        0,
+        959.5
+      ],
+      [
+        0,
+        805.5356459301888,
+        539.5
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "distortion": {
+      "model": "Brown-Conrady",
+      "k1": -0.12,
+      "k2": 0.02,
+      "k3": 0.0,
+      "p1": 0.0005,
+      "p2": -0.0003
+    },
+    "inverse_iterations": 8,
+    "out_of_bounds": "black; no overscan or crop",
+    "fov_change_note": "If HeadCameraFOV or aspect ratio changes, recompute FxOverWidth/FyOverHeight in M_HeadLensDistortion; delivered calibration assumes 100 degrees and 16:9."
+  },
+  "render": {
+    "resolution": [
+      1920,
+      1080
+    ],
+    "nominal_fps": 60,
+    "frames": 360,
+    "timeline_duration_seconds": 6,
+    "action_interval_seconds": [
+      1,
+      5
+    ],
+    "impact_timeline_seconds": 3.25,
+    "impact_frame_zero_based": 195,
+    "motion_blur": 0,
+    "depth_of_field": false,
+    "anti_aliasing": "TAA; r.AntiAliasingMethod=2",
+    "temporal_samples": 1,
+    "spatial_samples": 1,
+    "engine_warmup_frames": 30,
+    "render_warmup_frames": 32,
+    "preset": "/Game/GolfHeadCam/RenderPresets/MRQ_Golf_1080p60",
+    "queue": "/Game/GolfHeadCam/RenderPresets/Q_GolfViews",
+    "exported_video_metadata": [
+      {
+        "view": "FirstPerson",
+        "path": "<PROJECT_DIR>\\Output\\FirstPerson\\LS_Golf_HeadCamera_HeadCamera.mp4",
+        "relative_path": "Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4",
+        "size_bytes": 6225084,
+        "sha256": "a4f3a533be926414c81557b57d9387d071fc9032d501d222da0101529d7b5a79",
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": "21600000/359999",
+        "nominal_fps": 60,
+        "average_fps": 60.00016666712963,
+        "fps_tolerance": 0.001,
+        "mp4_timestamp_note": "Native encoder rounds final timestamp; nominal 60 fps, 360 frames, duration differs from 6 seconds by 33 microseconds.",
+        "duration_seconds": 5.999967,
+        "decoded_frames": 360,
+        "lossless_png_frames": 360,
+        "passed": true
+      },
+      {
+        "view": "ThirdPerson",
+        "path": "<PROJECT_DIR>\\Output\\ThirdPerson\\LS_Golf_ThirdPerson_ThirdCamera.mp4",
+        "relative_path": "Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4",
+        "size_bytes": 1557534,
+        "sha256": "38032e4296cd0bdcdac89e47bac62a4160501177646195f85327f48b015eb42f",
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": "21600000/359999",
+        "nominal_fps": 60,
+        "average_fps": 60.00016666712963,
+        "fps_tolerance": 0.001,
+        "mp4_timestamp_note": "Native encoder rounds final timestamp; nominal 60 fps, 360 frames, duration differs from 6 seconds by 33 microseconds.",
+        "duration_seconds": 5.999967,
+        "decoded_frames": 360,
+        "lossless_png_frames": 360,
+        "passed": true
+      }
+    ]
+  },
+  "ball": {
+    "source": "Assumed analytic flight, not collision physics or real measured golf trajectory",
+    "start_cm": [
+      7.777501,
+      95.5553086419753,
+      2.135
+    ],
+    "radius_cm": 2.135,
+    "impact_action_time_seconds": 2.25,
+    "launch_velocity_cm_s": [
+      650,
+      0,
+      380
+    ],
+    "gravity_cm_s2": 980,
+    "flight_duration_seconds": 0.7755102040816326,
+    "horizontal_range_cm": 504.0816326530612,
+    "landing_policy": "Stop at first return to start height; no bounce, drag or spin."
+  }
+}

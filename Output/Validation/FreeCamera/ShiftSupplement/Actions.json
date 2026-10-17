@@ -1,0 +1,100 @@
+[
+  {
+    "action": "enter_free",
+    "kind": "key_down",
+    "clock": 28452.468,
+    "key": "f"
+  },
+  {
+    "action": "enter_free",
+    "kind": "key_up",
+    "clock": 28452.671,
+    "key": "f"
+  },
+  {
+    "action": "replay_speed",
+    "kind": "key_down",
+    "clock": 28452.921,
+    "key": "r"
+  },
+  {
+    "action": "replay_speed",
+    "kind": "key_up",
+    "clock": 28453.093,
+    "key": "r"
+  },
+  {
+    "action": "rmb",
+    "kind": "mouse_down",
+    "clock": 28453.343,
+    "button": "right"
+  },
+  {
+    "action": "speed_normal",
+    "kind": "key_down",
+    "clock": 28453.578,
+    "key": "w"
+  },
+  {
+    "action": "speed_normal",
+    "kind": "key_up",
+    "clock": 28454.359,
+    "key": "w"
+  },
+  {
+    "action": "left_shift_scancode",
+    "kind": "key_down",
+    "clock": 28454.484,
+    "key": "LeftShift",
+    "scan_code": 42
+  },
+  {
+    "action": "speed_boosted",
+    "kind": "key_down",
+    "clock": 28454.64,
+    "key": "w"
+  },
+  {
+    "action": "speed_boosted",
+    "kind": "key_up",
+    "clock": 28455.421,
+    "key": "w"
+  },
+  {
+    "action": "left_shift_scancode",
+    "kind": "key_up",
+    "clock": 28455.531,
+    "key": "LeftShift",
+    "scan_code": 42
+  },
+  {
+    "action": "rmb",
+    "kind": "mouse_up",
+    "clock": 28455.531,
+    "button": "right"
+  },
+  {
+    "action": "home",
+    "kind": "key_down",
+    "clock": 28455.765,
+    "key": "home"
+  },
+  {
+    "action": "home",
+    "kind": "key_up",
+    "clock": 28455.937,
+    "key": "home"
+  },
+  {
+    "action": "exit_free",
+    "kind": "key_down",
+    "clock": 28456.187,
+    "key": "f"
+  },
+  {
+    "action": "exit_free",
+    "kind": "key_up",
+    "clock": 28456.375,
+    "key": "f"
+  }
+]

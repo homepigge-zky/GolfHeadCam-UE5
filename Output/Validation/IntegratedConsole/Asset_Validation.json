@@ -1,0 +1,1459 @@
+{
+  "schema": "GolfHeadCam.IntegratedConsole.AssetValidation.v1",
+  "read_only": true,
+  "saves_performed": [],
+  "compilation_requested": false,
+  "compiled_assets": [],
+  "checks": [
+    {
+      "name": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer_compiled_clean",
+      "passed": true,
+      "detail": {
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "/Game/GolfHeadCam/UI/WBP_CameraControl_compiled_clean",
+      "passed": true,
+      "detail": {
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole_compiled_clean",
+      "passed": true,
+      "detail": {
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD_compiled_clean",
+      "passed": true,
+      "detail": {
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "child_parent_is_camera_control",
+      "passed": true,
+      "detail": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl_C"
+    },
+    {
+      "name": "child_designer_tree_empty",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "child_tick_two_inherited_refresh_calls",
+      "passed": true,
+      "detail": [
+        "RefreshDisplay",
+        "RefreshFreeCameraUI"
+      ]
+    },
+    {
+      "name": "child_only_overrides_tick",
+      "passed": true,
+      "detail": [
+        "事件Tick"
+      ]
+    },
+    {
+      "name": "hud_creates_inherited_console",
+      "passed": true,
+      "detail": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C"
+    },
+    {
+      "name": "hud_create_is_on_begin_play_chain",
+      "passed": true
+    },
+    {
+      "name": "one_initialize_free_camera_hook",
+      "passed": true
+    },
+    {
+      "name": "one_initialize_interactive_session_hook",
+      "passed": true
+    },
+    {
+      "name": "capture_home_before_session_reset",
+      "passed": true,
+      "detail": [
+        "事件beginplay",
+        "attachcomponenttocomponent",
+        "attachcomponenttocomponent",
+        "resetpose",
+        "设置bheadview",
+        "applycameramode",
+        "addtickprerequisiteactor",
+        "initializefreecamera",
+        "initializeinteractivesession"
+      ]
+    },
+    {
+      "name": "begin_play_does_not_start_swing",
+      "passed": true
+    },
+    {
+      "name": "session_initialization_call_order",
+      "passed": true,
+      "detail": [
+        "stopfreecamera",
+        "resetpose",
+        "resetfreecamerapose",
+        "updateballflight",
+        "applycameramode"
+      ]
+    },
+    {
+      "name": "session_does_not_start_swing",
+      "passed": true
+    },
+    {
+      "name": "session_initialization_has_guard",
+      "passed": true
+    },
+    {
+      "name": "session_guard_reads_cinematic_mode",
+      "passed": true,
+      "detail": [
+        "CinematicMode"
+      ]
+    },
+    {
+      "name": "cinematic_guard_else_has_no_reset",
+      "passed": true
+    },
+    {
+      "name": "startup_resets_FreeCameraUIBlocked",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "startup_resets_StartInHeadView",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "startup_resets_bHeadView",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "startup_resets_LensDistortionEnabled",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "startup_resets_ShowCalibrationGrid",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "startup_lens_preset_none",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "startup_ball_time_zero",
+      "passed": true
+    },
+    {
+      "name": "pawn_default_StartInHeadView_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "pawn_default_bHeadView_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "pawn_default_bFreeCamera_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "pawn_default_bFreeLookCaptured_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "pawn_default_FreeCameraUIBlocked_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "pawn_default_LensDistortionEnabled_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "pawn_default_ShowCalibrationGrid_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "pawn_default_CinematicMode_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "pawn_default_lens_none",
+      "passed": true
+    },
+    {
+      "name": "third_camera_template_home_location",
+      "passed": true,
+      "detail": {
+        "object": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer.BP_GolfGolfer_C:ThirdCamera_GEN_VARIABLE",
+        "relative_location_cm": [
+          400.0,
+          480.0,
+          230.0
+        ],
+        "relative_rotation_pyr": [
+          -10.813510887319586,
+          -131.63353933657018,
+          -1.9130548511914918e-07
+        ],
+        "field_of_view": 60.0
+      }
+    },
+    {
+      "name": "expected_editor_map_loaded",
+      "passed": true,
+      "detail": "/Game/GolfHeadCam/Maps/L_GolfPractice.L_GolfPractice"
+    },
+    {
+      "name": "placed_pawn_StartInHeadView_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "placed_pawn_LensDistortionEnabled_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "placed_pawn_ShowCalibrationGrid_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "placed_pawn_CinematicMode_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "placed_third_camera_home_location",
+      "passed": true,
+      "detail": {
+        "object": "/Game/GolfHeadCam/Maps/L_GolfPractice.L_GolfPractice:PersistentLevel.BP_GolfGolfer_C_0.ThirdCamera",
+        "relative_location_cm": [
+          400.0,
+          480.0,
+          230.0
+        ],
+        "relative_rotation_pyr": [
+          -10.813510887319586,
+          -131.63353933657018,
+          -1.9130548511914918e-07
+        ],
+        "field_of_view": 60.0
+      }
+    },
+    {
+      "name": "no_project_python_or_cpp_sources",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_custom_project_cpp_modules",
+      "passed": true
+    },
+    {
+      "name": "no_runtime_python_blueprint_nodes",
+      "passed": true
+    },
+    {
+      "name": "read_only_check_created_no_dirty_packages",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "optional_checks": [
+    {
+      "name": "/Game/GolfHeadCam/UI/WBP_CameraControl_internal_widget_guids",
+      "required": false,
+      "status": "unavailable",
+      "passed": null,
+      "detail": "UE Python rejected WidgetVariableNameToGuidMap as protected; internal GUID completeness and uniqueness were not inspected."
+    },
+    {
+      "name": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole_internal_widget_guids",
+      "required": false,
+      "status": "unavailable",
+      "passed": null,
+      "detail": "UE Python rejected WidgetVariableNameToGuidMap as protected; internal GUID completeness and uniqueness were not inspected."
+    }
+  ],
+  "limitations": [
+    {
+      "asset": "/Game/GolfHeadCam/UI/WBP_CameraControl",
+      "inspection": "internal_widget_guid_metadata",
+      "detail": "UE Python rejected WidgetVariableNameToGuidMap as protected; internal GUID completeness and uniqueness were not inspected."
+    },
+    {
+      "asset": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole",
+      "inspection": "internal_widget_guid_metadata",
+      "detail": "UE Python rejected WidgetVariableNameToGuidMap as protected; internal GUID completeness and uniqueness were not inspected."
+    }
+  ],
+  "sections": {
+    "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer": {
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "diagnostics": {
+        "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer.BP_GolfGolfer",
+        "graphs": [
+          {
+            "name": "UserConstructionScript",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ResetPose",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "PlaySwing",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ApplyCameraMode",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ToggleCamera",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "TogglePause",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UpdateBallFlight",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ApplyDeliveryFrame",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ToggleLensDistortion",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ToggleCalibrationGrid",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UpdateLensSettings",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "HandleLensInput",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UIPlay",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UIPause",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UIHead",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UIThird",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UISetLensPreset",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "InitializeFreeCamera",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "SetFreeCameraCapture",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "StopFreeCamera",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ToggleFreeCamera",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "SetFreeCameraUIBlocked",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ResetFreeCameraPose",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UpdateFreeCameraPose",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ProcessFreeCameraNavigation",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "HandleFreeCameraInput",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "InitializeInteractiveSession",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UIResetThirdCamera",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "UIAdjustFreeCamera",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "EventGraph",
+            "errors": [],
+            "warnings": []
+          }
+        ]
+      },
+      "errors": 0,
+      "warnings": 0
+    },
+    "/Game/GolfHeadCam/UI/WBP_CameraControl": {
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "diagnostics": {
+        "asset": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl",
+        "graphs": [
+          {
+            "name": "ScenePlay",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ScenePause",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "SceneReplay",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ViewHead",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ViewThird",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "GridToggle",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "LensNone",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "LensBarrel",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "LensPincushion",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "LensCalibrated",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "OpenVideos",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "OpenHeadVideo",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "OpenThirdVideo",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "VideoPlay",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "VideoPause",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "VideoReplay",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "CloseVideos",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "MediaOpened",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "MediaFailed",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "MediaEnded",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "RefreshDisplay",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "OpenSelectedVideo",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "RefreshFreeCameraUI",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickFreeCamera",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickResetThirdCamera",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraForward",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraBack",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraLeft",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraRight",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraUp",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraDown",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraYawLeft",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraYawRight",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraPitchUp",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "ClickCameraPitchDown",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "EventGraph",
+            "errors": [],
+            "warnings": []
+          }
+        ]
+      },
+      "errors": 0,
+      "warnings": 0
+    },
+    "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole": {
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "diagnostics": {
+        "asset": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole",
+        "graphs": [
+          {
+            "name": "EventGraph",
+            "errors": [],
+            "warnings": []
+          }
+        ]
+      },
+      "errors": 0,
+      "warnings": 0
+    },
+    "/Game/GolfHeadCam/Blueprints/BP_GolfHUD": {
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "diagnostics": {
+        "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD.BP_GolfHUD",
+        "graphs": [
+          {
+            "name": "UserConstructionScript",
+            "errors": [],
+            "warnings": []
+          },
+          {
+            "name": "EventGraph",
+            "errors": [],
+            "warnings": []
+          }
+        ]
+      },
+      "errors": 0,
+      "warnings": 0
+    },
+    "inheritance": {
+      "parent_class": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl_C",
+      "owned_widgets": 0,
+      "tick_chain": [
+        {
+          "name": "K2Node_Event_3",
+          "class": "K2Node_Event",
+          "title": "事件Tick",
+          "function": "事件Tick",
+          "inputs": {}
+        },
+        {
+          "name": "K2Node_CallFunction_0",
+          "class": "K2Node_CallFunction",
+          "title": "RefreshDisplay",
+          "function": "RefreshDisplay",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_Event_3.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_1",
+          "class": "K2Node_CallFunction",
+          "title": "RefreshFreeCameraUI",
+          "function": "RefreshFreeCameraUI",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_0.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        }
+      ]
+    },
+    "hud_reference": {
+      "widget_type": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+      "begin_play_chain": [
+        {
+          "name": "K2Node_Event_5",
+          "class": "K2Node_Event",
+          "title": "事件BeginPlay",
+          "function": "事件BeginPlay",
+          "inputs": {}
+        },
+        {
+          "name": "K2Node_CallFunction_9",
+          "class": "K2Node_CallFunction",
+          "title": "Create Widget",
+          "function": "CreateWidget",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_Event_5.then"
+              ]
+            },
+            "WidgetType": {
+              "value": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+              "links": []
+            },
+            "OwningPlayer": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_8.ReturnValue"
+              ]
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_10",
+          "class": "K2Node_CallFunction",
+          "title": "AddToViewport",
+          "function": "AddToViewport",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_9.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_9.ReturnValue"
+              ]
+            },
+            "ZOrder": {
+              "value": "10",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_VariableSet_1",
+          "class": "K2Node_VariableSet",
+          "title": "设置bShowMouseCursor",
+          "function": "设置bShowMouseCursor",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_10.then"
+              ]
+            },
+            "bShowMouseCursor": {
+              "value": "True",
+              "links": []
+            },
+            "self": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_8.ReturnValue"
+              ]
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_11",
+          "class": "K2Node_CallFunction",
+          "title": "Set Input Mode Game And UI",
+          "function": "SetInputModeGameAndUI",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_VariableSet_1.then"
+              ]
+            },
+            "PlayerController": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_8.ReturnValue"
+              ]
+            },
+            "InWidgetToFocus": {
+              "value": "",
+              "links": []
+            },
+            "InMouseLockMode": {
+              "value": "DoNotLock",
+              "links": []
+            },
+            "bHideCursorDuringCapture": {
+              "value": "False",
+              "links": []
+            },
+            "bFlushInput": {
+              "value": "True",
+              "links": []
+            }
+          }
+        }
+      ]
+    },
+    "pawn_startup": {
+      "begin_play_chain": [
+        {
+          "name": "K2Node_Event_3",
+          "class": "K2Node_Event",
+          "title": "事件BeginPlay",
+          "function": "事件BeginPlay",
+          "inputs": {}
+        },
+        {
+          "name": "K2Node_CallFunction_0",
+          "class": "K2Node_CallFunction",
+          "title": "Attach Component To Component",
+          "function": "AttachComponentToComponent",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_Event_3.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": [
+                "K2Node_VariableGet_1.HeadCamera"
+              ]
+            },
+            "Parent": {
+              "value": "",
+              "links": [
+                "K2Node_VariableGet_0.GolferMesh"
+              ]
+            },
+            "SocketName": {
+              "value": "head",
+              "links": []
+            },
+            "LocationRule": {
+              "value": "KeepRelative",
+              "links": []
+            },
+            "RotationRule": {
+              "value": "KeepRelative",
+              "links": []
+            },
+            "ScaleRule": {
+              "value": "KeepRelative",
+              "links": []
+            },
+            "bWeldSimulatedBodies": {
+              "value": "False",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_1",
+          "class": "K2Node_CallFunction",
+          "title": "Attach Component To Component",
+          "function": "AttachComponentToComponent",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_0.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": [
+                "K2Node_VariableGet_2.ClubRoot"
+              ]
+            },
+            "Parent": {
+              "value": "",
+              "links": [
+                "K2Node_VariableGet_0.GolferMesh"
+              ]
+            },
+            "SocketName": {
+              "value": "hand_r",
+              "links": []
+            },
+            "LocationRule": {
+              "value": "KeepRelative",
+              "links": []
+            },
+            "RotationRule": {
+              "value": "KeepRelative",
+              "links": []
+            },
+            "ScaleRule": {
+              "value": "KeepRelative",
+              "links": []
+            },
+            "bWeldSimulatedBodies": {
+              "value": "False",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_2",
+          "class": "K2Node_CallFunction",
+          "title": "ResetPose",
+          "function": "ResetPose",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_1.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_VariableSet_0",
+          "class": "K2Node_VariableSet",
+          "title": "设置bHeadView",
+          "function": "设置bHeadView",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_2.then"
+              ]
+            },
+            "bHeadView": {
+              "value": "false",
+              "links": [
+                "K2Node_VariableGet_3.StartInHeadView"
+              ]
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_3",
+          "class": "K2Node_CallFunction",
+          "title": "ApplyCameraMode",
+          "function": "ApplyCameraMode",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_VariableSet_0.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_13",
+          "class": "K2Node_CallFunction",
+          "title": "AddTickPrerequisiteActor",
+          "function": "AddTickPrerequisiteActor",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_3.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": [
+                "K2Node_VariableGet_4.GolferMesh"
+              ]
+            },
+            "PrerequisiteActor": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_12.ReturnValue"
+              ]
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_23",
+          "class": "K2Node_CallFunction",
+          "title": "InitializeFreeCamera",
+          "function": "InitializeFreeCamera",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_13.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_24",
+          "class": "K2Node_CallFunction",
+          "title": "InitializeInteractiveSession",
+          "function": "InitializeInteractiveSession",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_23.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        }
+      ],
+      "session_true_chain": [
+        {
+          "name": "K2Node_FunctionEntry_0",
+          "class": "K2Node_FunctionEntry",
+          "title": "InitializeInteractiveSession",
+          "function": "InitializeInteractiveSession",
+          "inputs": {}
+        },
+        {
+          "name": "K2Node_IfThenElse_1",
+          "class": "K2Node_IfThenElse",
+          "title": "分支",
+          "function": "分支",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_FunctionEntry_0.then"
+              ]
+            },
+            "Condition": {
+              "value": "true",
+              "links": [
+                "K2Node_CallFunction_6.ReturnValue"
+              ]
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_7",
+          "class": "K2Node_CallFunction",
+          "title": "StopFreeCamera",
+          "function": "StopFreeCamera",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_IfThenElse_1.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_VariableSet_6",
+          "class": "K2Node_VariableSet",
+          "title": "设置FreeCameraUIBlocked",
+          "function": "设置FreeCameraUIBlocked",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_7.then"
+              ]
+            },
+            "FreeCameraUIBlocked": {
+              "value": "false",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_VariableSet_7",
+          "class": "K2Node_VariableSet",
+          "title": "设置StartInHeadView",
+          "function": "设置StartInHeadView",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_VariableSet_6.then"
+              ]
+            },
+            "StartInHeadView": {
+              "value": "false",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_VariableSet_8",
+          "class": "K2Node_VariableSet",
+          "title": "设置bHeadView",
+          "function": "设置bHeadView",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_VariableSet_7.then"
+              ]
+            },
+            "bHeadView": {
+              "value": "false",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_VariableSet_9",
+          "class": "K2Node_VariableSet",
+          "title": "设置LensDistortionEnabled",
+          "function": "设置LensDistortionEnabled",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_VariableSet_8.then"
+              ]
+            },
+            "LensDistortionEnabled": {
+              "value": "false",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_VariableSet_10",
+          "class": "K2Node_VariableSet",
+          "title": "设置ShowCalibrationGrid",
+          "function": "设置ShowCalibrationGrid",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_VariableSet_9.then"
+              ]
+            },
+            "ShowCalibrationGrid": {
+              "value": "false",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_VariableSet_11",
+          "class": "K2Node_VariableSet",
+          "title": "设置LensPresetIndex",
+          "function": "设置LensPresetIndex",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_VariableSet_10.then"
+              ]
+            },
+            "LensPresetIndex": {
+              "value": "0",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_8",
+          "class": "K2Node_CallFunction",
+          "title": "ResetPose",
+          "function": "ResetPose",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_VariableSet_11.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_9",
+          "class": "K2Node_CallFunction",
+          "title": "ResetFreeCameraPose",
+          "function": "ResetFreeCameraPose",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_8.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_10",
+          "class": "K2Node_CallFunction",
+          "title": "UpdateBallFlight",
+          "function": "UpdateBallFlight",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_9.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            },
+            "SwingTime": {
+              "value": "0.0",
+              "links": []
+            }
+          }
+        },
+        {
+          "name": "K2Node_CallFunction_11",
+          "class": "K2Node_CallFunction",
+          "title": "ApplyCameraMode",
+          "function": "ApplyCameraMode",
+          "inputs": {
+            "execute": {
+              "value": "",
+              "links": [
+                "K2Node_CallFunction_10.then"
+              ]
+            },
+            "self": {
+              "value": "",
+              "links": []
+            }
+          }
+        }
+      ],
+      "setters": {
+        "FreeCameraUIBlocked": "false",
+        "StartInHeadView": "false",
+        "bHeadView": "false",
+        "LensDistortionEnabled": "false",
+        "ShowCalibrationGrid": "false",
+        "LensPresetIndex": "0"
+      },
+      "defaults": {
+        "StartInHeadView": false,
+        "bHeadView": false,
+        "bFreeCamera": false,
+        "bFreeLookCaptured": false,
+        "FreeCameraUIBlocked": false,
+        "LensDistortionEnabled": false,
+        "ShowCalibrationGrid": false,
+        "CinematicMode": false,
+        "LensPresetIndex": 0,
+        "SwingPlayRate": 1.0,
+        "HeadCameraFOV": 100.0,
+        "FreeCameraMoveSpeed": 150.0,
+        "FreeCameraLookSensitivity": 2.0
+      },
+      "third_camera_template": {
+        "object": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer.BP_GolfGolfer_C:ThirdCamera_GEN_VARIABLE",
+        "relative_location_cm": [
+          400.0,
+          480.0,
+          230.0
+        ],
+        "relative_rotation_pyr": [
+          -10.813510887319586,
+          -131.63353933657018,
+          -1.9130548511914918e-07
+        ],
+        "field_of_view": 60.0
+      }
+    },
+    "editor_actor": {
+      "world": "/Game/GolfHeadCam/Maps/L_GolfPractice.L_GolfPractice",
+      "pawn": "/Game/GolfHeadCam/Maps/L_GolfPractice.L_GolfPractice:PersistentLevel.BP_GolfGolfer_C_0",
+      "defaults": {
+        "StartInHeadView": false,
+        "bHeadView": false,
+        "bFreeCamera": false,
+        "bFreeLookCaptured": false,
+        "FreeCameraUIBlocked": false,
+        "LensDistortionEnabled": false,
+        "ShowCalibrationGrid": false,
+        "CinematicMode": false,
+        "LensPresetIndex": 0,
+        "FreeCameraLookSensitivity": 2.0
+      },
+      "third_camera": {
+        "object": "/Game/GolfHeadCam/Maps/L_GolfPractice.L_GolfPractice:PersistentLevel.BP_GolfGolfer_C_0.ThirdCamera",
+        "relative_location_cm": [
+          400.0,
+          480.0,
+          230.0
+        ],
+        "relative_rotation_pyr": [
+          -10.813510887319586,
+          -131.63353933657018,
+          -1.9130548511914918e-07
+        ],
+        "field_of_view": 60.0
+      }
+    },
+    "/Game/GolfHeadCam/UI/WBP_CameraControl_widget_guids": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl",
+      "widget_count": 87,
+      "animation_count": 0,
+      "inspection_available": false,
+      "status": "unavailable",
+      "complete": null,
+      "internal_guid_uniqueness_verified": false,
+      "limitation": "UE Python rejected WidgetVariableNameToGuidMap as protected; internal GUID completeness and uniqueness were not inspected.",
+      "remaining_verification": "Root may explicitly compile the four Blueprints and inspect new log output for recurring ensure messages; this does not replace direct GUID inspection."
+    },
+    "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole_widget_guids": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole",
+      "widget_count": 0,
+      "animation_count": 0,
+      "inspection_available": false,
+      "status": "unavailable",
+      "complete": null,
+      "internal_guid_uniqueness_verified": false,
+      "limitation": "UE Python rejected WidgetVariableNameToGuidMap as protected; internal GUID completeness and uniqueness were not inspected.",
+      "remaining_verification": "Root may explicitly compile the four Blueprints and inspect new log output for recurring ensure messages; this does not replace direct GUID inspection."
+    },
+    "runtime_code": {
+      "project": "<PROJECT_DIR>",
+      "source_files": [],
+      "excluded_generated_folders": [
+        ".git",
+        "Binaries",
+        "DerivedDataCache",
+        "Intermediate",
+        "Saved"
+      ],
+      "project_modules": [],
+      "enabled_plugins": [
+        "ModelingToolsEditorMode",
+        "GameplayStateTree",
+        "MovieRenderPipeline",
+        "ElectraPlayer"
+      ],
+      "python_nodes": []
+    }
+  },
+  "errors": [],
+  "runtime_tick_and_input_verification": "Separate runtime trace required",
+  "dirty_before": {
+    "content": [],
+    "maps": []
+  },
+  "dirty_after": {
+    "content": [],
+    "maps": []
+  },
+  "new_dirty_packages": [],
+  "dirty_project_packages": [],
+  "passed": true,
+  "summary": {
+    "passed_checks": 46,
+    "total_checks": 46,
+    "failed_checks": [],
+    "optional_unavailable": [
+      "/Game/GolfHeadCam/UI/WBP_CameraControl_internal_widget_guids",
+      "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole_internal_widget_guids"
+    ]
+  }
+}

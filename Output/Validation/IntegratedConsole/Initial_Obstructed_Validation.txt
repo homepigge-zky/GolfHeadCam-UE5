@@ -1,0 +1,84 @@
+GolfHeadCam 继承式整合控制台验收
+结果：FAIL；通过58，失败14，未观察2。
+
+Session1：1796采样/1748游戏采样/45动作，{'status': 'FAIL', 'passed': 43, 'failed': 14, 'not_observed': 2}。
+Session2：558采样/278游戏采样/5动作，{'status': 'PASS', 'passed': 13, 'failed': 0, 'not_observed': 0}。
+
+[PASS] Session1.trace_complete：录制已停止，游戏内采样连续且无错误
+[PASS] Session1.ordered_clock：采样时钟与同会话游戏时钟有序
+[PASS] Session1.inherited_instance：实际运行的 UI 唯一且为 WBP_GolfCameraConsole 子类
+[PASS] Session1.inherited_widget_reads：已采样的10个继承文字与4个面板均可访问
+[PASS] Session1.one_camera：始终恰好一个场景相机激活
+[PASS] Session1.head_mount：头戴相机仍固定绑定 head 骨骼
+[PASS] Session1.home_constant：保存的启动机位参考不随操作改变
+[PASS] Session1.old_hint_hidden：旧独立自由相机提示始终隐藏
+[PASS] Session1.startup_defaults：首次游戏帧起保持第三人称原机位、0秒待命且交互选项关闭
+[PASS] Session1.startup_dwell：显式标记的无操作等待持续至少4秒且动画维持0
+[PASS] Session1.enable_free_mouse_state：鼠标自由相机按钮开启第三人称并显示微调面板
+[FAIL] Session1.nudge_forward_step：每次点击只产生指定25cm或5度微调：nudge_forward
+[FAIL] Session1.nudge_back_step：每次点击只产生指定25cm或5度微调：nudge_back
+[FAIL] Session1.nudge_up_step：每次点击只产生指定25cm或5度微调：nudge_up
+[FAIL] Session1.nudge_left_step：每次点击只产生指定25cm或5度微调：nudge_left
+[FAIL] Session1.nudge_right_step：每次点击只产生指定25cm或5度微调：nudge_right
+[FAIL] Session1.nudge_down_step：每次点击只产生指定25cm或5度微调：nudge_down
+[FAIL] Session1.nudge_yaw_left_step：每次点击只产生指定25cm或5度微调：nudge_yaw_left
+[FAIL] Session1.nudge_yaw_right_step：每次点击只产生指定25cm或5度微调：nudge_yaw_right
+[FAIL] Session1.nudge_pitch_up_step：每次点击只产生指定25cm或5度微调：nudge_pitch_up
+[FAIL] Session1.nudge_pitch_down_step：每次点击只产生指定25cm或5度微调：nudge_pitch_down
+[PASS] Session1.no_autoplay_from_controls：启用自由和十种微调操作均不触发自动挥杆
+[PASS] Session1.reset_mouse_idle_reset：复位回启动机位：reset_mouse_idle
+[PASS] Session1.play_mouse_play：鼠标播放/重播从开头推进：play_mouse
+[FAIL] Session1.nudge_forward_while_playing_step：每次点击只产生指定25cm或5度微调：nudge_forward_while_playing
+[NOT_OBSERVED] Session1.reset_while_playing_reset：复位回启动机位：reset_while_playing
+[PASS] Session1.nudge_forward_while_playing_continuity：点击/按键期间挥杆连续且无归零或暂停：nudge_forward_while_playing
+[PASS] Session1.reset_while_playing_continuity：点击/按键期间挥杆连续且无归零或暂停：reset_while_playing
+[PASS] Session1.disable_free_while_playing_continuity：点击/按键期间挥杆连续且无归零或暂停：disable_free_while_playing
+[PASS] Session1.disable_free_while_playing_state：播放中关闭自由相机但保留第三人称
+[PASS] Session1.disable_free_while_playing_retained：关闭自由模式保留当时第三机位
+[PASS] Session1.pause_mouse_paused：鼠标暂停后动画时间保持不变
+[PASS] Session1.resume_mouse_progress：鼠标播放从暂停位置继续
+[PASS] Session1.head_mouse_state：鼠标切头戴视角
+[PASS] Session1.lens_barrel_mouse_state：桶形镜头选项有效
+[PASS] Session1.grid_mouse_state：网格按钮有效
+[PASS] Session1.third_mouse_state：鼠标切第三人称
+[PASS] Session1.enable_free_again_state：再次点击自由按钮可进入自由模式
+[FAIL] Session1.nudge_before_video_step：每次点击只产生指定25cm或5度微调：nudge_before_video
+[PASS] Session1.video_open_mouse_state：视频弹层禁用主面板并退出自由控制
+[PASS] Session1.video_open_mouse_media：视频打开并实际推进：GolfHead.mp4
+[PASS] Session1.video_guard_F_state：视频模态发送F后仍不能进入自由模式
+[PASS] Session1.modal_entire_interval：视频模态全程场景暂停、相机不动、微调隐藏且输入被阻断
+[PASS] Session1.video_pause_mouse_paused：视频暂停保持媒体时钟不变
+[PASS] Session1.video_replay：视频重播归零并推进
+[PASS] Session1.video_third_mouse_media：视频打开并实际推进：GolfThird.mp4
+[PASS] Session1.video_close_mouse_state：关闭视频后恢复主面板并关闭播放器
+[PASS] Session1.restart_mouse_play：鼠标播放/重播从开头推进：restart_mouse
+[PASS] Session1.enable_free_after_video_state：视频关闭后自由按钮仍有效
+[FAIL] Session1.yaw_while_replaying_step：每次点击只产生指定25cm或5度微调：yaw_while_replaying
+[PASS] Session1.yaw_while_replaying_continuity：点击/按键期间挥杆连续且无归零或暂停：yaw_while_replaying
+[NOT_OBSERVED] Session1.reset_home_retained_reset：复位回启动机位：reset_home_retained
+[PASS] Session1.reset_home_retained_continuity：点击/按键期间挥杆连续且无归零或暂停：reset_home_retained
+[FAIL] Session1.toggle_F_retained_state：F键仍可退出自由相机
+[PASS] Session1.toggle_F_retained_retained：F键切换保持当前第三机位
+[PASS] Session1.toggle_F_retained_continuity：点击/按键期间挥杆连续且无归零或暂停：toggle_F_retained
+[PASS] Session1.nondefault_end：第一会话结束时确为头戴、任务畸变、网格、视频打开的非默认状态
+[PASS] Session1.inherited_media_end：继承的媒体结束事件更新播放结束状态
+[PASS] Session1.runtime_tick_refresh：子类 Tick 实际刷新父时间/视角文字与新自由按钮文字
+[PASS] Session2.trace_complete：录制已停止，游戏内采样连续且无错误
+[PASS] Session2.ordered_clock：采样时钟与同会话游戏时钟有序
+[PASS] Session2.inherited_instance：实际运行的 UI 唯一且为 WBP_GolfCameraConsole 子类
+[PASS] Session2.inherited_widget_reads：已采样的10个继承文字与4个面板均可访问
+[PASS] Session2.one_camera：始终恰好一个场景相机激活
+[PASS] Session2.head_mount：头戴相机仍固定绑定 head 骨骼
+[PASS] Session2.home_constant：保存的启动机位参考不随操作改变
+[PASS] Session2.old_hint_hidden：旧独立自由相机提示始终隐藏
+[PASS] Session2.startup_defaults：首次游戏帧起保持第三人称原机位、0秒待命且交互选项关闭
+[PASS] Session2.startup_dwell：显式标记的无操作等待持续至少4秒且动画维持0
+[PASS] Session2.play_mouse_session2_play：鼠标播放/重播从开头推进：play_mouse_session2
+[PASS] Session2.pause_mouse_session2_paused：第二次启动鼠标播放后暂停仍有效
+[PASS] Session2.runtime_tick_refresh：子类 Tick 实际刷新父时间/视角文字与新自由按钮文字
+[PASS] cross_session_reset：前次非默认状态不泄漏到新PIE会话
+[PASS] native_inheritance_structure：子类继承父Designer与初始化事件，原生Tick显式转发父刷新函数
+
+位移容差0.01cm，转角容差0.01度；零位移不能证明复位按钮有效。
+启动前等待PIE的不可用采样单列，不作为游戏错误。
+未运行打包EXE；未模拟媒体失败；继承结构来自生成时证据，Tick与按钮响应来自实际运行。

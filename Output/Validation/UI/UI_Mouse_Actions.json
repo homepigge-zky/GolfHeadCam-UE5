@@ -1,0 +1,257 @@
+[
+  {
+    "action": "scene_play",
+    "monotonic": 26478.156,
+    "wall": 1792176141.452099,
+    "position": [
+      102,
+      588
+    ]
+  },
+  {
+    "action": "scene_pause",
+    "monotonic": 26480.171,
+    "wall": 1792176143.4582381,
+    "position": [
+      216,
+      588
+    ]
+  },
+  {
+    "action": "scene_resume",
+    "monotonic": 26483.031,
+    "wall": 1792176146.3218498,
+    "position": [
+      102,
+      588
+    ]
+  },
+  {
+    "action": "scene_pause_again",
+    "monotonic": 26484.531,
+    "wall": 1792176147.8276117,
+    "position": [
+      216,
+      588
+    ]
+  },
+  {
+    "action": "head_view",
+    "monotonic": 26485.843,
+    "wall": 1792176149.133384,
+    "position": [
+      130,
+      703
+    ]
+  },
+  {
+    "action": "grid_on",
+    "monotonic": 26487.796,
+    "wall": 1792176151.0891428,
+    "position": [
+      115,
+      947
+    ]
+  },
+  {
+    "action": "lens_none",
+    "monotonic": 26489.109,
+    "wall": 1792176152.3938806,
+    "position": [
+      130,
+      814
+    ]
+  },
+  {
+    "action": "lens_barrel",
+    "monotonic": 26491.156,
+    "wall": 1792176154.440167,
+    "position": [
+      300,
+      814
+    ]
+  },
+  {
+    "action": "lens_pincushion",
+    "monotonic": 26493.171,
+    "wall": 1792176156.4638658,
+    "position": [
+      130,
+      858
+    ]
+  },
+  {
+    "action": "lens_task",
+    "monotonic": 26495.218,
+    "wall": 1792176158.5092824,
+    "position": [
+      300,
+      858
+    ]
+  },
+  {
+    "action": "grid_off",
+    "monotonic": 26497.234,
+    "wall": 1792176160.5260599,
+    "position": [
+      115,
+      947
+    ]
+  },
+  {
+    "action": "third_view",
+    "monotonic": 26498.437,
+    "wall": 1792176161.7308624,
+    "position": [
+      300,
+      703
+    ]
+  },
+  {
+    "action": "scene_replay",
+    "monotonic": 26499.64,
+    "wall": 1792176162.9366446,
+    "position": [
+      329,
+      588
+    ]
+  },
+  {
+    "action": "scene_pause_before_video",
+    "monotonic": 26501.156,
+    "wall": 1792176164.4422743,
+    "position": [
+      216,
+      588
+    ]
+  },
+  {
+    "action": "open_saved_videos",
+    "monotonic": 26502.359,
+    "wall": 1792176165.6485298,
+    "position": [
+      288,
+      947
+    ]
+  },
+  {
+    "action": "video_head_replay",
+    "monotonic": 26534.046,
+    "wall": 1792176197.3306677,
+    "position": [
+      770,
+      826
+    ]
+  },
+  {
+    "action": "video_head_pause",
+    "monotonic": 26535.953,
+    "wall": 1792176199.2376156,
+    "position": [
+      660,
+      826
+    ]
+  },
+  {
+    "action": "video_modal_blocks_scene_replay",
+    "monotonic": 26539.015,
+    "key": "space"
+  },
+  {
+    "action": "video_head_resume",
+    "monotonic": 26540.125,
+    "wall": 1792176203.4147625,
+    "position": [
+      550,
+      826
+    ]
+  },
+  {
+    "action": "select_third_video",
+    "monotonic": 26542.578,
+    "wall": 1792176205.861134,
+    "position": [
+      760,
+      241
+    ]
+  },
+  {
+    "action": "video_third_pause",
+    "monotonic": 26544.484,
+    "wall": 1792176207.7673132,
+    "position": [
+      660,
+      826
+    ]
+  },
+  {
+    "action": "video_third_resume",
+    "monotonic": 26546.5,
+    "wall": 1792176209.796737,
+    "position": [
+      550,
+      826
+    ]
+  },
+  {
+    "action": "video_third_replay",
+    "monotonic": 26554.234,
+    "wall": 1792176217.5233681,
+    "position": [
+      770,
+      826
+    ]
+  },
+  {
+    "action": "close_videos",
+    "monotonic": 26556.375,
+    "wall": 1792176219.6610105,
+    "position": [
+      1414,
+      196
+    ]
+  },
+  {
+    "action": "scene_resume_after_video",
+    "monotonic": 26558.64,
+    "wall": 1792176221.9282641,
+    "position": [
+      102,
+      588
+    ]
+  },
+  {
+    "action": "scene_pause_after_video",
+    "monotonic": 26560.046,
+    "wall": 1792176223.3344388,
+    "position": [
+      216,
+      588
+    ]
+  },
+  {
+    "action": "keyboard_replay",
+    "monotonic": 26560.703,
+    "key": "r"
+  },
+  {
+    "action": "keyboard_pause",
+    "monotonic": 26561.453,
+    "key": "p"
+  },
+  {
+    "action": "keyboard_camera",
+    "monotonic": 26562.109,
+    "key": "v"
+  },
+  {
+    "action": "keyboard_lens",
+    "monotonic": 26562.75,
+    "key": "b"
+  },
+  {
+    "action": "keyboard_grid",
+    "monotonic": 26563.406,
+    "key": "g"
+  }
+]

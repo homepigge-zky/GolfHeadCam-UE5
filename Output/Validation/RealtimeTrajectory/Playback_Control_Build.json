@@ -1,0 +1,6 @@
+{
+  "changed": [
+    "/Game/GolfHeadCam/UI/WBP_CameraControl.RefreshDisplay"
+  ],
+  "purpose": "Pause/continue remains usable while ball is moving after the four-second swing ends."
+}

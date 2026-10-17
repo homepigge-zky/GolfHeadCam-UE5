@@ -1,0 +1,2510 @@
+{
+  "generated_utc": "2026-10-16T19:17:40.402597+00:00",
+  "passed": true,
+  "summary": {
+    "status": "PASS",
+    "passed": 84,
+    "failed": 0,
+    "not_observed": 0
+  },
+  "sample_count": 1585,
+  "event_count": 117,
+  "duration_seconds": 99.23400000000038,
+  "trace_sha256": "04f00fde3be7fe76f4f8822c05f9b7343c9fed85fd53b3a04bdc3ad1bb420ae6",
+  "actions_sha256": "f870da566af3daeb5b38a25fc13c0284cf87c6a84c6c55f4280de27ec983e2a2",
+  "windows": {
+    "enter_free:post": {
+      "requested_clock_range": [
+        28175.335,
+        28175.495
+      ],
+      "samples": 3,
+      "sample_indices": [
+        175,
+        176,
+        177
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "move_forward:held": {
+      "requested_clock_range": [
+        28176.270999999997,
+        28176.762000000002
+      ],
+      "samples": 8,
+      "sample_indices": [
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "move_right:held": {
+      "requested_clock_range": [
+        28177.037,
+        28177.512000000002
+      ],
+      "samples": 7,
+      "sample_indices": [
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209
+      ],
+      "observed_wall_seconds": 0.375
+    },
+    "move_up:held": {
+      "requested_clock_range": [
+        28177.787,
+        28178.262000000002
+      ],
+      "samples": 7,
+      "sample_indices": [
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221
+      ],
+      "observed_wall_seconds": 0.375
+    },
+    "move_backward:held": {
+      "requested_clock_range": [
+        28183.068,
+        28183.543
+      ],
+      "samples": 8,
+      "sample_indices": [
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306
+      ],
+      "observed_wall_seconds": 0.4379999999982829
+    },
+    "move_left:held": {
+      "requested_clock_range": [
+        28183.818,
+        28184.309
+      ],
+      "samples": 8,
+      "sample_indices": [
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318
+      ],
+      "observed_wall_seconds": 0.4379999999982829
+    },
+    "move_down:held": {
+      "requested_clock_range": [
+        28184.568,
+        28185.059
+      ],
+      "samples": 8,
+      "sample_indices": [
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330
+      ],
+      "observed_wall_seconds": 0.4379999999982829
+    },
+    "speed_normal:held": {
+      "requested_clock_range": [
+        28186.630999999998,
+        28187.121
+      ],
+      "samples": 8,
+      "sample_indices": [
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "speed_boosted:held": {
+      "requested_clock_range": [
+        28187.443,
+        28187.918
+      ],
+      "samples": 8,
+      "sample_indices": [
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376
+      ],
+      "observed_wall_seconds": 0.4379999999982829
+    },
+    "mouse_look:drag": {
+      "requested_clock_range": [
+        28178.487,
+        28178.98
+      ],
+      "samples": 8,
+      "sample_indices": [
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "exit_free:post": {
+      "requested_clock_range": [
+        28179.585,
+        28180.065
+      ],
+      "samples": 8,
+      "sample_indices": [
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250
+      ],
+      "observed_wall_seconds": 0.4379999999982829
+    },
+    "locked_w_no_rmb:held": {
+      "requested_clock_range": [
+        28180.787,
+        28181.168
+      ],
+      "samples": 6,
+      "sample_indices": [
+        263,
+        264,
+        265,
+        266,
+        267,
+        268
+      ],
+      "observed_wall_seconds": 0.3129999999982829
+    },
+    "reenter_free:post": {
+      "requested_clock_range": [
+        28181.585,
+        28181.855
+      ],
+      "samples": 5,
+      "sample_indices": [
+        275,
+        276,
+        277,
+        278,
+        279
+      ],
+      "observed_wall_seconds": 0.25
+    },
+    "home_after_reenter:post": {
+      "requested_clock_range": [
+        28182.132,
+        28182.292
+      ],
+      "samples": 3,
+      "sample_indices": [
+        284,
+        285,
+        286
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "home_after_reverse:post": {
+      "requested_clock_range": [
+        28185.695,
+        28185.87
+      ],
+      "samples": 3,
+      "sample_indices": [
+        341,
+        342,
+        343
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "home_after_speed:post": {
+      "requested_clock_range": [
+        28188.601,
+        28188.761
+      ],
+      "samples": 2,
+      "sample_indices": [
+        388,
+        389
+      ],
+      "observed_wall_seconds": 0.062000000001717126
+    },
+    "free_w_no_rmb:held": {
+      "requested_clock_range": [
+        28218.630999999998,
+        28219.106
+      ],
+      "samples": 8,
+      "sample_indices": [
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "exit_during_swing:post": {
+      "requested_clock_range": [
+        28220.163,
+        28220.525999999998
+      ],
+      "samples": 5,
+      "sample_indices": [
+        891,
+        892,
+        893,
+        894,
+        895
+      ],
+      "observed_wall_seconds": 0.25
+    },
+    "enter_during_swing:post": {
+      "requested_clock_range": [
+        28220.804,
+        28221.167
+      ],
+      "samples": 6,
+      "sample_indices": [
+        901,
+        902,
+        903,
+        904,
+        905,
+        906
+      ],
+      "observed_wall_seconds": 0.3129999999982829
+    },
+    "move_during_swing:held": {
+      "requested_clock_range": [
+        28221.505999999998,
+        28221.95
+      ],
+      "samples": 7,
+      "sample_indices": [
+        912,
+        913,
+        914,
+        915,
+        916,
+        917,
+        918
+      ],
+      "observed_wall_seconds": 0.375
+    },
+    "pause_animation:post": {
+      "requested_clock_range": [
+        28223.226,
+        28223.433
+      ],
+      "samples": 3,
+      "sample_indices": [
+        940,
+        941,
+        942
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "move_while_paused:held": {
+      "requested_clock_range": [
+        28223.770999999997,
+        28224.262000000002
+      ],
+      "samples": 8,
+      "sample_indices": [
+        948,
+        949,
+        950,
+        951,
+        952,
+        953,
+        954,
+        955
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "ui_resume:post": {
+      "requested_clock_range": [
+        28225.96,
+        28226.44
+      ],
+      "samples": 8,
+      "sample_indices": [
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989,
+        990
+      ],
+      "observed_wall_seconds": 0.4379999999982829
+    },
+    "ui_pause:post": {
+      "requested_clock_range": [
+        28227.115999999998,
+        28227.595999999998
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "ui_head_exits_free:post": {
+      "requested_clock_range": [
+        28227.882,
+        28228.362
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019,
+        1020,
+        1021
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "ui_head_resume:post": {
+      "requested_clock_range": [
+        28228.757,
+        28229.237
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1028,
+        1029,
+        1030,
+        1031,
+        1032,
+        1033,
+        1034,
+        1035
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "ui_third_retains_pose:post": {
+      "requested_clock_range": [
+        28230.679,
+        28230.98
+      ],
+      "samples": 5,
+      "sample_indices": [
+        1059,
+        1060,
+        1061,
+        1062,
+        1063
+      ],
+      "observed_wall_seconds": 0.25
+    },
+    "enter_before_lens:post": {
+      "requested_clock_range": [
+        28231.257,
+        28231.417
+      ],
+      "samples": 3,
+      "sample_indices": [
+        1068,
+        1069,
+        1070
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "home_before_lens:post": {
+      "requested_clock_range": [
+        28231.695,
+        28231.855
+      ],
+      "samples": 3,
+      "sample_indices": [
+        1075,
+        1076,
+        1077
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "move_before_lens:held": {
+      "requested_clock_range": [
+        28232.193,
+        28232.575
+      ],
+      "samples": 6,
+      "sample_indices": [
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088
+      ],
+      "observed_wall_seconds": 0.3129999999982829
+    },
+    "lens_exits_free:post": {
+      "requested_clock_range": [
+        28233.507,
+        28233.987
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1104,
+        1105,
+        1106,
+        1107,
+        1108,
+        1109,
+        1110,
+        1111
+      ],
+      "observed_wall_seconds": 0.43800000000192085
+    },
+    "grid_after_free:post": {
+      "requested_clock_range": [
+        28234.382,
+        28234.862
+      ],
+      "samples": 7,
+      "sample_indices": [
+        1118,
+        1119,
+        1120,
+        1121,
+        1122,
+        1123,
+        1124
+      ],
+      "observed_wall_seconds": 0.375
+    },
+    "grid_off_after_free:post": {
+      "requested_clock_range": [
+        28235.96,
+        28236.44
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1143,
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "lens_none_after_free:post": {
+      "requested_clock_range": [
+        28236.679,
+        28237.159
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1154,
+        1155,
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1161
+      ],
+      "observed_wall_seconds": 0.4379999999982829
+    },
+    "third_before_video:post": {
+      "requested_clock_range": [
+        28237.398,
+        28237.558
+      ],
+      "samples": 2,
+      "sample_indices": [
+        1166,
+        1167
+      ],
+      "observed_wall_seconds": 0.06299999999828287
+    },
+    "enter_before_video:post": {
+      "requested_clock_range": [
+        28237.835,
+        28238.315
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1178,
+        1179,
+        1180
+      ],
+      "observed_wall_seconds": 0.4370000000017171
+    },
+    "open_video_exits_free:post": {
+      "requested_clock_range": [
+        28238.554,
+        28239.034
+      ],
+      "samples": 7,
+      "sample_indices": [
+        1184,
+        1185,
+        1186,
+        1187,
+        1188,
+        1189,
+        1190
+      ],
+      "observed_wall_seconds": 0.39099999999962165
+    },
+    "modal_f_blocked:post": {
+      "requested_clock_range": [
+        28239.835,
+        28240.042
+      ],
+      "samples": 3,
+      "sample_indices": [
+        1204,
+        1205,
+        1206
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "modal_w_blocked:held": {
+      "requested_clock_range": [
+        28240.380999999998,
+        28240.918
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1213,
+        1214,
+        1215,
+        1216,
+        1217,
+        1218,
+        1219,
+        1220
+      ],
+      "observed_wall_seconds": 0.43800000000192085
+    },
+    "modal_mouse_blocked:drag": {
+      "requested_clock_range": [
+        28241.143,
+        28241.62
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1225,
+        1226,
+        1227,
+        1228,
+        1229,
+        1230,
+        1231,
+        1232
+      ],
+      "observed_wall_seconds": 0.43800000000192085
+    },
+    "video_head_pause:post": {
+      "requested_clock_range": [
+        28242.523,
+        28243.003
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1247,
+        1248,
+        1249,
+        1250,
+        1251,
+        1252,
+        1253,
+        1254
+      ],
+      "observed_wall_seconds": 0.43800000000192085
+    },
+    "video_head_resume:post": {
+      "requested_clock_range": [
+        28244.085,
+        28244.565
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1272,
+        1273,
+        1274,
+        1275,
+        1276,
+        1277,
+        1278,
+        1279
+      ],
+      "observed_wall_seconds": 0.43699999999807915
+    },
+    "video_select_third:post": {
+      "requested_clock_range": [
+        28245.148,
+        28245.628
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1289,
+        1290,
+        1291,
+        1292,
+        1293,
+        1294,
+        1295,
+        1296
+      ],
+      "observed_wall_seconds": 0.43800000000192085
+    },
+    "video_third_pause:post": {
+      "requested_clock_range": [
+        28246.413,
+        28246.893
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316
+      ],
+      "observed_wall_seconds": 0.43800000000192085
+    },
+    "close_video:post": {
+      "requested_clock_range": [
+        28247.96,
+        28248.44
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1334,
+        1335,
+        1336,
+        1337,
+        1338,
+        1339,
+        1340,
+        1341
+      ],
+      "observed_wall_seconds": 0.43699999999807915
+    },
+    "resume_after_video:post": {
+      "requested_clock_range": [
+        28248.82,
+        28249.3
+      ],
+      "samples": 8,
+      "sample_indices": [
+        1348,
+        1349,
+        1350,
+        1351,
+        1352,
+        1353,
+        1354,
+        1355
+      ],
+      "observed_wall_seconds": 0.43699999999807915
+    },
+    "pause_after_video:post": {
+      "requested_clock_range": [
+        28249.898,
+        28250.150999999998
+      ],
+      "samples": 4,
+      "sample_indices": [
+        1365,
+        1366,
+        1367,
+        1368
+      ],
+      "observed_wall_seconds": 0.18800000000192085
+    },
+    "legacy_replay:post": {
+      "requested_clock_range": [
+        28250.429,
+        28250.636
+      ],
+      "samples": 3,
+      "sample_indices": [
+        1374,
+        1375,
+        1376
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "enter_before_v:post": {
+      "requested_clock_range": [
+        28250.913,
+        28251.12
+      ],
+      "samples": 4,
+      "sample_indices": [
+        1381,
+        1382,
+        1383,
+        1384
+      ],
+      "observed_wall_seconds": 0.18800000000192085
+    },
+    "legacy_v_exits_free:post": {
+      "requested_clock_range": [
+        28251.398,
+        28251.605
+      ],
+      "samples": 3,
+      "sample_indices": [
+        1389,
+        1390,
+        1391
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "f_from_head:post": {
+      "requested_clock_range": [
+        28251.882,
+        28252.089
+      ],
+      "samples": 3,
+      "sample_indices": [
+        1397,
+        1398,
+        1399
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "final_home:post": {
+      "requested_clock_range": [
+        28252.365999999998,
+        28252.573
+      ],
+      "samples": 3,
+      "sample_indices": [
+        1405,
+        1406,
+        1407
+      ],
+      "observed_wall_seconds": 0.125
+    },
+    "final_exit:post": {
+      "requested_clock_range": [
+        28252.851,
+        28253.058
+      ],
+      "samples": 4,
+      "sample_indices": [
+        1412,
+        1413,
+        1414,
+        1415
+      ],
+      "observed_wall_seconds": 0.18699999999807915
+    }
+  },
+  "checks": [
+    {
+      "name": "final_trace",
+      "label": "采样完整、停止录制且时钟有序",
+      "status": "PASS",
+      "evidence": {
+        "recording": false,
+        "unavailable_samples": [],
+        "samples": 1585
+      }
+    },
+    {
+      "name": "no_runtime_errors",
+      "label": "录制器与媒体无错误",
+      "status": "PASS",
+      "evidence": {
+        "recorder_errors": [],
+        "media_error_samples": []
+      }
+    },
+    {
+      "name": "one_camera",
+      "label": "每点恰好一个相机激活",
+      "status": "PASS",
+      "evidence": {
+        "samples": 1585,
+        "invalid_samples": []
+      }
+    },
+    {
+      "name": "head_mount_fixed",
+      "label": "头戴相机仍固定绑定 head 骨骼",
+      "status": "PASS",
+      "evidence": {
+        "samples": 1585,
+        "mount_span": {
+          "max_position_cm": 3.3937249765157416e-14,
+          "max_rotation_deg": 3.7632830500098297e-14
+        },
+        "invalid_socket_samples": []
+      }
+    },
+    {
+      "name": "head_world_composition",
+      "label": "头戴世界位姿等于头骨与固定安装变换组合",
+      "status": "PASS",
+      "evidence": {
+        "max_position_error_cm": 7.105427357601002e-15,
+        "max_rotation_error_deg": 2.6987901398369664e-14
+      }
+    },
+    {
+      "name": "home_reference_constant",
+      "label": "启动机位参考未被导航改写",
+      "status": "PASS",
+      "evidence": {
+        "span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        }
+      }
+    },
+    {
+      "name": "capture_exclusive",
+      "label": "捕获鼠标时必须处于未阻断的自由第三人称并隐藏指针",
+      "status": "PASS",
+      "evidence": {
+        "captured_samples": 165,
+        "invalid_samples": []
+      }
+    },
+    {
+      "name": "enter_free_state",
+      "label": "F 开启自由第三人称",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "expected": {
+          "pawn.bFreeCamera": true,
+          "head_active": false,
+          "third_active": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "move_forward_motion",
+      "label": "W 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "key": "W",
+        "basis": "forward",
+        "sign": 1,
+        "delta_cm": [
+          -42.4171391941037,
+          -47.71928159336727,
+          -12.19492751830478
+        ],
+        "along_expected_axis_cm": 65.00045992434018,
+        "total_distance_cm": 65.00045992434019,
+        "observed_world_seconds": 0.43333639949560165,
+        "speed_cm_s": 149.99999999999983,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 0.9999999999999998,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "move_forward_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：move_forward",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "in_progress_pairs": 7,
+        "animation_range": [
+          0.7666724920272827,
+          1.200008511543274
+        ],
+        "observed_advance_seconds": 0.4333360195159912,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 1.3783574104309082e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "move_right_motion",
+      "label": "D 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "key": "D",
+        "basis": "right",
+        "sign": 1,
+        "delta_cm": [
+          42.51246247004519,
+          -37.78885557660146,
+          1.8654412770047202e-07
+        ],
+        "along_expected_axis_cm": 56.879759766161506,
+        "total_distance_cm": 56.8797597661615,
+        "observed_world_seconds": 0.3791983984410763,
+        "speed_cm_s": 150.00000000000017,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 1.0000000000000002,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "move_right_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：move_right",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "in_progress_pairs": 6,
+        "animation_range": [
+          1.5833443403244019,
+          1.9625420570373535
+        ],
+        "observed_advance_seconds": 0.37919771671295166,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 1.7508864402770996e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "move_up_motion",
+      "label": "E 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "key": "E",
+        "basis": "world_z",
+        "sign": 1,
+        "delta_cm": [
+          0.0,
+          0.0,
+          57.50049054622653
+        ],
+        "along_expected_axis_cm": 57.50049054622653,
+        "total_distance_cm": 57.50049054622653,
+        "observed_world_seconds": 0.38333660364151,
+        "speed_cm_s": 150.00000000000009,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 1.0,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "move_up_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：move_up",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "in_progress_pairs": 6,
+        "animation_range": [
+          2.3292112350463867,
+          2.712547779083252
+        ],
+        "observed_advance_seconds": 0.38333654403686523,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 1.2293457984924316e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "move_backward_motion",
+      "label": "S 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "key": "S",
+        "basis": "forward",
+        "sign": -1,
+        "delta_cm": [
+          42.41712934855127,
+          47.71927051712032,
+          12.194924687708465
+        ],
+        "along_expected_axis_cm": 65.00044483691416,
+        "total_distance_cm": 65.00044483691416,
+        "observed_world_seconds": 0.4333362989127636,
+        "speed_cm_s": 149.99999999999912,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 1.0,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "move_backward_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：move_backward",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "in_progress_pairs": 7,
+        "animation_range": [
+          0.7833387851715088,
+          1.2166746854782104
+        ],
+        "observed_advance_seconds": 0.43333590030670166,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 1.3783574104309082e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "move_left_motion",
+      "label": "A 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "key": "A",
+        "basis": "right",
+        "sign": -1,
+        "delta_cm": [
+          -48.58201668037219,
+          43.18401488147663,
+          -2.1317731579983956e-07
+        ],
+        "along_expected_axis_cm": 65.00054989010137,
+        "total_distance_cm": 65.00054989010137,
+        "observed_world_seconds": 0.4333369992673397,
+        "speed_cm_s": 150.00000000000094,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 1.0,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "move_left_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：move_left",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "in_progress_pairs": 7,
+        "animation_range": [
+          1.5333434343338013,
+          1.9666796922683716
+        ],
+        "observed_advance_seconds": 0.4333362579345703,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 1.564621925354004e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "move_down_motion",
+      "label": "Q 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "key": "Q",
+        "basis": "world_z",
+        "sign": -1,
+        "delta_cm": [
+          0.0,
+          0.0,
+          -65.00058006495237
+        ],
+        "along_expected_axis_cm": 65.00058006495237,
+        "total_distance_cm": 65.00058006495237,
+        "observed_world_seconds": 0.4333372004330158,
+        "speed_cm_s": 150.0,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 1.0,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "move_down_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：move_down",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "in_progress_pairs": 7,
+        "animation_range": [
+          2.28334903717041,
+          2.716686487197876
+        ],
+        "observed_advance_seconds": 0.4333374500274658,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 2.5704503059387207e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "speed_normal_motion",
+      "label": "W 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "key": "W",
+        "basis": "forward",
+        "sign": 1,
+        "delta_cm": [
+          -42.417139194103754,
+          -47.71928159336733,
+          -12.194927518304809
+        ],
+        "along_expected_axis_cm": 65.00045992434028,
+        "total_distance_cm": 65.00045992434028,
+        "observed_world_seconds": 0.43333639949560165,
+        "speed_cm_s": 150.00000000000006,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 1.0,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "speed_normal_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：speed_normal",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "in_progress_pairs": 7,
+        "animation_range": [
+          0.7833399772644043,
+          1.2166757583618164
+        ],
+        "observed_advance_seconds": 0.4333357810974121,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 1.7881393432617188e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "speed_boosted_motion",
+      "label": "W 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "key": "W",
+        "basis": "forward",
+        "sign": 1,
+        "delta_cm": [
+          -42.4171391941037,
+          -47.71928159336733,
+          -12.19492751830478
+        ],
+        "along_expected_axis_cm": 65.00045992434023,
+        "total_distance_cm": 65.00045992434023,
+        "observed_world_seconds": 0.43333639949560165,
+        "speed_cm_s": 149.99999999999997,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 1.0,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "speed_boosted_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：speed_boosted",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "in_progress_pairs": 7,
+        "animation_range": [
+          1.600011944770813,
+          2.0333476066589355
+        ],
+        "observed_advance_seconds": 0.43333566188812256,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 1.601874828338623e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "mouse_look_look",
+      "label": "RMB 鼠标拖动改变自由相机朝向",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 7.326421862859811
+        },
+        "maximum_absolute_pitch": 13.670922279357907
+      }
+    },
+    {
+      "name": "mouse_look_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：mouse_look",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "in_progress_pairs": 7,
+        "animation_range": [
+          3.0127367973327637,
+          3.4627413749694824
+        ],
+        "observed_advance_seconds": 0.45000457763671875,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 2.1979212760925293e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "exit_free_state",
+      "label": "F 退出并释放捕获",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "pawn.bFreeCamera": false,
+          "pawn.bFreeLookCaptured": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "exit_free_retained",
+      "label": "F 退出保留当前第三相机位姿",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "reference_sample": 238,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 0.0
+      }
+    },
+    {
+      "name": "locked_w_no_rmb_locked",
+      "label": "F 退出后 W 不移动相机",
+      "status": "PASS",
+      "evidence": {
+        "samples": 6,
+        "pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "expected_free": false,
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      }
+    },
+    {
+      "name": "reenter_free_state",
+      "label": "再次 F 进入自由相机",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "expected": {
+          "pawn.bFreeCamera": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "reenter_free_retained",
+      "label": "再次进入保留上一机位",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "reference_sample": 270,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 0.0
+      }
+    },
+    {
+      "name": "home_after_reenter_home",
+      "label": "Home 恢复启动相对机位：home_after_reenter",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 2.6046101953734594e-14
+      }
+    },
+    {
+      "name": "home_after_reverse_home",
+      "label": "Home 恢复启动相对机位：home_after_reverse",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 2.6046101953734594e-14
+      }
+    },
+    {
+      "name": "home_after_speed_home",
+      "label": "Home 恢复启动相对机位：home_after_speed",
+      "status": "PASS",
+      "evidence": {
+        "samples": 2,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 2.6046101953734594e-14
+      }
+    },
+    {
+      "name": "shift_boost",
+      "label": "左 Shift 实际加速达到3倍（独立扫描码补测）",
+      "status": "PASS",
+      "evidence": {
+        "primary_attempt": {
+          "status": "FAIL",
+          "evidence": {
+            "normal_speed_cm_s": 150.00000000000006,
+            "boosted_speed_cm_s": 149.99999999999997,
+            "ratio": 0.9999999999999994,
+            "expected_ratio": 3.0,
+            "tolerance": 0.3
+          }
+        },
+        "primary_intended_shift_not_received": true,
+        "primary_boosted_window_sample_indices": [
+          369,
+          370,
+          371,
+          372,
+          373,
+          374,
+          375,
+          376
+        ],
+        "resolution": "The original generic Shift attempt is not used as passing evidence. A separately recorded left-Shift scan-code test supplies the acceleration evidence.",
+        "supplement_report": "ShiftSupplement/Validation.json",
+        "supplement_passed": true,
+        "supplement_checks": {
+          "PASS": 6,
+          "FAIL": 0,
+          "NOT_OBSERVED": 0
+        },
+        "normal_speed_cm_s": 150.0000000000002,
+        "boosted_speed_cm_s": 449.9999999999999,
+        "ratio": 2.999999999999995,
+        "supplement_trace_sha256": "a506ab809a140472f9ce4e52f4f1985f04db0b6ed2eb7f39870aaec6c5a3a0e9",
+        "supplement_actions_sha256": "8b257858995f9dcaf2c87f510e5a6ecfe9d56068695d9aa1c4a3ae9435de9353"
+      }
+    },
+    {
+      "name": "free_w_no_rmb_locked",
+      "label": "自由模式中未按 RMB 时 W 不移动相机",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "expected_free": true,
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      }
+    },
+    {
+      "name": "rmb_gate",
+      "label": "未按 RMB 不捕获鼠标",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8
+      }
+    },
+    {
+      "name": "exit_during_swing_state",
+      "label": "挥杆中 F 切换自由状态：exit_during_swing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "expected": {
+          "pawn.bFreeCamera": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "exit_during_swing_retained",
+      "label": "挥杆中 F 切换保留第三相机位姿：exit_during_swing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "reference_sample": 885,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 0.0
+      }
+    },
+    {
+      "name": "exit_during_swing_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：exit_during_swing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 6,
+        "in_progress_pairs": 5,
+        "animation_range": [
+          0.5666711330413818,
+          1.1833975315093994
+        ],
+        "observed_advance_seconds": 0.6167263984680176,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 1.0058283805847168e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "enter_during_swing_state",
+      "label": "挥杆中 F 切换自由状态：enter_during_swing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 6,
+        "expected": {
+          "pawn.bFreeCamera": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "enter_during_swing_retained",
+      "label": "挥杆中 F 切换保留第三相机位姿：enter_during_swing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 6,
+        "reference_sample": 895,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 0.0
+      }
+    },
+    {
+      "name": "enter_during_swing_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：enter_during_swing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "in_progress_pairs": 6,
+        "animation_range": [
+          1.1833975315093994,
+          1.8834015130996704
+        ],
+        "observed_advance_seconds": 0.700003981590271,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 7.115304470062256e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "move_during_swing_motion",
+      "label": "D 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "key": "D",
+        "basis": "right",
+        "sign": 1,
+        "delta_cm": [
+          42.97634605678854,
+          -38.201196543115714,
+          1.8857966210816812e-07
+        ],
+        "along_expected_axis_cm": 57.500415109098135,
+        "total_distance_cm": 57.50041510909813,
+        "observed_world_seconds": 0.3833361007273197,
+        "speed_cm_s": 150.00000000000045,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 1.0000000000000002,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "move_during_swing_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：move_during_swing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "in_progress_pairs": 6,
+        "animation_range": [
+          2.2500710487365723,
+          2.6334075927734375
+        ],
+        "observed_advance_seconds": 0.38333654403686523,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [],
+        "max_game_clock_prediction_error_seconds": 1.1920928955078125e-07,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "pause_animation_paused",
+      "label": "旧 P 键暂停挥杆且动画时间稳定",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "observed_wall_seconds": 0.125,
+        "time_range": [
+          0.6334248781204224,
+          0.6334248781204224
+        ],
+        "time_span_seconds": 0.0,
+        "state_flags_correct": true,
+        "tolerance_seconds": 0.001
+      }
+    },
+    {
+      "name": "move_while_paused_motion",
+      "label": "W 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "key": "W",
+        "basis": "forward",
+        "sign": 1,
+        "delta_cm": [
+          -42.41718805721581,
+          -47.71933656436846,
+          -12.1949415664495
+        ],
+        "along_expected_axis_cm": 65.00053480267529,
+        "total_distance_cm": 65.0005348026753,
+        "observed_world_seconds": 0.43333689868450165,
+        "speed_cm_s": 150.00000000000009,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 0.9999999999999998,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "move_while_paused_paused",
+      "label": "暂停挥杆时可导航且动画仍保持暂停",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "observed_wall_seconds": 0.4370000000017171,
+        "time_range": [
+          0.6334248781204224,
+          0.6334248781204224
+        ],
+        "time_span_seconds": 0.0,
+        "state_flags_correct": true,
+        "tolerance_seconds": 0.001
+      }
+    },
+    {
+      "name": "ui_resume_progress",
+      "label": "UI 播放从暂停处继续",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "time_range": [
+          0.7500922679901123,
+          1.2000950574874878
+        ],
+        "observed_advance_seconds": 0.4500027894973755,
+        "paused_baseline_seconds": 0.6334248781204224,
+        "no_backward_reset": true,
+        "state_flags_correct": true
+      }
+    },
+    {
+      "name": "ui_pause_paused",
+      "label": "UI 暂停仍有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "observed_wall_seconds": 0.4370000000017171,
+        "time_range": [
+          1.8000993728637695,
+          1.8000993728637695
+        ],
+        "time_span_seconds": 0.0,
+        "state_flags_correct": true,
+        "tolerance_seconds": 0.001
+      }
+    },
+    {
+      "name": "ui_head_exits_free_state",
+      "label": "UI 头戴视角退出自由并释放捕获",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "pawn.bFreeCamera": false,
+          "pawn.bFreeLookCaptured": false,
+          "head_active": true,
+          "third_active": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "ui_head_resume_progress",
+      "label": "头戴视角继续原挥杆进度",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "time_range": [
+          1.9334336519241333,
+          2.3667705059051514
+        ],
+        "observed_advance_seconds": 0.43333685398101807,
+        "paused_baseline_seconds": 1.8000993728637695,
+        "no_backward_reset": true,
+        "state_flags_correct": true
+      }
+    },
+    {
+      "name": "head_view_world_movement",
+      "label": "头戴视角播放时相机世界位姿随头骨运动",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "world_pose_span": {
+          "max_position_cm": 26.13385601083575,
+          "max_rotation_deg": 6.244905783389194
+        },
+        "binding_evidence": "head_mount_fixed and head_world_composition cover every sample."
+      }
+    },
+    {
+      "name": "ui_third_retains_pose_state",
+      "label": "UI 第三人称切换仍有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "expected": {
+          "head_active": false,
+          "third_active": true,
+          "pawn.bFreeCamera": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "ui_third_retains_pose_retained",
+      "label": "UI 返回第三人称保留调整后的机位",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "reference_sample": 1056,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 0.0
+      }
+    },
+    {
+      "name": "enter_before_lens_state",
+      "label": "镜头操作前可再次进入自由模式",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "expected": {
+          "pawn.bFreeCamera": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "home_before_lens_home",
+      "label": "Home 恢复启动相对机位：home_before_lens",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 2.6046101953734594e-14
+      }
+    },
+    {
+      "name": "move_before_lens_motion",
+      "label": "S 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 6,
+        "key": "S",
+        "basis": "forward",
+        "sign": -1,
+        "delta_cm": [
+          30.99716879131364,
+          34.871814890227995,
+          8.911686027502668
+        ],
+        "along_expected_axis_cm": 47.50037994235732,
+        "total_distance_cm": 47.50037994235732,
+        "observed_world_seconds": 0.31666919961571693,
+        "speed_cm_s": 149.99999999999932,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 1.0,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "lens_exits_free_state",
+      "label": "UI 桶形镜头退出自由模式并切头戴",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "pawn.bFreeCamera": false,
+          "pawn.bFreeLookCaptured": false,
+          "head_active": true,
+          "third_active": false,
+          "lens_preset": 1,
+          "lens_enabled": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "grid_after_free_state",
+      "label": "UI 网格在自由相机使用后仍能打开",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "expected": {
+          "grid_requested": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "grid_off_after_free_state",
+      "label": "UI 网格关闭仍有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "grid_requested": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "lens_none_after_free_state",
+      "label": "UI 无畸变选项仍有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "lens_preset": 0,
+          "lens_enabled": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "third_before_video_state",
+      "label": "视频前可返回第三人称",
+      "status": "PASS",
+      "evidence": {
+        "samples": 2,
+        "expected": {
+          "head_active": false,
+          "third_active": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "enter_before_video_state",
+      "label": "打开视频前处于自由模式",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "pawn.bFreeCamera": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "open_video_exits_free_state",
+      "label": "打开视频退出自由、释放捕获并暂停场景",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "expected": {
+          "ui.VideoOpen": true,
+          "pawn.FreeCameraUIBlocked": true,
+          "pawn.bFreeCamera": false,
+          "pawn.bFreeLookCaptured": false,
+          "pawn.bPaused": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "open_video_exits_free_media",
+      "label": "视频打开并实际推进：GolfHead.mp4",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "ready_samples": 7,
+        "selected_video": 0,
+        "media_time_range": [
+          0.0,
+          0.3166666
+        ],
+        "durations": [
+          5.9999666
+        ],
+        "resolved_urls": [
+          "file://<PROJECT_DIR>/Content/Movies/GolfHead.mp4"
+        ],
+        "note": "A resolved runtime URL may be absolute; saved relative media-source configuration was checked in UI_Validation.json."
+      }
+    },
+    {
+      "name": "modal_f_blocked_state",
+      "label": "视频模态阻止 F 进入自由相机",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "expected": {
+          "ui.VideoOpen": true,
+          "pawn.bFreeCamera": false,
+          "pawn.bFreeLookCaptured": false,
+          "pawn.FreeCameraUIBlocked": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "modal_w_blocked_locked",
+      "label": "视频模态下 RMB+W 不移动相机",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "expected_free": false,
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      }
+    },
+    {
+      "name": "modal_mouse_blocked_locked",
+      "label": "视频模态下 RMB+鼠标不转向相机",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "expected_free": false,
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      }
+    },
+    {
+      "name": "modal_entire_interval",
+      "label": "视频打开期间场景保持暂停、第三机位不动且导航一直被阻断",
+      "status": "PASS",
+      "evidence": {
+        "samples": 150,
+        "wall_duration_seconds": 9.328000000001339,
+        "animation_time_range": [
+          4.0,
+          4.0
+        ],
+        "third_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        }
+      }
+    },
+    {
+      "name": "video_head_pause_paused",
+      "label": "头戴成片播放器暂停有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "observed_wall_seconds": 0.43800000000192085,
+        "time_range": [
+          3.7333333,
+          3.7333333
+        ],
+        "time_span_seconds": 0.0,
+        "state_flags_correct": true,
+        "tolerance_seconds": 0.001
+      }
+    },
+    {
+      "name": "video_head_resume_progress",
+      "label": "头戴成片播放器从暂停位置续播",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "time_range": [
+          3.8666666,
+          4.31665
+        ],
+        "observed_advance_seconds": 0.44998340000000026,
+        "paused_baseline_seconds": 3.7333333,
+        "no_backward_reset": true,
+        "state_flags_correct": true
+      }
+    },
+    {
+      "name": "video_select_third_media",
+      "label": "视频打开并实际推进：GolfThird.mp4",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "ready_samples": 8,
+        "selected_video": 1,
+        "media_time_range": [
+          0.0,
+          0.2833333
+        ],
+        "durations": [
+          5.9999666
+        ],
+        "resolved_urls": [
+          "file://<PROJECT_DIR>/Content/Movies/GolfThird.mp4"
+        ],
+        "note": "A resolved runtime URL may be absolute; saved relative media-source configuration was checked in UI_Validation.json."
+      }
+    },
+    {
+      "name": "video_third_pause_paused",
+      "label": "第三人称成片播放器暂停有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "observed_wall_seconds": 0.43800000000192085,
+        "time_range": [
+          0.9833333,
+          0.9833333
+        ],
+        "time_span_seconds": 0.0,
+        "state_flags_correct": true,
+        "tolerance_seconds": 0.001
+      }
+    },
+    {
+      "name": "close_video_state",
+      "label": "关闭视频释放模态并关闭媒体播放器",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "ui.VideoOpen": false,
+          "pawn.FreeCameraUIBlocked": false,
+          "pawn.bFreeCamera": false,
+          "pawn.bFreeLookCaptured": false,
+          "media.ready": false,
+          "media.playing": false,
+          "media.url": ""
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "resume_after_video_progress",
+      "label": "关闭视频后 UI 播放按结束状态重新开始",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "baseline_sample": 1341,
+        "baseline_animation_time": 4.0,
+        "baseline_animation_playing": false,
+        "required_behavior": "Restart completed animation",
+        "time_range": [
+          0.13333450257778168,
+          0.5833387970924377
+        ],
+        "observed_advance_seconds": 0.45000429451465607
+      }
+    },
+    {
+      "name": "pause_after_video_paused",
+      "label": "关闭视频后 UI 暂停有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 4,
+        "observed_wall_seconds": 0.18800000000192085,
+        "time_range": [
+          1.0666753053665161,
+          1.0666753053665161
+        ],
+        "time_span_seconds": 0.0,
+        "state_flags_correct": true,
+        "tolerance_seconds": 0.001
+      }
+    },
+    {
+      "name": "legacy_replay_replay",
+      "label": "旧 R 键重播从开头推进",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "before_animation_time": 1.0666753053665161,
+        "time_range": [
+          0.31666868925094604,
+          0.43333619832992554
+        ],
+        "near_start_tolerance_seconds": 0.7
+      }
+    },
+    {
+      "name": "enter_before_v_state",
+      "label": "旧 V 测试前进入自由相机",
+      "status": "PASS",
+      "evidence": {
+        "samples": 4,
+        "expected": {
+          "pawn.bFreeCamera": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "legacy_v_exits_free_state",
+      "label": "旧 V 键切头戴并退出自由相机",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "expected": {
+          "pawn.bFreeCamera": false,
+          "pawn.bFreeLookCaptured": false,
+          "head_active": true,
+          "third_active": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "f_from_head_state",
+      "label": "头戴视角按 F 进入自由第三人称",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "expected": {
+          "pawn.bFreeCamera": true,
+          "head_active": false,
+          "third_active": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "final_home_home",
+      "label": "Home 恢复启动相对机位：final_home",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 2.6046101953734594e-14
+      }
+    },
+    {
+      "name": "final_exit_state",
+      "label": "最终 F 退出、释放鼠标并显示指针",
+      "status": "PASS",
+      "evidence": {
+        "samples": 4,
+        "expected": {
+          "pawn.bFreeCamera": false,
+          "pawn.bFreeLookCaptured": false,
+          "show_mouse_cursor": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "final_exit_retained",
+      "label": "最终退出仍保留 Home 机位",
+      "status": "PASS",
+      "evidence": {
+        "samples": 4,
+        "reference_sample": 1407,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 0.0
+      }
+    }
+  ],
+  "shift_supplement": {
+    "passed": true,
+    "summary": {
+      "PASS": 6,
+      "FAIL": 0,
+      "NOT_OBSERVED": 0
+    },
+    "sample_count": 386,
+    "event_count": 16,
+    "duration_seconds": 24.96900000000096,
+    "trace_sha256": "a506ab809a140472f9ce4e52f4f1985f04db0b6ed2eb7f39870aaec6c5a3a0e9",
+    "actions_sha256": "8b257858995f9dcaf2c87f510e5a6ecfe9d56068695d9aa1c4a3ae9435de9353",
+    "checks": [
+      {
+        "name": "supplement_final_trace",
+        "label": "补充采样已停止、完整且时钟有序",
+        "status": "PASS",
+        "evidence": {
+          "samples": 386,
+          "recording": false,
+          "unavailable_samples": []
+        }
+      },
+      {
+        "name": "supplement_errors",
+        "label": "补充录制器无错误",
+        "status": "PASS",
+        "evidence": {
+          "errors": []
+        }
+      },
+      {
+        "name": "speed_normal_motion",
+        "label": "W 持键移动方向与速度正确",
+        "status": "PASS",
+        "evidence": {
+          "samples": 9,
+          "key": "W",
+          "basis": "forward",
+          "sign": 1,
+          "delta_cm": [
+            -52.20692277185839,
+            -58.73278811834126,
+            -15.009490296909263
+          ],
+          "along_expected_axis_cm": 80.00242486596119,
+          "total_distance_cm": 80.0024248659612,
+          "observed_world_seconds": 0.5333494991064072,
+          "speed_cm_s": 150.0000000000002,
+          "expected_speed_cm_s": 150.0,
+          "direction_cosine": 0.9999999999999998,
+          "all_input_flags_valid": true,
+          "speed_relative_tolerance": 0.3
+        }
+      },
+      {
+        "name": "speed_boosted_motion",
+        "label": "W 持键移动方向与速度正确",
+        "status": "PASS",
+        "evidence": {
+          "samples": 10,
+          "key": "W",
+          "basis": "forward",
+          "sign": 1,
+          "delta_cm": [
+            -161.5114753800187,
+            -181.7004098025212,
+            -46.43454917175521
+          ],
+          "along_expected_axis_cm": 247.5018443539738,
+          "total_distance_cm": 247.5018443539738,
+          "observed_world_seconds": 0.5500040985643864,
+          "speed_cm_s": 449.9999999999999,
+          "expected_speed_cm_s": 450.0,
+          "direction_cosine": 1.0,
+          "all_input_flags_valid": true,
+          "speed_relative_tolerance": 0.3
+        }
+      },
+      {
+        "name": "actual_left_shift",
+        "label": "补充加速窗口确实收到左 Shift、W 与 RMB",
+        "status": "PASS",
+        "evidence": {
+          "samples": 10,
+          "left_shift_samples_in_full_trace": 17,
+          "right_shift_samples_in_full_trace": 0,
+          "injection_events": [
+            {
+              "action": "left_shift_scancode",
+              "kind": "key_down",
+              "clock": 28454.484,
+              "key": "LeftShift",
+              "scan_code": 42
+            },
+            {
+              "action": "left_shift_scancode",
+              "kind": "key_up",
+              "clock": 28455.531,
+              "key": "LeftShift",
+              "scan_code": 42
+            }
+          ]
+        }
+      },
+      {
+        "name": "supplement_shift_ratio",
+        "label": "左 Shift 导航速度为正常速度的3倍",
+        "status": "PASS",
+        "evidence": {
+          "normal_speed_cm_s": 150.0000000000002,
+          "boosted_speed_cm_s": 449.9999999999999,
+          "ratio": 2.999999999999995,
+          "expected_ratio": 3.0,
+          "tolerance": 0.3
+        }
+      }
+    ],
+    "windows": {
+      "speed_normal:held": {
+        "requested_clock_range": [
+          28453.678,
+          28454.309
+        ],
+        "samples": 9,
+        "sample_indices": [
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238
+        ],
+        "observed_wall_seconds": 0.5309999999990396
+      },
+      "speed_boosted:held": {
+        "requested_clock_range": [
+          28454.739999999998,
+          28455.371
+        ],
+        "samples": 10,
+        "sample_indices": [
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255
+        ],
+        "observed_wall_seconds": 0.5630000000019209
+      }
+    },
+    "additional_animation_observations": [
+      {
+        "name": "speed_normal_animation",
+        "label": "导航期间动画不归零、不暂停且按游戏时钟推进：speed_normal",
+        "status": "NOT_OBSERVED",
+        "evidence": {
+          "samples": 9,
+          "in_progress_pairs": 8,
+          "animation_range": [
+            0.0,
+            0.0
+          ],
+          "observed_advance_seconds": 0.0,
+          "reset_pairs": [],
+          "paused_or_stopped_pairs": [
+            [
+              230,
+              231
+            ],
+            [
+              231,
+              232
+            ],
+            [
+              232,
+              233
+            ],
+            [
+              233,
+              234
+            ],
+            [
+              234,
+              235
+            ],
+            [
+              235,
+              236
+            ],
+            [
+              236,
+              237
+            ],
+            [
+              237,
+              238
+            ]
+          ],
+          "max_game_clock_prediction_error_seconds": 0.06667900085449219,
+          "prediction_tolerance_seconds": 0.12,
+          "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+        }
+      },
+      {
+        "name": "speed_boosted_animation",
+        "label": "导航期间动画不归零、不暂停且按游戏时钟推进：speed_boosted",
+        "status": "NOT_OBSERVED",
+        "evidence": {
+          "samples": 10,
+          "in_progress_pairs": 9,
+          "animation_range": [
+            0.0,
+            0.0
+          ],
+          "observed_advance_seconds": 0.0,
+          "reset_pairs": [],
+          "paused_or_stopped_pairs": [
+            [
+              246,
+              247
+            ],
+            [
+              247,
+              248
+            ],
+            [
+              248,
+              249
+            ],
+            [
+              249,
+              250
+            ],
+            [
+              250,
+              251
+            ],
+            [
+              251,
+              252
+            ],
+            [
+              252,
+              253
+            ],
+            [
+              253,
+              254
+            ],
+            [
+              254,
+              255
+            ]
+          ],
+          "max_game_clock_prediction_error_seconds": 0.06666770204901695,
+          "prediction_tolerance_seconds": 0.12,
+          "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+        }
+      }
+    ],
+    "limits": [
+      "Only left Shift was physically retested; no independent right-Shift test is claimed.",
+      "The supplementary animation remained idle at 0s. This recording proves acceleration input and movement only; animation continuity evidence comes from the primary trace."
+    ]
+  },
+  "limits": [
+    "Checks use the recorded editor game session; no packaged executable test is claimed.",
+    "Home is the captured startup relative transform; retaining a pose applies within this session.",
+    "This run regresses R/P/V and UI lens/grid controls; keyboard B/G were not repeated in this run.",
+    "Navigation geometry and animation use game time, not wall-time assumptions.",
+    "Missing evidence remains NOT_OBSERVED; failures and short sample windows are retained."
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "runtime": "Native Blueprint + UE ProjectileMovementComponent",
+  "precomputed_path": false,
+  "actual_world_position_history": true,
+  "maximum_recorded_segments": 2048,
+  "trail_toggle_preserves_history": true,
+  "movement_component_properties": {
+    "auto_activate": "False",
+    "auto_register_updated_component": "False",
+    "auto_update_tick_registration": "True",
+    "tick_before_owner": "True",
+    "simulation_enabled": "False",
+    "initial_speed": "0.0",
+    "max_speed": "0.0",
+    "velocity": "<Struct 'Vector' (0x00000258BD54FB70) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+    "rotation_follows_velocity": "False",
+    "initial_velocity_in_local_space": "False",
+    "should_bounce": "True",
+    "bounciness": "0.42",
+    "friction": "0.35",
+    "bounce_velocity_stop_simulating_threshold": "12.0",
+    "force_sub_stepping": "True",
+    "sweep_collision": "True",
+    "max_simulation_time_step": "0.008333333333333333",
+    "max_simulation_iterations": "16",
+    "bounce_additional_iterations": "4",
+    "projectile_gravity_scale": "1.0"
+  },
+  "default_launch_cm_s": [
+    650,
+    0,
+    380
+  ],
+  "reset_functions": [
+    "PlaySwing",
+    "ResetPose"
+  ],
+  "preserved_graphs": {
+    "ApplyCameraMode": true,
+    "ApplyDeliveryFrame": true,
+    "ApplyOrbitMouseDelta": true,
+    "EventGraph": true,
+    "HandleBallTrajectoryInput": true,
+    "HandleFreeCameraInput": true,
+    "HandleLensInput": true,
+    "InitializeFreeCamera": true,
+    "InitializeInteractiveSession": true,
+    "InitializeOrbitCamera": true,
+    "ProcessFreeCameraNavigation": true,
+    "ResetFreeCameraPose": true,
+    "SetFreeCameraCapture": true,
+    "SetFreeCameraUIBlocked": true,
+    "StopFreeCamera": true,
+    "ToggleCalibrationGrid": true,
+    "ToggleCamera": true,
+    "ToggleFreeCamera": true,
+    "ToggleLensDistortion": true,
+    "UIAdjustFreeCamera": true,
+    "UIHead": true,
+    "UIResetThirdCamera": true,
+    "UISetLensPreset": true,
+    "UIThird": true,
+    "UpdateBallTrajectoryFrame": true,
+    "UpdateFreeCameraPose": true,
+    "UpdateLensSettings": true,
+    "UpdateShoulderCameraTranslation": true,
+    "UserConstructionScript": true
+  },
+  "diagnostics": {
+    "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer": {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer.BP_GolfGolfer",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ResetPose",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "PlaySwing",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ApplyCameraMode",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "TogglePause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateBallFlight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ApplyDeliveryFrame",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleLensDistortion",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleCalibrationGrid",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateLensSettings",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "HandleLensInput",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIPlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIPause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIHead",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIThird",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UISetLensPreset",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "InitializeFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "SetFreeCameraCapture",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "StopFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "SetFreeCameraUIBlocked",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ResetFreeCameraPose",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateFreeCameraPose",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ProcessFreeCameraNavigation",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "HandleFreeCameraInput",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "InitializeInteractiveSession",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIResetThirdCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIAdjustFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "InitializeBallTrajectory",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RebuildBallTrajectory",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateBallTrajectoryVisibility",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIToggleBallTrajectory",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "HandleBallTrajectoryInput",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateBallTrajectoryFrame",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateShoulderCameraTranslation",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "InitializeOrbitCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ApplyOrbitMouseDelta",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ResetRealtimeBall",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LaunchRealtimeBall",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "SyncRealtimeBallPause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RecordRealtimeBallTrail",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    "/Game/GolfHeadCam/UI/WBP_CameraControl": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl",
+      "graphs": [
+        {
+          "name": "ScenePlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ScenePause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "SceneReplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ViewHead",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ViewThird",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "GridToggle",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensNone",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensBarrel",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensPincushion",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensCalibrated",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenVideos",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenHeadVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenThirdVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoPlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoPause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoReplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "CloseVideos",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaOpened",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaFailed",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaEnded",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RefreshDisplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenSelectedVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RefreshFreeCameraUI",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickResetThirdCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraForward",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraBack",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraLeft",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraRight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraUp",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraDown",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraYawLeft",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraYawRight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraPitchUp",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraPitchDown",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickBallTrajectory",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole",
+      "graphs": [
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    "/Game/GolfHeadCam/Blueprints/BP_GolfHUD": {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD.BP_GolfHUD",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    }
+  },
+  "dirty_content": [],
+  "dirty_maps": []
+}

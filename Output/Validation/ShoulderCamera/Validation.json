@@ -1,0 +1,2775 @@
+{
+  "schema": "GolfHeadCam.ShoulderCamera.RuntimeValidation.v1",
+  "generated_utc": "2026-10-17T15:44:04.455095+00:00",
+  "passed": true,
+  "counts": {
+    "PASS": 26,
+    "FAIL": 0,
+    "NOT_OBSERVED": 0
+  },
+  "checks": [
+    {
+      "id": "capture_complete",
+      "check": "采集已停止、动作前台窗口一致、时钟有序且无错误",
+      "status": "PASS",
+      "evidence": {
+        "samples": 3899,
+        "game_samples": 3781,
+        "errors": [],
+        "media_errors": [],
+        "missing_fields": [],
+        "expected_foreground_HWND": 2689884,
+        "foreground_events_checked": 64,
+        "foreground_mismatches": [],
+        "focus_scope": "Foreground is checked at every recorded host action; this does not assert continuous Win32 focus between events. Actual movement is separately checked against native key/camera samples."
+      }
+    },
+    {
+      "id": "camera_and_ui",
+      "check": "场景相机唯一、集成 UI 唯一、FOV 保持 80 度",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "fixed_mount_and_home",
+      "check": "头戴安装和肩位 Home 参考不被导航改写",
+      "status": "PASS",
+      "evidence": {
+        "head_mount_span": {
+          "position_cm": 3.086979062946463e-14,
+          "rotation_deg": 2.4148365394514667e-06
+        },
+        "home_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        }
+      }
+    },
+    {
+      "id": "no_F_prerequisite",
+      "check": "首次 W 前保持 free=false，未按 F 或 RMB",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 444,
+        "bFreeCamera": false,
+        "F_events": []
+      }
+    },
+    {
+      "id": "startup_first",
+      "check": "启动保持肩右后默认位姿、80 度、0 秒待命且交互选项关闭",
+      "status": "PASS",
+      "evidence": {
+        "marked_seconds": 2.0,
+        "samples": 121,
+        "invalid_samples": [],
+        "expected_position_cm": [
+          -65.0,
+          -240.0,
+          170.0
+        ],
+        "expected_rotation_pyr_deg": [
+          -14.0,
+          85.0,
+          0.0
+        ],
+        "expected_fov": 80.0,
+        "first_world_time": 3.6646373011171818
+      }
+    },
+    {
+      "id": "direct_W",
+      "check": "直接 W：方向/速度正确，无 RMB，释放即停，动画独立",
+      "status": "PASS",
+      "evidence": {
+        "key": "W",
+        "held_samples": 16,
+        "continuous_tick_intervals": 15,
+        "intervals": [
+          {
+            "from": 453,
+            "to": 454,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.790602512155269e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 454,
+            "to": 455,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.416669506784086e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 455,
+            "to": 456,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.790602512155269e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 456,
+            "to": 457,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999957,
+            "vector_error_cm": 9.607278875871637e-15,
+            "moved_cm": 2.5000054389238286
+          },
+          {
+            "from": 457,
+            "to": 458,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.416669506784086e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 458,
+            "to": 459,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.416669506784086e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 459,
+            "to": 460,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.416669506784086e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 460,
+            "to": 461,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2963606990466608e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 461,
+            "to": 462,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2963606990466608e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 462,
+            "to": 463,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999957,
+            "vector_error_cm": 9.607278875871637e-15,
+            "moved_cm": 2.5000054389238286
+          },
+          {
+            "from": 463,
+            "to": 464,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.416669506784086e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 464,
+            "to": 465,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.790602512155269e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 465,
+            "to": 466,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2963606990466608e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 466,
+            "to": 467,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.416669506784086e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 467,
+            "to": 468,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2963606990466608e-14,
+            "moved_cm": 2.5000199675559918
+          }
+        ],
+        "unobserved_tick_gaps": [],
+        "edge_state_intervals_excluded": [],
+        "no_RMB_or_capture": true,
+        "third_navigation_enabled": true,
+        "held_pose_span": {
+          "position_cm": 37.50022519379848,
+          "rotation_deg": 0.0
+        },
+        "release_pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "animation_continuity": {
+          "passed": true,
+          "before_time": 0.0,
+          "after_time": 0.0,
+          "expected_rate": 0,
+          "max_residual_seconds": 0.0,
+          "state_unchanged": true
+        },
+        "default_speed_cm_s": 150,
+        "dt_clamp_seconds": 0.1,
+        "observed_dt_above_clamp": false,
+        "scope": "Only consecutive observed game ticks are integrated; omitted ticks are disclosed, never extrapolated from host wall time."
+      }
+    },
+    {
+      "id": "direct_A",
+      "check": "直接 A：方向/速度正确，无 RMB，释放即停，动画独立",
+      "status": "PASS",
+      "evidence": {
+        "key": "A",
+        "held_samples": 16,
+        "continuous_tick_intervals": 15,
+        "intervals": [
+          {
+            "from": 504,
+            "to": 505,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 505,
+            "to": 506,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 506,
+            "to": 507,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000014,
+            "vector_error_cm": 6.974692987888786e-15,
+            "moved_cm": 2.5000350549817107
+          },
+          {
+            "from": 507,
+            "to": 508,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999994,
+            "vector_error_cm": 3.028992113231714e-15,
+            "moved_cm": 2.50000488013029
+          },
+          {
+            "from": 508,
+            "to": 509,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 509,
+            "to": 510,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 510,
+            "to": 511,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 511,
+            "to": 512,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 1.3330120877639694e-14,
+            "moved_cm": 2.500005438923836
+          },
+          {
+            "from": 512,
+            "to": 513,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 513,
+            "to": 514,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999991,
+            "vector_error_cm": 6.974692987888786e-15,
+            "moved_cm": 2.500035054981707
+          },
+          {
+            "from": 514,
+            "to": 515,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999994,
+            "vector_error_cm": 3.028992113231714e-15,
+            "moved_cm": 2.50000488013029
+          },
+          {
+            "from": 515,
+            "to": 516,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 6.744694111256711e-15,
+            "moved_cm": 2.500035054981709
+          },
+          {
+            "from": 516,
+            "to": 517,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 517,
+            "to": 518,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 2.7562785439026114e-15,
+            "moved_cm": 2.500004880130291
+          },
+          {
+            "from": 518,
+            "to": 519,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999997,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.5000199675559993
+          }
+        ],
+        "unobserved_tick_gaps": [],
+        "edge_state_intervals_excluded": [],
+        "no_RMB_or_capture": true,
+        "third_navigation_enabled": true,
+        "held_pose_span": {
+          "position_cm": 37.50028498470783,
+          "rotation_deg": 0.0
+        },
+        "release_pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "animation_continuity": {
+          "passed": true,
+          "before_time": 0.0,
+          "after_time": 0.0,
+          "expected_rate": 0,
+          "max_residual_seconds": 0.0,
+          "state_unchanged": true
+        },
+        "default_speed_cm_s": 150,
+        "dt_clamp_seconds": 0.1,
+        "observed_dt_above_clamp": false,
+        "scope": "Only consecutive observed game ticks are integrated; omitted ticks are disclosed, never extrapolated from host wall time."
+      }
+    },
+    {
+      "id": "direct_S",
+      "check": "直接 S：方向/速度正确，无 RMB，释放即停，动画独立",
+      "status": "PASS",
+      "evidence": {
+        "key": "S",
+        "held_samples": 16,
+        "continuous_tick_intervals": 15,
+        "intervals": [
+          {
+            "from": 554,
+            "to": 555,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999955,
+            "vector_error_cm": 1.2742076618185534e-14,
+            "moved_cm": 2.500019967555992
+          },
+          {
+            "from": 555,
+            "to": 556,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999955,
+            "vector_error_cm": 1.2742076618185534e-14,
+            "moved_cm": 2.500019967555992
+          },
+          {
+            "from": 556,
+            "to": 557,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 8.191046104535687e-15,
+            "moved_cm": 2.5000048801302914
+          },
+          {
+            "from": 557,
+            "to": 558,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2743043923921736e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 558,
+            "to": 559,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999957,
+            "vector_error_cm": 9.607278875871637e-15,
+            "moved_cm": 2.5000054389238286
+          },
+          {
+            "from": 559,
+            "to": 560,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2743043923921736e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 560,
+            "to": 561,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2743043923921736e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 561,
+            "to": 562,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2743043923921736e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 562,
+            "to": 563,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 8.191046104535687e-15,
+            "moved_cm": 2.5000048801302914
+          },
+          {
+            "from": 563,
+            "to": 564,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2743043923921736e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 564,
+            "to": 565,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 8.191046104535687e-15,
+            "moved_cm": 2.5000048801302914
+          },
+          {
+            "from": 565,
+            "to": 566,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2743043923921736e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 566,
+            "to": 567,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.790602512155269e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 567,
+            "to": 568,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999955,
+            "vector_error_cm": 1.2744978315147303e-14,
+            "moved_cm": 2.500019967555992
+          },
+          {
+            "from": 568,
+            "to": 569,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999957,
+            "vector_error_cm": 9.607278875871637e-15,
+            "moved_cm": 2.5000054389238286
+          }
+        ],
+        "unobserved_tick_gaps": [],
+        "edge_state_intervals_excluded": [],
+        "no_RMB_or_capture": true,
+        "third_navigation_enabled": true,
+        "held_pose_span": {
+          "position_cm": 37.50024028122416,
+          "rotation_deg": 0.0
+        },
+        "release_pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "animation_continuity": {
+          "passed": true,
+          "before_time": 0.0,
+          "after_time": 0.0,
+          "expected_rate": 0,
+          "max_residual_seconds": 0.0,
+          "state_unchanged": true
+        },
+        "default_speed_cm_s": 150,
+        "dt_clamp_seconds": 0.1,
+        "observed_dt_above_clamp": false,
+        "scope": "Only consecutive observed game ticks are integrated; omitted ticks are disclosed, never extrapolated from host wall time."
+      }
+    },
+    {
+      "id": "direct_D",
+      "check": "直接 D：方向/速度正确，无 RMB，释放即停，动画独立",
+      "status": "PASS",
+      "evidence": {
+        "key": "D",
+        "held_samples": 16,
+        "continuous_tick_intervals": 15,
+        "intervals": [
+          {
+            "from": 605,
+            "to": 606,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 606,
+            "to": 607,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 607,
+            "to": 608,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 1.3330120877639694e-14,
+            "moved_cm": 2.500005438923836
+          },
+          {
+            "from": 608,
+            "to": 609,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 609,
+            "to": 610,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.9999999999998,
+            "vector_error_cm": 5.673728651947645e-15,
+            "moved_cm": 2.5000199675559966
+          },
+          {
+            "from": 610,
+            "to": 611,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999994,
+            "vector_error_cm": 3.028992113231714e-15,
+            "moved_cm": 2.50000488013029
+          },
+          {
+            "from": 611,
+            "to": 612,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000014,
+            "vector_error_cm": 6.974692987888786e-15,
+            "moved_cm": 2.5000350549817107
+          },
+          {
+            "from": 612,
+            "to": 613,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999994,
+            "vector_error_cm": 3.028992113231714e-15,
+            "moved_cm": 2.50000488013029
+          },
+          {
+            "from": 613,
+            "to": 614,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000014,
+            "vector_error_cm": 6.974692987888786e-15,
+            "moved_cm": 2.5000350549817107
+          },
+          {
+            "from": 614,
+            "to": 615,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000014,
+            "vector_error_cm": 6.974692987888786e-15,
+            "moved_cm": 2.5000350549817107
+          },
+          {
+            "from": 615,
+            "to": 616,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999994,
+            "vector_error_cm": 3.028992113231714e-15,
+            "moved_cm": 2.50000488013029
+          },
+          {
+            "from": 616,
+            "to": 617,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999994,
+            "vector_error_cm": 3.028992113231714e-15,
+            "moved_cm": 2.50000488013029
+          },
+          {
+            "from": 617,
+            "to": 618,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 618,
+            "to": 619,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 4.767060514958824e-15,
+            "moved_cm": 2.500019967556
+          },
+          {
+            "from": 619,
+            "to": 620,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000003,
+            "vector_error_cm": 1.3330120877639694e-14,
+            "moved_cm": 2.500005438923836
+          }
+        ],
+        "unobserved_tick_gaps": [],
+        "edge_state_intervals_excluded": [],
+        "no_RMB_or_capture": true,
+        "third_navigation_enabled": true,
+        "held_pose_span": {
+          "position_cm": 37.50025536864996,
+          "rotation_deg": 0.0
+        },
+        "release_pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "animation_continuity": {
+          "passed": true,
+          "before_time": 0.0,
+          "after_time": 0.0,
+          "expected_rate": 0,
+          "max_residual_seconds": 0.0,
+          "state_unchanged": true
+        },
+        "default_speed_cm_s": 150,
+        "dt_clamp_seconds": 0.1,
+        "observed_dt_above_clamp": false,
+        "scope": "Only consecutive observed game ticks are integrated; omitted ticks are disclosed, never extrapolated from host wall time."
+      }
+    },
+    {
+      "id": "direct_Q",
+      "check": "直接 Q：方向/速度正确，无 RMB，释放即停，动画独立",
+      "status": "PASS",
+      "evidence": {
+        "key": "Q",
+        "held_samples": 17,
+        "continuous_tick_intervals": 16,
+        "intervals": [
+          {
+            "from": 655,
+            "to": 656,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.500004880130291
+          },
+          {
+            "from": 656,
+            "to": 657,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 657,
+            "to": 658,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000350549817085
+          },
+          {
+            "from": 658,
+            "to": 659,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.500004880130291
+          },
+          {
+            "from": 659,
+            "to": 660,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.500004880130291
+          },
+          {
+            "from": 660,
+            "to": 661,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000054389238358
+          },
+          {
+            "from": 661,
+            "to": 662,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.500004880130291
+          },
+          {
+            "from": 662,
+            "to": 663,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 663,
+            "to": 664,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.500004880130291
+          },
+          {
+            "from": 664,
+            "to": 665,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 665,
+            "to": 666,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 666,
+            "to": 667,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 667,
+            "to": 668,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 668,
+            "to": 669,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000054389238358
+          },
+          {
+            "from": 669,
+            "to": 670,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.500004880130291
+          },
+          {
+            "from": 670,
+            "to": 671,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.500004880130291
+          }
+        ],
+        "unobserved_tick_gaps": [],
+        "edge_state_intervals_excluded": [],
+        "no_RMB_or_capture": true,
+        "third_navigation_enabled": true,
+        "held_pose_span": {
+          "position_cm": 40.000199899077415,
+          "rotation_deg": 0.0
+        },
+        "release_pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "animation_continuity": {
+          "passed": true,
+          "before_time": 0.0,
+          "after_time": 0.0,
+          "expected_rate": 0,
+          "max_residual_seconds": 0.0,
+          "state_unchanged": true
+        },
+        "default_speed_cm_s": 150,
+        "dt_clamp_seconds": 0.1,
+        "observed_dt_above_clamp": false,
+        "scope": "Only consecutive observed game ticks are integrated; omitted ticks are disclosed, never extrapolated from host wall time."
+      }
+    },
+    {
+      "id": "direct_E",
+      "check": "直接 E：方向/速度正确，无 RMB，释放即停，动画独立",
+      "status": "PASS",
+      "evidence": {
+        "key": "E",
+        "held_samples": 16,
+        "continuous_tick_intervals": 15,
+        "intervals": [
+          {
+            "from": 707,
+            "to": 708,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 708,
+            "to": 709,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 709,
+            "to": 710,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 710,
+            "to": 711,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 711,
+            "to": 712,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000350549817085
+          },
+          {
+            "from": 712,
+            "to": 713,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 713,
+            "to": 714,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000350549817085
+          },
+          {
+            "from": 714,
+            "to": 715,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.500004880130291
+          },
+          {
+            "from": 715,
+            "to": 716,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000199675559998
+          },
+          {
+            "from": 716,
+            "to": 717,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.500004880130291
+          },
+          {
+            "from": 717,
+            "to": 718,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000350549817085
+          },
+          {
+            "from": 718,
+            "to": 719,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000054389238358
+          },
+          {
+            "from": 719,
+            "to": 720,
+            "dt": 0.016666896641254425,
+            "effective_dt": 0.016666896641254425,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000344961881638
+          },
+          {
+            "from": 720,
+            "to": 721,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000054389238358
+          },
+          {
+            "from": 721,
+            "to": 722,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.0,
+            "vector_error_cm": 0.0,
+            "moved_cm": 2.5000350549817085
+          }
+        ],
+        "unobserved_tick_gaps": [],
+        "edge_state_intervals_excluded": [],
+        "no_RMB_or_capture": true,
+        "third_navigation_enabled": true,
+        "held_pose_span": {
+          "position_cm": 37.50031515955925,
+          "rotation_deg": 0.0
+        },
+        "release_pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "animation_continuity": {
+          "passed": true,
+          "before_time": 0.0,
+          "after_time": 0.0,
+          "expected_rate": 0,
+          "max_residual_seconds": 0.0,
+          "state_unchanged": true
+        },
+        "default_speed_cm_s": 150,
+        "dt_clamp_seconds": 0.1,
+        "observed_dt_above_clamp": false,
+        "scope": "Only consecutive observed game ticks are integrated; omitted ticks are disclosed, never extrapolated from host wall time."
+      }
+    },
+    {
+      "id": "mouse_without_RMB",
+      "check": "实际游动鼠标但未按 RMB 时相机不转不移",
+      "status": "PASS",
+      "evidence": {
+        "samples": 80,
+        "pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "scope": "Host mouse-move sequence plus camera pose; UI cursor movement need not appear as gameplay mouse_delta."
+      }
+    },
+    {
+      "id": "release_idle",
+      "check": "所有导航键释放后相机保持静止",
+      "status": "PASS",
+      "evidence": {
+        "samples": 62,
+        "pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        }
+      }
+    },
+    {
+      "id": "look_with_RMB",
+      "check": "仅按住 RMB 时转向，释放捕获后鼠标恢复",
+      "status": "PASS",
+      "evidence": {
+        "samples": 63,
+        "captured_samples": 30,
+        "pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 5.148950582332688
+        },
+        "captured_mouse_delta_samples": 12
+      }
+    },
+    {
+      "id": "Home_reset",
+      "check": "Home 从实际偏离位置/朝向复位到肩位",
+      "status": "PASS",
+      "evidence": {
+        "actions": [
+          {
+            "action": "home_after_move",
+            "before_home_error": {
+              "position_cm": 3.078249401238736,
+              "rotation_deg": 0.0
+            },
+            "after_errors": [
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              }
+            ],
+            "before_free_flag": true
+          },
+          {
+            "action": "home_after_look",
+            "before_home_error": {
+              "position_cm": 0.0,
+              "rotation_deg": 5.148950582332688
+            },
+            "after_errors": [
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              },
+              {
+                "position_cm": 0.0,
+                "rotation_deg": 0.0
+              }
+            ],
+            "before_free_flag": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "Home_freeoff",
+      "check": "普通第三人称 free=false 时 Home 仍能复位",
+      "status": "PASS",
+      "evidence": {
+        "before_home_error": {
+          "position_cm": 61.02202478796241,
+          "rotation_deg": 0.0
+        },
+        "after_errors": [
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "direct_W_playing",
+      "check": "直接 W：方向/速度正确，无 RMB，释放即停，动画独立",
+      "status": "PASS",
+      "evidence": {
+        "key": "W",
+        "held_samples": 16,
+        "continuous_tick_intervals": 15,
+        "intervals": [
+          {
+            "from": 1259,
+            "to": 1260,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.7463441157621156e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 1260,
+            "to": 1261,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.553086774935849e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 1261,
+            "to": 1262,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.553086774935849e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 1262,
+            "to": 1263,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999957,
+            "vector_error_cm": 8.973639867007219e-15,
+            "moved_cm": 2.5000054389238286
+          },
+          {
+            "from": 1263,
+            "to": 1264,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.7463441157621156e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 1264,
+            "to": 1265,
+            "dt": 0.016666896641254425,
+            "effective_dt": 0.016666896641254425,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999991,
+            "vector_error_cm": 1.3924007142256813e-14,
+            "moved_cm": 2.5000344961881624
+          },
+          {
+            "from": 1265,
+            "to": 1266,
+            "dt": 0.016666803508996964,
+            "effective_dt": 0.016666803508996964,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999912,
+            "vector_error_cm": 1.6549865648124613e-14,
+            "moved_cm": 2.50002052634953
+          },
+          {
+            "from": 1266,
+            "to": 1267,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 1267,
+            "to": 1268,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.553086774935849e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 1268,
+            "to": 1269,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.7463441157621156e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 1269,
+            "to": 1270,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 1270,
+            "to": 1271,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 1271,
+            "to": 1272,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 1272,
+            "to": 1273,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 1273,
+            "to": 1274,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          }
+        ],
+        "unobserved_tick_gaps": [],
+        "edge_state_intervals_excluded": [],
+        "no_RMB_or_capture": true,
+        "third_navigation_enabled": true,
+        "held_pose_span": {
+          "position_cm": 37.50030007213345,
+          "rotation_deg": 0.0
+        },
+        "release_pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "animation_continuity": {
+          "passed": true,
+          "before_time": 0.4000938832759857,
+          "after_time": 1.4001015424728394,
+          "expected_rate": 1.0,
+          "max_residual_seconds": 7.37607479095459e-07,
+          "state_unchanged": true
+        },
+        "default_speed_cm_s": 150,
+        "dt_clamp_seconds": 0.1,
+        "observed_dt_above_clamp": false,
+        "scope": "Only consecutive observed game ticks are integrated; omitted ticks are disclosed, never extrapolated from host wall time."
+      }
+    },
+    {
+      "id": "head_blocked_guard",
+      "check": "头戴中 W 和有意义的 Home 均不导航、不打断动画",
+      "status": "PASS",
+      "evidence": {
+        "actions": [
+          {
+            "action": "head_blocked_W",
+            "passed": true,
+            "host_key_events": [
+              {
+                "action": "head_blocked_W",
+                "kind": "key_down",
+                "clock": 14476.593,
+                "foreground": 2689884,
+                "key": "w"
+              },
+              {
+                "action": "head_blocked_W",
+                "kind": "key_up",
+                "clock": 14477.031,
+                "foreground": 2689884,
+                "key": "w"
+              }
+            ],
+            "controller_key_seen": true,
+            "before_home_error": {
+              "position_cm": 60.000464692711695,
+              "rotation_deg": 0.0
+            },
+            "max_position_delta_cm": 0.0,
+            "max_rotation_delta_deg": 0.0,
+            "animation_continuity": {
+              "passed": true,
+              "before_time": 1.5667692422866821,
+              "after_time": 1.5667692422866821,
+              "expected_rate": 0,
+              "max_residual_seconds": 0.0,
+              "state_unchanged": true
+            },
+            "input_evidence_note": "Host keys plus sampled camera/head state."
+          },
+          {
+            "action": "head_blocked_Home",
+            "passed": true,
+            "host_key_events": [
+              {
+                "action": "head_blocked_Home",
+                "kind": "key_down",
+                "clock": 14477.343,
+                "foreground": 2689884,
+                "key": "home"
+              },
+              {
+                "action": "head_blocked_Home",
+                "kind": "key_up",
+                "clock": 14477.546,
+                "foreground": 2689884,
+                "key": "home"
+              }
+            ],
+            "controller_key_seen": true,
+            "before_home_error": {
+              "position_cm": 60.000464692711695,
+              "rotation_deg": 0.0
+            },
+            "max_position_delta_cm": 0.0,
+            "max_rotation_delta_deg": 0.0,
+            "animation_continuity": {
+              "passed": true,
+              "before_time": 1.5667692422866821,
+              "after_time": 1.5667692422866821,
+              "expected_rate": 0,
+              "max_residual_seconds": 0.0,
+              "state_unchanged": true
+            },
+            "input_evidence_note": "Host keys plus sampled camera/head state."
+          }
+        ]
+      }
+    },
+    {
+      "id": "modal_blocked_guard",
+      "check": "视频模态中 W 和有意义的 Home 均不导航、不打断动画",
+      "status": "PASS",
+      "evidence": {
+        "actions": [
+          {
+            "action": "modal_blocked_W",
+            "passed": true,
+            "host_key_events": [
+              {
+                "action": "modal_blocked_W",
+                "kind": "key_down",
+                "clock": 14480.234,
+                "foreground": 2689884,
+                "key": "w"
+              },
+              {
+                "action": "modal_blocked_W",
+                "kind": "key_up",
+                "clock": 14480.671,
+                "foreground": 2689884,
+                "key": "w"
+              }
+            ],
+            "controller_key_seen": false,
+            "before_home_error": {
+              "position_cm": 60.000464692711695,
+              "rotation_deg": 0.0
+            },
+            "max_position_delta_cm": 0.0,
+            "max_rotation_delta_deg": 0.0,
+            "animation_continuity": {
+              "passed": true,
+              "before_time": 1.5667692422866821,
+              "after_time": 1.5667692422866821,
+              "expected_rate": 0,
+              "max_residual_seconds": 0.0,
+              "state_unchanged": true
+            },
+            "input_evidence_note": "UIOnly can consume host keys before PlayerController; no controller receipt is claimed."
+          },
+          {
+            "action": "modal_blocked_Home",
+            "passed": true,
+            "host_key_events": [
+              {
+                "action": "modal_blocked_Home",
+                "kind": "key_down",
+                "clock": 14480.984,
+                "foreground": 2689884,
+                "key": "home"
+              },
+              {
+                "action": "modal_blocked_Home",
+                "kind": "key_up",
+                "clock": 14481.187,
+                "foreground": 2689884,
+                "key": "home"
+              }
+            ],
+            "controller_key_seen": false,
+            "before_home_error": {
+              "position_cm": 60.000464692711695,
+              "rotation_deg": 0.0
+            },
+            "max_position_delta_cm": 0.0,
+            "max_rotation_delta_deg": 0.0,
+            "animation_continuity": {
+              "passed": true,
+              "before_time": 1.5667692422866821,
+              "after_time": 1.5667692422866821,
+              "expected_rate": 0,
+              "max_residual_seconds": 0.0,
+              "state_unchanged": true
+            },
+            "input_evidence_note": "UIOnly can consume host keys before PlayerController; no controller receipt is claimed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "play_pause",
+      "check": "既有 UI 播放/暂停正常，暂停后时间与球位置稳定",
+      "status": "PASS",
+      "evidence": {
+        "play_samples": 14,
+        "pause_samples": 27,
+        "paused_dwell_samples": 44
+      }
+    },
+    {
+      "id": "head_third_buttons",
+      "check": "头戴/第三人称按钮切换仍有效",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "video_open_close",
+      "check": "成片异步播放且关闭后恢复主界面",
+      "status": "PASS",
+      "evidence": {
+        "ready_samples": 131,
+        "closed_samples": 19
+      }
+    },
+    {
+      "id": "trajectory_compatible",
+      "check": "导航和视频不改变已开启轨迹的请求状态，模态按规则临时隐藏",
+      "status": "PASS",
+      "evidence": {
+        "samples": 710
+      }
+    },
+    {
+      "id": "F_exit_held_W",
+      "check": "W 仍按住时 F 退出，持续按住不会立即重入",
+      "status": "PASS",
+      "evidence": {
+        "hold_action": "held_W_before_F",
+        "F_action": "F_exit_while_W_held",
+        "samples": 40,
+        "pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        }
+      }
+    },
+    {
+      "id": "fresh_W_reentry",
+      "check": "直接 W：方向/速度正确，无 RMB，释放即停，动画独立",
+      "status": "PASS",
+      "evidence": {
+        "key": "W",
+        "held_samples": 17,
+        "continuous_tick_intervals": 16,
+        "intervals": [
+          {
+            "from": 3356,
+            "to": 3357,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 3357,
+            "to": 3358,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 3358,
+            "to": 3359,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.7463441157621156e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 3359,
+            "to": 3360,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.7463441157621156e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 3360,
+            "to": 3361,
+            "dt": 0.016666702926158905,
+            "effective_dt": 0.016666702926158905,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999957,
+            "vector_error_cm": 8.973639867007219e-15,
+            "moved_cm": 2.5000054389238286
+          },
+          {
+            "from": 3361,
+            "to": 3362,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.553086774935849e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 3362,
+            "to": 3363,
+            "dt": 0.016668997704982758,
+            "effective_dt": 0.016668997704982758,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000009,
+            "vector_error_cm": 1.147309544521544e-14,
+            "moved_cm": 2.500349655747415
+          },
+          {
+            "from": 3363,
+            "to": 3364,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 3364,
+            "to": 3365,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.7463441157621156e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 3365,
+            "to": 3366,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 3366,
+            "to": 3367,
+            "dt": 0.016666900366544724,
+            "effective_dt": 0.016666900366544724,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999946,
+            "vector_error_cm": 1.7463441157621156e-14,
+            "moved_cm": 2.5000350549816996
+          },
+          {
+            "from": 3367,
+            "to": 3368,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.553086774935849e-15,
+            "moved_cm": 2.500004880130292
+          },
+          {
+            "from": 3368,
+            "to": 3369,
+            "dt": 0.016666803508996964,
+            "effective_dt": 0.016666803508996964,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999912,
+            "vector_error_cm": 1.6549865648124613e-14,
+            "moved_cm": 2.50002052634953
+          },
+          {
+            "from": 3369,
+            "to": 3370,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 3370,
+            "to": 3371,
+            "dt": 0.016666799783706665,
+            "effective_dt": 0.016666799783706665,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 149.99999999999952,
+            "vector_error_cm": 1.2465807389206936e-14,
+            "moved_cm": 2.5000199675559918
+          },
+          {
+            "from": 3371,
+            "to": 3372,
+            "dt": 0.016666699200868607,
+            "effective_dt": 0.016666699200868607,
+            "expected_speed_cm_s": 150.0,
+            "observed_speed_cm_s": 150.00000000000006,
+            "vector_error_cm": 8.553086774935849e-15,
+            "moved_cm": 2.500004880130292
+          }
+        ],
+        "unobserved_tick_gaps": [],
+        "edge_state_intervals_excluded": [],
+        "no_RMB_or_capture": true,
+        "third_navigation_enabled": true,
+        "held_pose_span": {
+          "position_cm": 40.0006502866744,
+          "rotation_deg": 0.0
+        },
+        "release_pose_span": {
+          "position_cm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "animation_continuity": {
+          "passed": true,
+          "before_time": 1.5667692422866821,
+          "after_time": 1.5667692422866821,
+          "expected_rate": 0,
+          "max_residual_seconds": 0.0,
+          "state_unchanged": true
+        },
+        "default_speed_cm_s": 150,
+        "dt_clamp_seconds": 0.1,
+        "observed_dt_above_clamp": false,
+        "scope": "Only consecutive observed game ticks are integrated; omitted ticks are disclosed, never extrapolated from host wall time."
+      }
+    },
+    {
+      "id": "startup_second",
+      "check": "启动保持肩右后默认位姿、80 度、0 秒待命且交互选项关闭",
+      "status": "PASS",
+      "evidence": {
+        "marked_seconds": 2.29700000000048,
+        "samples": 139,
+        "invalid_samples": [],
+        "expected_position_cm": [
+          -65.0,
+          -240.0,
+          170.0
+        ],
+        "expected_rotation_pyr_deg": [
+          -14.0,
+          85.0,
+          0.0
+        ],
+        "expected_fov": 80.0,
+        "first_world_time": 2.601793799549341
+      }
+    }
+  ],
+  "windows": {
+    "direct_W": {
+      "requested": [
+        14459.478,
+        14459.709
+      ],
+      "indices": [
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496
+      ]
+    },
+    "direct_A": {
+      "requested": [
+        14460.321,
+        14460.553
+      ],
+      "indices": [
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547
+      ]
+    },
+    "direct_S": {
+      "requested": [
+        14461.164999999999,
+        14461.396
+      ],
+      "indices": [
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597
+      ]
+    },
+    "direct_D": {
+      "requested": [
+        14462.009,
+        14462.24
+      ],
+      "indices": [
+        635,
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648
+      ]
+    },
+    "direct_Q": {
+      "requested": [
+        14462.868,
+        14463.1
+      ],
+      "indices": [
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699
+      ]
+    },
+    "direct_E": {
+      "requested": [
+        14463.712,
+        14464.312
+      ],
+      "indices": [
+        737,
+        738,
+        739,
+        740,
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773
+      ]
+    },
+    "home_after_move": {
+      "requested": [
+        14467.431,
+        14468.031
+      ],
+      "indices": [
+        960,
+        961,
+        962,
+        963,
+        964,
+        965,
+        966,
+        967,
+        968,
+        969,
+        970,
+        971,
+        972,
+        973,
+        974,
+        975,
+        976,
+        977,
+        978,
+        979,
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989,
+        990,
+        991,
+        992,
+        993,
+        994,
+        995,
+        996
+      ]
+    },
+    "home_after_look": {
+      "requested": [
+        14470.493,
+        14470.834
+      ],
+      "indices": [
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155,
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1161,
+        1162,
+        1163,
+        1164
+      ]
+    },
+    "home_freeoff": {
+      "requested": [
+        14510.384,
+        14510.615
+      ],
+      "indices": [
+        3335,
+        3336,
+        3337,
+        3338,
+        3339,
+        3340,
+        3341,
+        3342,
+        3343,
+        3344,
+        3345,
+        3346,
+        3347,
+        3348
+      ]
+    },
+    "direct_W_playing": {
+      "requested": [
+        14472.946,
+        14473.311000000002
+      ],
+      "indices": [
+        1289,
+        1290,
+        1291,
+        1292,
+        1293,
+        1294,
+        1295,
+        1296,
+        1297,
+        1298,
+        1299,
+        1300,
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310
+      ]
+    },
+    "head_blocked_W": {
+      "requested": [
+        14477.181,
+        14477.318000000001
+      ],
+      "indices": [
+        1543,
+        1544,
+        1545,
+        1546,
+        1547,
+        1548,
+        1549,
+        1550,
+        1551
+      ]
+    },
+    "head_blocked_Home": {
+      "requested": [
+        14477.696,
+        14478.108
+      ],
+      "indices": [
+        1574,
+        1575,
+        1576,
+        1577,
+        1578,
+        1579,
+        1580,
+        1581,
+        1582,
+        1583,
+        1584,
+        1585,
+        1586,
+        1587,
+        1588,
+        1589,
+        1590,
+        1591,
+        1592,
+        1593,
+        1594,
+        1595,
+        1596,
+        1597
+      ]
+    },
+    "modal_blocked_W": {
+      "requested": [
+        14480.821,
+        14480.959
+      ],
+      "indices": [
+        1761,
+        1762,
+        1763,
+        1764,
+        1765,
+        1766,
+        1767,
+        1768,
+        1769
+      ]
+    },
+    "modal_blocked_Home": {
+      "requested": [
+        14481.337,
+        14481.764000000001
+      ],
+      "indices": [
+        1792,
+        1793,
+        1794,
+        1795,
+        1796,
+        1797,
+        1798,
+        1799,
+        1800,
+        1801,
+        1802,
+        1803,
+        1804,
+        1805,
+        1806,
+        1807,
+        1808,
+        1809,
+        1810,
+        1811,
+        1812,
+        1813,
+        1814,
+        1815
+      ]
+    },
+    "play": {
+      "requested": [
+        14472.103,
+        14472.334
+      ],
+      "indices": [
+        1239,
+        1240,
+        1241,
+        1242,
+        1243,
+        1244,
+        1245,
+        1246,
+        1247,
+        1248,
+        1249,
+        1250,
+        1251,
+        1252
+      ]
+    },
+    "pause": {
+      "requested": [
+        14473.681,
+        14474.115
+      ],
+      "indices": [
+        1333,
+        1334,
+        1335,
+        1336,
+        1337,
+        1338,
+        1339,
+        1340,
+        1341,
+        1342,
+        1343,
+        1344,
+        1345,
+        1346,
+        1347,
+        1348,
+        1349,
+        1350,
+        1351,
+        1352,
+        1353,
+        1354,
+        1355,
+        1356,
+        1357,
+        1358,
+        1359
+      ]
+    },
+    "head_view": {
+      "requested": [
+        14476.228,
+        14476.568000000001
+      ],
+      "indices": [
+        1486,
+        1487,
+        1488,
+        1489,
+        1490,
+        1491,
+        1492,
+        1493,
+        1494,
+        1495,
+        1496,
+        1497,
+        1498,
+        1499,
+        1500,
+        1501,
+        1502,
+        1503,
+        1504,
+        1505,
+        1506
+      ]
+    },
+    "third_view": {
+      "requested": [
+        14478.478,
+        14478.998000000001
+      ],
+      "indices": [
+        1621,
+        1622,
+        1623,
+        1624,
+        1625,
+        1626,
+        1627,
+        1628,
+        1629,
+        1630,
+        1631,
+        1632,
+        1633,
+        1634,
+        1635,
+        1636,
+        1637,
+        1638,
+        1639,
+        1640,
+        1641,
+        1642,
+        1643,
+        1644,
+        1645,
+        1646,
+        1647,
+        1648,
+        1649,
+        1650,
+        1651
+      ]
+    },
+    "video_close": {
+      "requested": [
+        14482.134,
+        14482.459
+      ],
+      "indices": [
+        1839,
+        1840,
+        1841,
+        1842,
+        1843,
+        1844,
+        1845,
+        1846,
+        1847,
+        1848,
+        1849,
+        1850,
+        1851,
+        1852,
+        1853,
+        1854,
+        1855,
+        1856,
+        1857
+      ]
+    },
+    "fresh_W_reentry": {
+      "requested": [
+        14511.243,
+        14511.475
+      ],
+      "indices": [
+        3387,
+        3388,
+        3389,
+        3390,
+        3391,
+        3392,
+        3393,
+        3394,
+        3395,
+        3396,
+        3397,
+        3398,
+        3399,
+        3400
+      ]
+    }
+  },
+  "summary": {
+    "samples": 3899,
+    "game_samples": 3781,
+    "actions": 64,
+    "observed_contiguous_movement_ticks": 122,
+    "max_movement_vector_error_cm": 1.790602512155269e-14,
+    "dynamic_dt_clamp_trigger_observed": false
+  },
+  "action_map": {
+    "held_W": "held_W_before_F",
+    "F_exit": "F_exit_while_W_held",
+    "new_W": "fresh_W_reentry",
+    "home_freeoff": "home_freeoff"
+  },
+  "limits": [
+    "Only actually sampled intervals are checked; skipped world-tick gaps are disclosed per action.",
+    "Only the supplied final Session3 trace and actions are used. Earlier Session1/Session2 input-focus attempts are retained separately and are not combined into pass evidence.",
+    "A normal-frame speed test does not prove a dynamic dt>0.1 clamp case unless explicitly observed.",
+    "UIOnly host keyboard input is evidenced by action logs, not by claiming PlayerController key receipt.",
+    "This is camera/UI compatibility validation; no packaged executable or unrelated shortcut retest is claimed."
+  ],
+  "inputs": {
+    "trace": {
+      "path": "<PROJECT_DIR>\\Output\\Validation\\ShoulderCamera\\Session3\\Runtime_Trace.json",
+      "sha256": "ef011dbda48010bfcbe8f5eda8a41233e1b5b21206cd27f7c13ea985a9b0e956"
+    },
+    "actions": {
+      "path": "<PROJECT_DIR>\\Output\\Validation\\ShoulderCamera\\Session3\\Actions.json",
+      "sha256": "2cb531ed73594214cfd5edec730f6f8112f03241321708ad35d6dff886976163"
+    }
+  }
+}

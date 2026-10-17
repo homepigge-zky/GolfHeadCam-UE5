@@ -1,0 +1,49 @@
+{
+  "parent": "/Game/GolfHeadCam/UI/WBP_CameraControl",
+  "child": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole",
+  "child_class": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+  "child_designer_widgets": 0,
+  "designer_inherited_from": "/Game/GolfHeadCam/UI/WBP_CameraControl",
+  "child_tick_forwards_to_inherited_functions": [
+    "RefreshDisplay",
+    "RefreshFreeCameraUI"
+  ],
+  "tick_forwarding_chain_compiled": true,
+  "runtime_tick_verified": false,
+  "inherited_events_not_overridden": [
+    "OnInitialized",
+    "Destruct"
+  ],
+  "hud": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD",
+  "hud_widget_type_before": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl_C",
+  "hud_widget_type_after": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+  "parent_graphs_modified": [],
+  "runtime_python_required": false,
+  "diagnostics": {
+    "child": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole",
+      "graphs": [
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    "hud": {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD.BP_GolfHUD",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    }
+  }
+}

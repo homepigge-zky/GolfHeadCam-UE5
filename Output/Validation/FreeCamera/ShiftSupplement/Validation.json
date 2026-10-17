@@ -1,0 +1,274 @@
+{
+  "passed": true,
+  "summary": {
+    "PASS": 6,
+    "FAIL": 0,
+    "NOT_OBSERVED": 0
+  },
+  "sample_count": 386,
+  "event_count": 16,
+  "duration_seconds": 24.96900000000096,
+  "trace_sha256": "a506ab809a140472f9ce4e52f4f1985f04db0b6ed2eb7f39870aaec6c5a3a0e9",
+  "actions_sha256": "8b257858995f9dcaf2c87f510e5a6ecfe9d56068695d9aa1c4a3ae9435de9353",
+  "checks": [
+    {
+      "name": "supplement_final_trace",
+      "label": "补充采样已停止、完整且时钟有序",
+      "status": "PASS",
+      "evidence": {
+        "samples": 386,
+        "recording": false,
+        "unavailable_samples": []
+      }
+    },
+    {
+      "name": "supplement_errors",
+      "label": "补充录制器无错误",
+      "status": "PASS",
+      "evidence": {
+        "errors": []
+      }
+    },
+    {
+      "name": "speed_normal_motion",
+      "label": "W 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 9,
+        "key": "W",
+        "basis": "forward",
+        "sign": 1,
+        "delta_cm": [
+          -52.20692277185839,
+          -58.73278811834126,
+          -15.009490296909263
+        ],
+        "along_expected_axis_cm": 80.00242486596119,
+        "total_distance_cm": 80.0024248659612,
+        "observed_world_seconds": 0.5333494991064072,
+        "speed_cm_s": 150.0000000000002,
+        "expected_speed_cm_s": 150.0,
+        "direction_cosine": 0.9999999999999998,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "speed_boosted_motion",
+      "label": "W 持键移动方向与速度正确",
+      "status": "PASS",
+      "evidence": {
+        "samples": 10,
+        "key": "W",
+        "basis": "forward",
+        "sign": 1,
+        "delta_cm": [
+          -161.5114753800187,
+          -181.7004098025212,
+          -46.43454917175521
+        ],
+        "along_expected_axis_cm": 247.5018443539738,
+        "total_distance_cm": 247.5018443539738,
+        "observed_world_seconds": 0.5500040985643864,
+        "speed_cm_s": 449.9999999999999,
+        "expected_speed_cm_s": 450.0,
+        "direction_cosine": 1.0,
+        "all_input_flags_valid": true,
+        "speed_relative_tolerance": 0.3
+      }
+    },
+    {
+      "name": "actual_left_shift",
+      "label": "补充加速窗口确实收到左 Shift、W 与 RMB",
+      "status": "PASS",
+      "evidence": {
+        "samples": 10,
+        "left_shift_samples_in_full_trace": 17,
+        "right_shift_samples_in_full_trace": 0,
+        "injection_events": [
+          {
+            "action": "left_shift_scancode",
+            "kind": "key_down",
+            "clock": 28454.484,
+            "key": "LeftShift",
+            "scan_code": 42
+          },
+          {
+            "action": "left_shift_scancode",
+            "kind": "key_up",
+            "clock": 28455.531,
+            "key": "LeftShift",
+            "scan_code": 42
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplement_shift_ratio",
+      "label": "左 Shift 导航速度为正常速度的3倍",
+      "status": "PASS",
+      "evidence": {
+        "normal_speed_cm_s": 150.0000000000002,
+        "boosted_speed_cm_s": 449.9999999999999,
+        "ratio": 2.999999999999995,
+        "expected_ratio": 3.0,
+        "tolerance": 0.3
+      }
+    }
+  ],
+  "windows": {
+    "speed_normal:held": {
+      "requested_clock_range": [
+        28453.678,
+        28454.309
+      ],
+      "samples": 9,
+      "sample_indices": [
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238
+      ],
+      "observed_wall_seconds": 0.5309999999990396
+    },
+    "speed_boosted:held": {
+      "requested_clock_range": [
+        28454.739999999998,
+        28455.371
+      ],
+      "samples": 10,
+      "sample_indices": [
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255
+      ],
+      "observed_wall_seconds": 0.5630000000019209
+    }
+  },
+  "additional_animation_observations": [
+    {
+      "name": "speed_normal_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：speed_normal",
+      "status": "NOT_OBSERVED",
+      "evidence": {
+        "samples": 9,
+        "in_progress_pairs": 8,
+        "animation_range": [
+          0.0,
+          0.0
+        ],
+        "observed_advance_seconds": 0.0,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [
+          [
+            230,
+            231
+          ],
+          [
+            231,
+            232
+          ],
+          [
+            232,
+            233
+          ],
+          [
+            233,
+            234
+          ],
+          [
+            234,
+            235
+          ],
+          [
+            235,
+            236
+          ],
+          [
+            236,
+            237
+          ],
+          [
+            237,
+            238
+          ]
+        ],
+        "max_game_clock_prediction_error_seconds": 0.06667900085449219,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    },
+    {
+      "name": "speed_boosted_animation",
+      "label": "导航期间动画不归零、不暂停且按游戏时钟推进：speed_boosted",
+      "status": "NOT_OBSERVED",
+      "evidence": {
+        "samples": 10,
+        "in_progress_pairs": 9,
+        "animation_range": [
+          0.0,
+          0.0
+        ],
+        "observed_advance_seconds": 0.0,
+        "reset_pairs": [],
+        "paused_or_stopped_pairs": [
+          [
+            246,
+            247
+          ],
+          [
+            247,
+            248
+          ],
+          [
+            248,
+            249
+          ],
+          [
+            249,
+            250
+          ],
+          [
+            250,
+            251
+          ],
+          [
+            251,
+            252
+          ],
+          [
+            252,
+            253
+          ],
+          [
+            253,
+            254
+          ],
+          [
+            254,
+            255
+          ]
+        ],
+        "max_game_clock_prediction_error_seconds": 0.06666770204901695,
+        "prediction_tolerance_seconds": 0.12,
+        "natural_end_policy": "Pairs starting at >=3.98s are not treated as unexpected stops; full counts remain reported."
+      }
+    }
+  ],
+  "limits": [
+    "Only left Shift was physically retested; no independent right-Shift test is claimed.",
+    "The supplementary animation remained idle at 0s. This recording proves acceleration input and movement only; animation continuity evidence comes from the primary trace."
+  ]
+}

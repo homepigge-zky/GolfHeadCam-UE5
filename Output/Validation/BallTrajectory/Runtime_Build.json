@@ -1,0 +1,435 @@
+{
+  "pawn": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer",
+  "component": {
+    "component": "BallTrajectoryMesh",
+    "shared_ball_parent": "DefaultSceneRoot",
+    "mesh": "/Engine/BasicShapes/Cylinder.Cylinder",
+    "material": "/Game/GolfHeadCam/Materials/M_BallTrajectory.M_BallTrajectory"
+  },
+  "segments": 48,
+  "default_radius_cm": 0.8,
+  "default_show": false,
+  "ui_function": "UIToggleBallTrajectory",
+  "ui_state": "ShowBallTrajectory",
+  "keyboard": "T",
+  "trajectory_kind": "Full predicted path, not an elapsed-time trail",
+  "rebuild_policy": "Each explicit off-to-on toggle only",
+  "guards": [
+    "CinematicMode",
+    "FreeCameraUIBlocked",
+    "!bEnableBallFlight",
+    "BallLaunchSpeedZ<=0"
+  ],
+  "flight_formula": "g=max(BallGravity,1); vz=max(BallLaunchSpeedZ,0); T=2*vz/g; P(t)=(startX+vx*t,startY,startZ+max(vz*t-.5*g*t*t,0))",
+  "existing_flight_graph_modified": false,
+  "animation_clock_modified": false,
+  "runtime_python_required": false,
+  "saved_assets": [
+    "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer",
+    "/Game/GolfHeadCam/UI/WBP_CameraControl",
+    "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole",
+    "/Game/GolfHeadCam/Blueprints/BP_GolfHUD"
+  ],
+  "map_saved": false,
+  "diagnostics": {
+    "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer": {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer.BP_GolfGolfer",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ResetPose",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "PlaySwing",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ApplyCameraMode",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "TogglePause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateBallFlight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ApplyDeliveryFrame",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleLensDistortion",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleCalibrationGrid",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateLensSettings",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "HandleLensInput",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIPlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIPause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIHead",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIThird",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UISetLensPreset",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "InitializeFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "SetFreeCameraCapture",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "StopFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "SetFreeCameraUIBlocked",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ResetFreeCameraPose",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateFreeCameraPose",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ProcessFreeCameraNavigation",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "HandleFreeCameraInput",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "InitializeInteractiveSession",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIResetThirdCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIAdjustFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "InitializeBallTrajectory",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RebuildBallTrajectory",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateBallTrajectoryVisibility",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UIToggleBallTrajectory",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "HandleBallTrajectoryInput",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateBallTrajectoryFrame",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    "/Game/GolfHeadCam/UI/WBP_CameraControl": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl",
+      "graphs": [
+        {
+          "name": "ScenePlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ScenePause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "SceneReplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ViewHead",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ViewThird",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "GridToggle",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensNone",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensBarrel",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensPincushion",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensCalibrated",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenVideos",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenHeadVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenThirdVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoPlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoPause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoReplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "CloseVideos",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaOpened",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaFailed",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaEnded",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RefreshDisplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenSelectedVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RefreshFreeCameraUI",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickResetThirdCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraForward",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraBack",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraLeft",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraRight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraUp",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraDown",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraYawLeft",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraYawRight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraPitchUp",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraPitchDown",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole",
+      "graphs": [
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    "/Game/GolfHeadCam/Blueprints/BP_GolfHUD": {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD.BP_GolfHUD",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    }
+  },
+  "dirty_packages_remaining": {
+    "content": [],
+    "maps": []
+  }
+}

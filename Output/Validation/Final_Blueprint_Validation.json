@@ -1,0 +1,131 @@
+{
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "blueprints": [
+    {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer.BP_GolfGolfer",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ResetPose",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "PlaySwing",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ApplyCameraMode",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "TogglePause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateBallFlight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ApplyDeliveryFrame",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleLensDistortion",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ToggleCalibrationGrid",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "UpdateLensSettings",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "HandleLensInput",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD.BP_GolfHUD",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfGameMode.BP_GolfGameMode",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfRenderGameMode.BP_GolfRenderGameMode",
+      "graphs": [
+        {
+          "name": "UserConstructionScript",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    }
+  ],
+  "pawn_class_defaults": {
+    "BallStartX": 7.777501,
+    "BallStartY": 95.5553086419753,
+    "BallStartZ": 2.135,
+    "CinematicMode": false,
+    "LensDistortionEnabled": false,
+    "ShowCalibrationGrid": false,
+    "HeadCameraFOV": 100.0,
+    "bEnableBallFlight": true
+  },
+  "passed": true
+}

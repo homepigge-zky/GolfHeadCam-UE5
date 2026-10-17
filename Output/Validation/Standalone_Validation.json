@@ -1,0 +1,26 @@
+{
+  "verified_at": "2026-10-16T18:13:50.639769+00:00",
+  "project_copy": "<PROJECT_DIR>\\Saved\\DeliverySmokeTest\\GolfHeadCam",
+  "source_core_files": 271,
+  "core_file_hash_mismatches": [],
+  "launch": "UnrealEditor.exe <copy>/GolfHeadCam.uproject -game -windowed -ResX=1280 -ResY=720 -NoSplash",
+  "authoring_bridge_enabled": false,
+  "runtime_python_script_passed": false,
+  "standalone_window_pid": 31500,
+  "visual_checks": {
+    "startup_ready_pose": true,
+    "space_plays_swing": true,
+    "p_pauses_and_resumes": true,
+    "v_switches_head_and_third": true,
+    "r_replays_from_ready": true,
+    "g_shows_grid_in_head_view": true,
+    "b_toggles_visible_lens_distortion": true,
+    "third_view_hides_grid": true,
+    "swing_reaches_finish": true
+  },
+  "pause_image_mean_absolute_difference_0_255": 0.12473103591825054,
+  "evidence_folder": "<PROJECT_DIR>\\Output\\Validation\\Standalone",
+  "evidence_contact_sheet": "Output/Validation/Standalone/Controls_ContactSheet.png",
+  "passed": true,
+  "scope": "Native standalone game mode of installed editor using clean copied assets; interactive keys visually inspected. This is not a packaged executable/cook test."
+}

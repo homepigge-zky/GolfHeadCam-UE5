@@ -1,0 +1,133 @@
+{
+  "pawn": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer.BP_GolfGolfer",
+  "new_functions": [
+    "UIPlay",
+    "UIPause",
+    "UIHead",
+    "UIThird",
+    "UISetLensPreset"
+  ],
+  "lens_function_input": {
+    "name": "PresetIndex",
+    "type": "int",
+    "default": 0
+  },
+  "lens_presets": {
+    "0": "Disabled; original retained for legacy B",
+    "1": "/Game/GolfHeadCam/Materials/MI_HeadLens_Barrel.MI_HeadLens_Barrel",
+    "2": "/Game/GolfHeadCam/Materials/MI_HeadLens_Pincushion.MI_HeadLens_Pincushion",
+    "3": "/Game/GolfHeadCam/Materials/M_HeadLensDistortion.M_HeadLensDistortion"
+  },
+  "material_scalars": {
+    "MI_HeadLens_Barrel": {
+      "k1": -0.1,
+      "k2": 0.01,
+      "p1": 0.0,
+      "p2": 0.0
+    },
+    "MI_HeadLens_Pincushion": {
+      "k1": 0.1,
+      "k2": 0.01,
+      "p1": 0.0,
+      "p2": 0.0
+    }
+  },
+  "ui_calls_ignored_in_cinematic_mode": true,
+  "existing_graphs_rewritten": [],
+  "runtime_python_required": false,
+  "diagnostics": {
+    "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfGolfer.BP_GolfGolfer",
+    "graphs": [
+      {
+        "name": "UserConstructionScript",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "ResetPose",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "PlaySwing",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "ApplyCameraMode",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "ToggleCamera",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "TogglePause",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "UpdateBallFlight",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "ApplyDeliveryFrame",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "ToggleLensDistortion",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "ToggleCalibrationGrid",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "UpdateLensSettings",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "HandleLensInput",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "UIPlay",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "UIPause",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "UIHead",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "UIThird",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "UISetLensPreset",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "name": "EventGraph",
+        "errors": [],
+        "warnings": []
+      }
+    ]
+  }
+}

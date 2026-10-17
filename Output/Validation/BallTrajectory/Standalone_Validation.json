@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "generated_utc": "2026-10-17T15:26:06.827742+00:00",
+  "mode": "Installed UnrealEditor native -game clean-copy smoke, not a cooked or packaged executable",
+  "launch": {
+    "copy": "<PROJECT_DIR>\\Saved\\BallTrajectorySmoke_20261017_112225\\GolfHeadCam",
+    "core_file_count": 283,
+    "hash_mismatches": [],
+    "pid": 26820,
+    "launch_args": [
+      "<UE_ROOT>\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+      "<PROJECT_DIR>\\Saved\\BallTrajectorySmoke_20261017_112225\\GolfHeadCam\\GolfHeadCam.uproject",
+      "-game",
+      "-windowed",
+      "-ResX=1600",
+      "-ResY=900",
+      "-NoSplash",
+      "-NoSound"
+    ],
+    "authoring_bridge": false,
+    "native_game_test_not_packaged_exe": true
+  },
+  "checks": [
+    {
+      "name": "core_copy_matches_original",
+      "passed": true,
+      "files": 283,
+      "mismatches": []
+    },
+    {
+      "name": "no_authoring_bridge_launch",
+      "passed": true,
+      "args": [
+        "<UE_ROOT>\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+        "<PROJECT_DIR>\\Saved\\BallTrajectorySmoke_20261017_112225\\GolfHeadCam\\GolfHeadCam.uproject",
+        "-game",
+        "-windowed",
+        "-ResX=1600",
+        "-ResY=900",
+        "-NoSplash",
+        "-NoSound"
+      ]
+    },
+    {
+      "name": "no_project_runtime_errors_in_log",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "01_DefaultIdle",
+      "passed": true,
+      "method": "Root visually inspected unmodified native-window screenshot after actual mouse/keyboard input.",
+      "observation": "Third person, idle 0.00/4.00, trajectory off.",
+      "screenshot": "Output\\Validation\\BallTrajectory\\StandaloneReady\\01_DefaultIdle.png",
+      "sha256": "e57c969a7cee0c59a1d31c926810c2f755cc51760402ded5334216fb97565379"
+    },
+    {
+      "name": "02_TrajectoryEnabled",
+      "passed": true,
+      "method": "Root visually inspected unmodified native-window screenshot after actual mouse/keyboard input.",
+      "observation": "Actual mouse click reveals gold curve and Hide label; animation still 0.00.",
+      "screenshot": "Output\\Validation\\BallTrajectory\\StandaloneReady\\02_TrajectoryEnabled.png",
+      "sha256": "8de3abed55cc4489bb916330ae51ce49e96affe5237a1a738ba3b9b21af33022"
+    },
+    {
+      "name": "03_PausedWithTrajectory",
+      "passed": true,
+      "method": "Root visually inspected unmodified native-window screenshot after actual mouse/keyboard input.",
+      "observation": "Actual play/pause clicks reach paused 0.99 seconds with visible trajectory.",
+      "screenshot": "Output\\Validation\\BallTrajectory\\StandaloneReady\\03_PausedWithTrajectory.png",
+      "sha256": "58d41685605b4d880b13bdf82d7502ffd569b14dc0cf89e6d26da019b4e17e48"
+    },
+    {
+      "name": "04_PausedTrajectoryOff",
+      "passed": true,
+      "method": "Root visually inspected unmodified native-window screenshot after actual mouse/keyboard input.",
+      "observation": "T hides curve and changes label; animation still paused at 0.99 seconds.",
+      "screenshot": "Output\\Validation\\BallTrajectory\\StandaloneReady\\04_PausedTrajectoryOff.png",
+      "sha256": "e17e2a1f911ba6173d7060ad2d651c0696f91e18823e71502b99cb74e05cd8a4"
+    },
+    {
+      "name": "05_PausedTrajectoryOn",
+      "passed": true,
+      "method": "Root visually inspected unmodified native-window screenshot after actual mouse/keyboard input.",
+      "observation": "T restores curve and Hide label; animation still paused at 0.99 seconds.",
+      "screenshot": "Output\\Validation\\BallTrajectory\\StandaloneReady\\05_PausedTrajectoryOn.png",
+      "sha256": "538837e41fdd35f0444806908c80d985d5b2dc0b2db5db5fd5eb3e47071f4799"
+    }
+  ],
+  "limits": [
+    "Visible interaction checks only; quantitative geometry and animation checks are in separate PIE reports.",
+    "Original Standalone run was attempted during loading; its screenshots did not establish input effects. It is retained, excluded from acceptance. StandaloneReady is the reviewed run.",
+    "PrintWindow images contain black DPI padding; original screenshots retained.",
+    "Stock editor plugins may load; no custom authoring script or runtime Python was used."
+  ]
+}

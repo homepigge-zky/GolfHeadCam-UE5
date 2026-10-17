@@ -1,0 +1,92 @@
+【GitHub 公开交付版说明｜2026-10-17】
+本仓库按要求不收录任何视频文件，也不收录主视频逐帧渲染序列。
+下文中“视频已交付”“完整压缩包”等描述属于本地完整交付或历史验证范围，并不表示视频在此仓库中。
+报告、PPT 和原始验收清单保留基础版范围；当前功能以 README.md、公开交付说明及 RealtimeTrajectory 验证记录为准。
+已保存视频回放需自行补回 Content/Movies/GolfHead.mp4 和 GolfThird.mp4；工程实时运行不依赖这两段视频。
+文档和验证记录中的本机路径已用 <PROJECT_DIR>、<UE_ROOT>、<AUTHOR_HOME>、<AUTHOR_TEMP> 代称。
+
+GolfHeadCam 任务书验收清单（最终交付）
+日期：2026-10-16
+依据：《一周实践任务_UE5高尔夫动作与头戴相机仿真(3).pdf》，共 2 页。
+工程：GolfHeadCam / Unreal Engine 5.8.3。
+用户约束：游戏运行逻辑全部为蓝图；编辑器作者工具仅生成保存的原生资产。
+
+状态说明
+本清单将任务功能、交付文件与已做验证分开说明。通过指对应证据范围内通过，不表示所有机器或所有未采样状态都已测试。
+
+一、必做内容与交付
+
+A01 人物、球杆、球、地面及连贯的准备—挥杆过程：已实现、已交付。
+原生 AS_GolfSwing 为 4 秒、60 fps、241 采样、89 骨骼轨；完整双视角视频包含准备、上杆、接触附近和收杆。
+证据：Content/GolfHeadCam；Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4；Video_Validation.json。
+
+A02 头戴相机随头部位置及朝向运动：已验证。
+HeadCamera 固定绑定 head，ClubRoot 固定绑定 hand_r；没有脱离头部的动态追球朝向。
+最终运行轨迹 788 点，相机与球杆局部安装不变；每点仅有一个激活相机。
+证据：Output/Validation/Delivery_Runtime_Validation.json。
+
+A03 合理头部安装、挥杆与接触附近可见性说明：已交付。
+头戴 FOV 100°，准备姿势向下约 55°；头骨前方约 10 cm、上方约 8 cm；精确局部变换见配置文档。
+最终头戴视频接触附近能看到球和杆头；收杆手臂遮挡按原始视角保留，并在报告说明。
+证据：Docs/挥杆与相机说明.txt；实践报告第 2 页；头戴视频第 195 帧附近。
+
+A04 完整第一人称视频：已交付、全帧解码通过。
+文件：Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4。
+A05 完整第三人称视频：已交付、全帧解码通过。
+文件：Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4。
+两段均为 H.264、1920×1080、360 帧；标称 60 fps、6 秒，实际平均 60.0001667 fps、5.999967 秒，微小偏差来自原生 MP4 时间戳舍入。
+证据：Output/Validation/Video_Validation.json，含 SHA-256；每个视角另保留 360 张原生 PNG。
+双视角共有 241 个动作时间点，覆盖 0～4 秒，几何状态一致；证据见 Delivery_Runtime_Validation.json。
+
+A06 输出参数与流程可复现：已交付。
+MRQ 预设 MRQ_Golf_1080p60；队列 Q_GolfViews；LS_Golf_HeadCamera 与 LS_Golf_ThirdPerson。
+时间安排为 1 秒准备、4 秒动作、1 秒保持；视频接触附近为 3.25 秒。使用 UE 5.8 原生 MP4 导出。
+证据：Docs/复现视频与相机参数.txt、Sequence_Build_Validation.json、Final_Asset_Settings.json。
+
+A07 可运行工程及启动操作说明：已交付并重开验证。
+GolfHeadCam.uproject + Config/ + Content/ + README.txt；地图 L_GolfPractice，GameMode 为 BP_GolfGameMode。
+Space/R 重播、P 暂停/恢复、V 切换视角；附加镜头/网格操作以 README 为准。
+最终四个蓝图编译 0 错误、0 警告；主地图检查通过。交付副本 271 个核心文件哈希与源工程一致，使用引擎 -game 独立运行，无作者桥接或启动 Python 脚本；播放、暂停、切换、重播、畸变和网格操作实际检查通过。此项不是打包 EXE 测试。
+任务书要求 UE 工程，本交付没有将未经测试的独立 EXE 列为结果。
+
+A08 引擎、插件、来源与依赖：已交付说明。
+工程启用内置 ModelingToolsEditorMode（Editor）、GameplayStateTree 与 MovieRenderPipeline。无第三方运行插件或外部编码器运行依赖。
+Epic Third Person 模板提供 Manny 人物网格/骨架；本工程编排动作关键帧、几何球杆、场景、蓝图与相机。
+无第三方动作包；无运行时 Python 或自定义 C++ 模块。来源及编辑器作者工具边界见 README、Docs 和报告。
+
+A09 简短报告：已交付 5 页 PDF，逐页渲染检查。
+文件：Deliverables/实践报告.pdf。
+覆盖任务拆解/资料/方案、动作—头部—相机关联、自编与复用边界、验证证据、问题与简化、机器人视觉后续改进六个主题。
+原文“报告建议 3～5 页”为建议长度；本报告采用 5 页。
+
+A10 约 10 分钟演示与讲解：已准备。
+文件：Deliverables/演示讲解_10页.pptx、Deliverables/演示讲稿_约10分钟.txt，配合两段完整视频。
+讲稿分配总计 600 秒，PPTX 含讲者备注；已检查 10 页预览和包结构、字体/布局、可编辑原生表格。
+此项是讲解材料准备，不声称已经举行现场演讲或录制 10 分钟讲解。
+
+A11 AI 辅助及完成/验证/计划边界：已说明。
+AI 辅助查阅资料、作者阶段脚本与证据整理；运行时使用保存的原生蓝图、动画、材质和场景资产。
+不把关键帧编排称为真人动作捕捉，不虚构个人学习经历；后续视觉数据功能列为改进计划。
+
+二、原任务可选加分项（本轮均已选择完成）
+
+B01 击球后飞行：已实现并验证。
+动作 2.25 秒附近启动沿 +X 的蓝图预设抛物线；vx=650 cm/s、vz=380 cm/s、g=980 cm/s²。
+初始球心 (7.777501,95.555308642,2.135) cm；飞行 0.775510204 s，水平位移约 504.081633 cm；落地后保持。
+静态球面/杆头 OBB 接触检查通过；最终运行轨迹与预设公式一致。完整双视角视频包含飞行。
+简化：不求解真实碰撞冲量、旋转、风阻、反弹。几何相切验证不是碰撞动力学验证。
+
+B02 内参与畸变：已实现、已提供对照并验证。
+自行设定仿真假设：1920×1080，fx=fy=805.5356459302 px，cx=960、cy=540 px；水平 FOV 100°。
+左上角为连续图像边界原点，u 右/v 下，像素中心为 (列+0.5,行+0.5)；OpenCV 整数中心约定对应主点 (959.5,539.5)。
+Brown-Conrady：k1=-0.12，k2=0.02，k3=0，p1=0.0005，p2=-0.0003；278 个原生材质节点，8 次逆映射迭代，无 Custom HLSL。
+源图外黑边，无 overscan/crop；TAA 抗锯齿。镜头畸变与运动模糊、景深分开说明；未宣称实体相机标定。
+证据：LensMaterial_Settings.json；Lens_Math_Validation.json（91027 点、有效域最大残差 0.000457 px）。
+原生图：Output/Validation/Calibration/ 的 Grid/Scene × Undistorted/Distorted 四张 1920×1080 PNG。
+像素检查：Lens_Render_Validation.json，独立重映射对照平均差 1.235/255、边缘距离 P95 0.955 px，通过；未以离线生成图替换原生输出。
+
+三、验证范围
+基础交互轨迹 443 点、13 项通过，覆盖完整播放、重播、连续暂停和切换；最终交付轨迹 788 点、11 项通过，覆盖同步、绑定、弹道、接触与固定 FOV。
+最终四个蓝图编译无错误/警告。运行轨迹、实际视频元数据/全帧解码和畸变像素对照分别保留，不能相互替代。
+动作和弹道仍为简化仿真；尚未加入真实标定、噪声、滚动快门、深度/分割标签或精确高尔夫动力学。
+PPTX 通过程序化导出/导入与布局检查，未声称已在用户的 Microsoft PowerPoint 中人工放映。

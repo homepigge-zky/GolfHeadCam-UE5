@@ -1,0 +1,7 @@
+# Preserve exact delivery hashes on every checkout.
+* -text
+*.uasset binary
+*.umap binary
+*.png binary
+*.pdf binary
+*.pptx binary

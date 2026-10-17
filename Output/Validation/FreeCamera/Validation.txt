@@ -1,0 +1,98 @@
+GolfHeadCam 自由第三人称相机验收
+结果：PASS；通过 84 / 失败 0 / 未观察 0。
+1585 个采样，117 条动作事件，99.234 秒。
+
+[PASS] 采样完整、停止录制且时钟有序
+[PASS] 录制器与媒体无错误
+[PASS] 每点恰好一个相机激活
+[PASS] 头戴相机仍固定绑定 head 骨骼
+[PASS] 头戴世界位姿等于头骨与固定安装变换组合
+[PASS] 启动机位参考未被导航改写
+[PASS] 捕获鼠标时必须处于未阻断的自由第三人称并隐藏指针
+[PASS] F 开启自由第三人称
+[PASS] W 持键移动方向与速度正确
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：move_forward
+[PASS] D 持键移动方向与速度正确
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：move_right
+[PASS] E 持键移动方向与速度正确
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：move_up
+[PASS] S 持键移动方向与速度正确
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：move_backward
+[PASS] A 持键移动方向与速度正确
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：move_left
+[PASS] Q 持键移动方向与速度正确
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：move_down
+[PASS] W 持键移动方向与速度正确
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：speed_normal
+[PASS] W 持键移动方向与速度正确
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：speed_boosted
+[PASS] RMB 鼠标拖动改变自由相机朝向
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：mouse_look
+[PASS] F 退出并释放捕获
+[PASS] F 退出保留当前第三相机位姿
+[PASS] F 退出后 W 不移动相机
+[PASS] 再次 F 进入自由相机
+[PASS] 再次进入保留上一机位
+[PASS] Home 恢复启动相对机位：home_after_reenter
+[PASS] Home 恢复启动相对机位：home_after_reverse
+[PASS] Home 恢复启动相对机位：home_after_speed
+[PASS] 左 Shift 实际加速达到3倍（独立扫描码补测）
+[PASS] 自由模式中未按 RMB 时 W 不移动相机
+[PASS] 未按 RMB 不捕获鼠标
+[PASS] 挥杆中 F 切换自由状态：exit_during_swing
+[PASS] 挥杆中 F 切换保留第三相机位姿：exit_during_swing
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：exit_during_swing
+[PASS] 挥杆中 F 切换自由状态：enter_during_swing
+[PASS] 挥杆中 F 切换保留第三相机位姿：enter_during_swing
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：enter_during_swing
+[PASS] D 持键移动方向与速度正确
+[PASS] 导航期间动画不归零、不暂停且按游戏时钟推进：move_during_swing
+[PASS] 旧 P 键暂停挥杆且动画时间稳定
+[PASS] W 持键移动方向与速度正确
+[PASS] 暂停挥杆时可导航且动画仍保持暂停
+[PASS] UI 播放从暂停处继续
+[PASS] UI 暂停仍有效
+[PASS] UI 头戴视角退出自由并释放捕获
+[PASS] 头戴视角继续原挥杆进度
+[PASS] 头戴视角播放时相机世界位姿随头骨运动
+[PASS] UI 第三人称切换仍有效
+[PASS] UI 返回第三人称保留调整后的机位
+[PASS] 镜头操作前可再次进入自由模式
+[PASS] Home 恢复启动相对机位：home_before_lens
+[PASS] S 持键移动方向与速度正确
+[PASS] UI 桶形镜头退出自由模式并切头戴
+[PASS] UI 网格在自由相机使用后仍能打开
+[PASS] UI 网格关闭仍有效
+[PASS] UI 无畸变选项仍有效
+[PASS] 视频前可返回第三人称
+[PASS] 打开视频前处于自由模式
+[PASS] 打开视频退出自由、释放捕获并暂停场景
+[PASS] 视频打开并实际推进：GolfHead.mp4
+[PASS] 视频模态阻止 F 进入自由相机
+[PASS] 视频模态下 RMB+W 不移动相机
+[PASS] 视频模态下 RMB+鼠标不转向相机
+[PASS] 视频打开期间场景保持暂停、第三机位不动且导航一直被阻断
+[PASS] 头戴成片播放器暂停有效
+[PASS] 头戴成片播放器从暂停位置续播
+[PASS] 视频打开并实际推进：GolfThird.mp4
+[PASS] 第三人称成片播放器暂停有效
+[PASS] 关闭视频释放模态并关闭媒体播放器
+[PASS] 关闭视频后 UI 播放按结束状态重新开始
+[PASS] 关闭视频后 UI 暂停有效
+[PASS] 旧 R 键重播从开头推进
+[PASS] 旧 V 测试前进入自由相机
+[PASS] 旧 V 键切头戴并退出自由相机
+[PASS] 头戴视角按 F 进入自由第三人称
+[PASS] Home 恢复启动相对机位：final_home
+[PASS] 最终 F 退出、释放鼠标并显示指针
+[PASS] 最终退出仍保留 Home 机位
+
+位移单位 cm；旋转使用四元数角差，避免 ±180° 欧拉跳变。
+动画按游戏时间和实际 play_rate 检查；正常达到4秒收杆不算异常停止。
+相机位置保留仅指当前运行会话，未宣称跨重开保存；未进行打包 EXE 测试。
+
+左 Shift 独立补充：386 点，16 事件，正常 150.000 cm/s，加速 450.000 cm/s，倍率 3.000。
+主记录 generic Shift 没有进入 UE，原150/150 cm/s失败观测完整保留，不作为功能通过证据。
+加速通过结论来自单独的左 Shift 扫描码测试；未独立验证右 Shift。
+补充段动画未播放，未把它计为连续性通过；F/导航/转向期间动画连续来自主记录。
+本轮复测旧 R/P/V 与 UI 镜头/网格操作；键盘 B/G 未重复测试。

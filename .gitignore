@@ -1,0 +1,51 @@
+# Unreal generated files
+/Saved/
+/Intermediate/
+/DerivedDataCache/
+/Binaries/
+/.vs/
+/.idea/
+*.sln
+*.suo
+*.VC.db
+*.opensdf
+*.sdf
+*.tmp
+*.log
+Thumbs.db
+.DS_Store
+
+# All video files (case insensitive) and main render sequences
+*.3[gG][pP]
+*.[aA][vV][iI]
+*.[bB][iI][kK]
+*.[bB][kK]2
+*.[fF][lL][vV]
+*.[mM]2[tT][sS]
+*.[mM]4[vV]
+*.[mM][kK][vV]
+*.[mM][oO][vV]
+*.[mM][pP]4
+*.[mM][pP][eE][gG]
+*.[mM][pP][gG]
+*.[mM][tT][sS]
+*.[mM][xX][fF]
+*.[oO][gG][vV]
+*.[vV][oO][bB]
+*.[wW][eE][bB][mM]
+*.[wW][mM][vV]
+/Output/FirstPerson/
+/Output/ThirdPerson/
+
+# Local archives may contain excluded videos
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Local credentials and environment files
+.env
+.env.*
+*.pem
+*.key

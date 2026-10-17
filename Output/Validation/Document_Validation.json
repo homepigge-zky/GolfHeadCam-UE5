@@ -1,0 +1,186 @@
+{
+  "pdf_pages": 5,
+  "pptx_slides": 10,
+  "speaker_planned_seconds": 600,
+  "all_pdf_pages_visually_reviewed": true,
+  "all_slide_previews_visually_reviewed": true,
+  "native_powerpoint_manually_tested": false,
+  "stale_pending_markers": [],
+  "artifacts": [
+    {
+      "relative_path": "Deliverables/实践报告.pdf",
+      "size_bytes": 9550782,
+      "sha256": "2b0434962b94c3487a18500c1edd7d8b3fcbf3c467a65318976613883fabd0e0"
+    },
+    {
+      "relative_path": "Deliverables/演示讲解_10页.pptx",
+      "size_bytes": 15397009,
+      "sha256": "bac770bb53c5ec4536729616642013077278be16be44210dbd5bf3180e76b2c2"
+    },
+    {
+      "relative_path": "Deliverables/演示讲稿_约10分钟.txt",
+      "size_bytes": 7797,
+      "sha256": "e1774caee933bb2749d9490ce0a0f5d4e005a5c6652993c99ec57e31ac0aabb5"
+    },
+    {
+      "relative_path": "Deliverables/验收清单.txt",
+      "size_bytes": 7172,
+      "sha256": "bed30d9a831d0221803958b00112647a08a29510713984f4c94120a16a8fed5a"
+    }
+  ],
+  "presentation_preflight": {
+    "schemaVersion": "presentation-finalization.v1",
+    "finalSha256": "bac770bb53c5ec4536729616642013077278be16be44210dbd5bf3180e76b2c2",
+    "byteCount": 15397009,
+    "packageIntegrity": {
+      "chart_count": 0,
+      "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+      "finding_count": 0,
+      "findings": [],
+      "notes_parts_skipped": 10,
+      "relationship_part_count": 30,
+      "slide_count": 10,
+      "status": "pass",
+      "exitCode": 0,
+      "findingCount": 0,
+      "warnings": []
+    },
+    "presentationLayout": {
+      "finding_count": 0,
+      "findings": [],
+      "font_policy": {
+        "checked_text_script_count": 122,
+        "native_font_rendering_verified": false,
+        "observed_font_families": [
+          "Microsoft YaHei"
+        ],
+        "observed_font_use_counts": {
+          "Microsoft YaHei": 122
+        },
+        "passed": true,
+        "performed": true
+      },
+      "slide_count": 10,
+      "slide_size_in": [
+        13.3333,
+        7.5
+      ],
+      "warning_count": 0,
+      "warnings": [],
+      "exitCode": 0,
+      "findingCount": 0,
+      "fontPolicy": {
+        "checked_text_script_count": 122,
+        "native_font_rendering_verified": false,
+        "observed_font_families": [
+          "Microsoft YaHei"
+        ],
+        "observed_font_use_counts": {
+          "Microsoft YaHei": 122
+        },
+        "passed": true,
+        "performed": true
+      }
+    },
+    "fontSelection": {
+      "basis": "design",
+      "approvedFamilies": [
+        "Microsoft YaHei"
+      ],
+      "scriptFonts": {},
+      "referenceSha256": null,
+      "referenceFontsVerifiedInEncodedText": false,
+      "checked_text_script_count": 122,
+      "native_font_rendering_verified": false,
+      "observed_font_families": [
+        "Microsoft YaHei"
+      ],
+      "observed_font_use_counts": {
+        "Microsoft YaHei": 122
+      },
+      "passed": true,
+      "performed": true
+    },
+    "firstPartyImport": {
+      "performed": true,
+      "passed": true,
+      "slideCount": 10,
+      "sha256": "bac770bb53c5ec4536729616642013077278be16be44210dbd5bf3180e76b2c2",
+      "runtimeNodeModules": "<AUTHOR_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules",
+      "nodeExecutable": "<AUTHOR_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe"
+    },
+    "nativeTableArithmetic": {
+      "performed": true,
+      "checked_column_count": 0,
+      "checks": [],
+      "claim_boundary": "Displayed-value arithmetic with rounding tolerance; not source-data verification.",
+      "eligible_table_count": 0,
+      "finding_count": 0,
+      "findings": [],
+      "native_table_count": 3,
+      "passed": true,
+      "schema_version": "presentation-native-table-arithmetic.v1",
+      "skipped_tables": [
+        {
+          "reason": "no_numeric_amounts",
+          "slide": 4,
+          "table": 1
+        },
+        {
+          "reason": "no_numeric_amounts",
+          "slide": 7,
+          "table": 1
+        },
+        {
+          "reason": "no_numeric_amounts",
+          "slide": 9,
+          "table": 1
+        }
+      ],
+      "slide_count": 10,
+      "warning_count": 0,
+      "warnings": []
+    },
+    "nativeChartTitles": {
+      "performed": true,
+      "checks": [],
+      "finding_count": 0,
+      "findings": [],
+      "native_chart_count": 0,
+      "native_powerpoint_verified": false,
+      "passed": true,
+      "presentation_sha256": "bac770bb53c5ec4536729616642013077278be16be44210dbd5bf3180e76b2c2",
+      "schema_version": "presentation-native-chart-titles.v1",
+      "slide_count": 10,
+      "source_text_emitted": false,
+      "unresolved_linked_title_count": 0
+    },
+    "sourceDerivedPolicyFlags": [
+      "--expected-slide-size-emu",
+      "12192000,6858000",
+      "--validate-bullet-geometry",
+      "--validate-heading-fit",
+      "--require-native-table-slide",
+      "4",
+      "--require-native-table-slide",
+      "7",
+      "--require-native-table-slide",
+      "9",
+      "--cover-role",
+      "none",
+      "--expected-slide-count",
+      "10",
+      "--approved-font-family",
+      "Microsoft YaHei"
+    ],
+    "nativeChartValidation": {
+      "detectedOwnerSlides": [],
+      "detectedChartCount": 0,
+      "targetApplication": "portable",
+      "sourceChartOwnersExplicitlyDeclared": true,
+      "validatorRan": false,
+      "passed": true
+    }
+  },
+  "scope": "Artifact text and rendered previews reviewed; not a claim of an already delivered live talk or native PowerPoint playback."
+}

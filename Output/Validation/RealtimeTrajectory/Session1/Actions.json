@@ -1,0 +1,232 @@
+[
+  {
+    "action": "tab_to_ui",
+    "kind": "key_down",
+    "clock": 17649.859,
+    "foreground": 17828792,
+    "key": "tab"
+  },
+  {
+    "action": "tab_to_ui",
+    "kind": "key_up",
+    "clock": 17650.125,
+    "foreground": 17828792,
+    "key": "tab"
+  },
+  {
+    "action": "trajectory_on",
+    "kind": "key_down",
+    "clock": 17650.531,
+    "foreground": 17828792,
+    "key": "t"
+  },
+  {
+    "action": "trajectory_on",
+    "kind": "key_up",
+    "clock": 17650.765,
+    "foreground": 17828792,
+    "key": "t"
+  },
+  {
+    "action": "before_swing_begin",
+    "kind": "mark",
+    "clock": 17651.171,
+    "foreground": 17828792
+  },
+  {
+    "action": "before_swing_end",
+    "kind": "mark",
+    "clock": 17651.781,
+    "foreground": 17828792
+  },
+  {
+    "action": "play",
+    "kind": "click",
+    "clock": 17653.0,
+    "foreground": 17828792,
+    "position": [
+      102,
+      379
+    ]
+  },
+  {
+    "action": "pause_midflight",
+    "kind": "key_down",
+    "clock": 17655.406,
+    "foreground": 17828792,
+    "key": "p"
+  },
+  {
+    "action": "pause_midflight",
+    "kind": "key_up",
+    "clock": 17655.593,
+    "foreground": 17828792,
+    "key": "p"
+  },
+  {
+    "action": "paused_begin",
+    "kind": "mark",
+    "clock": 17655.937,
+    "foreground": 17828792
+  },
+  {
+    "action": "paused_end",
+    "kind": "mark",
+    "clock": 17656.734,
+    "foreground": 17828792
+  },
+  {
+    "action": "hide_trail",
+    "kind": "key_down",
+    "clock": 17657.421,
+    "foreground": 17828792,
+    "key": "t"
+  },
+  {
+    "action": "hide_trail",
+    "kind": "key_up",
+    "clock": 17657.656,
+    "foreground": 17828792,
+    "key": "t"
+  },
+  {
+    "action": "hidden_begin",
+    "kind": "mark",
+    "clock": 17658.062,
+    "foreground": 17828792
+  },
+  {
+    "action": "hidden_end",
+    "kind": "mark",
+    "clock": 17658.468,
+    "foreground": 17828792
+  },
+  {
+    "action": "show_trail_again",
+    "kind": "key_down",
+    "clock": 17658.484,
+    "foreground": 17828792,
+    "key": "t"
+  },
+  {
+    "action": "show_trail_again",
+    "kind": "key_up",
+    "clock": 17658.718,
+    "foreground": 17828792,
+    "key": "t"
+  },
+  {
+    "action": "camera_W_paused",
+    "kind": "key_down",
+    "clock": 17659.125,
+    "foreground": 17828792,
+    "key": "w"
+  },
+  {
+    "action": "camera_W_paused",
+    "kind": "key_up",
+    "clock": 17659.421,
+    "foreground": 17828792,
+    "key": "w"
+  },
+  {
+    "action": "camera_orbit_mode",
+    "kind": "key_down",
+    "clock": 17659.625,
+    "foreground": 17828792,
+    "key": "tab"
+  },
+  {
+    "action": "camera_orbit_mode",
+    "kind": "key_up",
+    "clock": 17659.859,
+    "foreground": 17828792,
+    "key": "tab"
+  },
+  {
+    "action": "camera_orbit_paused_begin",
+    "kind": "mark",
+    "clock": 17660.265,
+    "foreground": 17828792
+  },
+  {
+    "action": "camera_orbit_paused_end",
+    "kind": "mark",
+    "clock": 17660.875,
+    "foreground": 17828792
+  },
+  {
+    "action": "camera_UI",
+    "kind": "key_down",
+    "clock": 17660.875,
+    "foreground": 17828792,
+    "key": "tab"
+  },
+  {
+    "action": "camera_UI",
+    "kind": "key_up",
+    "clock": 17661.125,
+    "foreground": 17828792,
+    "key": "tab"
+  },
+  {
+    "action": "resume",
+    "kind": "click",
+    "clock": 17662.0,
+    "foreground": 17828792,
+    "position": [
+      102,
+      379
+    ]
+  },
+  {
+    "action": "settled_begin",
+    "kind": "mark",
+    "clock": 17664.015,
+    "foreground": 17828792
+  },
+  {
+    "action": "settled_end",
+    "kind": "mark",
+    "clock": 17664.812,
+    "foreground": 17828792
+  },
+  {
+    "action": "restart",
+    "kind": "click",
+    "clock": 17666.0,
+    "foreground": 17828792,
+    "position": [
+      329,
+      379
+    ]
+  },
+  {
+    "action": "restarted_early_begin",
+    "kind": "mark",
+    "clock": 17666.109,
+    "foreground": 17828792
+  },
+  {
+    "action": "restarted_early_end",
+    "kind": "mark",
+    "clock": 17666.718,
+    "foreground": 17828792
+  },
+  {
+    "action": "pause_before_hit",
+    "kind": "click",
+    "clock": 17667.875,
+    "foreground": 17828792,
+    "position": [
+      216,
+      379
+    ]
+  },
+  {
+    "action": "session1_end",
+    "kind": "mark",
+    "clock": 17668.484,
+    "foreground": 17828792
+  }
+]

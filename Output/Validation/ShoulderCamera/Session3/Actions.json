@@ -1,0 +1,456 @@
+[
+  {
+    "action": "viewport_focus",
+    "kind": "click",
+    "clock": 14455.5,
+    "foreground": 2689884,
+    "position": [
+      1450,
+      650
+    ]
+  },
+  {
+    "action": "startup_idle_begin",
+    "kind": "mark",
+    "clock": 14456.109,
+    "foreground": 2689884
+  },
+  {
+    "action": "startup_idle_end",
+    "kind": "mark",
+    "clock": 14458.109,
+    "foreground": 2689884
+  },
+  {
+    "action": "direct_W",
+    "kind": "key_down",
+    "clock": 14458.89,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "direct_W",
+    "kind": "key_up",
+    "clock": 14459.328,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "direct_A",
+    "kind": "key_down",
+    "clock": 14459.734,
+    "foreground": 2689884,
+    "key": "a"
+  },
+  {
+    "action": "direct_A",
+    "kind": "key_up",
+    "clock": 14460.171,
+    "foreground": 2689884,
+    "key": "a"
+  },
+  {
+    "action": "direct_S",
+    "kind": "key_down",
+    "clock": 14460.578,
+    "foreground": 2689884,
+    "key": "s"
+  },
+  {
+    "action": "direct_S",
+    "kind": "key_up",
+    "clock": 14461.015,
+    "foreground": 2689884,
+    "key": "s"
+  },
+  {
+    "action": "direct_D",
+    "kind": "key_down",
+    "clock": 14461.421,
+    "foreground": 2689884,
+    "key": "d"
+  },
+  {
+    "action": "direct_D",
+    "kind": "key_up",
+    "clock": 14461.859,
+    "foreground": 2689884,
+    "key": "d"
+  },
+  {
+    "action": "direct_Q",
+    "kind": "key_down",
+    "clock": 14462.265,
+    "foreground": 2689884,
+    "key": "q"
+  },
+  {
+    "action": "direct_Q",
+    "kind": "key_up",
+    "clock": 14462.718,
+    "foreground": 2689884,
+    "key": "q"
+  },
+  {
+    "action": "direct_E",
+    "kind": "key_down",
+    "clock": 14463.125,
+    "foreground": 2689884,
+    "key": "e"
+  },
+  {
+    "action": "direct_E",
+    "kind": "key_up",
+    "clock": 14463.562,
+    "foreground": 2689884,
+    "key": "e"
+  },
+  {
+    "action": "mouse_without_RMB_begin",
+    "kind": "mark",
+    "clock": 14464.734,
+    "foreground": 2689884
+  },
+  {
+    "action": "mouse_without_RMB_end",
+    "kind": "mark",
+    "clock": 14466.046,
+    "foreground": 2689884
+  },
+  {
+    "action": "release_idle_begin",
+    "kind": "mark",
+    "clock": 14466.046,
+    "foreground": 2689884
+  },
+  {
+    "action": "release_idle_end",
+    "kind": "mark",
+    "clock": 14467.062,
+    "foreground": 2689884
+  },
+  {
+    "action": "home_after_move",
+    "kind": "key_down",
+    "clock": 14467.062,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "home_after_move",
+    "kind": "key_up",
+    "clock": 14467.281,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "look_with_RMB_begin",
+    "kind": "mark",
+    "clock": 14468.328,
+    "foreground": 2689884
+  },
+  {
+    "action": "look_with_RMB_end",
+    "kind": "mark",
+    "clock": 14469.375,
+    "foreground": 2689884
+  },
+  {
+    "action": "home_after_look",
+    "kind": "key_down",
+    "clock": 14470.14,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "home_after_look",
+    "kind": "key_up",
+    "clock": 14470.343,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "trajectory_on",
+    "kind": "key_down",
+    "clock": 14470.859,
+    "foreground": 2689884,
+    "key": "t"
+  },
+  {
+    "action": "trajectory_on",
+    "kind": "key_up",
+    "clock": 14471.062,
+    "foreground": 2689884,
+    "key": "t"
+  },
+  {
+    "action": "play",
+    "kind": "click",
+    "clock": 14471.953,
+    "foreground": 2689884,
+    "position": [
+      102,
+      379
+    ]
+  },
+  {
+    "action": "direct_W_playing",
+    "kind": "key_down",
+    "clock": 14472.359,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "direct_W_playing",
+    "kind": "key_up",
+    "clock": 14472.796,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "pause",
+    "kind": "click",
+    "clock": 14473.531,
+    "foreground": 2689884,
+    "position": [
+      216,
+      379
+    ]
+  },
+  {
+    "action": "paused_idle_begin",
+    "kind": "mark",
+    "clock": 14474.14,
+    "foreground": 2689884
+  },
+  {
+    "action": "paused_idle_end",
+    "kind": "mark",
+    "clock": 14474.843,
+    "foreground": 2689884
+  },
+  {
+    "action": "head_view",
+    "kind": "click",
+    "clock": 14476.078,
+    "foreground": 2689884,
+    "position": [
+      130,
+      494
+    ]
+  },
+  {
+    "action": "head_blocked_W",
+    "kind": "key_down",
+    "clock": 14476.593,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "head_blocked_W",
+    "kind": "key_up",
+    "clock": 14477.031,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "head_blocked_Home",
+    "kind": "key_down",
+    "clock": 14477.343,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "head_blocked_Home",
+    "kind": "key_up",
+    "clock": 14477.546,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "third_view",
+    "kind": "click",
+    "clock": 14478.328,
+    "foreground": 2689884,
+    "position": [
+      300,
+      494
+    ]
+  },
+  {
+    "action": "video_open",
+    "kind": "click",
+    "clock": 14479.218,
+    "foreground": 2689884,
+    "position": [
+      288,
+      938
+    ]
+  },
+  {
+    "action": "modal_blocked_W",
+    "kind": "key_down",
+    "clock": 14480.234,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "modal_blocked_W",
+    "kind": "key_up",
+    "clock": 14480.671,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "modal_blocked_Home",
+    "kind": "key_down",
+    "clock": 14480.984,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "modal_blocked_Home",
+    "kind": "key_up",
+    "clock": 14481.187,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "video_close",
+    "kind": "click",
+    "clock": 14481.984,
+    "foreground": 2689884,
+    "position": [
+      1414,
+      196
+    ]
+  },
+  {
+    "action": "home_after_video",
+    "kind": "key_down",
+    "clock": 14482.484,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "home_after_video",
+    "kind": "key_up",
+    "clock": 14482.703,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "part1_end",
+    "kind": "mark",
+    "clock": 14483.109,
+    "foreground": 2689884
+  },
+  {
+    "action": "held_W_before_F",
+    "kind": "key_down",
+    "clock": 14508.0,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "F_exit_while_W_held",
+    "kind": "key_down",
+    "clock": 14508.406,
+    "foreground": 2689884,
+    "key": "f"
+  },
+  {
+    "action": "F_exit_while_W_held",
+    "kind": "key_up",
+    "clock": 14508.625,
+    "foreground": 2689884,
+    "key": "f"
+  },
+  {
+    "action": "F_exit_hold_begin",
+    "kind": "mark",
+    "clock": 14509.14,
+    "foreground": 2689884
+  },
+  {
+    "action": "F_exit_hold_end",
+    "kind": "mark",
+    "clock": 14509.656,
+    "foreground": 2689884
+  },
+  {
+    "action": "held_W_before_F",
+    "kind": "key_up",
+    "clock": 14509.703,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "home_freeoff",
+    "kind": "key_down",
+    "clock": 14510.015,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "home_freeoff",
+    "kind": "key_up",
+    "clock": 14510.234,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "fresh_W_reentry",
+    "kind": "key_down",
+    "clock": 14510.64,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "fresh_W_reentry",
+    "kind": "key_up",
+    "clock": 14511.093,
+    "foreground": 2689884,
+    "key": "w"
+  },
+  {
+    "action": "home_final",
+    "kind": "key_down",
+    "clock": 14511.5,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "home_final",
+    "kind": "key_up",
+    "clock": 14511.718,
+    "foreground": 2689884,
+    "key": "home"
+  },
+  {
+    "action": "stop_pie",
+    "kind": "key_down",
+    "clock": 14512.937,
+    "foreground": 2689884,
+    "key": "esc"
+  },
+  {
+    "action": "stop_pie",
+    "kind": "key_up",
+    "clock": 14513.14,
+    "foreground": 2689884,
+    "key": "esc"
+  },
+  {
+    "action": "second_start_idle_begin",
+    "kind": "mark",
+    "clock": 14516.546,
+    "foreground": 2689884
+  },
+  {
+    "action": "second_start_idle_end",
+    "kind": "mark",
+    "clock": 14518.843,
+    "foreground": 2689884
+  }
+]

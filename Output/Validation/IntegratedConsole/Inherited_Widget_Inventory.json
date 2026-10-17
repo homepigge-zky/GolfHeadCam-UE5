@@ -1,0 +1,709 @@
+{
+  "clock": 10195.0,
+  "runtime_widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_0.WBP_GolfCameraConsole_C_0",
+  "runtime_class": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+  "parent_asset": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl",
+  "parent_widgets": [
+    {
+      "name": "BtnCamBack",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamBack_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamDown",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamDown_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamForward",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamForward_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamLeft",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamLeft_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamPitchDown",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamPitchDown_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamPitchUp",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamPitchUp_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamRight",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamRight_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamUp",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamUp_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamYawLeft",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamYawLeft_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamYawRight",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamYawRight_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnFreeCamera",
+      "class": "Button"
+    },
+    {
+      "name": "BtnFreeCamera_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnGrid",
+      "class": "Button"
+    },
+    {
+      "name": "BtnGrid_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnHead",
+      "class": "Button"
+    },
+    {
+      "name": "BtnHead_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnLensBarrel",
+      "class": "Button"
+    },
+    {
+      "name": "BtnLensBarrel_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnLensCalibrated",
+      "class": "Button"
+    },
+    {
+      "name": "BtnLensCalibrated_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnLensNone",
+      "class": "Button"
+    },
+    {
+      "name": "BtnLensNone_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnLensPincushion",
+      "class": "Button"
+    },
+    {
+      "name": "BtnLensPincushion_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnOpenVideos",
+      "class": "Button"
+    },
+    {
+      "name": "BtnOpenVideos_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnPause",
+      "class": "Button"
+    },
+    {
+      "name": "BtnPause_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnPlay",
+      "class": "Button"
+    },
+    {
+      "name": "BtnPlay_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnReplay",
+      "class": "Button"
+    },
+    {
+      "name": "BtnReplay_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnResetCamera",
+      "class": "Button"
+    },
+    {
+      "name": "BtnResetCamera_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnThird",
+      "class": "Button"
+    },
+    {
+      "name": "BtnThird_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoClose",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoClose_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoHead",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoHead_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoPause",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoPause_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoPlay",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoPlay_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoReplay",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoReplay_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoThird",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoThird_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "CameraNudgeBackground",
+      "class": "Border"
+    },
+    {
+      "name": "CameraNudgePanel",
+      "class": "CanvasPanel"
+    },
+    {
+      "name": "CameraUIRoot",
+      "class": "CanvasPanel"
+    },
+    {
+      "name": "FreeCameraHelpBackground",
+      "class": "Border"
+    },
+    {
+      "name": "FreeCameraHelpPanel",
+      "class": "CanvasPanel"
+    },
+    {
+      "name": "ImageVideo",
+      "class": "Image"
+    },
+    {
+      "name": "MainCardBackground",
+      "class": "Border"
+    },
+    {
+      "name": "MainControls",
+      "class": "CanvasPanel"
+    },
+    {
+      "name": "ProgressVideo",
+      "class": "ProgressBar"
+    },
+    {
+      "name": "TxtBrand",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtFreeCameraHelp",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtFreeCameraKeys",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtFreeCameraState",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtIntegratedFreeState",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtLens",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtLensHint",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtLensSection",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtNavigationHint",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtNudgeHint",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtNudgeTitle",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtStatus",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtTitle",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtVideoHint",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtVideoStatus",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtVideoTitle",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtView",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtViewSection",
+      "class": "TextBlock"
+    },
+    {
+      "name": "VideoCardBackground",
+      "class": "Border"
+    },
+    {
+      "name": "VideoOverlay",
+      "class": "CanvasPanel"
+    }
+  ],
+  "runtime_widgets": [
+    {
+      "name": "BtnCamBack",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamBack_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamDown",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamDown_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamForward",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamForward_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamLeft",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamLeft_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamPitchDown",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamPitchDown_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamPitchUp",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamPitchUp_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamRight",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamRight_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamUp",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamUp_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamYawLeft",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamYawLeft_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnCamYawRight",
+      "class": "Button"
+    },
+    {
+      "name": "BtnCamYawRight_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnFreeCamera",
+      "class": "Button"
+    },
+    {
+      "name": "BtnFreeCamera_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnGrid",
+      "class": "Button"
+    },
+    {
+      "name": "BtnGrid_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnHead",
+      "class": "Button"
+    },
+    {
+      "name": "BtnHead_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnLensBarrel",
+      "class": "Button"
+    },
+    {
+      "name": "BtnLensBarrel_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnLensCalibrated",
+      "class": "Button"
+    },
+    {
+      "name": "BtnLensCalibrated_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnLensNone",
+      "class": "Button"
+    },
+    {
+      "name": "BtnLensNone_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnLensPincushion",
+      "class": "Button"
+    },
+    {
+      "name": "BtnLensPincushion_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnOpenVideos",
+      "class": "Button"
+    },
+    {
+      "name": "BtnOpenVideos_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnPause",
+      "class": "Button"
+    },
+    {
+      "name": "BtnPause_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnPlay",
+      "class": "Button"
+    },
+    {
+      "name": "BtnPlay_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnReplay",
+      "class": "Button"
+    },
+    {
+      "name": "BtnReplay_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnResetCamera",
+      "class": "Button"
+    },
+    {
+      "name": "BtnResetCamera_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnThird",
+      "class": "Button"
+    },
+    {
+      "name": "BtnThird_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoClose",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoClose_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoHead",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoHead_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoPause",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoPause_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoPlay",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoPlay_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoReplay",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoReplay_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "BtnVideoThird",
+      "class": "Button"
+    },
+    {
+      "name": "BtnVideoThird_Label",
+      "class": "TextBlock"
+    },
+    {
+      "name": "CameraNudgeBackground",
+      "class": "Border"
+    },
+    {
+      "name": "CameraNudgePanel",
+      "class": "CanvasPanel"
+    },
+    {
+      "name": "CameraUIRoot",
+      "class": "CanvasPanel"
+    },
+    {
+      "name": "FreeCameraHelpBackground",
+      "class": "Border"
+    },
+    {
+      "name": "FreeCameraHelpPanel",
+      "class": "CanvasPanel"
+    },
+    {
+      "name": "ImageVideo",
+      "class": "Image"
+    },
+    {
+      "name": "MainCardBackground",
+      "class": "Border"
+    },
+    {
+      "name": "MainControls",
+      "class": "CanvasPanel"
+    },
+    {
+      "name": "ProgressVideo",
+      "class": "ProgressBar"
+    },
+    {
+      "name": "TxtBrand",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtFreeCameraHelp",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtFreeCameraKeys",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtFreeCameraState",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtIntegratedFreeState",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtLens",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtLensHint",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtLensSection",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtNavigationHint",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtNudgeHint",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtNudgeTitle",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtStatus",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtTitle",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtVideoHint",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtVideoStatus",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtVideoTitle",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtView",
+      "class": "TextBlock"
+    },
+    {
+      "name": "TxtViewSection",
+      "class": "TextBlock"
+    },
+    {
+      "name": "VideoCardBackground",
+      "class": "Border"
+    },
+    {
+      "name": "VideoOverlay",
+      "class": "CanvasPanel"
+    }
+  ],
+  "missing": [],
+  "extra": [],
+  "all_parent_tree_widgets_present": true
+}

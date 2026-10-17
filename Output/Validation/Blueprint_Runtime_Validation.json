@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "overall_status": "passed",
+  "scope": "仅验证此文件内的编辑器 PIE 运行采样；离线分析，不启动编辑器，不代表后续资产版本或打包版本。",
+  "packaged_build_tested": false,
+  "source_trace": "<PROJECT_DIR>\\Output\\Validation\\Blueprint_Runtime_Trace.json",
+  "source_sha256": "bb7c830e80c0e6dca17dbd68bee95abee011758bb562bc8826975ef862a2355f",
+  "source_file_modified_utc": "2026-10-16T17:27:05.879144+00:00",
+  "analysis_utc": "2026-10-16T17:28:09.570736+00:00",
+  "sample_count": 443,
+  "wall_duration_seconds": 27.73400000000038,
+  "sample_interval_seconds": {
+    "median": 0.06299999999828287,
+    "maximum": 0.0790000000015425
+  },
+  "tolerances": {
+    "position_cm": 0.001,
+    "rotation_degrees": 0.001,
+    "animation_time_seconds": 0.0001,
+    "reset_near_start_seconds": 0.15
+  },
+  "checks": {
+    "wall_time_monotonic": "passed",
+    "exactly_one_camera_active": "passed",
+    "both_camera_modes_observed": "passed",
+    "correct_attachment_sockets": "passed",
+    "head_camera_mount_invariant": "passed",
+    "club_mount_invariant": "passed",
+    "camera_world_equals_head_times_mount": "passed",
+    "head_camera_moves_in_world": "passed",
+    "replay_resets_observed": "passed",
+    "no_unexplained_time_rollback": "passed",
+    "animation_time_within_declared_duration": "passed",
+    "full_animation_duration_observed": "passed",
+    "contiguous_pauses_stable": "passed"
+  },
+  "camera_activation": {
+    "head_active_sample_count": 313,
+    "third_active_sample_count": 130,
+    "invalid_sample_indices": [],
+    "switch_count": 2,
+    "switch_sample_indices": [
+      128,
+      258
+    ]
+  },
+  "head_camera_mount": {
+    "max_position_displacement_from_first_cm": 3.241547046942845e-14,
+    "max_rotation_displacement_from_first_degrees": 3.882361760816661e-14,
+    "position_bounds_cm": {
+      "x": [
+        9.614950532938039,
+        9.614950532938073
+      ],
+      "y": [
+        8.45888445654354,
+        8.458884456543549
+      ],
+      "z": [
+        5.477513038698589e-07,
+        5.477513127516431e-07
+      ]
+    }
+  },
+  "club_mount": {
+    "max_position_displacement_from_first_cm": 2.05051911106139e-14,
+    "max_rotation_displacement_from_first_degrees": 2.5838948380254307e-14,
+    "position_bounds_cm": {
+      "x": [
+        -5.000000000000013,
+        -4.999999999999988
+      ],
+      "y": [
+        3.9999999999999885,
+        4.000000000000011
+      ],
+      "z": [
+        -1.0658141036401503e-14,
+        9.769962616701378e-15
+      ]
+    }
+  },
+  "camera_world_composition_error": {
+    "max_position_cm": 6.4047456679787536e-15,
+    "max_rotation_degrees": 2.4840926170103817e-14,
+    "assumption": "记录为单位缩放；camera_world = head_world × mount_local。"
+  },
+  "head_camera_world_motion": {
+    "max_position_displacement_from_first_cm": 26.736762494312252,
+    "max_rotation_displacement_from_first_degrees": 32.01713185892074,
+    "position_bounds_cm": {
+      "x": [
+        -16.335424804853194,
+        16.360320992850625
+      ],
+      "y": [
+        4.653408230131355,
+        27.70212248611296
+      ],
+      "z": [
+        154.34550169691403,
+        158.53728330701625
+      ]
+    }
+  },
+  "playback": {
+    "declared_animation_duration_seconds": 4.0,
+    "observed_anim_time_range_seconds": [
+      0.0,
+      4.0
+    ],
+    "complete_start_to_end_segment_count": 2,
+    "segments": [
+      {
+        "first_sample_index": 0,
+        "last_sample_index": 261,
+        "wall_range_seconds": [
+          0.01599999999962165,
+          16.39099999999962
+        ],
+        "anim_time_range_seconds": [
+          0.0,
+          4.0
+        ],
+        "reached_near_start_and_end": true,
+        "includes_paused_samples": true
+      },
+      {
+        "first_sample_index": 262,
+        "last_sample_index": 381,
+        "wall_range_seconds": [
+          16.4529999999977,
+          23.90599999999904
+        ],
+        "anim_time_range_seconds": [
+          0.0,
+          4.0
+        ],
+        "reached_near_start_and_end": true,
+        "includes_paused_samples": true
+      },
+      {
+        "first_sample_index": 382,
+        "last_sample_index": 442,
+        "wall_range_seconds": [
+          23.968999999997322,
+          27.75
+        ],
+        "anim_time_range_seconds": [
+          0.016666900366544724,
+          0.40000301599502563
+        ],
+        "reached_near_start_and_end": false,
+        "includes_paused_samples": true
+      }
+    ],
+    "observed_replay_reset_count": 2,
+    "time_rollbacks": [
+      {
+        "sample_index": 262,
+        "wall_time_seconds": 16.4529999999977,
+        "from_anim_time_seconds": 4.0,
+        "to_anim_time_seconds": 0.0,
+        "reset_to_near_start": true
+      },
+      {
+        "sample_index": 382,
+        "wall_time_seconds": 23.968999999997322,
+        "from_anim_time_seconds": 4.0,
+        "to_anim_time_seconds": 0.016666900366544724,
+        "reset_to_near_start": true
+      }
+    ],
+    "note": "重播按动画时间回落至起点附近统计；此轨迹不记录按键，不能逐一证明按键映射。完整段允许包含暂停。"
+  },
+  "paused_intervals": [
+    {
+      "first_sample_index": 162,
+      "last_sample_index": 195,
+      "sample_count": 34,
+      "wall_start_seconds": 10.2029999999977,
+      "wall_end_seconds": 12.265999999999622,
+      "observed_duration_seconds": 2.063000000001921,
+      "anim_time_range_seconds": [
+        1.8352574110031128,
+        1.8352574110031128
+      ],
+      "anim_time_span_seconds": 0.0,
+      "head_motion": {
+        "max_position_displacement_from_first_cm": 0.0,
+        "max_rotation_displacement_from_first_degrees": 3.0314661807699143e-15,
+        "position_bounds_cm": {
+          "x": [
+            -14.427223764165465,
+            -14.427223764165465
+          ],
+          "y": [
+            7.115804370102956,
+            7.115804370102956
+          ],
+          "z": [
+            148.1985023389617,
+            148.1985023389617
+          ]
+        }
+      },
+      "head_camera_motion": {
+        "max_position_displacement_from_first_cm": 0.0,
+        "max_rotation_displacement_from_first_degrees": 0.0,
+        "position_bounds_cm": {
+          "x": [
+            -14.958226369876698,
+            -14.958226369876698
+          ],
+          "y": [
+            17.101586090160865,
+            17.101586090160865
+          ],
+          "z": [
+            156.19863981728577,
+            156.19863981728577
+          ]
+        }
+      },
+      "club_head_max_position_displacement_cm": 0.0,
+      "all_play_rates_zero": true,
+      "stable": true,
+      "sufficient_samples": true,
+      "ended_before_trace_end": true
+    },
+    {
+      "first_sample_index": 300,
+      "last_sample_index": 324,
+      "sample_count": 25,
+      "wall_start_seconds": 18.843999999997322,
+      "wall_end_seconds": 20.343999999997322,
+      "observed_duration_seconds": 1.5,
+      "anim_time_range_seconds": [
+        2.3833529949188232,
+        2.3833529949188232
+      ],
+      "anim_time_span_seconds": 0.0,
+      "head_motion": {
+        "max_position_displacement_from_first_cm": 0.0,
+        "max_rotation_displacement_from_first_degrees": 2.9096670714842796e-15,
+        "position_bounds_cm": {
+          "x": [
+            12.353893104832988,
+            12.353893104832988
+          ],
+          "y": [
+            13.033889913512137,
+            13.033889913512137
+          ],
+          "z": [
+            147.31788896778144,
+            147.31788896778144
+          ]
+        }
+      },
+      "head_camera_motion": {
+        "max_position_displacement_from_first_cm": 0.0,
+        "max_rotation_displacement_from_first_degrees": 0.0,
+        "position_bounds_cm": {
+          "x": [
+            13.140419971136588,
+            13.140419971136588
+          ],
+          "y": [
+            23.002908548931977,
+            23.002908548931977
+          ],
+          "z": [
+            155.31789165123317,
+            155.31789165123317
+          ]
+        }
+      },
+      "club_head_max_position_displacement_cm": 0.0,
+      "all_play_rates_zero": true,
+      "stable": true,
+      "sufficient_samples": true,
+      "ended_before_trace_end": true
+    },
+    {
+      "first_sample_index": 388,
+      "last_sample_index": 442,
+      "sample_count": 55,
+      "wall_start_seconds": 24.35899999999674,
+      "wall_end_seconds": 27.75,
+      "observed_duration_seconds": 3.3910000000032596,
+      "anim_time_range_seconds": [
+        0.40000301599502563,
+        0.40000301599502563
+      ],
+      "anim_time_span_seconds": 0.0,
+      "head_motion": {
+        "max_position_displacement_from_first_cm": 0.0,
+        "max_rotation_displacement_from_first_degrees": 2.683593012484842e-15,
+        "position_bounds_cm": {
+          "x": [
+            -1.7039652267897205,
+            -1.7039652267897205
+          ],
+          "y": [
+            15.933003057843187,
+            15.933003057843187
+          ],
+          "z": [
+            147.00335391232426,
+            147.00335391232426
+          ]
+        }
+      },
+      "head_camera_motion": {
+        "max_position_displacement_from_first_cm": 0.0,
+        "max_rotation_displacement_from_first_degrees": 0.0,
+        "position_bounds_cm": {
+          "x": [
+            -1.8703113532899946,
+            -1.8703113532899946
+          ],
+          "y": [
+            25.932720426151,
+            25.932720426151
+          ],
+          "z": [
+            155.00197763895133,
+            155.00197763895133
+          ]
+        }
+      },
+      "club_head_max_position_displacement_cm": 0.0,
+      "all_play_rates_zero": true,
+      "stable": true,
+      "sufficient_samples": true,
+      "ended_before_trace_end": false
+    }
+  ],
+  "limitations": [
+    "仅有采样点证据，不能证明采样间不存在瞬时异常。",
+    "暂停只在各连续 paused=true 区间内部比较，不跨入段/出段帧，也不跨不同暂停段。",
+    "相机世界运动统计的是头戴相机组件，即使第三人称视角激活时仍会采样该组件。",
+    "未验证打包程序；未凭此轨迹判断动作自然度、视觉遮挡、画质或最终视频交付。",
+    "报告绑定源轨迹 SHA-256；修改动作或重录轨迹后应重新运行本脚本。"
+  ]
+}

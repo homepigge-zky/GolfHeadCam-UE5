@@ -1,0 +1,330 @@
+[
+  {
+    "action": "startup_idle_begin",
+    "kind": "mark",
+    "clock": 12962.859
+  },
+  {
+    "action": "startup_idle_end",
+    "kind": "mark",
+    "clock": 12966.156
+  },
+  {
+    "action": "verified_startup_idle_begin",
+    "kind": "mark",
+    "clock": 13034.75
+  },
+  {
+    "action": "verified_startup_idle_end",
+    "kind": "mark",
+    "clock": 13037.75
+  },
+  {
+    "action": "trajectory_on_mouse",
+    "kind": "click",
+    "clock": 13039.015,
+    "position": [
+      215,
+      681
+    ]
+  },
+  {
+    "action": "trajectory_off_T",
+    "kind": "key_down",
+    "clock": 13040.765,
+    "key": "t"
+  },
+  {
+    "action": "trajectory_off_T",
+    "kind": "key_up",
+    "clock": 13040.968,
+    "key": "t"
+  },
+  {
+    "action": "trajectory_on_T",
+    "kind": "key_down",
+    "clock": 13041.671,
+    "key": "t"
+  },
+  {
+    "action": "trajectory_on_T",
+    "kind": "key_up",
+    "clock": 13041.89,
+    "key": "t"
+  },
+  {
+    "action": "play_with_trajectory",
+    "kind": "click",
+    "clock": 13043.078,
+    "position": [
+      102,
+      379
+    ]
+  },
+  {
+    "action": "pause_midflight",
+    "kind": "click",
+    "clock": 13045.921,
+    "position": [
+      216,
+      379
+    ]
+  },
+  {
+    "action": "trajectory_off_while_paused",
+    "kind": "click",
+    "clock": 13048.187,
+    "position": [
+      215,
+      681
+    ]
+  },
+  {
+    "action": "trajectory_on_while_paused",
+    "kind": "click",
+    "clock": 13049.281,
+    "position": [
+      215,
+      681
+    ]
+  },
+  {
+    "action": "part1_end",
+    "kind": "mark",
+    "clock": 13049.875
+  },
+  {
+    "action": "free_on_paused",
+    "kind": "click",
+    "clock": 13099.89,
+    "position": [
+      130,
+      543
+    ]
+  },
+  {
+    "action": "camera_back_paused_0",
+    "kind": "click",
+    "clock": 13100.984,
+    "position": [
+      1724,
+      841
+    ]
+  },
+  {
+    "action": "camera_back_paused_1",
+    "kind": "click",
+    "clock": 13101.593,
+    "position": [
+      1724,
+      841
+    ]
+  },
+  {
+    "action": "camera_back_paused_2",
+    "kind": "click",
+    "clock": 13102.218,
+    "position": [
+      1724,
+      841
+    ]
+  },
+  {
+    "action": "camera_back_paused_3",
+    "kind": "click",
+    "clock": 13102.828,
+    "position": [
+      1724,
+      841
+    ]
+  },
+  {
+    "action": "camera_back_paused_4",
+    "kind": "click",
+    "clock": 13103.437,
+    "position": [
+      1724,
+      841
+    ]
+  },
+  {
+    "action": "camera_back_paused_5",
+    "kind": "click",
+    "clock": 13104.046,
+    "position": [
+      1724,
+      841
+    ]
+  },
+  {
+    "action": "camera_back_paused_6",
+    "kind": "click",
+    "clock": 13104.656,
+    "position": [
+      1724,
+      841
+    ]
+  },
+  {
+    "action": "camera_back_paused_7",
+    "kind": "click",
+    "clock": 13105.281,
+    "position": [
+      1724,
+      841
+    ]
+  },
+  {
+    "action": "free_off_paused",
+    "kind": "click",
+    "clock": 13106.656,
+    "position": [
+      130,
+      543
+    ]
+  },
+  {
+    "action": "video_open",
+    "kind": "click",
+    "clock": 13107.75,
+    "position": [
+      288,
+      938
+    ]
+  },
+  {
+    "action": "blocked_T",
+    "kind": "key_down",
+    "clock": 13109.156,
+    "key": "t"
+  },
+  {
+    "action": "blocked_T",
+    "kind": "key_up",
+    "clock": 13109.375,
+    "key": "t"
+  },
+  {
+    "action": "video_close",
+    "kind": "click",
+    "clock": 13111.406,
+    "position": [
+      1414,
+      196
+    ]
+  },
+  {
+    "action": "resume_to_end",
+    "kind": "click",
+    "clock": 13112.593,
+    "position": [
+      102,
+      379
+    ]
+  },
+  {
+    "action": "replay_with_trajectory",
+    "kind": "click",
+    "clock": 13115.656,
+    "position": [
+      329,
+      379
+    ]
+  },
+  {
+    "action": "free_during_replay",
+    "kind": "click",
+    "clock": 13116.546,
+    "position": [
+      130,
+      543
+    ]
+  },
+  {
+    "action": "camera_up_during_replay",
+    "kind": "click",
+    "clock": 13117.343,
+    "position": [
+      1829,
+      841
+    ]
+  },
+  {
+    "action": "pause_replay",
+    "kind": "click",
+    "clock": 13118.031,
+    "position": [
+      216,
+      379
+    ]
+  },
+  {
+    "action": "head_view",
+    "kind": "click",
+    "clock": 13119.984,
+    "position": [
+      130,
+      494
+    ]
+  },
+  {
+    "action": "third_view",
+    "kind": "click",
+    "clock": 13121.171,
+    "position": [
+      300,
+      494
+    ]
+  },
+  {
+    "action": "final_T_off",
+    "kind": "key_down",
+    "clock": 13121.89,
+    "key": "t"
+  },
+  {
+    "action": "final_T_off",
+    "kind": "key_up",
+    "clock": 13122.093,
+    "key": "t"
+  },
+  {
+    "action": "part2_end",
+    "kind": "mark",
+    "clock": 13123.453
+  },
+  {
+    "action": "stop_pie",
+    "kind": "key_down",
+    "clock": 13229.031,
+    "key": "esc"
+  },
+  {
+    "action": "stop_pie",
+    "kind": "key_up",
+    "clock": 13229.25,
+    "key": "esc"
+  },
+  {
+    "action": "second_start_idle_begin",
+    "kind": "mark",
+    "clock": 13232.109
+  },
+  {
+    "action": "second_start_idle_end",
+    "kind": "mark",
+    "clock": 13235.406
+  },
+  {
+    "action": "end_recorded_pie",
+    "kind": "key_down",
+    "clock": 13296.921,
+    "key": "esc"
+  },
+  {
+    "action": "end_recorded_pie",
+    "kind": "key_up",
+    "clock": 13297.125,
+    "key": "esc"
+  }
+]

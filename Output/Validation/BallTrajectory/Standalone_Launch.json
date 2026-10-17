@@ -1,0 +1,18 @@
+{
+  "copy": "<PROJECT_DIR>\\Saved\\BallTrajectorySmoke_20261017_112225\\GolfHeadCam",
+  "core_file_count": 283,
+  "hash_mismatches": [],
+  "pid": 26820,
+  "launch_args": [
+    "<UE_ROOT>\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "<PROJECT_DIR>\\Saved\\BallTrajectorySmoke_20261017_112225\\GolfHeadCam\\GolfHeadCam.uproject",
+    "-game",
+    "-windowed",
+    "-ResX=1600",
+    "-ResY=900",
+    "-NoSplash",
+    "-NoSound"
+  ],
+  "authoring_bridge": false,
+  "native_game_test_not_packaged_exe": true
+}

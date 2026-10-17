@@ -1,0 +1,3417 @@
+{
+  "generated_utc": "2026-10-17T14:32:16.857218+00:00",
+  "passed": true,
+  "summary": {
+    "status": "PASS",
+    "passed": 75,
+    "failed": 0,
+    "not_observed": 0
+  },
+  "sessions": {
+    "Session3": {
+      "summary": {
+        "status": "PASS",
+        "passed": 59,
+        "failed": 0,
+        "not_observed": 0
+      },
+      "sample_count": 1288,
+      "game_samples": 1244,
+      "event_count": 45,
+      "game_wall_seconds": 77.89000000000124,
+      "trace_sha256": "0f7638183684c763ffc2562490969455af9e66afa194577cbaf5dd7c82991bca",
+      "actions_sha256": "d52b3332534c1d265edacec1ec99977d4564d46df930914a990c26271ef30536",
+      "windows": {
+        "startup_untouched": {
+          "samples": 116,
+          "sample_indices": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159
+          ],
+          "observed_wall_seconds": 7.203000000001339
+        },
+        "enable_free_mouse:post": {
+          "requested_clock_range": [
+            10138.711000000001,
+            10139.231000000002
+          ],
+          "samples": 9,
+          "sample_indices": [
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174
+          ],
+          "observed_wall_seconds": 0.5
+        },
+        "nudge_forward:post": {
+          "requested_clock_range": [
+            10141.461000000001,
+            10141.981000000002
+          ],
+          "samples": 8,
+          "sample_indices": [
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216
+          ],
+          "observed_wall_seconds": 0.43800000000010186
+        },
+        "nudge_back:post": {
+          "requested_clock_range": [
+            10142.601,
+            10143.121000000001
+          ],
+          "samples": 9,
+          "sample_indices": [
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235
+          ],
+          "observed_wall_seconds": 0.5
+        },
+        "nudge_up:post": {
+          "requested_clock_range": [
+            10143.726,
+            10144.246000000001
+          ],
+          "samples": 9,
+          "sample_indices": [
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          "observed_wall_seconds": 0.5
+        },
+        "nudge_left:post": {
+          "requested_clock_range": [
+            10144.867,
+            10145.387
+          ],
+          "samples": 8,
+          "sample_indices": [
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271
+          ],
+          "observed_wall_seconds": 0.43800000000010186
+        },
+        "nudge_right:post": {
+          "requested_clock_range": [
+            10146.008,
+            10146.528
+          ],
+          "samples": 8,
+          "sample_indices": [
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            288,
+            289
+          ],
+          "observed_wall_seconds": 0.43800000000010186
+        },
+        "nudge_down:post": {
+          "requested_clock_range": [
+            10147.133,
+            10147.653
+          ],
+          "samples": 8,
+          "sample_indices": [
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307
+          ],
+          "observed_wall_seconds": 0.43800000000010186
+        },
+        "nudge_yaw_left:post": {
+          "requested_clock_range": [
+            10148.273000000001,
+            10148.793000000001
+          ],
+          "samples": 8,
+          "sample_indices": [
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            324,
+            325
+          ],
+          "observed_wall_seconds": 0.43800000000010186
+        },
+        "nudge_yaw_right:post": {
+          "requested_clock_range": [
+            10149.414,
+            10149.934000000001
+          ],
+          "samples": 9,
+          "sample_indices": [
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344
+          ],
+          "observed_wall_seconds": 0.5
+        },
+        "nudge_pitch_up:post": {
+          "requested_clock_range": [
+            10150.539,
+            10151.059000000001
+          ],
+          "samples": 9,
+          "sample_indices": [
+            354,
+            355,
+            356,
+            357,
+            358,
+            359,
+            360,
+            361,
+            362
+          ],
+          "observed_wall_seconds": 0.5
+        },
+        "nudge_pitch_down:post": {
+          "requested_clock_range": [
+            10151.68,
+            10152.2
+          ],
+          "samples": 8,
+          "sample_indices": [
+            373,
+            374,
+            375,
+            376,
+            377,
+            378,
+            379,
+            380
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "reset_mouse_idle:post": {
+          "requested_clock_range": [
+            10152.82,
+            10153.34
+          ],
+          "samples": 8,
+          "sample_indices": [
+            391,
+            392,
+            393,
+            394,
+            395,
+            396,
+            397,
+            398
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "play_mouse:post": {
+          "requested_clock_range": [
+            10153.945,
+            10154.234
+          ],
+          "samples": 5,
+          "sample_indices": [
+            409,
+            410,
+            411,
+            412,
+            413
+          ],
+          "observed_wall_seconds": 0.25
+        },
+        "nudge_forward_while_playing:post": {
+          "requested_clock_range": [
+            10154.664,
+            10154.937
+          ],
+          "samples": 5,
+          "sample_indices": [
+            420,
+            421,
+            422,
+            423,
+            424
+          ],
+          "observed_wall_seconds": 0.25
+        },
+        "reset_while_playing:post": {
+          "requested_clock_range": [
+            10155.367,
+            10155.64
+          ],
+          "samples": 4,
+          "sample_indices": [
+            432,
+            433,
+            434,
+            435
+          ],
+          "observed_wall_seconds": 0.18800000000010186
+        },
+        "nudge_forward_while_playing:continuity": {
+          "samples": 12,
+          "sample_indices": [
+            413,
+            414,
+            415,
+            416,
+            417,
+            418,
+            419,
+            420,
+            421,
+            422,
+            423,
+            424
+          ],
+          "observed_wall_seconds": 0.6869999999998981
+        },
+        "reset_while_playing:continuity": {
+          "samples": 12,
+          "sample_indices": [
+            424,
+            425,
+            426,
+            427,
+            428,
+            429,
+            430,
+            431,
+            432,
+            433,
+            434,
+            435
+          ],
+          "observed_wall_seconds": 0.6880000000001019
+        },
+        "disable_free_while_playing:post": {
+          "requested_clock_range": [
+            10156.07,
+            10156.359
+          ],
+          "samples": 5,
+          "sample_indices": [
+            443,
+            444,
+            445,
+            446,
+            447
+          ],
+          "observed_wall_seconds": 0.25
+        },
+        "disable_free_while_playing:continuity": {
+          "samples": 13,
+          "sample_indices": [
+            435,
+            436,
+            437,
+            438,
+            439,
+            440,
+            441,
+            442,
+            443,
+            444,
+            445,
+            446,
+            447
+          ],
+          "observed_wall_seconds": 0.75
+        },
+        "pause_mouse:post": {
+          "requested_clock_range": [
+            10156.789,
+            10157.309000000001
+          ],
+          "samples": 9,
+          "sample_indices": [
+            454,
+            455,
+            456,
+            457,
+            458,
+            459,
+            460,
+            461,
+            462
+          ],
+          "observed_wall_seconds": 0.5
+        },
+        "resume_mouse:post": {
+          "requested_clock_range": [
+            10159.008,
+            10159.528
+          ],
+          "samples": 8,
+          "sample_indices": [
+            490,
+            491,
+            492,
+            493,
+            494,
+            495,
+            496,
+            497
+          ],
+          "observed_wall_seconds": 0.43800000000010186
+        },
+        "head_mouse:post": {
+          "requested_clock_range": [
+            10163.695,
+            10164.215
+          ],
+          "samples": 8,
+          "sample_indices": [
+            565,
+            566,
+            567,
+            568,
+            569,
+            570,
+            571,
+            572
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "lens_barrel_mouse:post": {
+          "requested_clock_range": [
+            10164.836000000001,
+            10165.356000000002
+          ],
+          "samples": 8,
+          "sample_indices": [
+            583,
+            584,
+            585,
+            586,
+            587,
+            588,
+            589,
+            590
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "grid_mouse:post": {
+          "requested_clock_range": [
+            10165.976,
+            10166.496000000001
+          ],
+          "samples": 9,
+          "sample_indices": [
+            601,
+            602,
+            603,
+            604,
+            605,
+            606,
+            607,
+            608,
+            609
+          ],
+          "observed_wall_seconds": 0.5
+        },
+        "third_mouse:post": {
+          "requested_clock_range": [
+            10167.805,
+            10168.325
+          ],
+          "samples": 8,
+          "sample_indices": [
+            631,
+            632,
+            633,
+            634,
+            635,
+            636,
+            637,
+            638
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "enable_free_again:post": {
+          "requested_clock_range": [
+            10168.945,
+            10169.465
+          ],
+          "samples": 8,
+          "sample_indices": [
+            649,
+            650,
+            651,
+            652,
+            653,
+            654,
+            655,
+            656
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "nudge_before_video:post": {
+          "requested_clock_range": [
+            10170.086000000001,
+            10170.606000000002
+          ],
+          "samples": 8,
+          "sample_indices": [
+            667,
+            668,
+            669,
+            670,
+            671,
+            672,
+            673,
+            674
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "video_open_mouse:post": {
+          "requested_clock_range": [
+            10171.211000000001,
+            10171.731000000002
+          ],
+          "samples": 8,
+          "sample_indices": [
+            685,
+            686,
+            687,
+            688,
+            689,
+            690,
+            691,
+            692
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "video_guard_F:post": {
+          "requested_clock_range": [
+            10174.148000000001,
+            10174.515
+          ],
+          "samples": 6,
+          "sample_indices": [
+            732,
+            733,
+            734,
+            735,
+            736,
+            737
+          ],
+          "observed_wall_seconds": 0.31300000000010186
+        },
+        "video_pause_mouse:post": {
+          "requested_clock_range": [
+            10174.945,
+            10175.465
+          ],
+          "samples": 8,
+          "sample_indices": [
+            745,
+            746,
+            747,
+            748,
+            749,
+            750,
+            751,
+            752
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "video_replay_mouse:post": {
+          "requested_clock_range": [
+            10176.023000000001,
+            10176.543000000001
+          ],
+          "samples": 8,
+          "sample_indices": [
+            762,
+            763,
+            764,
+            765,
+            766,
+            767,
+            768,
+            769
+          ],
+          "observed_wall_seconds": 0.43800000000010186
+        },
+        "video_third_mouse:post": {
+          "requested_clock_range": [
+            10177.305,
+            10177.825
+          ],
+          "samples": 9,
+          "sample_indices": [
+            782,
+            783,
+            784,
+            785,
+            786,
+            787,
+            788,
+            789,
+            790
+          ],
+          "observed_wall_seconds": 0.5
+        },
+        "video_close_mouse:post": {
+          "requested_clock_range": [
+            10178.789,
+            10179.309000000001
+          ],
+          "samples": 8,
+          "sample_indices": [
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813
+          ],
+          "observed_wall_seconds": 0.43800000000010186
+        },
+        "restart_mouse:post": {
+          "requested_clock_range": [
+            10179.789,
+            10180.234
+          ],
+          "samples": 7,
+          "sample_indices": [
+            822,
+            823,
+            824,
+            825,
+            826,
+            827,
+            828
+          ],
+          "observed_wall_seconds": 0.375
+        },
+        "enable_free_after_video:post": {
+          "requested_clock_range": [
+            10180.664,
+            10180.968
+          ],
+          "samples": 5,
+          "sample_indices": [
+            836,
+            837,
+            838,
+            839,
+            840
+          ],
+          "observed_wall_seconds": 0.25
+        },
+        "yaw_while_replaying:post:primary_empty": {
+          "requested_clock_range": [
+            10181.398000000001,
+            10181.438
+          ],
+          "samples": 0,
+          "sample_indices": []
+        },
+        "yaw_while_replaying:post:sampling_note": {
+          "reason": "The next key-down truncates the normal settle window between sample ticks.",
+          "alternate_start_after_mouse_release_seconds": 0.03,
+          "end_still_precedes_next_input": true
+        },
+        "yaw_while_replaying:post": {
+          "requested_clock_range": [
+            10181.248000000001,
+            10181.438
+          ],
+          "samples": 3,
+          "sample_indices": [
+            845,
+            846,
+            847
+          ],
+          "observed_wall_seconds": 0.125
+        },
+        "yaw_while_replaying:continuity": {
+          "samples": 8,
+          "sample_indices": [
+            840,
+            841,
+            842,
+            843,
+            844,
+            845,
+            846,
+            847
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        },
+        "reset_home_retained:post": {
+          "requested_clock_range": [
+            10181.851,
+            10181.954
+          ],
+          "samples": 1,
+          "sample_indices": [
+            855
+          ],
+          "observed_wall_seconds": 0.0
+        },
+        "reset_home_retained:continuity": {
+          "samples": 9,
+          "sample_indices": [
+            847,
+            848,
+            849,
+            850,
+            851,
+            852,
+            853,
+            854,
+            855
+          ],
+          "observed_wall_seconds": 0.5160000000014406
+        },
+        "toggle_F_retained:post": {
+          "requested_clock_range": [
+            10182.367,
+            10182.718
+          ],
+          "samples": 6,
+          "sample_indices": [
+            863,
+            864,
+            865,
+            866,
+            867,
+            868
+          ],
+          "observed_wall_seconds": 0.31199999999989814
+        },
+        "toggle_F_retained:continuity": {
+          "samples": 14,
+          "sample_indices": [
+            855,
+            856,
+            857,
+            858,
+            859,
+            860,
+            861,
+            862,
+            863,
+            864,
+            865,
+            866,
+            867,
+            868
+          ],
+          "observed_wall_seconds": 0.8119999999998981
+        }
+      },
+      "first_game_sample": {
+        "clock": 10131.078,
+        "t": 13.343999999999141,
+        "available": true,
+        "world_time": 0.016666799783706665,
+        "world_delta": 0.016666799783706665,
+        "anim_time": 0.0,
+        "anim_playing": false,
+        "play_rate": 1.0,
+        "pawn_path": "/Game/GolfHeadCam/Maps/UEDPIE_0_L_GolfPractice.L_GolfPractice:PersistentLevel.BP_GolfGolfer_C_0",
+        "pawn": {
+          "bFreeCamera": false,
+          "bFreeLookCaptured": false,
+          "FreeCameraUIBlocked": false,
+          "FreeCameraMoveSpeed": 150.0,
+          "FreeCameraLookSensitivity": 2.0,
+          "bHeadView": false,
+          "bPaused": false,
+          "CinematicMode": false,
+          "SwingPlayRate": 1.0
+        },
+        "third_world": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "third_relative": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "third_rotation_pyr": [
+          -10.813510887319579,
+          -131.63353933657018,
+          -1.9130550156013997e-07
+        ],
+        "third_home": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_bone_world": {
+          "position": [
+            -1.0003362099134998,
+            15.933003057843187,
+            147.00335391232426
+          ],
+          "rotation": [
+            -0.061808186587264606,
+            -0.7046891340443112,
+            0.061556196879657146,
+            0.704133373059668
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_camera_world": {
+          "position": [
+            -1.003983137479886,
+            25.93421867010438,
+            155.00183332887477
+          ],
+          "rotation": [
+            -0.32676171238173746,
+            0.32634464999807666,
+            0.6269637665597871,
+            0.6274092668746233
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_mount": {
+          "position": [
+            9.61495053293804,
+            8.458884456543547,
+            5.477513091989294e-07
+          ],
+          "rotation": [
+            0.27059829156754023,
+            0.6532813669814995,
+            0.6532813825340411,
+            0.27059832850541365
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_socket": "head",
+        "head_active": false,
+        "third_active": true,
+        "ball_world_position": [
+          7.777501,
+          95.5553086419753,
+          2.135
+        ],
+        "keys": {
+          "F": false,
+          "RMB": false,
+          "W": false,
+          "A": false,
+          "S": false,
+          "D": false,
+          "Q": false,
+          "E": false,
+          "LeftShift": false,
+          "RightShift": false,
+          "Home": false,
+          "R": false,
+          "P": false,
+          "V": false,
+          "B": false,
+          "G": false,
+          "LMB": false,
+          "Space": false,
+          "Escape": false,
+          "Shift": false
+        },
+        "mouse_delta": [
+          0.0,
+          0.0
+        ],
+        "show_mouse_cursor": true,
+        "ui": {
+          "instance_count": 1,
+          "present": true,
+          "candidate_widgets": [
+            {
+              "class_name": "WBP_GolfCameraConsole_C",
+              "widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_0.WBP_GolfCameraConsole_C_0"
+            }
+          ],
+          "class_name": "WBP_GolfCameraConsole_C",
+          "class_path": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+          "widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_0.WBP_GolfCameraConsole_C_0",
+          "texts": {
+            "TxtStatus": "准备就绪  ·  0.00 / 4.00 秒",
+            "TxtView": "当前：第三人称",
+            "TxtLens": "当前：无畸变",
+            "TxtVideoStatus": "选择视频开始查看",
+            "TxtFreeCameraState": "自由相机未启用",
+            "TxtFreeCameraKeys": "F 切换自由第三人称   ·   Home 复位",
+            "TxtFreeCameraHelp": "按住右键：鼠标转向 / WASD 移动 / Q E 升降 / Shift 加速",
+            "BtnFreeCamera_Label": "自由相机",
+            "TxtIntegratedFreeState": "自由相机关闭 · 点击按钮后启用"
+          },
+          "panels": {
+            "MainControls": {
+              "visibility": "<SlateVisibility.SELF_HIT_TEST_INVISIBLE: 4>",
+              "visible": true,
+              "enabled": true
+            },
+            "CameraNudgePanel": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            },
+            "FreeCameraHelpPanel": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            },
+            "VideoOverlay": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            }
+          },
+          "optional_fields_missing": [],
+          "integrated_fields_missing": [],
+          "VideoOpen": false,
+          "VideoHasFailed": false,
+          "VideoAtEnd": false,
+          "SelectedVideo": 0,
+          "panel_visibility_semantics": "Direct visibility and enabled flags; inspect ancestors and modal state too."
+        },
+        "lens_preset": 0,
+        "lens_enabled": false,
+        "grid_requested": false,
+        "media": {
+          "present": true,
+          "playing": false,
+          "paused": false,
+          "ready": false,
+          "error": false,
+          "time": 0.0,
+          "duration": 0.0,
+          "url": "",
+          "player": "None"
+        },
+        "run_name": "Session3",
+        "index": 44
+      },
+      "last_game_sample": {
+        "clock": 10208.968,
+        "t": 91.23400000000038,
+        "available": true,
+        "world_time": 78.1487504132092,
+        "world_delta": 0.016666900366544724,
+        "anim_time": 3.3666927814483643,
+        "anim_playing": true,
+        "play_rate": 0.0,
+        "pawn_path": "/Game/GolfHeadCam/Maps/UEDPIE_0_L_GolfPractice.L_GolfPractice:PersistentLevel.BP_GolfGolfer_C_0",
+        "pawn": {
+          "bFreeCamera": false,
+          "bFreeLookCaptured": false,
+          "FreeCameraUIBlocked": true,
+          "FreeCameraMoveSpeed": 150.0,
+          "FreeCameraLookSensitivity": 2.0,
+          "bHeadView": true,
+          "bPaused": true,
+          "CinematicMode": false,
+          "SwingPlayRate": 1.0
+        },
+        "third_world": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503199,
+            0.03860012429847966,
+            -0.9081813738510958,
+            0.40783343506275294
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "third_relative": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503199,
+            0.03860012429847966,
+            -0.9081813738510958,
+            0.40783343506275294
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "third_rotation_pyr": [
+          -10.813510887319579,
+          -131.6335393365702,
+          -1.9130550156013997e-07
+        ],
+        "third_home": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_bone_world": {
+          "position": [
+            9.490099490308259,
+            -3.820734061588535,
+            150.5317155957471
+          ],
+          "rotation": [
+            -0.2534300741127831,
+            -0.6601794618171352,
+            -0.1353096862515098,
+            0.693993922550151
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_camera_world": {
+          "position": [
+            14.791022410144826,
+            4.653409249209531,
+            158.5372831175414
+          ],
+          "rotation": [
+            -0.2236718393838486,
+            0.40367641877900035,
+            0.4298410235086075,
+            0.7760495806953828
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_mount": {
+          "position": [
+            9.614950532938039,
+            8.458884456543547,
+            5.477513056462158e-07
+          ],
+          "rotation": [
+            0.27059829156754006,
+            0.6532813669814995,
+            0.653281382534041,
+            0.27059832850541343
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_socket": "head",
+        "head_active": true,
+        "third_active": false,
+        "ball_world_position": [
+          511.8591336530612,
+          95.5553086419753,
+          2.135
+        ],
+        "keys": {
+          "F": false,
+          "RMB": false,
+          "W": false,
+          "A": false,
+          "S": false,
+          "D": false,
+          "Q": false,
+          "E": false,
+          "LeftShift": false,
+          "RightShift": false,
+          "Home": false,
+          "R": false,
+          "P": false,
+          "V": false,
+          "B": false,
+          "G": false,
+          "LMB": false,
+          "Space": false,
+          "Escape": false,
+          "Shift": false
+        },
+        "mouse_delta": [
+          0.0,
+          0.0
+        ],
+        "show_mouse_cursor": true,
+        "ui": {
+          "instance_count": 1,
+          "present": true,
+          "candidate_widgets": [
+            {
+              "class_name": "WBP_GolfCameraConsole_C",
+              "widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_0.WBP_GolfCameraConsole_C_0"
+            }
+          ],
+          "class_name": "WBP_GolfCameraConsole_C",
+          "class_path": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+          "widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_0.WBP_GolfCameraConsole_C_0",
+          "texts": {
+            "TxtStatus": "已暂停  ·  3.37 / 4.00 秒",
+            "TxtView": "当前：头戴相机",
+            "TxtLens": "当前：任务参数",
+            "TxtVideoStatus": "播放结束  ·  6.00 / 6.00 秒",
+            "TxtFreeCameraState": "自由相机未启用",
+            "TxtFreeCameraKeys": "F 切换自由第三人称   ·   Home 复位",
+            "TxtFreeCameraHelp": "按住右键：鼠标转向 / WASD 移动 / Q E 升降 / Shift 加速",
+            "BtnFreeCamera_Label": "自由相机",
+            "TxtIntegratedFreeState": "自由相机关闭 · 点击按钮后启用"
+          },
+          "panels": {
+            "MainControls": {
+              "visibility": "<SlateVisibility.SELF_HIT_TEST_INVISIBLE: 4>",
+              "visible": true,
+              "enabled": false
+            },
+            "CameraNudgePanel": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            },
+            "FreeCameraHelpPanel": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            },
+            "VideoOverlay": {
+              "visibility": "<SlateVisibility.SELF_HIT_TEST_INVISIBLE: 4>",
+              "visible": true,
+              "enabled": true
+            }
+          },
+          "optional_fields_missing": [],
+          "integrated_fields_missing": [],
+          "VideoOpen": true,
+          "VideoHasFailed": false,
+          "VideoAtEnd": true,
+          "SelectedVideo": 1,
+          "panel_visibility_semantics": "Direct visibility and enabled flags; inspect ancestors and modal state too."
+        },
+        "lens_preset": 3,
+        "lens_enabled": true,
+        "grid_requested": true,
+        "media": {
+          "present": true,
+          "playing": false,
+          "paused": false,
+          "ready": true,
+          "error": false,
+          "time": 5.9833166,
+          "duration": 5.9999666,
+          "url": "file://<PROJECT_DIR>/Content/Movies/GolfThird.mp4",
+          "player": "ElectraPlayer"
+        },
+        "run_name": "Session3",
+        "index": 1287
+      }
+    },
+    "Session4": {
+      "summary": {
+        "status": "PASS",
+        "passed": 13,
+        "failed": 0,
+        "not_observed": 0
+      },
+      "sample_count": 560,
+      "game_samples": 396,
+      "event_count": 5,
+      "game_wall_seconds": 24.686999999999898,
+      "trace_sha256": "a8540ce2986a761d3ec73230d0ddc1949d86c6ee49eba81c8e4389d447c73664",
+      "actions_sha256": "58fb01d1b4578050be16038726113313c2ed74d49048d17a07230daac0f6b492",
+      "windows": {
+        "startup_untouched": {
+          "samples": 115,
+          "sample_indices": [
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            263,
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278
+          ],
+          "observed_wall_seconds": 7.125
+        },
+        "play_mouse_session2:post": {
+          "requested_clock_range": [
+            10234.07,
+            10234.531
+          ],
+          "samples": 7,
+          "sample_indices": [
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292
+          ],
+          "observed_wall_seconds": 0.375
+        },
+        "pause_mouse_session2:post": {
+          "requested_clock_range": [
+            10234.961000000001,
+            10235.481000000002
+          ],
+          "samples": 8,
+          "sample_indices": [
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307
+          ],
+          "observed_wall_seconds": 0.43699999999989814
+        }
+      },
+      "first_game_sample": {
+        "clock": 10226.5,
+        "t": 10.42200000000048,
+        "available": true,
+        "world_time": 0.016666900366544724,
+        "world_delta": 0.016666900366544724,
+        "anim_time": 0.0,
+        "anim_playing": false,
+        "play_rate": 1.0,
+        "pawn_path": "/Game/GolfHeadCam/Maps/UEDPIE_0_L_GolfPractice.L_GolfPractice:PersistentLevel.BP_GolfGolfer_C_0",
+        "pawn": {
+          "bFreeCamera": false,
+          "bFreeLookCaptured": false,
+          "FreeCameraUIBlocked": false,
+          "FreeCameraMoveSpeed": 150.0,
+          "FreeCameraLookSensitivity": 2.0,
+          "bHeadView": false,
+          "bPaused": false,
+          "CinematicMode": false,
+          "SwingPlayRate": 1.0
+        },
+        "third_world": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "third_relative": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "third_rotation_pyr": [
+          -10.813510887319579,
+          -131.63353933657018,
+          -1.9130550156013997e-07
+        ],
+        "third_home": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_bone_world": {
+          "position": [
+            -1.0003362099134998,
+            15.933003057843187,
+            147.00335391232426
+          ],
+          "rotation": [
+            -0.061808186587264606,
+            -0.7046891340443112,
+            0.061556196879657146,
+            0.704133373059668
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_camera_world": {
+          "position": [
+            -1.003983137479886,
+            25.93421867010438,
+            155.00183332887477
+          ],
+          "rotation": [
+            -0.32676171238173746,
+            0.32634464999807666,
+            0.6269637665597871,
+            0.6274092668746233
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_mount": {
+          "position": [
+            9.61495053293804,
+            8.458884456543547,
+            5.477513091989294e-07
+          ],
+          "rotation": [
+            0.27059829156754023,
+            0.6532813669814995,
+            0.6532813825340411,
+            0.27059832850541365
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_socket": "head",
+        "head_active": false,
+        "third_active": true,
+        "ball_world_position": [
+          7.777501,
+          95.5553086419753,
+          2.135
+        ],
+        "keys": {
+          "F": false,
+          "RMB": false,
+          "W": false,
+          "A": false,
+          "S": false,
+          "D": false,
+          "Q": false,
+          "E": false,
+          "LeftShift": false,
+          "RightShift": false,
+          "Home": false,
+          "R": false,
+          "P": false,
+          "V": false,
+          "B": false,
+          "G": false,
+          "LMB": false,
+          "Space": false,
+          "Escape": false,
+          "Shift": false
+        },
+        "mouse_delta": [
+          0.0,
+          0.0
+        ],
+        "show_mouse_cursor": true,
+        "ui": {
+          "instance_count": 1,
+          "present": true,
+          "candidate_widgets": [
+            {
+              "class_name": "WBP_GolfCameraConsole_C",
+              "widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_1.WBP_GolfCameraConsole_C_0"
+            }
+          ],
+          "class_name": "WBP_GolfCameraConsole_C",
+          "class_path": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+          "widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_1.WBP_GolfCameraConsole_C_0",
+          "texts": {
+            "TxtStatus": "准备就绪  ·  0.00 / 4.00 秒",
+            "TxtView": "当前：第三人称",
+            "TxtLens": "当前：无畸变",
+            "TxtVideoStatus": "选择视频开始查看",
+            "TxtFreeCameraState": "自由相机未启用",
+            "TxtFreeCameraKeys": "F 切换自由第三人称   ·   Home 复位",
+            "TxtFreeCameraHelp": "按住右键：鼠标转向 / WASD 移动 / Q E 升降 / Shift 加速",
+            "BtnFreeCamera_Label": "自由相机",
+            "TxtIntegratedFreeState": "自由相机关闭 · 点击按钮后启用"
+          },
+          "panels": {
+            "MainControls": {
+              "visibility": "<SlateVisibility.SELF_HIT_TEST_INVISIBLE: 4>",
+              "visible": true,
+              "enabled": true
+            },
+            "CameraNudgePanel": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            },
+            "FreeCameraHelpPanel": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            },
+            "VideoOverlay": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            }
+          },
+          "optional_fields_missing": [],
+          "integrated_fields_missing": [],
+          "VideoOpen": false,
+          "VideoHasFailed": false,
+          "VideoAtEnd": false,
+          "SelectedVideo": 0,
+          "panel_visibility_semantics": "Direct visibility and enabled flags; inspect ancestors and modal state too."
+        },
+        "lens_preset": 0,
+        "lens_enabled": false,
+        "grid_requested": false,
+        "media": {
+          "present": true,
+          "playing": false,
+          "paused": false,
+          "ready": false,
+          "error": false,
+          "time": 0.0,
+          "duration": 0.0,
+          "url": "",
+          "player": "ElectraPlayer"
+        },
+        "run_name": "Session4",
+        "index": 164
+      },
+      "last_game_sample": {
+        "clock": 10251.187,
+        "t": 35.10900000000038,
+        "available": true,
+        "world_time": 24.873436901718378,
+        "world_delta": 0.016666900366544724,
+        "anim_time": 0.8833393454551697,
+        "anim_playing": true,
+        "play_rate": 0.0,
+        "pawn_path": "/Game/GolfHeadCam/Maps/UEDPIE_0_L_GolfPractice.L_GolfPractice:PersistentLevel.BP_GolfGolfer_C_0",
+        "pawn": {
+          "bFreeCamera": false,
+          "bFreeLookCaptured": false,
+          "FreeCameraUIBlocked": false,
+          "FreeCameraMoveSpeed": 150.0,
+          "FreeCameraLookSensitivity": 2.0,
+          "bHeadView": false,
+          "bPaused": true,
+          "CinematicMode": false,
+          "SwingPlayRate": 1.0
+        },
+        "third_world": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "third_relative": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "third_rotation_pyr": [
+          -10.813510887319579,
+          -131.63353933657018,
+          -1.9130550156013997e-07
+        ],
+        "third_home": {
+          "position": [
+            400.0,
+            480.0,
+            230.0
+          ],
+          "rotation": [
+            0.08595645315503198,
+            0.03860012429847968,
+            -0.9081813738510957,
+            0.40783343506275316
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_bone_world": {
+          "position": [
+            -7.162141610641361,
+            14.452213207010344,
+            147.32122084520148
+          ],
+          "rotation": [
+            -0.048825593171644796,
+            -0.7054201012785287,
+            0.07442992750581807,
+            0.7031775935388628
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_camera_world": {
+          "position": [
+            -7.525599190918858,
+            24.445816476197447,
+            155.32095785871834
+          ],
+          "rotation": [
+            -0.33239497223621717,
+            0.32052478147252705,
+            0.638502068440398,
+            0.6157049256676501
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_mount": {
+          "position": [
+            9.614950532938053,
+            8.458884456543545,
+            5.477513074225726e-07
+          ],
+          "rotation": [
+            0.27059829156754023,
+            0.6532813669814996,
+            0.6532813825340411,
+            0.27059832850541365
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "head_socket": "head",
+        "head_active": false,
+        "third_active": true,
+        "ball_world_position": [
+          7.777501,
+          95.5553086419753,
+          2.135
+        ],
+        "keys": {
+          "F": false,
+          "RMB": false,
+          "W": false,
+          "A": false,
+          "S": false,
+          "D": false,
+          "Q": false,
+          "E": false,
+          "LeftShift": false,
+          "RightShift": false,
+          "Home": false,
+          "R": false,
+          "P": false,
+          "V": false,
+          "B": false,
+          "G": false,
+          "LMB": false,
+          "Space": false,
+          "Escape": false,
+          "Shift": false
+        },
+        "mouse_delta": [
+          0.0,
+          0.0
+        ],
+        "show_mouse_cursor": true,
+        "ui": {
+          "instance_count": 1,
+          "present": true,
+          "candidate_widgets": [
+            {
+              "class_name": "WBP_GolfCameraConsole_C",
+              "widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_1.WBP_GolfCameraConsole_C_0"
+            }
+          ],
+          "class_name": "WBP_GolfCameraConsole_C",
+          "class_path": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+          "widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_1.WBP_GolfCameraConsole_C_0",
+          "texts": {
+            "TxtStatus": "已暂停  ·  0.88 / 4.00 秒",
+            "TxtView": "当前：第三人称",
+            "TxtLens": "当前：无畸变",
+            "TxtVideoStatus": "选择视频开始查看",
+            "TxtFreeCameraState": "自由相机未启用",
+            "TxtFreeCameraKeys": "F 切换自由第三人称   ·   Home 复位",
+            "TxtFreeCameraHelp": "按住右键：鼠标转向 / WASD 移动 / Q E 升降 / Shift 加速",
+            "BtnFreeCamera_Label": "自由相机",
+            "TxtIntegratedFreeState": "自由相机关闭 · 点击按钮后启用"
+          },
+          "panels": {
+            "MainControls": {
+              "visibility": "<SlateVisibility.SELF_HIT_TEST_INVISIBLE: 4>",
+              "visible": true,
+              "enabled": true
+            },
+            "CameraNudgePanel": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            },
+            "FreeCameraHelpPanel": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            },
+            "VideoOverlay": {
+              "visibility": "<SlateVisibility.COLLAPSED: 1>",
+              "visible": false,
+              "enabled": true
+            }
+          },
+          "optional_fields_missing": [],
+          "integrated_fields_missing": [],
+          "VideoOpen": false,
+          "VideoHasFailed": false,
+          "VideoAtEnd": false,
+          "SelectedVideo": 0,
+          "panel_visibility_semantics": "Direct visibility and enabled flags; inspect ancestors and modal state too."
+        },
+        "lens_preset": 0,
+        "lens_enabled": false,
+        "grid_requested": false,
+        "media": {
+          "present": true,
+          "playing": false,
+          "paused": false,
+          "ready": false,
+          "error": false,
+          "time": 0.0,
+          "duration": 0.0,
+          "url": "",
+          "player": "ElectraPlayer"
+        },
+        "run_name": "Session4",
+        "index": 559
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "Session3.trace_complete",
+      "label": "录制已停止，游戏内采样连续且无错误",
+      "status": "PASS",
+      "evidence": {
+        "total_samples": 1288,
+        "game_samples": 1244,
+        "pre_game_unavailable_samples": 44,
+        "unavailable_during_game": [],
+        "recorder_errors": [],
+        "media_error_samples": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.ordered_clock",
+      "label": "采样时钟与同会话游戏时钟有序",
+      "status": "PASS",
+      "evidence": {},
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.inherited_instance",
+      "label": "实际运行的 UI 唯一且为 WBP_GolfCameraConsole 子类",
+      "status": "PASS",
+      "evidence": {
+        "game_samples": 1244,
+        "invalid_samples": [],
+        "widget_paths": [
+          "/Engine/Transient.UnrealEdEngine_0:GameInstance_0.WBP_GolfCameraConsole_C_0"
+        ]
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.inherited_widget_reads",
+      "label": "已采样的10个继承文字与4个面板均可访问",
+      "status": "PASS",
+      "evidence": {
+        "text_names": [
+          "BtnFreeCamera_Label",
+          "TxtFreeCameraHelp",
+          "TxtFreeCameraKeys",
+          "TxtFreeCameraState",
+          "TxtIntegratedFreeState",
+          "TxtLens",
+          "TxtStatus",
+          "TxtVideoStatus",
+          "TxtView"
+        ],
+        "panel_names": [
+          "CameraNudgePanel",
+          "FreeCameraHelpPanel",
+          "MainControls",
+          "VideoOverlay"
+        ],
+        "missing_samples": [],
+        "scope": "Does not independently enumerate every inherited button object."
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.one_camera",
+      "label": "始终恰好一个场景相机激活",
+      "status": "PASS",
+      "evidence": {
+        "invalid_samples": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.head_mount",
+      "label": "头戴相机仍固定绑定 head 骨骼",
+      "status": "PASS",
+      "evidence": {
+        "mount_span": {
+          "max_position_cm": 3.467310224881561e-14,
+          "max_rotation_deg": 3.335793892007934e-14
+        }
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.home_constant",
+      "label": "保存的启动机位参考不随操作改变",
+      "status": "PASS",
+      "evidence": {
+        "home_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        }
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.old_hint_hidden",
+      "label": "旧独立自由相机提示始终隐藏",
+      "status": "PASS",
+      "evidence": {
+        "invalid_samples": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.startup_defaults",
+      "label": "首次游戏帧起保持第三人称原机位、0秒待命且交互选项关闭",
+      "status": "PASS",
+      "evidence": {
+        "samples": 116,
+        "observed_wall_seconds": 7.203000000001339,
+        "first_world_time": 0.016666799783706665,
+        "invalid_samples": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.startup_dwell",
+      "label": "显式标记的无操作等待持续至少4秒且动画维持0",
+      "status": "PASS",
+      "evidence": {
+        "marked_duration_seconds": 4.29700000000048,
+        "samples": 69
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.enable_free_mouse_state",
+      "label": "鼠标自由相机按钮开启第三人称并显示微调面板",
+      "status": "PASS",
+      "evidence": {
+        "samples": 9,
+        "expected": {
+          "pawn.bFreeCamera": true,
+          "head_active": false,
+          "third_active": true,
+          "ui.panels.CameraNudgePanel.visible": true,
+          "ui.texts.BtnFreeCamera_Label": "关闭自由相机"
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_forward_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_forward",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 202,
+        "after_sample": 209,
+        "samples": 8,
+        "axis": "forward",
+        "expected_amount": 25,
+        "position_delta_cm": [
+          -16.3141688702961,
+          -18.353439979083078,
+          -4.690323550210138
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_error_cm": 3.1489651599578104e-14,
+        "rotation_error_deg": 0.0,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_back_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_back",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 220,
+        "after_sample": 227,
+        "samples": 9,
+        "axis": "forward",
+        "expected_amount": -25,
+        "position_delta_cm": [
+          16.3141688702961,
+          18.353439979083078,
+          4.690323550210138
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_error_cm": 3.1489651599578104e-14,
+        "rotation_error_deg": 0.0,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_up_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_up",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 238,
+        "after_sample": 245,
+        "samples": 9,
+        "axis": "up",
+        "expected_amount": 25,
+        "position_delta_cm": [
+          0.0,
+          0.0,
+          25.0
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_error_cm": 0.0,
+        "rotation_error_deg": 0.0,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_left_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_left",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 256,
+        "after_sample": 264,
+        "samples": 8,
+        "axis": "right",
+        "expected_amount": -25,
+        "position_delta_cm": [
+          -18.685232956687173,
+          16.609095982452857,
+          -8.199054946089745e-08
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_error_cm": 7.953607063799475e-15,
+        "rotation_error_deg": 0.0,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_right_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_right",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 274,
+        "after_sample": 282,
+        "samples": 8,
+        "axis": "right",
+        "expected_amount": 25,
+        "position_delta_cm": [
+          18.685232956687173,
+          -16.609095982452857,
+          8.199054946089745e-08
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_error_cm": 7.953607063799475e-15,
+        "rotation_error_deg": 0.0,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_down_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_down",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 292,
+        "after_sample": 300,
+        "samples": 8,
+        "axis": "up",
+        "expected_amount": -25,
+        "position_delta_cm": [
+          0.0,
+          0.0,
+          -25.0
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_error_cm": 0.0,
+        "rotation_error_deg": 0.0,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_yaw_left_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_yaw_left",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 310,
+        "after_sample": 318,
+        "samples": 8,
+        "axis": "yaw",
+        "expected_amount": -5,
+        "position_delta_cm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_delta_pyr_deg": [
+          -7.455810191459022e-09,
+          -5.000005585304848,
+          1.9130550299450988e-07
+        ],
+        "position_error_cm": 0.0,
+        "rotation_error_deg": 5.585304847954831e-06,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_yaw_right_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_yaw_right",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 329,
+        "after_sample": 336,
+        "samples": 9,
+        "axis": "yaw",
+        "expected_amount": 5,
+        "position_delta_cm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          5.000000000000057,
+          0.0
+        ],
+        "position_error_cm": 0.0,
+        "rotation_error_deg": 5.684341886080802e-14,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_pitch_up_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_pitch_up",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 347,
+        "after_sample": 354,
+        "samples": 9,
+        "axis": "pitch",
+        "expected_amount": 5,
+        "position_delta_cm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_delta_pyr_deg": [
+          5.0,
+          -2.842170943040401e-14,
+          0.0
+        ],
+        "position_error_cm": 0.0,
+        "rotation_error_deg": 2.842170943040401e-14,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_pitch_down_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_pitch_down",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 365,
+        "after_sample": 373,
+        "samples": 8,
+        "axis": "pitch",
+        "expected_amount": -5,
+        "position_delta_cm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_delta_pyr_deg": [
+          -5.0,
+          2.842170943040401e-14,
+          0.0
+        ],
+        "position_error_cm": 0.0,
+        "rotation_error_deg": 2.842170943040401e-14,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.no_autoplay_from_controls",
+      "label": "启用自由和十种微调操作均不触发自动挥杆",
+      "status": "PASS",
+      "evidence": {
+        "samples": 358,
+        "duration_seconds": 22.40600000000086
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.reset_mouse_idle_reset",
+      "label": "复位回启动机位：reset_mouse_idle",
+      "status": "PASS",
+      "evidence": {
+        "before_home_difference": {
+          "position_cm": 0.0,
+          "rotation_deg": 5.552598904974997e-06
+        },
+        "after_home_differences": [
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          }
+        ],
+        "requires_nonhome_start": false,
+        "note": "A pre-existing home pose alone cannot prove that the reset action executed."
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.play_mouse_play",
+      "label": "鼠标播放/重播从开头推进：play_mouse",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "before_time": 0.0,
+        "animation_range": [
+          0.25000229477882385,
+          0.5000048875808716
+        ],
+        "restart": false
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_forward_while_playing_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_forward_while_playing",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 413,
+        "after_sample": 420,
+        "samples": 5,
+        "axis": "forward",
+        "expected_amount": 25,
+        "position_delta_cm": [
+          -16.314170659019794,
+          -18.353438388289703,
+          -4.6903235534055625
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_error_cm": 1.7130564986077266e-14,
+        "rotation_error_deg": 0.0,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.reset_while_playing_reset",
+      "label": "复位回启动机位：reset_while_playing",
+      "status": "PASS",
+      "evidence": {
+        "before_home_difference": {
+          "position_cm": 24.99999999999999,
+          "rotation_deg": 5.552598904974997e-06
+        },
+        "after_home_differences": [
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          },
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 5.552598904974997e-06
+          }
+        ],
+        "requires_nonhome_start": true,
+        "note": "A pre-existing home pose alone cannot prove that the reset action executed."
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_forward_while_playing_continuity",
+      "label": "点击/按键期间挥杆连续且无归零或暂停：nudge_forward_while_playing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 12,
+        "animation_range": [
+          0.5000048875808716,
+          1.2002438306808472
+        ],
+        "reset_pairs": [],
+        "paused_samples": [],
+        "max_clock_prediction_error_seconds": 1.3783574104309082e-07
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.reset_while_playing_continuity",
+      "label": "点击/按键期间挥杆连续且无归零或暂停：reset_while_playing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 12,
+        "animation_range": [
+          1.2002438306808472,
+          1.8835810422897339
+        ],
+        "reset_pairs": [],
+        "paused_samples": [],
+        "max_clock_prediction_error_seconds": 1.601874828338623e-07
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.disable_free_while_playing_continuity",
+      "label": "点击/按键期间挥杆连续且无归零或暂停：disable_free_while_playing",
+      "status": "PASS",
+      "evidence": {
+        "samples": 13,
+        "animation_range": [
+          1.8835810422897339,
+          2.6335878372192383
+        ],
+        "reset_pairs": [],
+        "paused_samples": [],
+        "max_clock_prediction_error_seconds": 2.1979212760925293e-07
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.disable_free_while_playing_state",
+      "label": "播放中关闭自由相机但保留第三人称",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "expected": {
+          "pawn.bFreeCamera": false,
+          "third_active": true,
+          "ui.panels.CameraNudgePanel.visible": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.disable_free_while_playing_retained",
+      "label": "关闭自由模式保留当时第三机位",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "reference_sample": 435,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 0.0
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.pause_mouse_paused",
+      "label": "鼠标暂停后动画时间保持不变",
+      "status": "PASS",
+      "evidence": {
+        "samples": 9,
+        "observed_wall_seconds": 0.5,
+        "time_range": [
+          2.833589792251587,
+          2.833589792251587
+        ],
+        "time_span_seconds": 0.0,
+        "state_flags_correct": true,
+        "tolerance_seconds": 0.001
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.resume_mouse_progress",
+      "label": "鼠标播放从暂停位置继续",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "time_range": [
+          3.0835916996002197,
+          3.5169289112091064
+        ],
+        "observed_advance_seconds": 0.4333372116088867,
+        "paused_baseline_seconds": 2.833589792251587,
+        "no_backward_reset": true,
+        "state_flags_correct": true
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.head_mouse_state",
+      "label": "鼠标切头戴视角",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "head_active": true,
+          "third_active": false,
+          "pawn.bFreeCamera": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.lens_barrel_mouse_state",
+      "label": "桶形镜头选项有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "lens_preset": 1,
+          "lens_enabled": true,
+          "head_active": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.grid_mouse_state",
+      "label": "网格按钮有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 9,
+        "expected": {
+          "grid_requested": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.third_mouse_state",
+      "label": "鼠标切第三人称",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "head_active": false,
+          "third_active": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.enable_free_again_state",
+      "label": "再次点击自由按钮可进入自由模式",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "pawn.bFreeCamera": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nudge_before_video_step",
+      "label": "每次点击只产生指定25cm或5度微调：nudge_before_video",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 659,
+        "after_sample": 667,
+        "samples": 8,
+        "axis": "forward",
+        "expected_amount": 25,
+        "position_delta_cm": [
+          -16.314170659019794,
+          -18.353438388289703,
+          -4.6903235534055625
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_error_cm": 1.7130564986077266e-14,
+        "rotation_error_deg": 0.0,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.video_open_mouse_state",
+      "label": "视频弹层禁用主面板并退出自由控制",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "ui.VideoOpen": true,
+          "pawn.bFreeCamera": false,
+          "pawn.FreeCameraUIBlocked": true,
+          "pawn.bPaused": true,
+          "ui.panels.MainControls.enabled": false,
+          "ui.panels.CameraNudgePanel.visible": false,
+          "ui.panels.VideoOverlay.visible": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.video_open_mouse_media",
+      "label": "视频打开并实际推进：GolfHead.mp4",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "ready_samples": 8,
+        "selected_video": 0,
+        "media_time_range": [
+          0.0,
+          0.5
+        ],
+        "durations": [
+          5.9999666
+        ],
+        "resolved_urls": [
+          "file://<PROJECT_DIR>/Content/Movies/GolfHead.mp4"
+        ],
+        "note": "A resolved runtime URL may be absolute; saved relative media-source configuration was checked in UI_Validation.json."
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.video_guard_F_state",
+      "label": "视频模态发送F后仍不能进入自由模式",
+      "status": "PASS",
+      "evidence": {
+        "samples": 6,
+        "expected": {
+          "ui.VideoOpen": true,
+          "pawn.bFreeCamera": false,
+          "pawn.FreeCameraUIBlocked": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.modal_entire_interval",
+      "label": "视频模态全程场景暂停、相机不动、微调隐藏且输入被阻断",
+      "status": "PASS",
+      "evidence": {
+        "samples": 114,
+        "duration_seconds": 7.07799999999952,
+        "camera_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "animation_time_range": [
+          4.0,
+          4.0
+        ]
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.video_pause_mouse_paused",
+      "label": "视频暂停保持媒体时钟不变",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "observed_wall_seconds": 0.43699999999989814,
+        "time_range": [
+          3.5333333,
+          3.5333333
+        ],
+        "time_span_seconds": 0.0,
+        "state_flags_correct": true,
+        "tolerance_seconds": 0.001
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.video_replay",
+      "label": "视频重播归零并推进",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "time_range": [
+          0.0,
+          0.4333333
+        ]
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.video_third_mouse_media",
+      "label": "视频打开并实际推进：GolfThird.mp4",
+      "status": "PASS",
+      "evidence": {
+        "samples": 9,
+        "ready_samples": 9,
+        "selected_video": 1,
+        "media_time_range": [
+          0.0,
+          0.45
+        ],
+        "durations": [
+          5.9999666
+        ],
+        "resolved_urls": [
+          "file://<PROJECT_DIR>/Content/Movies/GolfThird.mp4"
+        ],
+        "note": "A resolved runtime URL may be absolute; saved relative media-source configuration was checked in UI_Validation.json."
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.video_close_mouse_state",
+      "label": "关闭视频后恢复主面板并关闭播放器",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "expected": {
+          "ui.VideoOpen": false,
+          "pawn.FreeCameraUIBlocked": false,
+          "ui.panels.MainControls.enabled": true,
+          "ui.panels.VideoOverlay.visible": false,
+          "media.ready": false,
+          "media.playing": false,
+          "media.url": ""
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.restart_mouse_play",
+      "label": "鼠标播放/重播从开头推进：restart_mouse",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "before_time": 4.0,
+        "animation_range": [
+          0.2500019967556,
+          0.633338212966919
+        ],
+        "restart": true
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.enable_free_after_video_state",
+      "label": "视频关闭后自由按钮仍有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 5,
+        "expected": {
+          "pawn.bFreeCamera": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.yaw_while_replaying_step",
+      "label": "每次点击只产生指定25cm或5度微调：yaw_while_replaying",
+      "status": "PASS",
+      "evidence": {
+        "reference_sample": 840,
+        "after_sample": 845,
+        "samples": 3,
+        "axis": "yaw",
+        "expected_amount": -5,
+        "position_delta_cm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_delta_pyr_deg": [
+          0.0,
+          -5.000000000000057,
+          0.0
+        ],
+        "position_error_cm": 0.0,
+        "rotation_error_deg": 5.684341886080802e-14,
+        "settled_pose_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        },
+        "position_tolerance_cm": 0.01,
+        "rotation_tolerance_deg": 0.01
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.yaw_while_replaying_continuity",
+      "label": "点击/按键期间挥杆连续且无归零或暂停：yaw_while_replaying",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "animation_range": [
+          1.3833431005477905,
+          1.8333463668823242
+        ],
+        "reset_pairs": [],
+        "paused_samples": [],
+        "max_clock_prediction_error_seconds": 1.4156103134155273e-07
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.reset_home_retained_reset",
+      "label": "复位回启动机位：reset_home_retained",
+      "status": "PASS",
+      "evidence": {
+        "before_home_difference": {
+          "position_cm": 24.99999999999999,
+          "rotation_deg": 5.000005549413453
+        },
+        "after_home_differences": [
+          {
+            "position_cm": 0.0,
+            "rotation_deg": 2.6046101953734594e-14
+          }
+        ],
+        "requires_nonhome_start": true,
+        "note": "A pre-existing home pose alone cannot prove that the reset action executed."
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.reset_home_retained_continuity",
+      "label": "点击/按键期间挥杆连续且无归零或暂停：reset_home_retained",
+      "status": "PASS",
+      "evidence": {
+        "samples": 9,
+        "animation_range": [
+          1.8333463668823242,
+          2.3500173091888428
+        ],
+        "reset_pairs": [],
+        "paused_samples": [],
+        "max_clock_prediction_error_seconds": 3.5762786865234375e-07
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.toggle_F_retained_state",
+      "label": "F键仍可退出自由相机",
+      "status": "PASS",
+      "evidence": {
+        "samples": 6,
+        "expected": {
+          "pawn.bFreeCamera": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.toggle_F_retained_retained",
+      "label": "F键切换保持当前第三机位",
+      "status": "PASS",
+      "evidence": {
+        "samples": 6,
+        "reference_sample": 855,
+        "max_position_error_cm": 0.0,
+        "max_rotation_error_deg": 0.0
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.toggle_F_retained_continuity",
+      "label": "点击/按键期间挥杆连续且无归零或暂停：toggle_F_retained",
+      "status": "PASS",
+      "evidence": {
+        "samples": 14,
+        "animation_range": [
+          2.3500173091888428,
+          3.1500244140625
+        ],
+        "reset_pairs": [],
+        "paused_samples": [],
+        "max_clock_prediction_error_seconds": 1.9744038581848145e-07
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.nondefault_end",
+      "label": "第一会话结束时确为头戴、任务畸变、网格、视频打开的非默认状态",
+      "status": "PASS",
+      "evidence": {
+        "sample": 1287,
+        "head": true,
+        "lens": 3,
+        "grid": true,
+        "video_open": true
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.inherited_media_end",
+      "label": "继承的媒体结束事件更新播放结束状态",
+      "status": "PASS",
+      "evidence": {
+        "samples": 281,
+        "status_texts": [
+          "播放结束  ·  6.00 / 6.00 秒"
+        ]
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session3.runtime_tick_refresh",
+      "label": "子类 Tick 实际刷新父时间/视角文字与新自由按钮文字",
+      "status": "PASS",
+      "evidence": {
+        "samples": 61,
+        "max_time_text_error_seconds": 0.0035943222045897727,
+        "bad_samples": [],
+        "unique_status_text_count": 30
+      },
+      "session": "Session3"
+    },
+    {
+      "name": "Session4.trace_complete",
+      "label": "录制已停止，游戏内采样连续且无错误",
+      "status": "PASS",
+      "evidence": {
+        "total_samples": 560,
+        "game_samples": 396,
+        "pre_game_unavailable_samples": 164,
+        "unavailable_during_game": [],
+        "recorder_errors": [],
+        "media_error_samples": []
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.ordered_clock",
+      "label": "采样时钟与同会话游戏时钟有序",
+      "status": "PASS",
+      "evidence": {},
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.inherited_instance",
+      "label": "实际运行的 UI 唯一且为 WBP_GolfCameraConsole 子类",
+      "status": "PASS",
+      "evidence": {
+        "game_samples": 396,
+        "invalid_samples": [],
+        "widget_paths": [
+          "/Engine/Transient.UnrealEdEngine_0:GameInstance_1.WBP_GolfCameraConsole_C_0"
+        ]
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.inherited_widget_reads",
+      "label": "已采样的10个继承文字与4个面板均可访问",
+      "status": "PASS",
+      "evidence": {
+        "text_names": [
+          "BtnFreeCamera_Label",
+          "TxtFreeCameraHelp",
+          "TxtFreeCameraKeys",
+          "TxtFreeCameraState",
+          "TxtIntegratedFreeState",
+          "TxtLens",
+          "TxtStatus",
+          "TxtVideoStatus",
+          "TxtView"
+        ],
+        "panel_names": [
+          "CameraNudgePanel",
+          "FreeCameraHelpPanel",
+          "MainControls",
+          "VideoOverlay"
+        ],
+        "missing_samples": [],
+        "scope": "Does not independently enumerate every inherited button object."
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.one_camera",
+      "label": "始终恰好一个场景相机激活",
+      "status": "PASS",
+      "evidence": {
+        "invalid_samples": []
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.head_mount",
+      "label": "头戴相机仍固定绑定 head 骨骼",
+      "status": "PASS",
+      "evidence": {
+        "mount_span": {
+          "max_position_cm": 2.416106516409301e-14,
+          "max_rotation_deg": 3.01733910484081e-14
+        }
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.home_constant",
+      "label": "保存的启动机位参考不随操作改变",
+      "status": "PASS",
+      "evidence": {
+        "home_span": {
+          "max_position_cm": 0.0,
+          "max_rotation_deg": 0.0
+        }
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.old_hint_hidden",
+      "label": "旧独立自由相机提示始终隐藏",
+      "status": "PASS",
+      "evidence": {
+        "invalid_samples": []
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.startup_defaults",
+      "label": "首次游戏帧起保持第三人称原机位、0秒待命且交互选项关闭",
+      "status": "PASS",
+      "evidence": {
+        "samples": 115,
+        "observed_wall_seconds": 7.125,
+        "first_world_time": 0.016666900366544724,
+        "invalid_samples": []
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.startup_dwell",
+      "label": "显式标记的无操作等待持续至少4秒且动画维持0",
+      "status": "PASS",
+      "evidence": {
+        "marked_duration_seconds": 4.296999999998661,
+        "samples": 69
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.play_mouse_session2_play",
+      "label": "鼠标播放/重播从开头推进：play_mouse_session2",
+      "status": "PASS",
+      "evidence": {
+        "samples": 7,
+        "before_time": 0.0,
+        "animation_range": [
+          0.28333529829978943,
+          0.6500042676925659
+        ],
+        "restart": false
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.pause_mouse_session2_paused",
+      "label": "第二次启动鼠标播放后暂停仍有效",
+      "status": "PASS",
+      "evidence": {
+        "samples": 8,
+        "observed_wall_seconds": 0.43699999999989814,
+        "time_range": [
+          0.8833393454551697,
+          0.8833393454551697
+        ],
+        "time_span_seconds": 0.0,
+        "state_flags_correct": true,
+        "tolerance_seconds": 0.001
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "Session4.runtime_tick_refresh",
+      "label": "子类 Tick 实际刷新父时间/视角文字与新自由按钮文字",
+      "status": "PASS",
+      "evidence": {
+        "samples": 15,
+        "max_time_text_error_seconds": 0.0033393454551696733,
+        "bad_samples": [],
+        "unique_status_text_count": 8
+      },
+      "session": "Session4"
+    },
+    {
+      "name": "cross_session_reset",
+      "label": "前次非默认状态不泄漏到新PIE会话",
+      "status": "PASS",
+      "evidence": {
+        "previous_widget": "/Engine/Transient.UnrealEdEngine_0:GameInstance_0.WBP_GolfCameraConsole_C_0",
+        "new_widget": "/Engine/Transient.UnrealEdEngine_0:GameInstance_1.WBP_GolfCameraConsole_C_0",
+        "new_first_world_time": 0.016666900366544724
+      }
+    },
+    {
+      "name": "native_inheritance_structure",
+      "label": "子类继承父Designer与初始化事件，原生Tick显式转发父刷新函数",
+      "status": "PASS",
+      "evidence": {
+        "manifest": "<PROJECT_DIR>\\Output\\Validation\\IntegratedConsole\\Inheritance_Build.json",
+        "sha256": "242a69f28454f582436471460ca7567cdf3988d6c17118ce49c37f8776f61072",
+        "build_evidence": {
+          "parent": "/Game/GolfHeadCam/UI/WBP_CameraControl",
+          "child": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole",
+          "child_class": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+          "child_designer_widgets": 0,
+          "designer_inherited_from": "/Game/GolfHeadCam/UI/WBP_CameraControl",
+          "child_tick_forwards_to_inherited_functions": [
+            "RefreshDisplay",
+            "RefreshFreeCameraUI"
+          ],
+          "tick_forwarding_chain_compiled": true,
+          "runtime_tick_verified": false,
+          "inherited_events_not_overridden": [
+            "OnInitialized",
+            "Destruct"
+          ],
+          "hud": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD",
+          "hud_widget_type_before": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl_C",
+          "hud_widget_type_after": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole_C",
+          "parent_graphs_modified": [],
+          "runtime_python_required": false,
+          "diagnostics": {
+            "child": {
+              "asset": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole",
+              "graphs": [
+                {
+                  "name": "EventGraph",
+                  "errors": [],
+                  "warnings": []
+                }
+              ]
+            },
+            "hud": {
+              "asset": "/Game/GolfHeadCam/Blueprints/BP_GolfHUD.BP_GolfHUD",
+              "graphs": [
+                {
+                  "name": "UserConstructionScript",
+                  "errors": [],
+                  "warnings": []
+                },
+                {
+                  "name": "EventGraph",
+                  "errors": [],
+                  "warnings": []
+                }
+              ]
+            }
+          }
+        },
+        "note": "Build-time runtime_tick_verified=false is supplemented by runtime_tick_refresh checks above."
+      }
+    },
+    {
+      "name": "all_inherited_widgets",
+      "label": "父Designer全部命名控件与类型在运行子实例中存在",
+      "status": "PASS",
+      "evidence": {
+        "manifest": "<PROJECT_DIR>\\Output\\Validation\\IntegratedConsole\\Inherited_Widget_Inventory.json",
+        "sha256": "4ed94b042ff210bf767fd659b679174b9de75f4d92d5991f13f0ec07d1e5a334",
+        "parent_widget_count": 87,
+        "runtime_widget_count": 87,
+        "missing": [],
+        "extra": [],
+        "runtime_widget_path": "/Engine/Transient.UnrealEdEngine_0:GameInstance_0.WBP_GolfCameraConsole_C_0"
+      }
+    }
+  ],
+  "initial_obstructed_attempt": {
+    "manifest": "<PROJECT_DIR>\\Output\\Validation\\IntegratedConsole\\Initial_Obstructed_Validation.json",
+    "sha256": "4927520f89641715fe5abc11c58d1cb52b8eb28bbc2b7477c0e8799b3a4af745",
+    "summary": {
+      "status": "FAIL",
+      "passed": 58,
+      "failed": 14,
+      "not_observed": 2
+    },
+    "note": "The original failed host-input attempt is retained independently. Root host-window inspection found a separate Executing Python editor notification covering the nudge buttons and taking input focus. The editor was relaunched without that notification; runtime Blueprints were unchanged. Current acceptance uses the explicitly selected sessions."
+  },
+  "limits": [
+    "Actual host click/key records are aligned with runtime state; the analyzer never invokes gameplay actions.",
+    "Click records occur after mouse release. Baselines precede the record by at least 0.25s; settled samples start at +0.18s and stop before the next input.",
+    "If an immediate subsequent key leaves the standard settle window between sample ticks, a documented +0.03s post-release window is used without crossing the next input or changing tolerances.",
+    "Per-frame UI fields and the separate parent/runtime WidgetTree inventory serve different scopes; complete enumeration is only claimed when its explicit check passes.",
+    "Media failure was not deliberately injected; media-open/play/end behavior and empty error flags are observed.",
+    "No packaged executable or cross-relaunch saved custom camera pose is claimed."
+  ]
+}

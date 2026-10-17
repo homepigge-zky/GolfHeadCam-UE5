@@ -1,0 +1,281 @@
+{
+  "parent": "/Game/GolfHeadCam/UI/WBP_CameraControl",
+  "child": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole",
+  "saved": true,
+  "button": "BtnBallTrajectory",
+  "label": "BtnBallTrajectory_Label",
+  "button_rect": [
+    24,
+    420,
+    352,
+    38
+  ],
+  "label_off": "显示球轨迹（T）",
+  "label_on": "隐藏球轨迹（T）",
+  "button_handler": "ClickBallTrajectory",
+  "pawn_toggle_function": "UIToggleBallTrajectory",
+  "pawn_state_variable": "ShowBallTrajectory",
+  "main_size": [
+    400,
+    772
+  ],
+  "shifted_existing_widgets": [
+    "TxtLensSection",
+    "TxtLens",
+    "BtnLensNone",
+    "BtnLensBarrel",
+    "BtnLensPincushion",
+    "BtnLensCalibrated",
+    "TxtLensHint",
+    "BtnGrid",
+    "BtnOpenVideos"
+  ],
+  "lower_local_delta_y": 52,
+  "lower_screen_positions_preserved": true,
+  "label_refresh_appended_to": "RefreshFreeCameraUI",
+  "child_designer_widgets": 0,
+  "video_image_preserved": {
+    "draw_as": "<SlateBrushDrawType.IMAGE: 3>",
+    "tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "resource": null,
+    "geometry": {
+      "position": [
+        70.0,
+        116.0
+      ],
+      "size": [
+        960.0,
+        540.0
+      ],
+      "anchor_min": [
+        0.0,
+        0.0
+      ],
+      "anchor_max": [
+        0.0,
+        0.0
+      ],
+      "alignment": [
+        0.0,
+        0.0
+      ],
+      "z_order": 2
+    }
+  },
+  "old_graphs_recreated": [],
+  "video_modal_uses_existing_parent_disable": true,
+  "runtime_python_required": false,
+  "diagnostics": {
+    "parent": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl",
+      "graphs": [
+        {
+          "name": "ScenePlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ScenePause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "SceneReplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ViewHead",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ViewThird",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "GridToggle",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensNone",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensBarrel",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensPincushion",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensCalibrated",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenVideos",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenHeadVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenThirdVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoPlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoPause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoReplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "CloseVideos",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaOpened",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaFailed",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaEnded",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RefreshDisplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenSelectedVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RefreshFreeCameraUI",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickResetThirdCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraForward",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraBack",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraLeft",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraRight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraUp",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraDown",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraYawLeft",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraYawRight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraPitchUp",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraPitchDown",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickBallTrajectory",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    },
+    "child": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_GolfCameraConsole.WBP_GolfCameraConsole",
+      "graphs": [
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    }
+  }
+}

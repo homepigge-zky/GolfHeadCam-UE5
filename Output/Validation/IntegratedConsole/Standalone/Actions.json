@@ -1,0 +1,106 @@
+[
+  {
+    "action": "native_startup_idle",
+    "kind": "mark",
+    "clock": 10449.0,
+    "client_origin": [
+      160,
+      60
+    ],
+    "client_size": [
+      1600,
+      900
+    ],
+    "scale": 0.8333333333333334
+  },
+  {
+    "action": "enable_free_mouse",
+    "kind": "click",
+    "clock": 10450.25,
+    "position": [
+      274,
+      582
+    ]
+  },
+  {
+    "action": "nudge_forward_mouse",
+    "kind": "click",
+    "clock": 10451.078,
+    "position": [
+      1494,
+      802
+    ]
+  },
+  {
+    "action": "yaw_left_mouse",
+    "kind": "click",
+    "clock": 10451.921,
+    "position": [
+      1517,
+      870
+    ]
+  },
+  {
+    "action": "reset_mouse",
+    "kind": "click",
+    "clock": 10453.5,
+    "position": [
+      426,
+      582
+    ]
+  },
+  {
+    "action": "play_mouse",
+    "kind": "click",
+    "clock": 10454.328,
+    "position": [
+      250,
+      438
+    ]
+  },
+  {
+    "action": "nudge_playing_mouse",
+    "kind": "click",
+    "clock": 10455.015,
+    "position": [
+      1494,
+      802
+    ]
+  },
+  {
+    "action": "pause_mouse",
+    "kind": "click",
+    "clock": 10455.703,
+    "position": [
+      350,
+      438
+    ]
+  },
+  {
+    "action": "reset_paused_mouse",
+    "kind": "click",
+    "clock": 10457.234,
+    "position": [
+      426,
+      582
+    ]
+  },
+  {
+    "action": "resume_mouse",
+    "kind": "click",
+    "clock": 10458.781,
+    "position": [
+      250,
+      438
+    ]
+  },
+  {
+    "action": "pause_after_resume_mouse",
+    "kind": "click",
+    "clock": 10459.765,
+    "position": [
+      350,
+      438
+    ]
+  }
+]

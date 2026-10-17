@@ -1,0 +1,27 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Simulation",
+  "Description": "Blueprint golf swing and bone-attached head camera practice scene.",
+  "Plugins": [
+    {
+      "Name": "ModelingToolsEditorMode",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    },
+    {
+      "Name": "GameplayStateTree",
+      "Enabled": true
+    },
+    {
+      "Name": "MovieRenderPipeline",
+      "Enabled": true
+    },
+    {
+      "Name": "ElectraPlayer",
+      "Enabled": true
+    }
+  ]
+}

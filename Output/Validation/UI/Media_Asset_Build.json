@@ -1,0 +1,52 @@
+{
+  "status": "assets_created_playback_not_yet_verified",
+  "asset_root": "/Game/GolfHeadCam/UI/Media",
+  "assets": {
+    "MP_SavedGolf": "/Game/GolfHeadCam/UI/Media/MP_SavedGolf.MP_SavedGolf",
+    "MT_SavedGolf": "/Game/GolfHeadCam/UI/Media/MT_SavedGolf.MT_SavedGolf",
+    "MS_GolfHead": "/Game/GolfHeadCam/UI/Media/MS_GolfHead.MS_GolfHead",
+    "MS_GolfThird": "/Game/GolfHeadCam/UI/Media/MS_GolfThird.MS_GolfThird",
+    "M_UI_SavedGolf": "/Game/GolfHeadCam/UI/Media/M_UI_SavedGolf.M_UI_SavedGolf"
+  },
+  "clips": {
+    "head": {
+      "asset": "/Game/GolfHeadCam/UI/Media/MS_GolfHead.MS_GolfHead",
+      "file_path": "./Movies/GolfHead.mp4",
+      "source_relative_path": "Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4",
+      "movie_relative_path": "Content/Movies/GolfHead.mp4",
+      "sha256": "a4f3a533be926414c81557b57d9387d071fc9032d501d222da0101529d7b5a79",
+      "bytes": 6225084,
+      "can_play_source": true
+    },
+    "third": {
+      "asset": "/Game/GolfHeadCam/UI/Media/MS_GolfThird.MS_GolfThird",
+      "file_path": "./Movies/GolfThird.mp4",
+      "source_relative_path": "Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4",
+      "movie_relative_path": "Content/Movies/GolfThird.mp4",
+      "sha256": "38032e4296cd0bdcdac89e47bac62a4160501177646195f85327f48b015eb42f",
+      "bytes": 1557534,
+      "can_play_source": true
+    }
+  },
+  "defaults": {
+    "player_runtime_name": "ElectraPlayer",
+    "play_on_open": false,
+    "loop": false,
+    "native_audio_out": false,
+    "new_style_output": true,
+    "auto_clear": true,
+    "precache_file": false,
+    "material_domain": "User Interface",
+    "sampler_type": "Color",
+    "material_nodes": 1,
+    "requires_audio_component": false
+  },
+  "runtime_reminders": [
+    "Bind OnMediaOpened/OnMediaOpenFailed before OpenSource.",
+    "SetDesiredPlayerName(ElectraPlayer) at runtime; author-time value is transient.",
+    "Handle immediate OpenSource=False separately from asynchronous OnMediaOpenFailed.",
+    "Play only from OnMediaOpened or when IsReady; do not chain Play after OpenSource.",
+    "Use UMG Image.SetBrushFromMaterial(M_UI_SavedGolf), not SetBrushFromTexture.",
+    "Close player when the panel is destroyed; saved MP4 pixels are baseline undistorted."
+  ]
+}

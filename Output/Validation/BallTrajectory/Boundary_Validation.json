@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "CinematicMode_hides_and_blocks_toggle",
+      "passed": true
+    },
+    {
+      "name": "FreeCameraUIBlocked_hides_and_blocks_toggle",
+      "passed": true
+    },
+    {
+      "name": "bEnableBallFlight_clears_invalid_path",
+      "passed": true
+    },
+    {
+      "name": "BallLaunchSpeedZ_clears_invalid_path",
+      "passed": true
+    }
+  ],
+  "geometry_cases": 5,
+  "temporary_pie_changes_restored": true,
+  "assets_saved": false
+}

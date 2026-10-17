@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "generated_utc": "2026-10-17T14:36:03.683238+00:00",
+  "mode": "Installed UnrealEditor native -game clean-copy smoke, not a cooked or packaged executable",
+  "launch": {
+    "copy": "<PROJECT_DIR>\\Saved\\IntegratedConsoleSmoke_20261017\\GolfHeadCam",
+    "core_file_count": 282,
+    "hash_mismatches": [],
+    "pid": 2648,
+    "launch_args": [
+      "<UE_ROOT>\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+      "<PROJECT_DIR>\\Saved\\IntegratedConsoleSmoke_20261017\\GolfHeadCam\\GolfHeadCam.uproject",
+      "-game",
+      "-windowed",
+      "-ResX=1600",
+      "-ResY=900",
+      "-NoSplash",
+      "-NoSound"
+    ],
+    "authoring_bridge": false,
+    "native_game_test_not_packaged_exe": true
+  },
+  "checks": [
+    {
+      "name": "core_copy_matches_original",
+      "passed": true,
+      "files": 282,
+      "mismatches": []
+    },
+    {
+      "name": "no_authoring_bridge_launch",
+      "passed": true,
+      "args": [
+        "<UE_ROOT>\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+        "<PROJECT_DIR>\\Saved\\IntegratedConsoleSmoke_20261017\\GolfHeadCam\\GolfHeadCam.uproject",
+        "-game",
+        "-windowed",
+        "-ResX=1600",
+        "-ResY=900",
+        "-NoSplash",
+        "-NoSound"
+      ]
+    },
+    {
+      "name": "no_project_runtime_errors_in_log",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "01_DefaultIdle",
+      "passed": true,
+      "method": "Root visually inspected the unmodified native-window screenshot after real mouse input.",
+      "observation": "Third-person default, idle 0.00/4.00, free camera off, lens none, media closed.",
+      "screenshot": "Output\\Validation\\IntegratedConsole\\Standalone\\01_DefaultIdle.png",
+      "sha256": "aea8110ce7178d6f93daed63fb48d0075daccfe732cbe535b9d144c91675da91"
+    },
+    {
+      "name": "02_MouseAdjustedIdle",
+      "passed": true,
+      "method": "Root visually inspected the unmodified native-window screenshot after real mouse input.",
+      "observation": "Explicit free-camera/forward/yaw clicks change framing while pose stays idle at 0.00.",
+      "screenshot": "Output\\Validation\\IntegratedConsole\\Standalone\\02_MouseAdjustedIdle.png",
+      "sha256": "45aa0b70cbc49ed244469425a6cf95ac682ddc290f634db7b25d6a480a4a69bf"
+    },
+    {
+      "name": "03_AdjustedWhilePlayingThenPaused",
+      "passed": true,
+      "method": "Root visually inspected the unmodified native-window screenshot after real mouse input.",
+      "observation": "Explicit play, forward adjustment, then pause reaches 1.37 seconds with adjusted framing.",
+      "screenshot": "Output\\Validation\\IntegratedConsole\\Standalone\\03_AdjustedWhilePlayingThenPaused.png",
+      "sha256": "b62544aff2795570a4c76b21b846591ce0e1e5653298cc66878f8aaa9cee13e0"
+    },
+    {
+      "name": "04_ResetWithoutRestartingSwing",
+      "passed": true,
+      "method": "Root visually inspected the unmodified native-window screenshot after real mouse input.",
+      "observation": "Mouse reset restores home framing while animation stays paused at 1.37 seconds.",
+      "screenshot": "Output\\Validation\\IntegratedConsole\\Standalone\\04_ResetWithoutRestartingSwing.png",
+      "sha256": "c337fecf191ddec7a1cf3dd388c44baa3406e93bd6a84b18857b7cceef6b5a7c"
+    },
+    {
+      "name": "05_ResumedAndPaused",
+      "passed": true,
+      "method": "Root visually inspected the unmodified native-window screenshot after real mouse input.",
+      "observation": "Explicit resume then pause advances animation to 2.35 seconds.",
+      "screenshot": "Output\\Validation\\IntegratedConsole\\Standalone\\05_ResumedAndPaused.png",
+      "sha256": "851ba16e17e50a4d17598ebe90425720d926d70c138574157ca0ffba5c79ff39"
+    }
+  ],
+  "limits": [
+    "Five screenshots and host Actions.json validate visible interaction only; quantitative 25 cm/5 degree and animation continuity checks are in the separate PIE Validation.json.",
+    "PrintWindow captures include black padding due to the native window DPI; original screenshots retained.",
+    "The installed editor may load stock editor plugins; no custom authoring script or runtime Python is used."
+  ]
+}

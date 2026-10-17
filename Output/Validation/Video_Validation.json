@@ -1,0 +1,44 @@
+{
+  "videos": [
+    {
+      "view": "FirstPerson",
+      "path": "<PROJECT_DIR>\\Output\\FirstPerson\\LS_Golf_HeadCamera_HeadCamera.mp4",
+      "relative_path": "Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4",
+      "size_bytes": 6225084,
+      "sha256": "a4f3a533be926414c81557b57d9387d071fc9032d501d222da0101529d7b5a79",
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "fps": "21600000/359999",
+      "nominal_fps": 60,
+      "average_fps": 60.00016666712963,
+      "fps_tolerance": 0.001,
+      "mp4_timestamp_note": "Native encoder rounds final timestamp; nominal 60 fps, 360 frames, duration differs from 6 seconds by 33 microseconds.",
+      "duration_seconds": 5.999967,
+      "decoded_frames": 360,
+      "lossless_png_frames": 360,
+      "passed": true
+    },
+    {
+      "view": "ThirdPerson",
+      "path": "<PROJECT_DIR>\\Output\\ThirdPerson\\LS_Golf_ThirdPerson_ThirdCamera.mp4",
+      "relative_path": "Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4",
+      "size_bytes": 1557534,
+      "sha256": "38032e4296cd0bdcdac89e47bac62a4160501177646195f85327f48b015eb42f",
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "fps": "21600000/359999",
+      "nominal_fps": 60,
+      "average_fps": 60.00016666712963,
+      "fps_tolerance": 0.001,
+      "mp4_timestamp_note": "Native encoder rounds final timestamp; nominal 60 fps, 360 frames, duration differs from 6 seconds by 33 microseconds.",
+      "duration_seconds": 5.999967,
+      "decoded_frames": 360,
+      "lossless_png_frames": 360,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "method": "ffprobe metadata plus full OpenCV frame decode; 360 PNG source frames retained per view."
+}

@@ -1,0 +1,1304 @@
+{
+  "schema": "GolfHeadCam.BallTrajectory.GeometryValidation.v1",
+  "passed": true,
+  "counts": {
+    "PASS": 60,
+    "FAIL": 0,
+    "NOT_OBSERVED": 0
+  },
+  "cases": [
+    {
+      "name": "default",
+      "checks": [
+        {
+          "check": "观测数值均有限",
+          "status": "PASS",
+          "evidence": {
+            "nonfinite_fields": []
+          }
+        },
+        {
+          "check": "实例数量与清单一致",
+          "status": "PASS",
+          "evidence": {
+            "reported": 48,
+            "observed": 48
+          }
+        },
+        {
+          "check": "Cylinder 网格几何范围有效",
+          "status": "PASS",
+          "evidence": {
+            "mesh": "/Engine/BasicShapes/Cylinder.Cylinder",
+            "bounds_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds_extent": [
+              50.0,
+              50.0,
+              50.0
+            ]
+          }
+        },
+        {
+          "check": "轨迹实例不参与碰撞",
+          "status": "PASS",
+          "evidence": {
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        },
+        {
+          "check": "分段数量符合配置",
+          "status": "PASS",
+          "evidence": {
+            "actual": 48,
+            "expected": 48
+          }
+        },
+        {
+          "check": "实例顺序连续",
+          "status": "PASS",
+          "evidence": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "check": "所有圆柱端点符合球运动解析式",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 1.7419169285135556e-13,
+            "endpoint_count": 96,
+            "duration_seconds": 0.7755102040816326
+          }
+        },
+        {
+          "check": "相邻线段连续",
+          "status": "PASS",
+          "evidence": {
+            "max_gap_cm": 1.1457157353758233e-13
+          }
+        },
+        {
+          "check": "世界坐标包含父级平移旋转缩放",
+          "status": "PASS",
+          "evidence": {
+            "max_world_error_cm": 1.7419169285135556e-13,
+            "world_tolerance_cm": 0.02,
+            "ball_parent_world_transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          }
+        },
+        {
+          "check": "独立四元数计算复核实际圆柱端点",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 5.728578676879116e-14,
+            "method": "mesh Z endpoint -> instance local -> component world (sequential)"
+          }
+        },
+        {
+          "check": "圆柱长度非退化且缩放为正",
+          "status": "PASS",
+          "evidence": {
+            "min_segment_length_cm": 10.502479562044481,
+            "max_segment_length_cm": 12.100597341998522
+          }
+        },
+        {
+          "check": "起点与终点精确覆盖预测区间",
+          "status": "PASS",
+          "evidence": {
+            "actual_start": [
+              7.777501000000001,
+              95.5553086419753,
+              2.1350000000000007
+            ],
+            "actual_end": [
+              511.8591336530612,
+              95.5553086419753,
+              2.134999999999998
+            ],
+            "expected_start": [
+              7.777501,
+              95.5553086419753,
+              2.135
+            ],
+            "expected_end": [
+              511.8591336530612,
+              95.5553086419753,
+              2.135
+            ]
+          }
+        }
+      ],
+      "tolerance_cm": 0.02,
+      "parameters": {
+        "bEnableBallFlight": true,
+        "BallImpactTime": 2.25,
+        "BallLaunchSpeedX": 650.0,
+        "BallLaunchSpeedZ": 380.0,
+        "BallGravity": 980.0,
+        "BallStartX": 7.777501,
+        "BallStartY": 95.5553086419753,
+        "BallStartZ": 2.135
+      },
+      "prediction": {
+        "effective_gravity_cm_s2": 980.0,
+        "effective_launch_z_cm_s": 380.0,
+        "flight_duration_seconds": 0.7755102040816326,
+        "checked_duration_seconds": 0.7755102040816326,
+        "landing_ball_parent_local_cm": [
+          511.8591336530612,
+          95.5553086419753,
+          2.135
+        ],
+        "start_ball_parent_local_cm": [
+          7.777501,
+          95.5553086419753,
+          2.135
+        ],
+        "apex_ball_parent_local_cm": [
+          259.8183173265306,
+          95.5553086419753,
+          75.80846938775511
+        ],
+        "full_flight_completed_by_animation_end_4s": true,
+        "semantics": "Full predicted trajectory unless expected_duration_seconds is explicitly supplied; geometric agreement does not establish physical collision or traversal under arbitrary long-flight parameters."
+      },
+      "approximation": {
+        "segment_count": 48,
+        "time_per_segment_seconds": 0.016156462585034014,
+        "max_analytic_arc_to_chord_vertical_deviation_cm": 0.03197633219954649,
+        "numeric_endpoint_tolerance_cm": 0.02,
+        "note": "Straight chords approximate the parabola; this bound is the maximum vertical interpolation deviation, not a zero-error continuous curve claim."
+      },
+      "flight_enabled": true,
+      "effective_visible": true,
+      "ball_observation": {
+        "anim_time": 2.384044647216797,
+        "predicted_tau": 0.13404464721679688,
+        "position_cm": [
+          94.90652169091797,
+          95.5553086419753,
+          44.2676618931198
+        ],
+        "predicted_position_cm": [
+          94.90652169091797,
+          95.5553086419753,
+          44.2676618931198
+        ],
+        "residual_cm": 0.0,
+        "scope": "Diagnostic only; runtime frame-order alignment must be checked in the recorded trace."
+      },
+      "counts": {
+        "PASS": 12,
+        "FAIL": 0,
+        "NOT_OBSERVED": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "translated_rotated_scaled_parent",
+      "checks": [
+        {
+          "check": "观测数值均有限",
+          "status": "PASS",
+          "evidence": {
+            "nonfinite_fields": []
+          }
+        },
+        {
+          "check": "实例数量与清单一致",
+          "status": "PASS",
+          "evidence": {
+            "reported": 48,
+            "observed": 48
+          }
+        },
+        {
+          "check": "Cylinder 网格几何范围有效",
+          "status": "PASS",
+          "evidence": {
+            "mesh": "/Engine/BasicShapes/Cylinder.Cylinder",
+            "bounds_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds_extent": [
+              50.0,
+              50.0,
+              50.0
+            ]
+          }
+        },
+        {
+          "check": "轨迹实例不参与碰撞",
+          "status": "PASS",
+          "evidence": {
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        },
+        {
+          "check": "分段数量符合配置",
+          "status": "PASS",
+          "evidence": {
+            "actual": 48,
+            "expected": 48
+          }
+        },
+        {
+          "check": "实例顺序连续",
+          "status": "PASS",
+          "evidence": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "check": "所有圆柱端点符合球运动解析式",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 2.2958338407482174e-13,
+            "endpoint_count": 96,
+            "duration_seconds": 0.7755102040816326
+          }
+        },
+        {
+          "check": "相邻线段连续",
+          "status": "PASS",
+          "evidence": {
+            "max_gap_cm": 2.3480185464362513e-13
+          }
+        },
+        {
+          "check": "世界坐标包含父级平移旋转缩放",
+          "status": "PASS",
+          "evidence": {
+            "max_world_error_cm": 2.0691316789454157e-13,
+            "world_tolerance_cm": 0.024,
+            "ball_parent_world_transform": {
+              "position": [
+                240.0,
+                -160.0,
+                35.0
+              ],
+              "rotation": [
+                -0.00800289330327597,
+                -0.11279728187189181,
+                0.31094222806740773,
+                0.9436777297920967
+              ],
+              "scale": [
+                1.2,
+                0.8,
+                1.1
+              ]
+            }
+          }
+        },
+        {
+          "check": "独立四元数计算复核实际圆柱端点",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 1.2710574864626038e-13,
+            "method": "mesh Z endpoint -> instance local -> component world (sequential)"
+          }
+        },
+        {
+          "check": "圆柱长度非退化且缩放为正",
+          "status": "PASS",
+          "evidence": {
+            "min_segment_length_cm": 10.502479562044481,
+            "max_segment_length_cm": 12.100597341998487
+          }
+        },
+        {
+          "check": "起点与终点精确覆盖预测区间",
+          "status": "PASS",
+          "evidence": {
+            "actual_start": [
+              7.777501000000004,
+              95.55530864197533,
+              2.135000000000001
+            ],
+            "actual_end": [
+              511.85913365306106,
+              95.55530864197527,
+              2.1350000000000335
+            ],
+            "expected_start": [
+              7.777501,
+              95.5553086419753,
+              2.135
+            ],
+            "expected_end": [
+              511.8591336530612,
+              95.5553086419753,
+              2.135
+            ]
+          }
+        }
+      ],
+      "tolerance_cm": 0.02,
+      "parameters": {
+        "bEnableBallFlight": true,
+        "BallImpactTime": 2.25,
+        "BallLaunchSpeedX": 650.0,
+        "BallLaunchSpeedZ": 380.0,
+        "BallGravity": 980.0,
+        "BallStartX": 7.777501,
+        "BallStartY": 95.5553086419753,
+        "BallStartZ": 2.135
+      },
+      "prediction": {
+        "effective_gravity_cm_s2": 980.0,
+        "effective_launch_z_cm_s": 380.0,
+        "flight_duration_seconds": 0.7755102040816326,
+        "checked_duration_seconds": 0.7755102040816326,
+        "landing_ball_parent_local_cm": [
+          511.8591336530612,
+          95.5553086419753,
+          2.135
+        ],
+        "start_ball_parent_local_cm": [
+          7.777501,
+          95.5553086419753,
+          2.135
+        ],
+        "apex_ball_parent_local_cm": [
+          259.8183173265306,
+          95.5553086419753,
+          75.80846938775511
+        ],
+        "full_flight_completed_by_animation_end_4s": true,
+        "semantics": "Full predicted trajectory unless expected_duration_seconds is explicitly supplied; geometric agreement does not establish physical collision or traversal under arbitrary long-flight parameters."
+      },
+      "approximation": {
+        "segment_count": 48,
+        "time_per_segment_seconds": 0.016156462585034014,
+        "max_analytic_arc_to_chord_vertical_deviation_cm": 0.03197633219954649,
+        "numeric_endpoint_tolerance_cm": 0.02,
+        "note": "Straight chords approximate the parabola; this bound is the maximum vertical interpolation deviation, not a zero-error continuous curve claim."
+      },
+      "flight_enabled": true,
+      "effective_visible": true,
+      "ball_observation": {
+        "anim_time": 2.384044647216797,
+        "predicted_tau": 0.13404464721679688,
+        "position_cm": [
+          94.90652169091797,
+          95.5553086419753,
+          44.2676618931198
+        ],
+        "predicted_position_cm": [
+          94.90652169091797,
+          95.5553086419753,
+          44.2676618931198
+        ],
+        "residual_cm": 0.0,
+        "scope": "Diagnostic only; runtime frame-order alignment must be checked in the recorded trace."
+      },
+      "counts": {
+        "PASS": 12,
+        "FAIL": 0,
+        "NOT_OBSERVED": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "negative_horizontal",
+      "checks": [
+        {
+          "check": "观测数值均有限",
+          "status": "PASS",
+          "evidence": {
+            "nonfinite_fields": []
+          }
+        },
+        {
+          "check": "实例数量与清单一致",
+          "status": "PASS",
+          "evidence": {
+            "reported": 48,
+            "observed": 48
+          }
+        },
+        {
+          "check": "Cylinder 网格几何范围有效",
+          "status": "PASS",
+          "evidence": {
+            "mesh": "/Engine/BasicShapes/Cylinder.Cylinder",
+            "bounds_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds_extent": [
+              50.0,
+              50.0,
+              50.0
+            ]
+          }
+        },
+        {
+          "check": "轨迹实例不参与碰撞",
+          "status": "PASS",
+          "evidence": {
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        },
+        {
+          "check": "分段数量符合配置",
+          "status": "PASS",
+          "evidence": {
+            "actual": 48,
+            "expected": 48
+          }
+        },
+        {
+          "check": "实例顺序连续",
+          "status": "PASS",
+          "evidence": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "check": "所有圆柱端点符合球运动解析式",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 1.7419169285135556e-13,
+            "endpoint_count": 96,
+            "duration_seconds": 0.7755102040816326
+          }
+        },
+        {
+          "check": "相邻线段连续",
+          "status": "PASS",
+          "evidence": {
+            "max_gap_cm": 1.1457157353758233e-13
+          }
+        },
+        {
+          "check": "世界坐标包含父级平移旋转缩放",
+          "status": "PASS",
+          "evidence": {
+            "max_world_error_cm": 1.7419169285135556e-13,
+            "world_tolerance_cm": 0.02,
+            "ball_parent_world_transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                -0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          }
+        },
+        {
+          "check": "独立四元数计算复核实际圆柱端点",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 5.728578676879116e-14,
+            "method": "mesh Z endpoint -> instance local -> component world (sequential)"
+          }
+        },
+        {
+          "check": "圆柱长度非退化且缩放为正",
+          "status": "PASS",
+          "evidence": {
+            "min_segment_length_cm": 10.50247956204451,
+            "max_segment_length_cm": 12.100597341998522
+          }
+        },
+        {
+          "check": "起点与终点精确覆盖预测区间",
+          "status": "PASS",
+          "evidence": {
+            "actual_start": [
+              7.777500999999999,
+              95.5553086419753,
+              2.135
+            ],
+            "actual_end": [
+              -496.30413165306123,
+              95.5553086419753,
+              2.134999999999998
+            ],
+            "expected_start": [
+              7.777501,
+              95.5553086419753,
+              2.135
+            ],
+            "expected_end": [
+              -496.30413165306123,
+              95.5553086419753,
+              2.135
+            ]
+          }
+        }
+      ],
+      "tolerance_cm": 0.02,
+      "parameters": {
+        "bEnableBallFlight": true,
+        "BallImpactTime": 2.25,
+        "BallLaunchSpeedX": -650.0,
+        "BallLaunchSpeedZ": 380.0,
+        "BallGravity": 980.0,
+        "BallStartX": 7.777501,
+        "BallStartY": 95.5553086419753,
+        "BallStartZ": 2.135
+      },
+      "prediction": {
+        "effective_gravity_cm_s2": 980.0,
+        "effective_launch_z_cm_s": 380.0,
+        "flight_duration_seconds": 0.7755102040816326,
+        "checked_duration_seconds": 0.7755102040816326,
+        "landing_ball_parent_local_cm": [
+          -496.30413165306123,
+          95.5553086419753,
+          2.135
+        ],
+        "start_ball_parent_local_cm": [
+          7.777501,
+          95.5553086419753,
+          2.135
+        ],
+        "apex_ball_parent_local_cm": [
+          -244.2633153265306,
+          95.5553086419753,
+          75.80846938775511
+        ],
+        "full_flight_completed_by_animation_end_4s": true,
+        "semantics": "Full predicted trajectory unless expected_duration_seconds is explicitly supplied; geometric agreement does not establish physical collision or traversal under arbitrary long-flight parameters."
+      },
+      "approximation": {
+        "segment_count": 48,
+        "time_per_segment_seconds": 0.016156462585034014,
+        "max_analytic_arc_to_chord_vertical_deviation_cm": 0.03197633219954649,
+        "numeric_endpoint_tolerance_cm": 0.02,
+        "note": "Straight chords approximate the parabola; this bound is the maximum vertical interpolation deviation, not a zero-error continuous curve claim."
+      },
+      "flight_enabled": true,
+      "effective_visible": true,
+      "ball_observation": {
+        "anim_time": 2.384044647216797,
+        "predicted_tau": 0.13404464721679688,
+        "position_cm": [
+          94.90652169091797,
+          95.5553086419753,
+          44.2676618931198
+        ],
+        "predicted_position_cm": [
+          -79.35151969091797,
+          95.5553086419753,
+          44.2676618931198
+        ],
+        "residual_cm": 174.25804138183594,
+        "scope": "Diagnostic only; runtime frame-order alignment must be checked in the recorded trace."
+      },
+      "counts": {
+        "PASS": 12,
+        "FAIL": 0,
+        "NOT_OBSERVED": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "modified_gravity",
+      "checks": [
+        {
+          "check": "观测数值均有限",
+          "status": "PASS",
+          "evidence": {
+            "nonfinite_fields": []
+          }
+        },
+        {
+          "check": "实例数量与清单一致",
+          "status": "PASS",
+          "evidence": {
+            "reported": 48,
+            "observed": 48
+          }
+        },
+        {
+          "check": "Cylinder 网格几何范围有效",
+          "status": "PASS",
+          "evidence": {
+            "mesh": "/Engine/BasicShapes/Cylinder.Cylinder",
+            "bounds_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds_extent": [
+              50.0,
+              50.0,
+              50.0
+            ]
+          }
+        },
+        {
+          "check": "轨迹实例不参与碰撞",
+          "status": "PASS",
+          "evidence": {
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        },
+        {
+          "check": "分段数量符合配置",
+          "status": "PASS",
+          "evidence": {
+            "actual": 48,
+            "expected": 48
+          }
+        },
+        {
+          "check": "实例顺序连续",
+          "status": "PASS",
+          "evidence": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "check": "所有圆柱端点符合球运动解析式",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 3.4838338570271113e-13,
+            "endpoint_count": 96,
+            "duration_seconds": 1.5510204081632653
+          }
+        },
+        {
+          "check": "相邻线段连续",
+          "status": "PASS",
+          "evidence": {
+            "max_gap_cm": 2.2914314707516465e-13
+          }
+        },
+        {
+          "check": "世界坐标包含父级平移旋转缩放",
+          "status": "PASS",
+          "evidence": {
+            "max_world_error_cm": 3.4838338570271113e-13,
+            "world_tolerance_cm": 0.02,
+            "ball_parent_world_transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                -0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          }
+        },
+        {
+          "check": "独立四元数计算复核实际圆柱端点",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 1.1457157353758233e-13,
+            "method": "mesh Z endpoint -> instance local -> component world (sequential)"
+          }
+        },
+        {
+          "check": "圆柱长度非退化且缩放为正",
+          "status": "PASS",
+          "evidence": {
+            "min_segment_length_cm": 21.00495912408902,
+            "max_segment_length_cm": 24.201194683997045
+          }
+        },
+        {
+          "check": "起点与终点精确覆盖预测区间",
+          "status": "PASS",
+          "evidence": {
+            "actual_start": [
+              7.777501000000001,
+              95.5553086419753,
+              2.1350000000000016
+            ],
+            "actual_end": [
+              1015.9407663061226,
+              95.5553086419753,
+              2.1349999999999962
+            ],
+            "expected_start": [
+              7.777501,
+              95.5553086419753,
+              2.135
+            ],
+            "expected_end": [
+              1015.9407663061224,
+              95.5553086419753,
+              2.135
+            ]
+          }
+        }
+      ],
+      "tolerance_cm": 0.02,
+      "parameters": {
+        "bEnableBallFlight": true,
+        "BallImpactTime": 2.25,
+        "BallLaunchSpeedX": 650.0,
+        "BallLaunchSpeedZ": 380.0,
+        "BallGravity": 490.0,
+        "BallStartX": 7.777501,
+        "BallStartY": 95.5553086419753,
+        "BallStartZ": 2.135
+      },
+      "prediction": {
+        "effective_gravity_cm_s2": 490.0,
+        "effective_launch_z_cm_s": 380.0,
+        "flight_duration_seconds": 1.5510204081632653,
+        "checked_duration_seconds": 1.5510204081632653,
+        "landing_ball_parent_local_cm": [
+          1015.9407663061224,
+          95.5553086419753,
+          2.135
+        ],
+        "start_ball_parent_local_cm": [
+          7.777501,
+          95.5553086419753,
+          2.135
+        ],
+        "apex_ball_parent_local_cm": [
+          511.8591336530612,
+          95.5553086419753,
+          149.4819387755102
+        ],
+        "full_flight_completed_by_animation_end_4s": true,
+        "semantics": "Full predicted trajectory unless expected_duration_seconds is explicitly supplied; geometric agreement does not establish physical collision or traversal under arbitrary long-flight parameters."
+      },
+      "approximation": {
+        "segment_count": 48,
+        "time_per_segment_seconds": 0.03231292517006803,
+        "max_analytic_arc_to_chord_vertical_deviation_cm": 0.06395266439909297,
+        "numeric_endpoint_tolerance_cm": 0.02,
+        "note": "Straight chords approximate the parabola; this bound is the maximum vertical interpolation deviation, not a zero-error continuous curve claim."
+      },
+      "flight_enabled": true,
+      "effective_visible": true,
+      "ball_observation": {
+        "anim_time": 2.384044647216797,
+        "predicted_tau": 0.13404464721679688,
+        "position_cm": [
+          94.90652169091797,
+          95.5553086419753,
+          44.2676618931198
+        ],
+        "predicted_position_cm": [
+          94.90652169091797,
+          95.5553086419753,
+          48.669813917751306
+        ],
+        "residual_cm": 4.402152024631505,
+        "scope": "Diagnostic only; runtime frame-order alignment must be checked in the recorded trace."
+      },
+      "counts": {
+        "PASS": 12,
+        "FAIL": 0,
+        "NOT_OBSERVED": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "restored_default",
+      "checks": [
+        {
+          "check": "观测数值均有限",
+          "status": "PASS",
+          "evidence": {
+            "nonfinite_fields": []
+          }
+        },
+        {
+          "check": "实例数量与清单一致",
+          "status": "PASS",
+          "evidence": {
+            "reported": 48,
+            "observed": 48
+          }
+        },
+        {
+          "check": "Cylinder 网格几何范围有效",
+          "status": "PASS",
+          "evidence": {
+            "mesh": "/Engine/BasicShapes/Cylinder.Cylinder",
+            "bounds_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds_extent": [
+              50.0,
+              50.0,
+              50.0
+            ]
+          }
+        },
+        {
+          "check": "轨迹实例不参与碰撞",
+          "status": "PASS",
+          "evidence": {
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        },
+        {
+          "check": "分段数量符合配置",
+          "status": "PASS",
+          "evidence": {
+            "actual": 48,
+            "expected": 48
+          }
+        },
+        {
+          "check": "实例顺序连续",
+          "status": "PASS",
+          "evidence": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "check": "所有圆柱端点符合球运动解析式",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 1.7419169285135556e-13,
+            "endpoint_count": 96,
+            "duration_seconds": 0.7755102040816326
+          }
+        },
+        {
+          "check": "相邻线段连续",
+          "status": "PASS",
+          "evidence": {
+            "max_gap_cm": 1.1457157353758233e-13
+          }
+        },
+        {
+          "check": "世界坐标包含父级平移旋转缩放",
+          "status": "PASS",
+          "evidence": {
+            "max_world_error_cm": 1.7419169285135556e-13,
+            "world_tolerance_cm": 0.02,
+            "ball_parent_world_transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                -0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          }
+        },
+        {
+          "check": "独立四元数计算复核实际圆柱端点",
+          "status": "PASS",
+          "evidence": {
+            "max_error_cm": 5.728578676879116e-14,
+            "method": "mesh Z endpoint -> instance local -> component world (sequential)"
+          }
+        },
+        {
+          "check": "圆柱长度非退化且缩放为正",
+          "status": "PASS",
+          "evidence": {
+            "min_segment_length_cm": 10.502479562044481,
+            "max_segment_length_cm": 12.100597341998522
+          }
+        },
+        {
+          "check": "起点与终点精确覆盖预测区间",
+          "status": "PASS",
+          "evidence": {
+            "actual_start": [
+              7.777501000000001,
+              95.5553086419753,
+              2.1350000000000007
+            ],
+            "actual_end": [
+              511.8591336530612,
+              95.5553086419753,
+              2.134999999999998
+            ],
+            "expected_start": [
+              7.777501,
+              95.5553086419753,
+              2.135
+            ],
+            "expected_end": [
+              511.8591336530612,
+              95.5553086419753,
+              2.135
+            ]
+          }
+        }
+      ],
+      "tolerance_cm": 0.02,
+      "parameters": {
+        "bEnableBallFlight": true,
+        "BallImpactTime": 2.25,
+        "BallLaunchSpeedX": 650.0,
+        "BallLaunchSpeedZ": 380.0,
+        "BallGravity": 980.0,
+        "BallStartX": 7.777501,
+        "BallStartY": 95.5553086419753,
+        "BallStartZ": 2.135
+      },
+      "prediction": {
+        "effective_gravity_cm_s2": 980.0,
+        "effective_launch_z_cm_s": 380.0,
+        "flight_duration_seconds": 0.7755102040816326,
+        "checked_duration_seconds": 0.7755102040816326,
+        "landing_ball_parent_local_cm": [
+          511.8591336530612,
+          95.5553086419753,
+          2.135
+        ],
+        "start_ball_parent_local_cm": [
+          7.777501,
+          95.5553086419753,
+          2.135
+        ],
+        "apex_ball_parent_local_cm": [
+          259.8183173265306,
+          95.5553086419753,
+          75.80846938775511
+        ],
+        "full_flight_completed_by_animation_end_4s": true,
+        "semantics": "Full predicted trajectory unless expected_duration_seconds is explicitly supplied; geometric agreement does not establish physical collision or traversal under arbitrary long-flight parameters."
+      },
+      "approximation": {
+        "segment_count": 48,
+        "time_per_segment_seconds": 0.016156462585034014,
+        "max_analytic_arc_to_chord_vertical_deviation_cm": 0.03197633219954649,
+        "numeric_endpoint_tolerance_cm": 0.02,
+        "note": "Straight chords approximate the parabola; this bound is the maximum vertical interpolation deviation, not a zero-error continuous curve claim."
+      },
+      "flight_enabled": true,
+      "effective_visible": true,
+      "ball_observation": {
+        "anim_time": 2.384044647216797,
+        "predicted_tau": 0.13404464721679688,
+        "position_cm": [
+          94.90652169091797,
+          95.5553086419753,
+          44.2676618931198
+        ],
+        "predicted_position_cm": [
+          94.90652169091797,
+          95.5553086419753,
+          44.2676618931198
+        ],
+        "residual_cm": 0.0,
+        "scope": "Diagnostic only; runtime frame-order alignment must be checked in the recorded trace."
+      },
+      "counts": {
+        "PASS": 12,
+        "FAIL": 0,
+        "NOT_OBSERVED": 0
+      },
+      "passed": true
+    }
+  ],
+  "scope": "Read-only mathematical comparison of actual recorded cylinder geometry to the existing Blueprint ballistic law. Does not prove mouse/key controls, animation continuity, startup defaults, packaged execution, or physical golf dynamics.",
+  "runtime_followup": [
+    "默认关闭及 UI/T 显隐",
+    "播放/暂停与开关互不干扰",
+    "相机状态及头戴绑定不变",
+    "记录球位置与解析轨迹相符，考虑采样和 Tick 顺序"
+  ],
+  "input_file": "<PROJECT_DIR>\\Output\\Validation\\BallTrajectory\\Boundary_Inventory.json"
+}

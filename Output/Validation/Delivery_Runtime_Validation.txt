@@ -1,0 +1,22 @@
+GolfHeadCam 交付运行轨迹检查
+状态：PASS
+采样：788；电影模式：784；记录跨度：37.339 秒
+通过：11；失败：0；未观察：0
+
+PASS  exactly_one_active_camera
+PASS  head_camera_head_bone_mount_invariant
+PASS  club_hand_r_mount_invariant
+PASS  animation_clock_matches_cinematic_time
+PASS  cinematic_ball_analytic_trajectory
+PASS  interactive_ball_analytic_trajectory
+PASS  same_time_head_third_geometry
+PASS  impact_sphere_to_club_obb_contact
+PASS  lens_flag_drives_head_postprocess_weight
+PASS  calibration_grid_visible_only_when_requested_in_head_view
+PASS  fixed_100_degree_calibration_fov
+
+此检查基于编辑器运行数据，不能代替输出视频的逐帧视觉检查。
+同一时间双视角的原始配对全部纳入判定；对齐后的子集只用于诊断时序延迟。
+球为预设解析轨迹，接触检查验证几何相切，不代表碰撞冲量仿真。
+
+详细数值与输入 SHA256 见 Delivery_Runtime_Validation.json

@@ -1,0 +1,68 @@
+[
+  {
+    "action": "native_startup",
+    "kind": "mark",
+    "clock": 13334.171,
+    "client_origin": [
+      160,
+      60
+    ],
+    "client_size": [
+      1600,
+      900
+    ],
+    "scale": 0.8333333333333334,
+    "hwnd": 4721878
+  },
+  {
+    "action": "trajectory_on_mouse",
+    "kind": "click",
+    "clock": 13370.25,
+    "position": [
+      350,
+      659
+    ]
+  },
+  {
+    "action": "play",
+    "kind": "click",
+    "clock": 13373.062,
+    "position": [
+      250,
+      394
+    ]
+  },
+  {
+    "action": "pause",
+    "kind": "click",
+    "clock": 13374.171,
+    "position": [
+      350,
+      394
+    ]
+  },
+  {
+    "action": "trajectory_off_T",
+    "kind": "key_down",
+    "clock": 13375.921,
+    "key": "t"
+  },
+  {
+    "action": "trajectory_off_T",
+    "kind": "key_up",
+    "clock": 13376.14,
+    "key": "t"
+  },
+  {
+    "action": "trajectory_on_T",
+    "kind": "key_down",
+    "clock": 13378.015,
+    "key": "t"
+  },
+  {
+    "action": "trajectory_on_T",
+    "kind": "key_up",
+    "clock": 13378.234,
+    "key": "t"
+  }
+]

@@ -1,0 +1,1612 @@
+{
+  "generated_utc": "2026-10-16T18:49:37.825973+00:00",
+  "passed": true,
+  "summary": {
+    "status": "PASS",
+    "passed": 37,
+    "failed": 0,
+    "not_observed": 0
+  },
+  "trace_path": "<PROJECT_DIR>\\Output\\Validation\\UI\\UI_Runtime_Trace.json",
+  "trace_sha256": "a55d9d26a030f1a8a526cd5dfda1eeac0d241c7b172e860d1af1ef290316a558",
+  "actions_path": "<PROJECT_DIR>\\Output\\Validation\\UI\\UI_Mouse_Actions.json",
+  "actions_sha256": "c6e2894d5aa0320c0ea545530412e5c754a0c83f2c24452cac871a6a9691c91c",
+  "sample_count": 2039,
+  "action_count": 31,
+  "clock_range": [
+    26467.671,
+    26595.484
+  ],
+  "duration_seconds": 127.81300000000192,
+  "observed_average_sample_hz": 15.945169896645641,
+  "method": {
+    "state_window": "action +0.15 s through next action -0.40 s",
+    "transition_window": "action -0.65 s through +0.50 s; includes pre-log dwell/release",
+    "animation_time_tolerance_seconds": 0.0001,
+    "media_time_tolerance_seconds": 0.008333333333333333,
+    "all_mismatches_counted": true,
+    "direct_editor_function_calls_used_for_test": false
+  },
+  "action_windows": {
+    "scene_play": {
+      "requested_clock_range": [
+        26478.306,
+        26479.770999999997
+      ],
+      "samples": 23,
+      "sample_index_range": [
+        170,
+        192
+      ],
+      "observed_seconds": 1.3909999999996217,
+      "scene_time": {
+        "first": 0.2954307198524475,
+        "last": 1.678774356842041,
+        "min": 0.2954307198524475,
+        "max": 1.678774356842041,
+        "span": 1.3833436369895935
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "scene_pause": {
+      "requested_clock_range": [
+        26480.321,
+        26482.630999999998
+      ],
+      "samples": 37,
+      "sample_index_range": [
+        202,
+        238
+      ],
+      "observed_seconds": 2.25,
+      "scene_time": {
+        "first": 2.0121095180511475,
+        "last": 2.0121095180511475,
+        "min": 2.0121095180511475,
+        "max": 2.0121095180511475,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "scene_resume": {
+      "requested_clock_range": [
+        26483.181,
+        26484.130999999998
+      ],
+      "samples": 15,
+      "sample_index_range": [
+        248,
+        262
+      ],
+      "observed_seconds": 0.8590000000003783,
+      "scene_time": {
+        "first": 2.328779458999634,
+        "last": 3.19545316696167,
+        "min": 2.328779458999634,
+        "max": 3.19545316696167,
+        "span": 0.8666737079620361
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "scene_pause_again": {
+      "requested_clock_range": [
+        26484.681,
+        26485.443
+      ],
+      "samples": 13,
+      "sample_index_range": [
+        271,
+        283
+      ],
+      "observed_seconds": 0.7339999999967404,
+      "scene_time": {
+        "first": 3.5287892818450928,
+        "last": 3.5287892818450928,
+        "min": 3.5287892818450928,
+        "max": 3.5287892818450928,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "head_view": {
+      "requested_clock_range": [
+        26485.993000000002,
+        26487.395999999997
+      ],
+      "samples": 23,
+      "sample_index_range": [
+        292,
+        314
+      ],
+      "observed_seconds": 1.3590000000003783,
+      "scene_time": {
+        "first": 3.5287892818450928,
+        "last": 3.5287892818450928,
+        "min": 3.5287892818450928,
+        "max": 3.5287892818450928,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "grid_on": {
+      "requested_clock_range": [
+        26487.946,
+        26488.709
+      ],
+      "samples": 12,
+      "sample_index_range": [
+        324,
+        335
+      ],
+      "observed_seconds": 0.7030000000013388,
+      "scene_time": {
+        "first": 3.5287892818450928,
+        "last": 3.5287892818450928,
+        "min": 3.5287892818450928,
+        "max": 3.5287892818450928,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "lens_none": {
+      "requested_clock_range": [
+        26489.259000000002,
+        26490.755999999998
+      ],
+      "samples": 24,
+      "sample_index_range": [
+        345,
+        368
+      ],
+      "observed_seconds": 1.4380000000019209,
+      "scene_time": {
+        "first": 3.5287892818450928,
+        "last": 3.5287892818450928,
+        "min": 3.5287892818450928,
+        "max": 3.5287892818450928,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "lens_barrel": {
+      "requested_clock_range": [
+        26491.306,
+        26492.770999999997
+      ],
+      "samples": 23,
+      "sample_index_range": [
+        378,
+        400
+      ],
+      "observed_seconds": 1.3590000000003783,
+      "scene_time": {
+        "first": 3.5287892818450928,
+        "last": 3.5287892818450928,
+        "min": 3.5287892818450928,
+        "max": 3.5287892818450928,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "lens_pincushion": {
+      "requested_clock_range": [
+        26493.321,
+        26494.818
+      ],
+      "samples": 24,
+      "sample_index_range": [
+        410,
+        433
+      ],
+      "observed_seconds": 1.4209999999984575,
+      "scene_time": {
+        "first": 3.5287892818450928,
+        "last": 3.5287892818450928,
+        "min": 3.5287892818450928,
+        "max": 3.5287892818450928,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "lens_task": {
+      "requested_clock_range": [
+        26495.368000000002,
+        26496.834
+      ],
+      "samples": 24,
+      "sample_index_range": [
+        442,
+        465
+      ],
+      "observed_seconds": 1.4209999999984575,
+      "scene_time": {
+        "first": 3.5287892818450928,
+        "last": 3.5287892818450928,
+        "min": 3.5287892818450928,
+        "max": 3.5287892818450928,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "grid_off": {
+      "requested_clock_range": [
+        26497.384000000002,
+        26498.037
+      ],
+      "samples": 10,
+      "sample_index_range": [
+        475,
+        484
+      ],
+      "observed_seconds": 0.5469999999986612,
+      "scene_time": {
+        "first": 3.5287892818450928,
+        "last": 3.5287892818450928,
+        "min": 3.5287892818450928,
+        "max": 3.5287892818450928,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "third_view": {
+      "requested_clock_range": [
+        26498.587000000003,
+        26499.239999999998
+      ],
+      "samples": 11,
+      "sample_index_range": [
+        494,
+        504
+      ],
+      "observed_seconds": 0.6090000000003783,
+      "scene_time": {
+        "first": 3.5287892818450928,
+        "last": 3.5287892818450928,
+        "min": 3.5287892818450928,
+        "max": 3.5287892818450928,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "scene_replay": {
+      "requested_clock_range": [
+        26499.79,
+        26500.755999999998
+      ],
+      "samples": 16,
+      "sample_index_range": [
+        513,
+        528
+      ],
+      "observed_seconds": 0.9380000000019209,
+      "scene_time": {
+        "first": 0.2500026226043701,
+        "last": 1.183343768119812,
+        "min": 0.2500026226043701,
+        "max": 1.183343768119812,
+        "span": 0.9333411455154419
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "scene_pause_before_video": {
+      "requested_clock_range": [
+        26501.306,
+        26501.959
+      ],
+      "samples": 10,
+      "sample_index_range": [
+        538,
+        547
+      ],
+      "observed_seconds": 0.5620000000017171,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "open_saved_videos": {
+      "requested_clock_range": [
+        26502.509000000002,
+        26533.645999999997
+      ],
+      "samples": 495,
+      "sample_index_range": [
+        557,
+        1051
+      ],
+      "observed_seconds": 31.06300000000192,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0833333,
+        "last": 5.9833166,
+        "min": 0.0833333,
+        "max": 5.9833166,
+        "span": 5.899983300000001
+      }
+    },
+    "video_head_replay": {
+      "requested_clock_range": [
+        26534.196,
+        26535.553
+      ],
+      "samples": 21,
+      "sample_index_range": [
+        1061,
+        1081
+      ],
+      "observed_seconds": 1.264999999999418,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 1.3166666,
+        "min": 0.0,
+        "max": 1.3166666,
+        "span": 1.3166666
+      }
+    },
+    "video_head_pause": {
+      "requested_clock_range": [
+        26536.103000000003,
+        26538.614999999998
+      ],
+      "samples": 40,
+      "sample_index_range": [
+        1091,
+        1130
+      ],
+      "observed_seconds": 2.437000000001717,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 1.65,
+        "last": 1.65,
+        "min": 1.65,
+        "max": 1.65,
+        "span": 0.0
+      }
+    },
+    "video_head_resume": {
+      "requested_clock_range": [
+        26540.275,
+        26542.178
+      ],
+      "samples": 30,
+      "sample_index_range": [
+        1158,
+        1187
+      ],
+      "observed_seconds": 1.8129999999982829,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 1.9333333,
+        "last": 3.75,
+        "min": 1.9333333,
+        "max": 3.75,
+        "span": 1.8166667
+      }
+    },
+    "select_third_video": {
+      "requested_clock_range": [
+        26542.728000000003,
+        26544.084
+      ],
+      "samples": 22,
+      "sample_index_range": [
+        1197,
+        1218
+      ],
+      "observed_seconds": 1.2970000000022992,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 1.3,
+        "min": 0.0,
+        "max": 1.3,
+        "span": 1.3
+      }
+    },
+    "video_third_pause": {
+      "requested_clock_range": [
+        26544.634000000002,
+        26546.1
+      ],
+      "samples": 23,
+      "sample_index_range": [
+        1228,
+        1250
+      ],
+      "observed_seconds": 1.3590000000003783,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 1.6166666,
+        "last": 1.6166666,
+        "min": 1.6166666,
+        "max": 1.6166666,
+        "span": 0.0
+      }
+    },
+    "video_third_resume": {
+      "requested_clock_range": [
+        26546.65,
+        26553.834
+      ],
+      "samples": 115,
+      "sample_index_range": [
+        1260,
+        1374
+      ],
+      "observed_seconds": 7.109000000000378,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 1.9,
+        "last": 5.9833166,
+        "min": 1.9,
+        "max": 5.9833166,
+        "span": 4.0833166
+      }
+    },
+    "video_third_replay": {
+      "requested_clock_range": [
+        26554.384000000002,
+        26555.975
+      ],
+      "samples": 24,
+      "sample_index_range": [
+        1384,
+        1407
+      ],
+      "observed_seconds": 1.4840000000003783,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 1.55,
+        "min": 0.0,
+        "max": 1.55,
+        "span": 1.55
+      }
+    },
+    "video_modal_blocks_scene_replay": {
+      "requested_clock_range": [
+        26539.165,
+        26539.725
+      ],
+      "samples": 9,
+      "sample_index_range": [
+        1140,
+        1148
+      ],
+      "observed_seconds": 0.5,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 1.65,
+        "last": 1.65,
+        "min": 1.65,
+        "max": 1.65,
+        "span": 0.0
+      }
+    },
+    "close_videos": {
+      "requested_clock_range": [
+        26556.525,
+        26558.239999999998
+      ],
+      "samples": 27,
+      "sample_index_range": [
+        1417,
+        1443
+      ],
+      "observed_seconds": 1.625,
+      "scene_time": {
+        "first": 1.5000195503234863,
+        "last": 1.5000195503234863,
+        "min": 1.5000195503234863,
+        "max": 1.5000195503234863,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "scene_resume_after_video": {
+      "requested_clock_range": [
+        26558.79,
+        26559.645999999997
+      ],
+      "samples": 14,
+      "sample_index_range": [
+        1453,
+        1466
+      ],
+      "observed_seconds": 0.8130000000019209,
+      "scene_time": {
+        "first": 1.7500319480895996,
+        "last": 2.5667057037353516,
+        "min": 1.7500319480895996,
+        "max": 2.5667057037353516,
+        "span": 0.816673755645752
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "scene_pause_after_video": {
+      "requested_clock_range": [
+        26560.196,
+        26560.303
+      ],
+      "samples": 2,
+      "sample_index_range": [
+        1476,
+        1477
+      ],
+      "observed_seconds": 0.0459999999984575,
+      "scene_time": {
+        "first": 2.9000418186187744,
+        "last": 2.9000418186187744,
+        "min": 2.9000418186187744,
+        "max": 2.9000418186187744,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "keyboard_replay": {
+      "requested_clock_range": [
+        26560.853000000003,
+        26561.053
+      ],
+      "samples": 4,
+      "sample_index_range": [
+        1486,
+        1489
+      ],
+      "observed_seconds": 0.18699999999807915,
+      "scene_time": {
+        "first": 0.5166709423065186,
+        "last": 0.7000055909156799,
+        "min": 0.5166709423065186,
+        "max": 0.7000055909156799,
+        "span": 0.18333464860916138
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "keyboard_pause": {
+      "requested_clock_range": [
+        26561.603000000003,
+        26561.709
+      ],
+      "samples": 1,
+      "sample_index_range": [
+        1498,
+        1498
+      ],
+      "observed_seconds": 0.0,
+      "scene_time": {
+        "first": 0.7500060796737671,
+        "last": 0.7500060796737671,
+        "min": 0.7500060796737671,
+        "max": 0.7500060796737671,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "keyboard_camera": {
+      "requested_clock_range": [
+        26562.259000000002,
+        26562.35
+      ],
+      "samples": 2,
+      "sample_index_range": [
+        1508,
+        1509
+      ],
+      "observed_seconds": 0.06300000000192085,
+      "scene_time": {
+        "first": 0.7500060796737671,
+        "last": 0.7500060796737671,
+        "min": 0.7500060796737671,
+        "max": 0.7500060796737671,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "keyboard_lens": {
+      "requested_clock_range": [
+        26562.9,
+        26563.005999999998
+      ],
+      "samples": 1,
+      "sample_index_range": [
+        1519,
+        1519
+      ],
+      "observed_seconds": 0.0,
+      "scene_time": {
+        "first": 0.7500060796737671,
+        "last": 0.7500060796737671,
+        "min": 0.7500060796737671,
+        "max": 0.7500060796737671,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    },
+    "keyboard_grid": {
+      "requested_clock_range": [
+        26563.556,
+        26595.484
+      ],
+      "samples": 510,
+      "sample_index_range": [
+        1529,
+        2038
+      ],
+      "observed_seconds": 31.90599999999904,
+      "scene_time": {
+        "first": 0.7500060796737671,
+        "last": 0.7500060796737671,
+        "min": 0.7500060796737671,
+        "max": 0.7500060796737671,
+        "span": 0.0
+      },
+      "media_time": {
+        "first": 0.0,
+        "last": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "span": 0.0
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "trace_complete_ordered",
+      "label": "运行采样完整且时钟有序",
+      "status": "PASS",
+      "evidence": {
+        "samples": 2039,
+        "incomplete_sample_indices": [],
+        "actions": 31,
+        "unique_action_names": 31
+      }
+    },
+    {
+      "name": "no_recorded_media_errors",
+      "label": "录制器与媒体错误标志均为空",
+      "status": "PASS",
+      "evidence": {
+        "recorder_errors": [],
+        "error_sample_indices": []
+      }
+    },
+    {
+      "name": "scene_play_progress",
+      "label": "播放按钮从准备姿势推进",
+      "status": "PASS",
+      "evidence": {
+        "action": "scene_play",
+        "samples": 23,
+        "moving_samples": 23,
+        "time": {
+          "first": 0.2954307198524475,
+          "last": 1.678774356842041,
+          "min": 0.2954307198524475,
+          "max": 1.678774356842041,
+          "span": 1.3833436369895935
+        },
+        "minimum_progress_seconds": 0.1
+      }
+    },
+    {
+      "name": "scene_pause_frozen",
+      "label": "场景暂停期间动画时间不变",
+      "status": "PASS",
+      "evidence": {
+        "action": "scene_pause",
+        "primary_window_samples": 37,
+        "samples": 37,
+        "observed_seconds": 2.25,
+        "supplemental_contiguous_paused_interval": false,
+        "time": {
+          "first": 2.0121095180511475,
+          "last": 2.0121095180511475,
+          "min": 2.0121095180511475,
+          "max": 2.0121095180511475,
+          "span": 0.0
+        },
+        "tolerance_seconds": 0.0001
+      }
+    },
+    {
+      "name": "scene_resume_progress",
+      "label": "场景续播保持暂停位置且继续推进",
+      "status": "PASS",
+      "evidence": {
+        "action": "scene_resume",
+        "samples": 15,
+        "moving_samples": 15,
+        "time": {
+          "first": 2.328779458999634,
+          "last": 3.19545316696167,
+          "min": 2.328779458999634,
+          "max": 3.19545316696167,
+          "span": 0.8666737079620361
+        },
+        "minimum_progress_seconds": 0.1,
+        "previous_pause": "scene_pause",
+        "paused_position": 2.0121095180511475,
+        "transition_time": {
+          "first": 2.0121095180511475,
+          "last": 2.5787816047668457,
+          "min": 2.0121095180511475,
+          "max": 2.5787816047668457,
+          "span": 0.5666720867156982
+        },
+        "no_reset": true
+      }
+    },
+    {
+      "name": "scene_pause_again_frozen",
+      "label": "再次暂停时间稳定",
+      "status": "PASS",
+      "evidence": {
+        "action": "scene_pause_again",
+        "primary_window_samples": 13,
+        "samples": 13,
+        "observed_seconds": 0.7339999999967404,
+        "supplemental_contiguous_paused_interval": false,
+        "time": {
+          "first": 3.5287892818450928,
+          "last": 3.5287892818450928,
+          "min": 3.5287892818450928,
+          "max": 3.5287892818450928,
+          "span": 0.0
+        },
+        "tolerance_seconds": 0.0001
+      }
+    },
+    {
+      "name": "head_view_state",
+      "label": "头戴视角按钮选择正确",
+      "status": "PASS",
+      "evidence": {
+        "action": "head_view",
+        "samples": 23,
+        "expected": {
+          "head": true,
+          "ui.texts.TxtView": "当前：头戴相机"
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "grid_on_state",
+      "label": "头戴网格开启标志正确",
+      "status": "PASS",
+      "evidence": {
+        "action": "grid_on",
+        "samples": 12,
+        "expected": {
+          "head": true,
+          "grid": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "lens_none_exclusive",
+      "label": "无畸变关闭效果",
+      "status": "PASS",
+      "evidence": {
+        "action": "lens_none",
+        "samples": 24,
+        "preset": 0,
+        "mismatch_count": 0,
+        "first_mismatches": [],
+        "representative": [
+          {
+            "raw_weights": {
+              "M_HeadLensDistortion": 1.0,
+              "MI_HeadLens_Barrel": 0.0,
+              "MI_HeadLens_Pincushion": 0.0
+            },
+            "effective_weights": {
+              "M_HeadLensDistortion": 0.0,
+              "MI_HeadLens_Barrel": 0.0,
+              "MI_HeadLens_Pincushion": 0.0
+            },
+            "ui_text": "当前：无畸变"
+          }
+        ]
+      }
+    },
+    {
+      "name": "lens_barrel_exclusive",
+      "label": "桶形预设互斥生效",
+      "status": "PASS",
+      "evidence": {
+        "action": "lens_barrel",
+        "samples": 23,
+        "preset": 1,
+        "mismatch_count": 0,
+        "first_mismatches": [],
+        "representative": [
+          {
+            "raw_weights": {
+              "M_HeadLensDistortion": 0.0,
+              "MI_HeadLens_Barrel": 1.0,
+              "MI_HeadLens_Pincushion": 0.0
+            },
+            "effective_weights": {
+              "M_HeadLensDistortion": 0.0,
+              "MI_HeadLens_Barrel": 1.0,
+              "MI_HeadLens_Pincushion": 0.0
+            },
+            "ui_text": "当前：桶形"
+          }
+        ]
+      }
+    },
+    {
+      "name": "lens_pincushion_exclusive",
+      "label": "枕形预设互斥生效",
+      "status": "PASS",
+      "evidence": {
+        "action": "lens_pincushion",
+        "samples": 24,
+        "preset": 2,
+        "mismatch_count": 0,
+        "first_mismatches": [],
+        "representative": [
+          {
+            "raw_weights": {
+              "M_HeadLensDistortion": 0.0,
+              "MI_HeadLens_Barrel": 0.0,
+              "MI_HeadLens_Pincushion": 1.0
+            },
+            "effective_weights": {
+              "M_HeadLensDistortion": 0.0,
+              "MI_HeadLens_Barrel": 0.0,
+              "MI_HeadLens_Pincushion": 1.0
+            },
+            "ui_text": "当前：枕形"
+          }
+        ]
+      }
+    },
+    {
+      "name": "lens_task_exclusive",
+      "label": "任务原校准预设互斥生效",
+      "status": "PASS",
+      "evidence": {
+        "action": "lens_task",
+        "samples": 24,
+        "preset": 3,
+        "mismatch_count": 0,
+        "first_mismatches": [],
+        "representative": [
+          {
+            "raw_weights": {
+              "M_HeadLensDistortion": 1.0,
+              "MI_HeadLens_Barrel": 0.0,
+              "MI_HeadLens_Pincushion": 0.0
+            },
+            "effective_weights": {
+              "M_HeadLensDistortion": 1.0,
+              "MI_HeadLens_Barrel": 0.0,
+              "MI_HeadLens_Pincushion": 0.0
+            },
+            "ui_text": "当前：任务参数"
+          }
+        ]
+      }
+    },
+    {
+      "name": "grid_off_state",
+      "label": "网格关闭标志正确",
+      "status": "PASS",
+      "evidence": {
+        "action": "grid_off",
+        "samples": 10,
+        "expected": {
+          "grid": false
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "third_view_state",
+      "label": "第三人称按钮选择正确",
+      "status": "PASS",
+      "evidence": {
+        "action": "third_view",
+        "samples": 11,
+        "expected": {
+          "head": false,
+          "ui.texts.TxtView": "当前：第三人称"
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "scene_replay_reset",
+      "label": "场景重播回到起点附近并推进",
+      "status": "PASS",
+      "evidence": {
+        "action": "scene_replay",
+        "transition_samples": 18,
+        "stable_samples": 16,
+        "observed_resets": [
+          {
+            "before_sample": 509,
+            "after_sample": 510,
+            "before_time": 3.5287892818450928,
+            "after_time": 0.0666676014661789
+          }
+        ],
+        "post_action_time": {
+          "first": 0.2500026226043701,
+          "last": 1.183343768119812,
+          "min": 0.2500026226043701,
+          "max": 1.183343768119812,
+          "span": 0.9333411455154419
+        },
+        "reset_tolerance_seconds": 0.25,
+        "minimum_detected_drop_seconds": 0.5
+      }
+    },
+    {
+      "name": "scene_pause_before_video_frozen",
+      "label": "进入视频前场景暂停稳定",
+      "status": "PASS",
+      "evidence": {
+        "action": "scene_pause_before_video",
+        "primary_window_samples": 10,
+        "samples": 10,
+        "observed_seconds": 0.5620000000017171,
+        "supplemental_contiguous_paused_interval": false,
+        "time": {
+          "first": 1.5000195503234863,
+          "last": 1.5000195503234863,
+          "min": 1.5000195503234863,
+          "max": 1.5000195503234863,
+          "span": 0.0
+        },
+        "tolerance_seconds": 0.0001
+      }
+    },
+    {
+      "name": "open_saved_videos_media_ready",
+      "label": "头戴视频异步打开并推进",
+      "status": "PASS",
+      "evidence": {
+        "action": "open_saved_videos",
+        "samples": 495,
+        "ready_samples": 495,
+        "time": {
+          "first": 0.0833333,
+          "last": 5.9833166,
+          "min": 0.0833333,
+          "max": 5.9833166,
+          "span": 5.899983300000001
+        },
+        "durations": [
+          5.9999666
+        ],
+        "resolved_urls": [
+          "file://<PROJECT_DIR>/Content/Movies/GolfHead.mp4"
+        ],
+        "failed_samples": 0,
+        "first_mismatches": [],
+        "note": "Ready/playback is runtime evidence; the resolved URL is absolute even when the saved media source is relative."
+      }
+    },
+    {
+      "name": "video_head_replay_reset",
+      "label": "头戴视频重播归零并推进",
+      "status": "PASS",
+      "evidence": {
+        "action": "video_head_replay",
+        "transition_samples": 18,
+        "stable_samples": 21,
+        "observed_resets": [
+          {
+            "before_sample": 1056,
+            "after_sample": 1057,
+            "before_time": 5.9833166,
+            "after_time": 0.0
+          }
+        ],
+        "post_action_time": {
+          "first": 0.0,
+          "last": 1.3166666,
+          "min": 0.0,
+          "max": 1.3166666,
+          "span": 1.3166666
+        },
+        "reset_tolerance_seconds": 0.25,
+        "minimum_detected_drop_seconds": 0.5
+      }
+    },
+    {
+      "name": "video_head_pause_frozen",
+      "label": "头戴视频暂停时媒体时钟稳定",
+      "status": "PASS",
+      "evidence": {
+        "action": "video_head_pause",
+        "primary_window_samples": 40,
+        "samples": 40,
+        "observed_seconds": 2.437000000001717,
+        "supplemental_contiguous_paused_interval": false,
+        "time": {
+          "first": 1.65,
+          "last": 1.65,
+          "min": 1.65,
+          "max": 1.65,
+          "span": 0.0
+        },
+        "tolerance_seconds": 0.008333333333333333
+      }
+    },
+    {
+      "name": "video_head_resume_progress",
+      "label": "头戴视频从暂停处续播",
+      "status": "PASS",
+      "evidence": {
+        "action": "video_head_resume",
+        "samples": 30,
+        "moving_samples": 30,
+        "time": {
+          "first": 1.9333333,
+          "last": 3.75,
+          "min": 1.9333333,
+          "max": 3.75,
+          "span": 1.8166667
+        },
+        "minimum_progress_seconds": 0.1,
+        "previous_pause": "video_head_pause",
+        "paused_position": 1.65,
+        "transition_time": {
+          "first": 1.65,
+          "last": 2.25,
+          "min": 1.65,
+          "max": 2.25,
+          "span": 0.6000000000000001
+        },
+        "no_reset": true
+      }
+    },
+    {
+      "name": "select_third_video_media_ready",
+      "label": "第三人称视频异步打开并推进",
+      "status": "PASS",
+      "evidence": {
+        "action": "select_third_video",
+        "samples": 22,
+        "ready_samples": 22,
+        "time": {
+          "first": 0.0,
+          "last": 1.3,
+          "min": 0.0,
+          "max": 1.3,
+          "span": 1.3
+        },
+        "durations": [
+          5.9999666
+        ],
+        "resolved_urls": [
+          "file://<PROJECT_DIR>/Content/Movies/GolfThird.mp4"
+        ],
+        "failed_samples": 0,
+        "first_mismatches": [],
+        "note": "Ready/playback is runtime evidence; the resolved URL is absolute even when the saved media source is relative."
+      }
+    },
+    {
+      "name": "video_third_pause_frozen",
+      "label": "第三人称视频暂停时媒体时钟稳定",
+      "status": "PASS",
+      "evidence": {
+        "action": "video_third_pause",
+        "primary_window_samples": 23,
+        "samples": 23,
+        "observed_seconds": 1.3590000000003783,
+        "supplemental_contiguous_paused_interval": false,
+        "time": {
+          "first": 1.6166666,
+          "last": 1.6166666,
+          "min": 1.6166666,
+          "max": 1.6166666,
+          "span": 0.0
+        },
+        "tolerance_seconds": 0.008333333333333333
+      }
+    },
+    {
+      "name": "video_third_resume_progress",
+      "label": "第三人称视频从暂停处续播",
+      "status": "PASS",
+      "evidence": {
+        "action": "video_third_resume",
+        "samples": 115,
+        "moving_samples": 65,
+        "time": {
+          "first": 1.9,
+          "last": 5.9833166,
+          "min": 1.9,
+          "max": 5.9833166,
+          "span": 4.0833166
+        },
+        "minimum_progress_seconds": 0.1,
+        "previous_pause": "video_third_pause",
+        "paused_position": 1.6166666,
+        "transition_time": {
+          "first": 1.6166666,
+          "last": 2.15,
+          "min": 1.6166666,
+          "max": 2.15,
+          "span": 0.5333333999999998
+        },
+        "no_reset": true
+      }
+    },
+    {
+      "name": "video_end_state",
+      "label": "第三人称视频自然结束并保持末帧时间",
+      "status": "PASS",
+      "evidence": {
+        "ended_samples": 50,
+        "final_media_time": {
+          "first": 5.96665,
+          "last": 5.9833166,
+          "min": 5.96665,
+          "max": 5.9833166,
+          "span": 0.016666600000000642
+        },
+        "note": "This verifies the clock and UI end state. Final-frame pixels are checked separately in screenshot 13."
+      }
+    },
+    {
+      "name": "video_third_replay_reset",
+      "label": "第三人称视频重播归零并推进",
+      "status": "PASS",
+      "evidence": {
+        "action": "video_third_replay",
+        "transition_samples": 18,
+        "stable_samples": 24,
+        "observed_resets": [
+          {
+            "before_sample": 1379,
+            "after_sample": 1380,
+            "before_time": 5.9833166,
+            "after_time": 0.0
+          }
+        ],
+        "post_action_time": {
+          "first": 0.0,
+          "last": 1.55,
+          "min": 0.0,
+          "max": 1.55,
+          "span": 1.55
+        },
+        "reset_tolerance_seconds": 0.25,
+        "minimum_detected_drop_seconds": 0.5
+      }
+    },
+    {
+      "name": "video_modal_freezes_scene",
+      "label": "完整视频面板期间场景保持暂停",
+      "status": "PASS",
+      "evidence": {
+        "samples": 851,
+        "scene_time": {
+          "first": 1.5000195503234863,
+          "last": 1.5000195503234863,
+          "min": 1.5000195503234863,
+          "max": 1.5000195503234863,
+          "span": 0.0
+        },
+        "observed_seconds": 53.39100000000326
+      }
+    },
+    {
+      "name": "video_modal_blocks_space",
+      "label": "视频面板中的空格不穿透重播场景",
+      "status": "PASS",
+      "evidence": {
+        "samples": 9,
+        "scene_time": {
+          "first": 1.5000195503234863,
+          "last": 1.5000195503234863,
+          "min": 1.5000195503234863,
+          "max": 1.5000195503234863,
+          "span": 0.0
+        },
+        "action": "video_modal_blocks_scene_replay",
+        "expected_scene_time": 1.5000195503234863
+      }
+    },
+    {
+      "name": "close_videos_state",
+      "label": "关闭视频后播放器关闭且面板状态退出",
+      "status": "PASS",
+      "evidence": {
+        "action": "close_videos",
+        "samples": 27,
+        "expected": {
+          "ui.VideoOpen": false,
+          "media.playing": false,
+          "media.paused": false,
+          "media.ready": false,
+          "media.url": ""
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "scene_resume_after_video_progress",
+      "label": "关闭视频后主场景按钮仍可续播",
+      "status": "PASS",
+      "evidence": {
+        "action": "scene_resume_after_video",
+        "samples": 14,
+        "moving_samples": 14,
+        "time": {
+          "first": 1.7500319480895996,
+          "last": 2.5667057037353516,
+          "min": 1.7500319480895996,
+          "max": 2.5667057037353516,
+          "span": 0.816673755645752
+        },
+        "minimum_progress_seconds": 0.1,
+        "previous_pause": "scene_pause_before_video",
+        "paused_position": 1.5000195503234863,
+        "transition_time": {
+          "first": 1.5000195503234863,
+          "last": 2.0667009353637695,
+          "min": 1.5000195503234863,
+          "max": 2.0667009353637695,
+          "span": 0.5666813850402832
+        },
+        "no_reset": true
+      }
+    },
+    {
+      "name": "scene_pause_after_video_frozen",
+      "label": "回到主场景后暂停按钮有效",
+      "status": "PASS",
+      "evidence": {
+        "action": "scene_pause_after_video",
+        "primary_window_samples": 2,
+        "samples": 6,
+        "observed_seconds": 0.2959999999984575,
+        "supplemental_contiguous_paused_interval": true,
+        "time": {
+          "first": 2.9000418186187744,
+          "last": 2.9000418186187744,
+          "min": 2.9000418186187744,
+          "max": 2.9000418186187744,
+          "span": 0.0
+        },
+        "tolerance_seconds": 0.0001
+      }
+    },
+    {
+      "name": "keyboard_replay_reset",
+      "label": "旧快捷键 R 仍重播回到起点附近",
+      "status": "PASS",
+      "evidence": {
+        "action": "keyboard_replay",
+        "transition_samples": 18,
+        "stable_samples": 4,
+        "observed_resets": [
+          {
+            "before_sample": 1477,
+            "after_sample": 1478,
+            "before_time": 2.9000418186187744,
+            "after_time": 0.016666799783706665
+          }
+        ],
+        "post_action_time": {
+          "first": 0.5166709423065186,
+          "last": 0.7000055909156799,
+          "min": 0.5166709423065186,
+          "max": 0.7000055909156799,
+          "span": 0.18333464860916138
+        },
+        "reset_tolerance_seconds": 0.25,
+        "minimum_detected_drop_seconds": 0.5
+      }
+    },
+    {
+      "name": "keyboard_pause_state",
+      "label": "旧快捷键 P 设置暂停",
+      "status": "PASS",
+      "evidence": {
+        "action": "keyboard_pause",
+        "samples": 1,
+        "expected": {
+          "paused": true
+        },
+        "mismatch_count": 0,
+        "first_mismatches": []
+      }
+    },
+    {
+      "name": "keyboard_pause_frozen",
+      "label": "旧快捷键 P 后同一暂停段时间稳定",
+      "status": "PASS",
+      "evidence": {
+        "action": "keyboard_pause",
+        "primary_window_samples": 1,
+        "samples": 549,
+        "observed_seconds": 34.35900000000038,
+        "supplemental_contiguous_paused_interval": true,
+        "time": {
+          "first": 0.7500060796737671,
+          "last": 0.7500060796737671,
+          "min": 0.7500060796737671,
+          "max": 0.7500060796737671,
+          "span": 0.0
+        },
+        "tolerance_seconds": 0.0001
+      }
+    },
+    {
+      "name": "keyboard_camera_toggle",
+      "label": "旧快捷键 V 切换视角",
+      "status": "PASS",
+      "evidence": {
+        "samples": 2,
+        "previous": false,
+        "observed_states": [
+          true
+        ]
+      }
+    },
+    {
+      "name": "keyboard_lens_toggle",
+      "label": "旧快捷键 B 切换畸变",
+      "status": "PASS",
+      "evidence": {
+        "samples": 1,
+        "previous": true,
+        "observed_states": [
+          false
+        ]
+      }
+    },
+    {
+      "name": "keyboard_grid_toggle",
+      "label": "旧快捷键 G 切换网格",
+      "status": "PASS",
+      "evidence": {
+        "samples": 510,
+        "previous": false,
+        "observed_states": [
+          true
+        ]
+      }
+    },
+    {
+      "name": "relative_media_sources_match_exports",
+      "label": "相对媒体来源与正式双视频文件一致",
+      "status": "PASS",
+      "evidence": {
+        "clips": [
+          {
+            "view": "head",
+            "saved_media_source_path": "./Movies/GolfHead.mp4",
+            "movie_relative_path": "Content/Movies/GolfHead.mp4",
+            "files_exist": true,
+            "relative_source": true,
+            "source_sha256": "a4f3a533be926414c81557b57d9387d071fc9032d501d222da0101529d7b5a79",
+            "movie_sha256": "a4f3a533be926414c81557b57d9387d071fc9032d501d222da0101529d7b5a79",
+            "hashes_match": true
+          },
+          {
+            "view": "third",
+            "saved_media_source_path": "./Movies/GolfThird.mp4",
+            "movie_relative_path": "Content/Movies/GolfThird.mp4",
+            "files_exist": true,
+            "relative_source": true,
+            "source_sha256": "38032e4296cd0bdcdac89e47bac62a4160501177646195f85327f48b015eb42f",
+            "movie_sha256": "38032e4296cd0bdcdac89e47bac62a4160501177646195f85327f48b015eb42f",
+            "hashes_match": true
+          }
+        ],
+        "source_configuration_evidence": "<PROJECT_DIR>\\Output\\Validation\\UI\\Media_Asset_Build.json",
+        "note": "Saved FileMediaSource paths are taken from the authoring snapshot; runtime readiness/URLs are verified separately."
+      }
+    }
+  ],
+  "limits": [
+    "Conclusions apply to this recorded editor game session and real mouse/key action log.",
+    "Head/grid fields are selected state flags; this trace does not include both camera active flags or mesh visibility.",
+    "Media clock/status checks do not replace the separate actual screenshot/video-pixel inspection.",
+    "No packaged executable or different-computer run is claimed.",
+    "Short keyboard windows retain their actual sample counts; sustained pause uses only one contiguous paused interval."
+  ]
+}

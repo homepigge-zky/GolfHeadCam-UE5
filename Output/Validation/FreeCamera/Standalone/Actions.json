@@ -1,0 +1,144 @@
+[
+  {
+    "action": "enter_free",
+    "kind": "key_down",
+    "clock": 28581.171,
+    "key": "f"
+  },
+  {
+    "action": "enter_free",
+    "kind": "key_up",
+    "clock": 28581.359,
+    "key": "f"
+  },
+  {
+    "action": "play_swing",
+    "kind": "key_down",
+    "clock": 28581.765,
+    "key": "r"
+  },
+  {
+    "action": "play_swing",
+    "kind": "key_up",
+    "clock": 28581.937,
+    "key": "r"
+  },
+  {
+    "action": "rmb",
+    "kind": "mouse_down",
+    "clock": 28582.343,
+    "button": "right"
+  },
+  {
+    "action": "move_forward",
+    "kind": "key_down",
+    "clock": 28582.562,
+    "key": "w"
+  },
+  {
+    "action": "move_forward",
+    "kind": "key_up",
+    "clock": 28583.046,
+    "key": "w"
+  },
+  {
+    "action": "look",
+    "kind": "drag_start",
+    "clock": 28583.171
+  },
+  {
+    "action": "look",
+    "kind": "drag_end",
+    "clock": 28583.734
+  },
+  {
+    "action": "rmb",
+    "kind": "mouse_up",
+    "clock": 28583.859,
+    "button": "right"
+  },
+  {
+    "action": "pause_swing",
+    "kind": "key_down",
+    "clock": 28584.078,
+    "key": "p"
+  },
+  {
+    "action": "pause_swing",
+    "kind": "key_up",
+    "clock": 28584.25,
+    "key": "p"
+  },
+  {
+    "action": "lock_pose",
+    "kind": "key_down",
+    "clock": 28585.406,
+    "key": "f"
+  },
+  {
+    "action": "lock_pose",
+    "kind": "key_up",
+    "clock": 28585.593,
+    "key": "f"
+  },
+  {
+    "action": "resume_swing",
+    "kind": "key_down",
+    "clock": 28586.812,
+    "key": "p"
+  },
+  {
+    "action": "resume_swing",
+    "kind": "key_up",
+    "clock": 28587.0,
+    "key": "p"
+  },
+  {
+    "action": "pause_again",
+    "kind": "key_down",
+    "clock": 28587.5,
+    "key": "p"
+  },
+  {
+    "action": "pause_again",
+    "kind": "key_up",
+    "clock": 28587.687,
+    "key": "p"
+  },
+  {
+    "action": "reenter",
+    "kind": "key_down",
+    "clock": 28588.859,
+    "key": "f"
+  },
+  {
+    "action": "reenter",
+    "kind": "key_up",
+    "clock": 28589.046,
+    "key": "f"
+  },
+  {
+    "action": "home",
+    "kind": "key_down",
+    "clock": 28589.296,
+    "key": "home"
+  },
+  {
+    "action": "home",
+    "kind": "key_up",
+    "clock": 28589.484,
+    "key": "home"
+  },
+  {
+    "action": "leave_free",
+    "kind": "key_down",
+    "clock": 28589.734,
+    "key": "f"
+  },
+  {
+    "action": "leave_free",
+    "kind": "key_up",
+    "clock": 28589.921,
+    "key": "f"
+  }
+]

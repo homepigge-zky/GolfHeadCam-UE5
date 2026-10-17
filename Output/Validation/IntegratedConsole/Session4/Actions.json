@@ -1,0 +1,35 @@
+[
+  {
+    "action": "startup_idle_begin",
+    "kind": "mark",
+    "clock": 10228.343
+  },
+  {
+    "action": "startup_idle_end",
+    "kind": "mark",
+    "clock": 10232.64
+  },
+  {
+    "action": "play_mouse_session2",
+    "kind": "click",
+    "clock": 10233.89,
+    "position": [
+      102,
+      428
+    ]
+  },
+  {
+    "action": "pause_mouse_session2",
+    "kind": "click",
+    "clock": 10234.781,
+    "position": [
+      216,
+      428
+    ]
+  },
+  {
+    "action": "session2_end",
+    "kind": "mark",
+    "clock": 10236.203
+  }
+]

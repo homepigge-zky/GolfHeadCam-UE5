@@ -1,0 +1,843 @@
+{
+  "layout": {
+    "asset": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl",
+    "saved": true,
+    "main_card_geometry": {
+      "position": [
+        28.0,
+        -28.0
+      ],
+      "size": [
+        400.0,
+        720.0
+      ],
+      "anchor_min": [
+        0.0,
+        1.0
+      ],
+      "anchor_max": [
+        0.0,
+        1.0
+      ],
+      "alignment": [
+        0.0,
+        1.0
+      ],
+      "z_order": 10
+    },
+    "nudge_panel_geometry": {
+      "position": [
+        -28.0,
+        -28.0
+      ],
+      "size": [
+        360.0,
+        260.0
+      ],
+      "anchor_min": [
+        1.0,
+        1.0
+      ],
+      "anchor_max": [
+        1.0,
+        1.0
+      ],
+      "alignment": [
+        1.0,
+        1.0
+      ],
+      "z_order": 12
+    },
+    "nudge_panel_default": "Collapsed",
+    "legacy_help_default": "Collapsed",
+    "main_buttons": {
+      "BtnFreeCamera": [
+        "自由相机",
+        [
+          24,
+          275,
+          170,
+          38
+        ]
+      ],
+      "BtnResetCamera": [
+        "复位第三机位",
+        [
+          206,
+          275,
+          170,
+          38
+        ]
+      ]
+    },
+    "nudge_buttons": {
+      "BtnCamForward": [
+        "前进",
+        [
+          18,
+          82,
+          102,
+          32
+        ]
+      ],
+      "BtnCamBack": [
+        "后退",
+        [
+          129,
+          82,
+          102,
+          32
+        ]
+      ],
+      "BtnCamUp": [
+        "升高",
+        [
+          240,
+          82,
+          102,
+          32
+        ]
+      ],
+      "BtnCamLeft": [
+        "左移",
+        [
+          18,
+          122,
+          102,
+          32
+        ]
+      ],
+      "BtnCamRight": [
+        "右移",
+        [
+          129,
+          122,
+          102,
+          32
+        ]
+      ],
+      "BtnCamDown": [
+        "降低",
+        [
+          240,
+          122,
+          102,
+          32
+        ]
+      ],
+      "BtnCamYawLeft": [
+        "向左看",
+        [
+          18,
+          164,
+          156,
+          32
+        ]
+      ],
+      "BtnCamYawRight": [
+        "向右看",
+        [
+          186,
+          164,
+          156,
+          32
+        ]
+      ],
+      "BtnCamPitchUp": [
+        "抬头",
+        [
+          18,
+          204,
+          156,
+          32
+        ]
+      ],
+      "BtnCamPitchDown": [
+        "低头",
+        [
+          186,
+          204,
+          156,
+          32
+        ]
+      ]
+    },
+    "managed_widget_variables": [
+      "BtnCamBack",
+      "BtnCamBack_Label",
+      "BtnCamDown",
+      "BtnCamDown_Label",
+      "BtnCamForward",
+      "BtnCamForward_Label",
+      "BtnCamLeft",
+      "BtnCamLeft_Label",
+      "BtnCamPitchDown",
+      "BtnCamPitchDown_Label",
+      "BtnCamPitchUp",
+      "BtnCamPitchUp_Label",
+      "BtnCamRight",
+      "BtnCamRight_Label",
+      "BtnCamUp",
+      "BtnCamUp_Label",
+      "BtnCamYawLeft",
+      "BtnCamYawLeft_Label",
+      "BtnCamYawRight",
+      "BtnCamYawRight_Label",
+      "BtnFreeCamera",
+      "BtnFreeCamera_Label",
+      "BtnResetCamera",
+      "BtnResetCamera_Label",
+      "CameraNudgeBackground",
+      "CameraNudgePanel",
+      "TxtIntegratedFreeState",
+      "TxtNavigationHint",
+      "TxtNudgeHint",
+      "TxtNudgeTitle"
+    ],
+    "new_state_variable": "TxtIntegratedFreeState",
+    "upper_geometry_preserved": {
+      "TxtTitle": {
+        "position": [
+          24.0,
+          22.0
+        ],
+        "size": [
+          352.0,
+          34.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 2
+      },
+      "TxtStatus": {
+        "position": [
+          24.0,
+          62.0
+        ],
+        "size": [
+          352.0,
+          24.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 2
+      },
+      "BtnPlay": {
+        "position": [
+          24.0,
+          100.0
+        ],
+        "size": [
+          112.0,
+          42.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 3
+      },
+      "BtnPause": {
+        "position": [
+          144.0,
+          100.0
+        ],
+        "size": [
+          112.0,
+          42.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 3
+      },
+      "BtnReplay": {
+        "position": [
+          264.0,
+          100.0
+        ],
+        "size": [
+          112.0,
+          42.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 3
+      },
+      "TxtViewSection": {
+        "position": [
+          24.0,
+          163.0
+        ],
+        "size": [
+          352.0,
+          24.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 2
+      },
+      "TxtView": {
+        "position": [
+          24.0,
+          190.0
+        ],
+        "size": [
+          352.0,
+          23.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 2
+      },
+      "BtnHead": {
+        "position": [
+          24.0,
+          222.0
+        ],
+        "size": [
+          170.0,
+          42.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 3
+      },
+      "BtnThird": {
+        "position": [
+          206.0,
+          222.0
+        ],
+        "size": [
+          170.0,
+          42.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 3
+      }
+    },
+    "image_video_preserved": {
+      "draw_as": "<SlateBrushDrawType.IMAGE: 3>",
+      "tint": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resource": null,
+      "geometry": {
+        "position": [
+          70.0,
+          116.0
+        ],
+        "size": [
+          960.0,
+          540.0
+        ],
+        "anchor_min": [
+          0.0,
+          0.0
+        ],
+        "anchor_max": [
+          0.0,
+          0.0
+        ],
+        "alignment": [
+          0.0,
+          0.0
+        ],
+        "z_order": 2
+      }
+    },
+    "graphs_recreated": [],
+    "runtime_events_wired": false,
+    "diagnostics": [
+      {
+        "graph": "ScenePlay",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "ScenePause",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "SceneReplay",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "ViewHead",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "ViewThird",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "GridToggle",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "LensNone",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "LensBarrel",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "LensPincushion",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "LensCalibrated",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "OpenVideos",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "OpenHeadVideo",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "OpenThirdVideo",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "VideoPlay",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "VideoPause",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "VideoReplay",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "CloseVideos",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "MediaOpened",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "MediaFailed",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "MediaEnded",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "RefreshDisplay",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "OpenSelectedVideo",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "RefreshFreeCameraUI",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "graph": "EventGraph",
+        "errors": [],
+        "warnings": []
+      }
+    ]
+  },
+  "logic": {
+    "parent_widget": "/Game/GolfHeadCam/UI/WBP_CameraControl",
+    "mouse_buttons": {
+      "BtnFreeCamera": [
+        "ClickFreeCamera",
+        "ToggleFreeCamera",
+        {}
+      ],
+      "BtnResetCamera": [
+        "ClickResetThirdCamera",
+        "UIResetThirdCamera",
+        {}
+      ],
+      "BtnCamForward": [
+        "ClickCameraForward",
+        "UIAdjustFreeCamera",
+        {
+          "ForwardStep": 25
+        }
+      ],
+      "BtnCamBack": [
+        "ClickCameraBack",
+        "UIAdjustFreeCamera",
+        {
+          "ForwardStep": -25
+        }
+      ],
+      "BtnCamLeft": [
+        "ClickCameraLeft",
+        "UIAdjustFreeCamera",
+        {
+          "RightStep": -25
+        }
+      ],
+      "BtnCamRight": [
+        "ClickCameraRight",
+        "UIAdjustFreeCamera",
+        {
+          "RightStep": 25
+        }
+      ],
+      "BtnCamUp": [
+        "ClickCameraUp",
+        "UIAdjustFreeCamera",
+        {
+          "UpStep": 25
+        }
+      ],
+      "BtnCamDown": [
+        "ClickCameraDown",
+        "UIAdjustFreeCamera",
+        {
+          "UpStep": -25
+        }
+      ],
+      "BtnCamYawLeft": [
+        "ClickCameraYawLeft",
+        "UIAdjustFreeCamera",
+        {
+          "YawStep": -5
+        }
+      ],
+      "BtnCamYawRight": [
+        "ClickCameraYawRight",
+        "UIAdjustFreeCamera",
+        {
+          "YawStep": 5
+        }
+      ],
+      "BtnCamPitchUp": [
+        "ClickCameraPitchUp",
+        "UIAdjustFreeCamera",
+        {
+          "PitchStep": 5
+        }
+      ],
+      "BtnCamPitchDown": [
+        "ClickCameraPitchDown",
+        "UIAdjustFreeCamera",
+        {
+          "PitchStep": -5
+        }
+      ]
+    },
+    "top_hint_removed_from_visible_ui": true,
+    "nudge_panel_only_after_explicit_enable": true,
+    "diagnostics": {
+      "asset": "/Game/GolfHeadCam/UI/WBP_CameraControl.WBP_CameraControl",
+      "graphs": [
+        {
+          "name": "ScenePlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ScenePause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "SceneReplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ViewHead",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ViewThird",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "GridToggle",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensNone",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensBarrel",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensPincushion",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "LensCalibrated",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenVideos",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenHeadVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenThirdVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoPlay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoPause",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "VideoReplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "CloseVideos",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaOpened",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaFailed",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "MediaEnded",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RefreshDisplay",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "OpenSelectedVideo",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "RefreshFreeCameraUI",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickFreeCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickResetThirdCamera",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraForward",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraBack",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraLeft",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraRight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraUp",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraDown",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraYawLeft",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraYawRight",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraPitchUp",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "ClickCameraPitchDown",
+          "errors": [],
+          "warnings": []
+        },
+        {
+          "name": "EventGraph",
+          "errors": [],
+          "warnings": []
+        }
+      ]
+    }
+  }
+}
