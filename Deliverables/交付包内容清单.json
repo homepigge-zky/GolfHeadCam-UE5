@@ -1,9 +1,9 @@
 {
-  "created_utc": "2026-10-17T20:02:27.173112+00:00",
+  "created_utc": "2026-10-17T20:11:30.300489+00:00",
   "delivery": "GolfHeadCam public GitHub delivery, all videos excluded",
   "engine": "Unreal Engine 5.8.3",
   "scope": "Editable native Blueprint project, report, slides, script, parameters, docs, still images and validation evidence. No video binaries, primary render frame sequences, engine, cache or packaged executable.",
-  "historical_scope": "Current acceptance is defined by RealtimeTrajectory gates. Prior BallTrajectory records describe the superseded predicted path. Existing MP4/PDF/PPT retain their original baseline scope and were not regenerated. Current project renders use the new motion and are not expected to reproduce the old video frame-for-frame.",
+  "historical_scope": "Deliverables/实践报告.pdf, presentation slides/script and earlier validation retain baseline scope. Root 实验报告.pdf describes current Blueprint behavior. All videos are excluded.",
   "source_manifest_files_verified": 569,
   "excluded_video_files": [
     "Content/Movies/GolfHead.mp4",
@@ -101,341 +101,6 @@
       "path": "Config/DefaultInput.ini",
       "bytes": 9107,
       "sha256": "0e3ff7f7a074e29869cdbe583d37e2ba3e7ca99d7811510bf5d028d4b0182afd"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/0/9R/UKIMD8EYGPZFS8OC6GX24A.uasset",
-      "bytes": 4665,
-      "sha256": "fcc1060527c489fb8e33b8a3752fc86d65f7d3cdb9c4bbb044dfefccad6b124d"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/EU/X5MT1GOX9C5UUGZAKRVC3R.uasset",
-      "bytes": 4373,
-      "sha256": "50d947877d507c95b765d9b3a3abab19739d6d0f41e6c7fa35a67e223d189023"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/K3/79QZQ7KG2RXNWMD6RSPKUM.uasset",
-      "bytes": 4371,
-      "sha256": "c6c82f9d1fc5f5cbfc3e0ff029862e718a80cd9ff9f59e0c495f873f8d815219"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/KL/UYSRPQ5SOYIFVLEQINPH31.uasset",
-      "bytes": 4569,
-      "sha256": "67e1837f62649ac749d1ba75c4431602110aef8a648a4eb5b84f5f5490832d7c"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/MV/2U2IE6JXO1320Q32RJQKSE.uasset",
-      "bytes": 4727,
-      "sha256": "0517da9397218cf46cf5db73305b412848d3325b302ac11c4ecda325e6da6a92"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/X5/JDOWWCJ7DZVSHT4Y29GQ4D.uasset",
-      "bytes": 4373,
-      "sha256": "0041dd5c5f354e58fe0d681490fad5162013ced33e4856a33f86cb3daa0789f5"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/AM/9YGDW7FMEY1CZD31VUYO11.uasset",
-      "bytes": 5271,
-      "sha256": "4228732dd1d3826717b668980a23af543daec697e6b469ad9d0f88aa246324f4"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/AX/QEPSHOMS1K2ANUR3LXWOJM.uasset",
-      "bytes": 4665,
-      "sha256": "4602c5ff270ae3f56633b28275fd4430e9853d8b6d1c1b30f801b55db7df43ef"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/TV/DYUIEBPX2N8UFXT326WX2O.uasset",
-      "bytes": 4721,
-      "sha256": "b5d9e958280ea231d5f413eae02e1d00448f9e979c2715bbee865ba6adf2094b"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/V0/9XTUAMN5S6UUCFB5K0ZGZM.uasset",
-      "bytes": 4667,
-      "sha256": "0740b3c48e2a86ae0e6b8f2a57128b55d9a9150d3020c4cdd451edb69cd9bcd7"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/0N/NTRPN55OWWUSD03K29ZOSH.uasset",
-      "bytes": 3982,
-      "sha256": "7582c3a747bc6768a187ec5d99e000dc7aeb944b0cd0dfe73c203b17e5d84e5f"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/C5/3LNK9WKCBL4YVMWIBXQZ1I.uasset",
-      "bytes": 4699,
-      "sha256": "bad12184219cf6228a6c12dde934b3acd8bdf54ef2c3efd55629097907a9092d"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/D3/XWEMBL7KZTNQP83W1KTMXE.uasset",
-      "bytes": 4427,
-      "sha256": "1cbf22ea1591837bd98cad4630de112d1dd845c5ec17513dee07ae6b884147a7"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/E2/L159AMTR83MORHTF2GEOKE.uasset",
-      "bytes": 4699,
-      "sha256": "ecc364fc3ca8ac6be41fd6678969db9988c321b485fd2e9631fb4accef3a242a"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/L5/790AP8RYBMX9YBLGTW6WE6.uasset",
-      "bytes": 4373,
-      "sha256": "401926d52aa019c3ecf608045ecaf76a25bc3476b91edefe3934ae039ad93fe0"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/4/CQ/I205QOSSXONYWBP69RVMVA.uasset",
-      "bytes": 4585,
-      "sha256": "239c53042288f4b190cd736dd95a09c4d781ff0e6caa278c473b329c04d00869"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/25/3IO0LF8AOO4YLSEAEN2JO1.uasset",
-      "bytes": 4667,
-      "sha256": "fb301f5c7c1357068be1db6ac00e786d09d8d75f48d5247b6e5a8d71c25d005e"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/9M/BJR5SDQDQW7QDFFPNUUMNX.uasset",
-      "bytes": 4699,
-      "sha256": "cf8f07d3823652f9ccaa9a51a90437e459121c2b4bb3ab4f9e068d83c279c992"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/KG/ETKAO35ANVW90XFH3J8GJ2.uasset",
-      "bytes": 4257,
-      "sha256": "c46a9b87b994d4980b31ae98b17c43bdfad88ee012bf86381edcd3b097a9baa8"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/W9/ZAAGYIUQZ2W6WEO3HPXAX7.uasset",
-      "bytes": 4259,
-      "sha256": "9e271778dbd64a2415a3153b7876bd837aa8e8c5162346b566340d3b3851682f"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/3C/KAT90QYQLFOHNMOF9BEDZK.uasset",
-      "bytes": 4665,
-      "sha256": "a280012bb325b7138a87a9972d3a7cd296e86c11a3ac019fb0f2948356dd693f"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/8I/HFL05AWIVBP8M8UXTV4H5K.uasset",
-      "bytes": 4259,
-      "sha256": "13b40bea681cb7072c2b45cd7195a9086efd9feab31d168a47c3b71ce7c1a5fc"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/G9/77SUGCMHUBU5E7FP1DLCVD.uasset",
-      "bytes": 4727,
-      "sha256": "01e9ed1e1a92c8093e7d59b553b7bd63dd852044a4ace54aca2bda83e402ff6f"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/UK/OT5UOZ3WBJ9P30TU3DBDEK.uasset",
-      "bytes": 4665,
-      "sha256": "765234f9cf1fffc1fcf1869cf10020d12a151b44f62011168800d51820853a82"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/XM/SN8KJL01L24VVIYC52MNFR.uasset",
-      "bytes": 4665,
-      "sha256": "4ad373eaffb2ea7902d5490935cf3157178f469af5dae89d727357cd566750ea"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/YB/C5UDZYKFL5M0YW62JXMPIZ.uasset",
-      "bytes": 4665,
-      "sha256": "b045e31b99e0d6e4c161d5df031e778a48379970df98a9d09375336842bce36d"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/GV/W5DNM2FP1ON7VGU0C2BGMV.uasset",
-      "bytes": 4665,
-      "sha256": "990532545c8d3f95f46d757d5e3b213ffeeeec56a8d72faced411ed722e576a7"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/JD/OCW0UZT4ANZZD9YHEAOMAP.uasset",
-      "bytes": 4665,
-      "sha256": "a4e38728841b251774dc04a0cd449732d3658a95b3d878b3b37e038896b3c7f4"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/O7/IHUOIGG1MW1YZY097JJ8O7.uasset",
-      "bytes": 4427,
-      "sha256": "8996f954790c768ba172b9e23d93826ee3527e4510742821a6d5b7347fb13811"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/XU/RW3P9HUUCOCG5TL3TPG6XF.uasset",
-      "bytes": 4371,
-      "sha256": "3c9902b418c6e61ab3208906a24a61759b50b14eddde562be5de934829c0ea3d"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/0N/1OONKTGJMLVBN21M6JE59I.uasset",
-      "bytes": 4699,
-      "sha256": "200009c1fdc32c8dac2957472f868f53fcb9443f322327497ec71018c9f2530a"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/7A/C0UVMH95QVQO1KMTVK7MSB.uasset",
-      "bytes": 4373,
-      "sha256": "bb78f3ea599e5d0192c7dcf0a8e5a17a1201fc07385f45e040550e5d5418846b"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/HN/XXZLD30WH49IXWEHJXSVAR.uasset",
-      "bytes": 4373,
-      "sha256": "7e91d1cf1be0495280cfb1d81ca3ce780e3dda437ba9615e3320874a7b38bdaa"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/VS/XX060WNO6GEZU5BZQCLZPP.uasset",
-      "bytes": 5152,
-      "sha256": "2d46bb9f7cd67ba05478b0253eeca463f1d9c5c91d7a14dd7c31e442cd3c4d4f"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/WI/FHUVUALB8C8XRJ0PY9XXTI.uasset",
-      "bytes": 4727,
-      "sha256": "f2869c44a01b31617b0d4cfad8d6a0c91d67e25b15a33c7e14ce1755efda3fc7"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/XH/SKCKQTQDTE8ZNW6C0FCBRO.uasset",
-      "bytes": 4699,
-      "sha256": "1656426c30aaf8411663649dc131649fa75fe8d8f0fde5b502ff73b74b73d0fd"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/5G/29Z6AXUGZPZ0CXHLK2DICG.uasset",
-      "bytes": 3143,
-      "sha256": "be525ecb970386358b3ff94791f5dbe1a04eb58cbaf4a63ece318a8d0d101d33"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/6V/AV0JKCFBVPU58UEBGB0GC0.uasset",
-      "bytes": 4665,
-      "sha256": "fdd245925ceaf4b4c59d07f1aab5610db0450523e10afb118b3a56cddfa802fd"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/EE/OCR348BHEJWLHO72TR249H.uasset",
-      "bytes": 4427,
-      "sha256": "0de101b829a7fc08e4b66fd830209d2546bce035009bc86fa7077aef9f6f91cb"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/LX/1K6D4FIEJMOF50LSVJKFMP.uasset",
-      "bytes": 2530,
-      "sha256": "c54a64753205d3fdf3f097a72075c75e64bab20424be893332c354e8bec09f32"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/UM/1F7R5WQFM2D9KH7A94JFBU.uasset",
-      "bytes": 4721,
-      "sha256": "936a6f14ece57dd7c3050effb10720f86bab8268edb3b0fa67f780a1e8946cce"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/3J/Q8CQM512VVS7UZZW0KQRSV.uasset",
-      "bytes": 4721,
-      "sha256": "faa6fa198fa4804bf650764113c461a3d83912ad609f1837cc4b77353df96d03"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/8N/4L4W0MLV9WFUGRTMUBLBOP.uasset",
-      "bytes": 4373,
-      "sha256": "f412a0b400434b9cfe73c2f91f74b14db0d2bd7f4d5189bc3c7dae7b8ece10ae"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/BN/LKN4IB4C3UPW62GHBEKTIW.uasset",
-      "bytes": 4665,
-      "sha256": "26ddd5829ac624aef3e6d6e8e60daddb5937591d71b589f1dd96f6728a45c685"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/IP/MGVQPE8M923OBBJLZBI1PC.uasset",
-      "bytes": 4719,
-      "sha256": "9aa9365621fda8c4e6ec4d71896f6f20afc3692845448b121ed9314ce5f66084"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/0L/IL99N1JAI1J4A2DFQBQL53.uasset",
-      "bytes": 4667,
-      "sha256": "95f0f52f115330087f4550c1a75b40a0f89ca820626f040515d19ad10d6c4fa1"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/2F/XTDQUHCYJJV6JCH4OJSVLG.uasset",
-      "bytes": 4545,
-      "sha256": "84b421a0de897e34b06b211f13ba865a822cc34f35596f1f95bd18915d16e900"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/HX/PES0ONLF01PSQTJCC5USD2.uasset",
-      "bytes": 4259,
-      "sha256": "b797b10826ecda36e7e2a5dcd9db2f805eef1aa30ab7155f9994b7e7955399a3"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/P1/LRQT09TOYHOXK9DY22EIKE.uasset",
-      "bytes": 4551,
-      "sha256": "c11effe59153014dd5db0f65c7627309e99b262da486c73758c4c8a1f19a5d7b"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/RX/297QBXCKTP06G7NIHIULK4.uasset",
-      "bytes": 4427,
-      "sha256": "60f28c2a70beb6455f7c9dfb9c657e1ff2222d5d7b1544a0537e757902d10312"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/27/6ZCCZ1F7ZO6DM3C8OLVGTF.uasset",
-      "bytes": 4699,
-      "sha256": "5da67a33b962a06bfc798be0009c01e4cfdf371c1ac3a14e1d6f2e94e4ea4b67"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/EE/HZ5WNBFZRJYQPUA6X8TVVT.uasset",
-      "bytes": 3911,
-      "sha256": "713b84f11124e7aee44b370bd50bc5c0e2a6aa2596dc0a7830491c809310d99e"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/HY/Q7CPP7VHOXBAMAJI90W626.uasset",
-      "bytes": 4594,
-      "sha256": "0ef1995a35ce0f27ff11dc3b93062db63c9d41e8edd03a62870cb22ea4322cc2"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/13/EPTYZCFZWXT7Z7XYKZ88XK.uasset",
-      "bytes": 4699,
-      "sha256": "bf85d87c37ff35dfe1cb8a40c52a061314c44b57d422a472765264e39527cd4c"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/50/395Y4QE4IIEWI3KSE3SB6L.uasset",
-      "bytes": 4721,
-      "sha256": "cd2515bd223d6506801eab781774531dc243870c78562ca08df664aadf8b0c03"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/8U/VKFLMM0CV8ZCC0P3TQGTTM.uasset",
-      "bytes": 4373,
-      "sha256": "d5e84da0ce8e73b66a023e358033a8fd062b96abe1b33ee5b9973926608d2713"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/AY/KLCRMXKI9WR2P0GDY96C36.uasset",
-      "bytes": 3788,
-      "sha256": "5a5cd7edf92dd7d3e60de12fb2a735184096b504b4712ea8d807bc9ea22a2635"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/K5/NQBPXM7AM8N39CBW4ZT57P.uasset",
-      "bytes": 4824,
-      "sha256": "f50b777e76cd2aa8bd7b62c0fd87f812bb76d2953ffbaf51da9a881e8d1158b9"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/M3/6T1XG4EDG4ZEE1U9HMYL4C.uasset",
-      "bytes": 4371,
-      "sha256": "c7757663530e94239db0f4978938e39e2c20b85ecda00be7b00427f7767a9415"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/MG/EDRUPW3EOYDDSI6HNSIVT1.uasset",
-      "bytes": 4659,
-      "sha256": "6cf521a1730e4bf6d5f847271390917aaa219a7bee2ac9671c414e404d702f47"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/RI/R8L7GQXCHQGMMKBPTBJTNA.uasset",
-      "bytes": 2401,
-      "sha256": "bba4c777dd2fcd28b3f0157372f01f7de4f8e00f75a6b91a31bd3a02b33db291"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/96/RFQP83S9K0LC7IW8CXS6C0.uasset",
-      "bytes": 3690,
-      "sha256": "95cc1d9fb2b7bb54552bb44ddd8a8945dd4b30596fe40f3f9cf3d78e16433ad4"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/JR/W7S9610Y7RWELGF93FZYAE.uasset",
-      "bytes": 4373,
-      "sha256": "311c40dc59a935655b52c322a3693bbf826da5344270d3e6988c59973b004772"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/SS/QXUZ4IXFNKHCYFWERA1HQA.uasset",
-      "bytes": 4257,
-      "sha256": "c28022e47f1ba2f85951dac32b7c0e00fff99ec5d78bdc186c1070adcd00647b"
-    },
-    {
-      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS.uasset",
-      "bytes": 11309,
-      "sha256": "558aafd26e2e204a85d7f4d570df7f8aa1620c135d33c47efbe43bc0256cbf52"
-    },
-    {
-      "path": "Content/__ExternalObjects__/ThirdPerson/Lvl_ThirdPerson/0/TQ/1UP2MCOIYXC0GTW985R4K0.uasset",
-      "bytes": 1867,
-      "sha256": "4bb0cff17e56dd734bbcb3f746f387f601ae46cf2e7c1bd2a3660d971590a65e"
-    },
-    {
-      "path": "Content/__ExternalObjects__/ThirdPerson/Lvl_ThirdPerson/5/TX/O6OLZU4WSCI3YRJS922SWL.uasset",
-      "bytes": 1863,
-      "sha256": "80c21c703b7747b2e849b7a39d9e354091d075737892398d581d0eca66c8fbac"
     },
     {
       "path": "Content/Characters/Mannequins/Anims/Death/MM_Death_Back_01.uasset",
@@ -973,11 +638,6 @@
       "sha256": "6aec77489fdfab0e1ea299de60fbd4f332face4495bbbd20b97fb0308bb9c5b4"
     },
     {
-      "path": "Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset",
-      "bytes": 191198,
-      "sha256": "22029d47455f24471195b26a0e04a1e1389f27d6a924e88c9f46a0f600c9a530"
-    },
-    {
       "path": "Content/Characters/Mannequins/Meshes/SKM_Manny_Simple.uasset",
       "bytes": 15825101,
       "sha256": "be9f011191ee1887b97cd13bce09886a6066c2fd62c619991070ec142184e1bf"
@@ -986,6 +646,11 @@
       "path": "Content/Characters/Mannequins/Meshes/SKM_Quinn_Simple.uasset",
       "bytes": 16252577,
       "sha256": "1ef45d92507a76d74a5e06737f94cad40eb7d5f5769dfbb63f7f74e784a178c6"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset",
+      "bytes": 191198,
+      "sha256": "22029d47455f24471195b26a0e04a1e1389f27d6a924e88c9f46a0f600c9a530"
     },
     {
       "path": "Content/Characters/Mannequins/Rigs/CR_Mannequin_Body.uasset",
@@ -1113,6 +778,16 @@
       "sha256": "6046a43cf7e39022ca456f92083962a86c4835b2be1515cd3fae4581146bba65"
     },
     {
+      "path": "Content/GolfHeadCam/Materials/MI_HeadLens_Barrel.uasset",
+      "bytes": 9365,
+      "sha256": "764eaa916fb8c889774d6956d08b37e964b624c6d23e28fb351a6872a484329a"
+    },
+    {
+      "path": "Content/GolfHeadCam/Materials/MI_HeadLens_Pincushion.uasset",
+      "bytes": 9468,
+      "sha256": "cee28f972c92410a41892616a1b6fa01737f6645c6a30879fad08f58fb04c97f"
+    },
+    {
       "path": "Content/GolfHeadCam/Materials/M_BallTrajectory.uasset",
       "bytes": 9115,
       "sha256": "78425bfb175838533d73d0f5b160f0c1525e77ae21ba896384da8e0a9a32f77a"
@@ -1178,16 +853,6 @@
       "sha256": "d72f166419439f1d06151a8026c105e0af6c516b0eb8e87c392dcb4434a0ef04"
     },
     {
-      "path": "Content/GolfHeadCam/Materials/MI_HeadLens_Barrel.uasset",
-      "bytes": 9365,
-      "sha256": "764eaa916fb8c889774d6956d08b37e964b624c6d23e28fb351a6872a484329a"
-    },
-    {
-      "path": "Content/GolfHeadCam/Materials/MI_HeadLens_Pincushion.uasset",
-      "bytes": 9468,
-      "sha256": "cee28f972c92410a41892616a1b6fa01737f6645c6a30879fad08f58fb04c97f"
-    },
-    {
       "path": "Content/GolfHeadCam/RenderPresets/MRQ_Golf_1080p60.uasset",
       "bytes": 4595,
       "sha256": "857a4ff60d9ed1d6da37b4eee41f4f7b89b19f0ebe42102c630dcccbda4b204a"
@@ -1228,11 +893,6 @@
       "sha256": "8c3b6ea96dd62db9cdbab935e58223e04d4322830f1fd6748a6fb92a18eaecb8"
     },
     {
-      "path": "Content/GolfHeadCam/UI/Media/M_UI_SavedGolf.uasset",
-      "bytes": 7012,
-      "sha256": "6ad1d78fc662cbf3a1cbae948d675fb1bfd868dcd1104c6e7682c0bb2a229a8d"
-    },
-    {
       "path": "Content/GolfHeadCam/UI/Media/MP_SavedGolf.uasset",
       "bytes": 1399,
       "sha256": "3ee24aa981e48062976b187882698e51e3809fa6ec318c9e2a51c4c3bc14a007"
@@ -1251,6 +911,11 @@
       "path": "Content/GolfHeadCam/UI/Media/MT_SavedGolf.uasset",
       "bytes": 7844,
       "sha256": "662a5fc6435861e0c0b1336049dd5a61a8ca212129e7adb00415631a3e3b0b3e"
+    },
+    {
+      "path": "Content/GolfHeadCam/UI/Media/M_UI_SavedGolf.uasset",
+      "bytes": 7012,
+      "sha256": "6ad1d78fc662cbf3a1cbae948d675fb1bfd868dcd1104c6e7682c0bb2a229a8d"
     },
     {
       "path": "Content/GolfHeadCam/UI/WBP_CameraControl.uasset",
@@ -1328,6 +993,11 @@
       "sha256": "26eb76a2ce36be334bf0770561475a9e06be928e9ca75b4a31f5df3debb36592"
     },
     {
+      "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Materials/MI_GlowNT.uasset",
+      "bytes": 4145,
+      "sha256": "6fd40bc38bfea9418fa54fe365732a1219e615169542a0a4d2e1d518318c864b"
+    },
+    {
       "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Materials/M_GradientGlow.uasset",
       "bytes": 17587,
       "sha256": "c1b29ad29c2eac3dba6dd6a90aed9de8c6147a13b6288a42bd73fe14b78970a8"
@@ -1336,11 +1006,6 @@
       "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Materials/M_SimpleGlow.uasset",
       "bytes": 15213,
       "sha256": "e6098242541b34be6aba19ea1fbfa35107f891e8f55d30d4061aa11b065b8bd8"
-    },
-    {
-      "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Materials/MI_GlowNT.uasset",
-      "bytes": 4145,
-      "sha256": "6fd40bc38bfea9418fa54fe365732a1219e615169542a0a4d2e1d518318c864b"
     },
     {
       "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Meshes/SM_CircularBand.uasset",
@@ -1373,16 +1038,6 @@
       "sha256": "8bd8784bf03cb945d63deb2c4c22261a9a9ea2af1f84766805ca92ec7b521ab3"
     },
     {
-      "path": "Content/LevelPrototyping/Materials/M_FlatCol.uasset",
-      "bytes": 11771,
-      "sha256": "41dbbda4b463a224c29ee01765e1f52a8ae63f2f94f1440ee267fe7b1a481585"
-    },
-    {
-      "path": "Content/LevelPrototyping/Materials/M_PrototypeGrid.uasset",
-      "bytes": 79863,
-      "sha256": "bf8625ad5917cee705867038d8a590b25465e6b5d5818a738a584e515d7cbdfc"
-    },
-    {
       "path": "Content/LevelPrototyping/Materials/MF_ProcGrid.uasset",
       "bytes": 49820,
       "sha256": "e5ee13abdb241d9811f6c1bcc0a607d229fa7adc5f46bfd5a9d5fedbfa279683"
@@ -1411,6 +1066,16 @@
       "path": "Content/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark.uasset",
       "bytes": 11957,
       "sha256": "838034e5afc7ab3a70bfff6de2e1237aa02337fb423e95c1b536b3e30c61c982"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/M_FlatCol.uasset",
+      "bytes": 11771,
+      "sha256": "41dbbda4b463a224c29ee01765e1f52a8ae63f2f94f1440ee267fe7b1a481585"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/M_PrototypeGrid.uasset",
+      "bytes": 79863,
+      "sha256": "bf8625ad5917cee705867038d8a590b25465e6b5d5818a738a584e515d7cbdfc"
     },
     {
       "path": "Content/LevelPrototyping/Meshes/SM_ChamferCube.uasset",
@@ -1483,9 +1148,344 @@
       "sha256": "aa8b4a4115c11750c57dc94df7fb8ab3c7f0cfef71037b9d11e7639fab15c25e"
     },
     {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/0/9R/UKIMD8EYGPZFS8OC6GX24A.uasset",
+      "bytes": 4665,
+      "sha256": "fcc1060527c489fb8e33b8a3752fc86d65f7d3cdb9c4bbb044dfefccad6b124d"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/EU/X5MT1GOX9C5UUGZAKRVC3R.uasset",
+      "bytes": 4373,
+      "sha256": "50d947877d507c95b765d9b3a3abab19739d6d0f41e6c7fa35a67e223d189023"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/K3/79QZQ7KG2RXNWMD6RSPKUM.uasset",
+      "bytes": 4371,
+      "sha256": "c6c82f9d1fc5f5cbfc3e0ff029862e718a80cd9ff9f59e0c495f873f8d815219"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/KL/UYSRPQ5SOYIFVLEQINPH31.uasset",
+      "bytes": 4569,
+      "sha256": "67e1837f62649ac749d1ba75c4431602110aef8a648a4eb5b84f5f5490832d7c"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/MV/2U2IE6JXO1320Q32RJQKSE.uasset",
+      "bytes": 4727,
+      "sha256": "0517da9397218cf46cf5db73305b412848d3325b302ac11c4ecda325e6da6a92"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/X5/JDOWWCJ7DZVSHT4Y29GQ4D.uasset",
+      "bytes": 4373,
+      "sha256": "0041dd5c5f354e58fe0d681490fad5162013ced33e4856a33f86cb3daa0789f5"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/AM/9YGDW7FMEY1CZD31VUYO11.uasset",
+      "bytes": 5271,
+      "sha256": "4228732dd1d3826717b668980a23af543daec697e6b469ad9d0f88aa246324f4"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/AX/QEPSHOMS1K2ANUR3LXWOJM.uasset",
+      "bytes": 4665,
+      "sha256": "4602c5ff270ae3f56633b28275fd4430e9853d8b6d1c1b30f801b55db7df43ef"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/TV/DYUIEBPX2N8UFXT326WX2O.uasset",
+      "bytes": 4721,
+      "sha256": "b5d9e958280ea231d5f413eae02e1d00448f9e979c2715bbee865ba6adf2094b"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/V0/9XTUAMN5S6UUCFB5K0ZGZM.uasset",
+      "bytes": 4667,
+      "sha256": "0740b3c48e2a86ae0e6b8f2a57128b55d9a9150d3020c4cdd451edb69cd9bcd7"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/0N/NTRPN55OWWUSD03K29ZOSH.uasset",
+      "bytes": 3982,
+      "sha256": "7582c3a747bc6768a187ec5d99e000dc7aeb944b0cd0dfe73c203b17e5d84e5f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/C5/3LNK9WKCBL4YVMWIBXQZ1I.uasset",
+      "bytes": 4699,
+      "sha256": "bad12184219cf6228a6c12dde934b3acd8bdf54ef2c3efd55629097907a9092d"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/D3/XWEMBL7KZTNQP83W1KTMXE.uasset",
+      "bytes": 4427,
+      "sha256": "1cbf22ea1591837bd98cad4630de112d1dd845c5ec17513dee07ae6b884147a7"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/E2/L159AMTR83MORHTF2GEOKE.uasset",
+      "bytes": 4699,
+      "sha256": "ecc364fc3ca8ac6be41fd6678969db9988c321b485fd2e9631fb4accef3a242a"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/L5/790AP8RYBMX9YBLGTW6WE6.uasset",
+      "bytes": 4373,
+      "sha256": "401926d52aa019c3ecf608045ecaf76a25bc3476b91edefe3934ae039ad93fe0"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/4/CQ/I205QOSSXONYWBP69RVMVA.uasset",
+      "bytes": 4585,
+      "sha256": "239c53042288f4b190cd736dd95a09c4d781ff0e6caa278c473b329c04d00869"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/25/3IO0LF8AOO4YLSEAEN2JO1.uasset",
+      "bytes": 4667,
+      "sha256": "fb301f5c7c1357068be1db6ac00e786d09d8d75f48d5247b6e5a8d71c25d005e"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/9M/BJR5SDQDQW7QDFFPNUUMNX.uasset",
+      "bytes": 4699,
+      "sha256": "cf8f07d3823652f9ccaa9a51a90437e459121c2b4bb3ab4f9e068d83c279c992"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/KG/ETKAO35ANVW90XFH3J8GJ2.uasset",
+      "bytes": 4257,
+      "sha256": "c46a9b87b994d4980b31ae98b17c43bdfad88ee012bf86381edcd3b097a9baa8"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/W9/ZAAGYIUQZ2W6WEO3HPXAX7.uasset",
+      "bytes": 4259,
+      "sha256": "9e271778dbd64a2415a3153b7876bd837aa8e8c5162346b566340d3b3851682f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/3C/KAT90QYQLFOHNMOF9BEDZK.uasset",
+      "bytes": 4665,
+      "sha256": "a280012bb325b7138a87a9972d3a7cd296e86c11a3ac019fb0f2948356dd693f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/8I/HFL05AWIVBP8M8UXTV4H5K.uasset",
+      "bytes": 4259,
+      "sha256": "13b40bea681cb7072c2b45cd7195a9086efd9feab31d168a47c3b71ce7c1a5fc"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/G9/77SUGCMHUBU5E7FP1DLCVD.uasset",
+      "bytes": 4727,
+      "sha256": "01e9ed1e1a92c8093e7d59b553b7bd63dd852044a4ace54aca2bda83e402ff6f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/UK/OT5UOZ3WBJ9P30TU3DBDEK.uasset",
+      "bytes": 4665,
+      "sha256": "765234f9cf1fffc1fcf1869cf10020d12a151b44f62011168800d51820853a82"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/XM/SN8KJL01L24VVIYC52MNFR.uasset",
+      "bytes": 4665,
+      "sha256": "4ad373eaffb2ea7902d5490935cf3157178f469af5dae89d727357cd566750ea"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/YB/C5UDZYKFL5M0YW62JXMPIZ.uasset",
+      "bytes": 4665,
+      "sha256": "b045e31b99e0d6e4c161d5df031e778a48379970df98a9d09375336842bce36d"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/GV/W5DNM2FP1ON7VGU0C2BGMV.uasset",
+      "bytes": 4665,
+      "sha256": "990532545c8d3f95f46d757d5e3b213ffeeeec56a8d72faced411ed722e576a7"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/JD/OCW0UZT4ANZZD9YHEAOMAP.uasset",
+      "bytes": 4665,
+      "sha256": "a4e38728841b251774dc04a0cd449732d3658a95b3d878b3b37e038896b3c7f4"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/O7/IHUOIGG1MW1YZY097JJ8O7.uasset",
+      "bytes": 4427,
+      "sha256": "8996f954790c768ba172b9e23d93826ee3527e4510742821a6d5b7347fb13811"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/XU/RW3P9HUUCOCG5TL3TPG6XF.uasset",
+      "bytes": 4371,
+      "sha256": "3c9902b418c6e61ab3208906a24a61759b50b14eddde562be5de934829c0ea3d"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/0N/1OONKTGJMLVBN21M6JE59I.uasset",
+      "bytes": 4699,
+      "sha256": "200009c1fdc32c8dac2957472f868f53fcb9443f322327497ec71018c9f2530a"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/7A/C0UVMH95QVQO1KMTVK7MSB.uasset",
+      "bytes": 4373,
+      "sha256": "bb78f3ea599e5d0192c7dcf0a8e5a17a1201fc07385f45e040550e5d5418846b"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/HN/XXZLD30WH49IXWEHJXSVAR.uasset",
+      "bytes": 4373,
+      "sha256": "7e91d1cf1be0495280cfb1d81ca3ce780e3dda437ba9615e3320874a7b38bdaa"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/VS/XX060WNO6GEZU5BZQCLZPP.uasset",
+      "bytes": 5152,
+      "sha256": "2d46bb9f7cd67ba05478b0253eeca463f1d9c5c91d7a14dd7c31e442cd3c4d4f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/WI/FHUVUALB8C8XRJ0PY9XXTI.uasset",
+      "bytes": 4727,
+      "sha256": "f2869c44a01b31617b0d4cfad8d6a0c91d67e25b15a33c7e14ce1755efda3fc7"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/XH/SKCKQTQDTE8ZNW6C0FCBRO.uasset",
+      "bytes": 4699,
+      "sha256": "1656426c30aaf8411663649dc131649fa75fe8d8f0fde5b502ff73b74b73d0fd"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/5G/29Z6AXUGZPZ0CXHLK2DICG.uasset",
+      "bytes": 3143,
+      "sha256": "be525ecb970386358b3ff94791f5dbe1a04eb58cbaf4a63ece318a8d0d101d33"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/6V/AV0JKCFBVPU58UEBGB0GC0.uasset",
+      "bytes": 4665,
+      "sha256": "fdd245925ceaf4b4c59d07f1aab5610db0450523e10afb118b3a56cddfa802fd"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/EE/OCR348BHEJWLHO72TR249H.uasset",
+      "bytes": 4427,
+      "sha256": "0de101b829a7fc08e4b66fd830209d2546bce035009bc86fa7077aef9f6f91cb"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/LX/1K6D4FIEJMOF50LSVJKFMP.uasset",
+      "bytes": 2530,
+      "sha256": "c54a64753205d3fdf3f097a72075c75e64bab20424be893332c354e8bec09f32"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/UM/1F7R5WQFM2D9KH7A94JFBU.uasset",
+      "bytes": 4721,
+      "sha256": "936a6f14ece57dd7c3050effb10720f86bab8268edb3b0fa67f780a1e8946cce"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/3J/Q8CQM512VVS7UZZW0KQRSV.uasset",
+      "bytes": 4721,
+      "sha256": "faa6fa198fa4804bf650764113c461a3d83912ad609f1837cc4b77353df96d03"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/8N/4L4W0MLV9WFUGRTMUBLBOP.uasset",
+      "bytes": 4373,
+      "sha256": "f412a0b400434b9cfe73c2f91f74b14db0d2bd7f4d5189bc3c7dae7b8ece10ae"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/BN/LKN4IB4C3UPW62GHBEKTIW.uasset",
+      "bytes": 4665,
+      "sha256": "26ddd5829ac624aef3e6d6e8e60daddb5937591d71b589f1dd96f6728a45c685"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/IP/MGVQPE8M923OBBJLZBI1PC.uasset",
+      "bytes": 4719,
+      "sha256": "9aa9365621fda8c4e6ec4d71896f6f20afc3692845448b121ed9314ce5f66084"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/0L/IL99N1JAI1J4A2DFQBQL53.uasset",
+      "bytes": 4667,
+      "sha256": "95f0f52f115330087f4550c1a75b40a0f89ca820626f040515d19ad10d6c4fa1"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/2F/XTDQUHCYJJV6JCH4OJSVLG.uasset",
+      "bytes": 4545,
+      "sha256": "84b421a0de897e34b06b211f13ba865a822cc34f35596f1f95bd18915d16e900"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/HX/PES0ONLF01PSQTJCC5USD2.uasset",
+      "bytes": 4259,
+      "sha256": "b797b10826ecda36e7e2a5dcd9db2f805eef1aa30ab7155f9994b7e7955399a3"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/P1/LRQT09TOYHOXK9DY22EIKE.uasset",
+      "bytes": 4551,
+      "sha256": "c11effe59153014dd5db0f65c7627309e99b262da486c73758c4c8a1f19a5d7b"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/RX/297QBXCKTP06G7NIHIULK4.uasset",
+      "bytes": 4427,
+      "sha256": "60f28c2a70beb6455f7c9dfb9c657e1ff2222d5d7b1544a0537e757902d10312"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/27/6ZCCZ1F7ZO6DM3C8OLVGTF.uasset",
+      "bytes": 4699,
+      "sha256": "5da67a33b962a06bfc798be0009c01e4cfdf371c1ac3a14e1d6f2e94e4ea4b67"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/EE/HZ5WNBFZRJYQPUA6X8TVVT.uasset",
+      "bytes": 3911,
+      "sha256": "713b84f11124e7aee44b370bd50bc5c0e2a6aa2596dc0a7830491c809310d99e"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/HY/Q7CPP7VHOXBAMAJI90W626.uasset",
+      "bytes": 4594,
+      "sha256": "0ef1995a35ce0f27ff11dc3b93062db63c9d41e8edd03a62870cb22ea4322cc2"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/13/EPTYZCFZWXT7Z7XYKZ88XK.uasset",
+      "bytes": 4699,
+      "sha256": "bf85d87c37ff35dfe1cb8a40c52a061314c44b57d422a472765264e39527cd4c"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/50/395Y4QE4IIEWI3KSE3SB6L.uasset",
+      "bytes": 4721,
+      "sha256": "cd2515bd223d6506801eab781774531dc243870c78562ca08df664aadf8b0c03"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/8U/VKFLMM0CV8ZCC0P3TQGTTM.uasset",
+      "bytes": 4373,
+      "sha256": "d5e84da0ce8e73b66a023e358033a8fd062b96abe1b33ee5b9973926608d2713"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/AY/KLCRMXKI9WR2P0GDY96C36.uasset",
+      "bytes": 3788,
+      "sha256": "5a5cd7edf92dd7d3e60de12fb2a735184096b504b4712ea8d807bc9ea22a2635"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/K5/NQBPXM7AM8N39CBW4ZT57P.uasset",
+      "bytes": 4824,
+      "sha256": "f50b777e76cd2aa8bd7b62c0fd87f812bb76d2953ffbaf51da9a881e8d1158b9"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/M3/6T1XG4EDG4ZEE1U9HMYL4C.uasset",
+      "bytes": 4371,
+      "sha256": "c7757663530e94239db0f4978938e39e2c20b85ecda00be7b00427f7767a9415"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/MG/EDRUPW3EOYDDSI6HNSIVT1.uasset",
+      "bytes": 4659,
+      "sha256": "6cf521a1730e4bf6d5f847271390917aaa219a7bee2ac9671c414e404d702f47"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/RI/R8L7GQXCHQGMMKBPTBJTNA.uasset",
+      "bytes": 2401,
+      "sha256": "bba4c777dd2fcd28b3f0157372f01f7de4f8e00f75a6b91a31bd3a02b33db291"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/96/RFQP83S9K0LC7IW8CXS6C0.uasset",
+      "bytes": 3690,
+      "sha256": "95cc1d9fb2b7bb54552bb44ddd8a8945dd4b30596fe40f3f9cf3d78e16433ad4"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/JR/W7S9610Y7RWELGF93FZYAE.uasset",
+      "bytes": 4373,
+      "sha256": "311c40dc59a935655b52c322a3693bbf826da5344270d3e6988c59973b004772"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/SS/QXUZ4IXFNKHCYFWERA1HQA.uasset",
+      "bytes": 4257,
+      "sha256": "c28022e47f1ba2f85951dac32b7c0e00fff99ec5d78bdc186c1070adcd00647b"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS.uasset",
+      "bytes": 11309,
+      "sha256": "558aafd26e2e204a85d7f4d570df7f8aa1620c135d33c47efbe43bc0256cbf52"
+    },
+    {
+      "path": "Content/__ExternalObjects__/ThirdPerson/Lvl_ThirdPerson/0/TQ/1UP2MCOIYXC0GTW985R4K0.uasset",
+      "bytes": 1867,
+      "sha256": "4bb0cff17e56dd734bbcb3f746f387f601ae46cf2e7c1bd2a3660d971590a65e"
+    },
+    {
+      "path": "Content/__ExternalObjects__/ThirdPerson/Lvl_ThirdPerson/5/TX/O6OLZU4WSCI3YRJS922SWL.uasset",
+      "bytes": 1863,
+      "sha256": "80c21c703b7747b2e849b7a39d9e354091d075737892398d581d0eca66c8fbac"
+    },
+    {
       "path": "Deliverables/公开交付说明.md",
-      "bytes": 2796,
-      "sha256": "ab6ed119ac797123a3e8e28f15f005a151273340abdfb45dbeaa0ed8a7d2596d"
+      "bytes": 3381,
+      "sha256": "238af179198a2f744f640bcab8c79d373976bab1f5528b66f801bab89262d99f"
     },
     {
       "path": "Deliverables/实践报告.pdf",
@@ -1668,16 +1668,6 @@
       "sha256": "65baf270ec6c5e4e8a8b774c3a8c17c9f5fb4113f0e4029b5f8b4a28f4aca747"
     },
     {
-      "path": "Output/Validation/BallTrajectory/Standalone_Launch.json",
-      "bytes": 508,
-      "sha256": "779a571bffef69dd92971a961a1c22b4f6a333cf3ab926c92465b8d074aa2f47"
-    },
-    {
-      "path": "Output/Validation/BallTrajectory/Standalone_Validation.json",
-      "bytes": 4185,
-      "sha256": "97f8bfefe542252080c3649920c84e6fcbb46c97bdb942d44630443490ab990f"
-    },
-    {
       "path": "Output/Validation/BallTrajectory/StandaloneReady/01_DefaultIdle.png",
       "bytes": 507301,
       "sha256": "e57c969a7cee0c59a1d31c926810c2f755cc51760402ded5334216fb97565379"
@@ -1706,6 +1696,16 @@
       "path": "Output/Validation/BallTrajectory/StandaloneReady/Actions.json",
       "bytes": 1103,
       "sha256": "61d9d64dc6a3891f28e6db22514f3c015cc1eb63dbe8cda8d3b31f9be69ae8b3"
+    },
+    {
+      "path": "Output/Validation/BallTrajectory/Standalone_Launch.json",
+      "bytes": 508,
+      "sha256": "779a571bffef69dd92971a961a1c22b4f6a333cf3ab926c92465b8d074aa2f47"
+    },
+    {
+      "path": "Output/Validation/BallTrajectory/Standalone_Validation.json",
+      "bytes": 4185,
+      "sha256": "97f8bfefe542252080c3649920c84e6fcbb46c97bdb942d44630443490ab990f"
     },
     {
       "path": "Output/Validation/BallTrajectory/UI_Build.json",
@@ -1958,14 +1958,14 @@
       "sha256": "e6931a10d4f65a33cead881b4380f4946821c8f97d97d78016c830645dfeb35e"
     },
     {
-      "path": "Output/Validation/HeadCamera_Impact_2p25s.png",
-      "bytes": 1017034,
-      "sha256": "e866de44593432a00f13625cca16695ce196f55adeb0721a52f2910e1446b4a8"
-    },
-    {
       "path": "Output/Validation/HeadCamera_ImpactNear.png",
       "bytes": 1103569,
       "sha256": "aa3ffbc17e4f1f983a51b9d50e7b9ab111e4e4f0880aeadad8347de61bd1983a"
+    },
+    {
+      "path": "Output/Validation/HeadCamera_Impact_2p25s.png",
+      "bytes": 1017034,
+      "sha256": "e866de44593432a00f13625cca16695ce196f55adeb0721a52f2910e1446b4a8"
     },
     {
       "path": "Output/Validation/Initialization_ThirdPersonTemplate.png",
@@ -2183,6 +2183,11 @@
       "sha256": "4bbe4b8ca4f5d75c18bdc285f2178cf2989c02087665a3d903c27f07fc017001"
     },
     {
+      "path": "Output/Validation/LensMaterial_Settings.json",
+      "bytes": 921,
+      "sha256": "3a8d4365ab602197ca3ab4539daf30cb1abfb82a3bafa866e8e8ebd4906bad78"
+    },
+    {
       "path": "Output/Validation/Lens_Math_Validation.json",
       "bytes": 415,
       "sha256": "51ed7437bc3ee6a363ae0b2fe8403ef1ad27a95b0bc367434e2c094c107cbbe7"
@@ -2191,11 +2196,6 @@
       "path": "Output/Validation/Lens_Render_Validation.json",
       "bytes": 659,
       "sha256": "11ec18283e51d47e5b522b1a559fafc7f12d4498ad6f0f3bd2bcd5a6e7d62538"
-    },
-    {
-      "path": "Output/Validation/LensMaterial_Settings.json",
-      "bytes": 921,
-      "sha256": "3a8d4365ab602197ca3ab4539daf30cb1abfb82a3bafa866e8e8ebd4906bad78"
     },
     {
       "path": "Output/Validation/OrbitCamera/Asset_Validation.json",
@@ -2929,13 +2929,20 @@
     },
     {
       "path": "README.md",
-      "bytes": 5440,
-      "sha256": "665c2a09a3853c7a56aa83500b6293fc8b3ddab277702238cb4c3aeed1c80d6c"
+      "bytes": 6748,
+      "sha256": "a5245e154c202a03d7852043de899cf3fe3224e9d5cf2db8bcebb55249ed3828"
     },
     {
       "path": "README.txt",
       "bytes": 15877,
       "sha256": "7baf9cb29aa81346fe5eea7f64c9763ae187ec20ea139031a3b9fef79b825876"
+    },
+    {
+      "path": "实验报告.pdf",
+      "bytes": 5473956,
+      "sha256": "eaea0430bddd5d3fbd038a24178d4313f4618d7fa03e3a3a4cbcc7b9d4a317d2"
     }
-  ]
+  ],
+  "current_report": "实验报告.pdf: current five-page report including realtime flight and trajectory, shoulder orbit camera, inherited UI, lens model and evidence scope.",
+  "download_bundle": "GitHub Release ZIP: GolfHeadCam/ editable UE5 project and 实验报告.pdf. Separate archive manifest uses paths relative to the ZIP root."
 }

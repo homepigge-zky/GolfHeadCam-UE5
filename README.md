@@ -4,12 +4,32 @@
 
 **本公开仓库按要求排除所有视频和视频逐帧渲染序列。** 报告、演示 PPT、讲稿、参数、静态对照图和验证记录均已整理在内。
 
+## 一次下载工程与实验报告
+
+**[下载「UE5 工程＋实验报告」完整压缩包](https://github.com/homepigge-zky/GolfHeadCam-UE5/releases/latest/download/GolfHeadCam_UE5_Project_Report.zip)**
+
+完整解压后，顶层只有两项：
+
+```text
+GolfHeadCam/             UE5 工程文件夹
+  GolfHeadCam.uproject   用 UE5.8.3 打开此文件
+  Content/              蓝图、动画、材质、人物和关卡
+  Config/               工程配置
+  ...                   说明、PPT、参数和验证记录
+实验报告.pdf             当前版本的 5 页实验报告
+```
+
+请保留整个工程文件夹；`.uproject` 需要同级 `Content` 和 `Config`。本交付需要 UE5 编辑器，符合可打开、可编辑的工程要求。
+
+也可单独查看 [最新实验报告](实验报告.pdf)，或在 [Releases](https://github.com/homepigge-zky/GolfHeadCam-UE5/releases/latest) 下载报告与 SHA-256 校验文件。
+
 ## 交付入口
 
 | 内容 | 文件／目录 |
 | --- | --- |
 | UE5 可编辑工程 | [GolfHeadCam.uproject](GolfHeadCam.uproject)、[Content](Content)、[Config](Config) |
-| 5 页实践报告（基础版） | [实践报告.pdf](Deliverables/实践报告.pdf) |
+| 5 页实验报告（当前版本） | [实验报告.pdf](实验报告.pdf) |
+| 早期报告（历史资料） | [实践报告.pdf](Deliverables/实践报告.pdf)；只保留在源码仓库，整合下载包不重复收录 |
 | 10 页演示 PPT（基础版） | [演示讲解_10页.pptx](Deliverables/演示讲解_10页.pptx) |
 | 约 10 分钟讲稿 | [演示讲稿](Deliverables/演示讲稿_约10分钟.txt) |
 | 当前交付范围与验收入口 | [公开交付说明](Deliverables/公开交付说明.md)、[原任务验收清单](Deliverables/验收清单.txt) |
@@ -21,7 +41,7 @@
 
 ## 启动
 
-1. 克隆仓库，或选择 GitHub **Code → Download ZIP** 并解压。
+1. 推荐下载上面的「UE5 工程＋实验报告」压缩包并完整解压；也可克隆仓库或选择 **Code → Download ZIP**。
 2. 使用 UE **5.8.3** 打开 `GolfHeadCam.uproject`，等待资源和着色器加载完成。
 3. 打开 `/Game/GolfHeadCam/Maps/L_GolfPractice`，点击编辑器 **Play**。
 4. 初始为右肩后方视角，动作保持待命；移动鼠标可直接环绕人物。按 **Tab** 显示鼠标，再点击左下控制台的“播放”。
@@ -54,7 +74,7 @@
 - 当前记录包含 **28 项运行检查和 25 项资产检查，均通过**。这些是源工程已执行的验证记录；本次上传验证了文件完整性与排除范围，没有重新执行全部运行测试。
 - 挥杆是简化关键姿势动画；初速度和发射时刻可调，未实现空气阻力、自旋升力或球杆碰撞冲量求解。
 
-PDF、PPT 和原始任务验收清单保留早期基础版范围，其中的预设弹道和视频描述属于历史版本。**当前蓝图功能以本 README、公开交付说明和 `Output/Validation/RealtimeTrajectory` 为准。** `BallTrajectory` 等更早的验证目录保留为历史证据；`RealtimeTrajectory/Session1` 是已标注作废的尝试，最终验收依据后续有效会话。
+根目录的 **实验报告.pdf 已更新为当前版本**，包括实时球运动、实际轨迹、肩后相机与继承 UI。`Deliverables/实践报告.pdf`、PPT 和原始任务验收清单保留早期基础版范围，其中的预设弹道和视频描述属于历史版本。当前蓝图功能以本 README、最新实验报告、公开交付说明和 `Output/Validation/RealtimeTrajectory` 为准。`BallTrajectory` 等更早的验证目录保留为历史证据；`RealtimeTrajectory/Session1` 是已标注作废的尝试，最终验收依据后续有效会话。
 
 ## 视频排除与回放
 
