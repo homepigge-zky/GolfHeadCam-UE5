@@ -1,44 +1,198 @@
 {
+  "date": "2026-10-18",
+  "passed": true,
   "videos": [
     {
       "view": "FirstPerson",
-      "path": "<PROJECT_DIR>\\Output\\FirstPerson\\LS_Golf_HeadCamera_HeadCamera.mp4",
-      "relative_path": "Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4",
-      "size_bytes": 6225084,
-      "sha256": "a4f3a533be926414c81557b57d9387d071fc9032d501d222da0101529d7b5a79",
+      "path": "Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4",
+      "media_copy": "Content/Movies/GolfHead.mp4",
+      "bytes": 6367273,
+      "sha256": "28a11c958fe77b6a8974cad94ff52b42b7e0dee2456fb0add096f9984cc2871b",
       "codec": "h264",
       "width": 1920,
       "height": 1080,
-      "fps": "21600000/359999",
       "nominal_fps": 60,
       "average_fps": 60.00016666712963,
-      "fps_tolerance": 0.001,
-      "mp4_timestamp_note": "Native encoder rounds final timestamp; nominal 60 fps, 360 frames, duration differs from 6 seconds by 33 microseconds.",
       "duration_seconds": 5.999967,
       "decoded_frames": 360,
-      "lossless_png_frames": 360,
       "passed": true
     },
     {
       "view": "ThirdPerson",
-      "path": "<PROJECT_DIR>\\Output\\ThirdPerson\\LS_Golf_ThirdPerson_ThirdCamera.mp4",
-      "relative_path": "Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4",
-      "size_bytes": 1557534,
-      "sha256": "38032e4296cd0bdcdac89e47bac62a4160501177646195f85327f48b015eb42f",
+      "path": "Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4",
+      "media_copy": "Content/Movies/GolfThird.mp4",
+      "bytes": 2676259,
+      "sha256": "4b573660572574f2e063d3c7647362a06e437c13784ba90e13aca6c5cca70b8d",
       "codec": "h264",
       "width": 1920,
       "height": 1080,
-      "fps": "21600000/359999",
       "nominal_fps": 60,
       "average_fps": 60.00016666712963,
-      "fps_tolerance": 0.001,
-      "mp4_timestamp_note": "Native encoder rounds final timestamp; nominal 60 fps, 360 frames, duration differs from 6 seconds by 33 microseconds.",
       "duration_seconds": 5.999967,
       "decoded_frames": 360,
-      "lossless_png_frames": 360,
       "passed": true
     }
   ],
-  "passed": true,
-  "method": "ffprobe metadata plus full OpenCV frame decode; 360 PNG source frames retained per view."
+  "runtime_summary": {
+    "FirstPerson": {
+      "samples": 241,
+      "action_min": 0.0,
+      "action_max": 4.0,
+      "launch_time": 2.25,
+      "ball_extent_cm": [
+        706.9605792907731,
+        0.0,
+        76.7875150718689
+      ],
+      "character_extent_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mount_extent_cm": [
+        3.197442310920451e-14,
+        1.0658141036401503e-14,
+        7.105427357601002e-15
+      ],
+      "bounce_seen": true,
+      "last_ball_cm": [
+        714.7380802907732,
+        95.5553086419753,
+        -0.863625857927933
+      ]
+    },
+    "ThirdPerson": {
+      "samples": 241,
+      "action_min": 0.0,
+      "action_max": 4.0,
+      "launch_time": 2.25,
+      "ball_extent_cm": [
+        706.9605792907731,
+        0.0,
+        76.7875150718689
+      ],
+      "character_extent_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mount_extent_cm": [
+        3.197442310920451e-14,
+        1.0658141036401503e-14,
+        7.105427357601002e-15
+      ],
+      "bounce_seen": true,
+      "last_ball_cm": [
+        714.7380802907732,
+        95.5553086419753,
+        -0.863625857927933
+      ]
+    }
+  },
+  "checks": [
+    {
+      "name": "native_render_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "telemetry_without_errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "FirstPerson_full_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FirstPerson_launched_near_impact",
+      "passed": true,
+      "detail": 2.25
+    },
+    {
+      "name": "FirstPerson_ball_really_moves",
+      "passed": true,
+      "detail": [
+        706.9605792907731,
+        0.0,
+        76.7875150718689
+      ]
+    },
+    {
+      "name": "FirstPerson_actual_bounce",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FirstPerson_character_stays_fixed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FirstPerson_head_mount_stays_fixed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FirstPerson_trail_enabled_in_video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FirstPerson_video_fully_decodes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ThirdPerson_full_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ThirdPerson_launched_near_impact",
+      "passed": true,
+      "detail": 2.25
+    },
+    {
+      "name": "ThirdPerson_ball_really_moves",
+      "passed": true,
+      "detail": [
+        706.9605792907731,
+        0.0,
+        76.7875150718689
+      ]
+    },
+    {
+      "name": "ThirdPerson_actual_bounce",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ThirdPerson_character_stays_fixed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ThirdPerson_head_mount_stays_fixed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ThirdPerson_trail_enabled_in_video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ThirdPerson_video_fully_decodes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dual_views_same_final_ball",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Current MRQ videos, complete frame decode, read-only Blueprint/ProjectileMovement telemetry; independent of prior interactive runtime acceptance."
 }

@@ -1,14 +1,6 @@
-【GitHub 公开交付版说明｜2026-10-17】
-本仓库按要求不收录任何视频文件，也不收录主视频逐帧渲染序列。
-下文中“视频已交付”“完整压缩包”等描述属于本地完整交付或历史验证范围，并不表示视频在此仓库中。
-报告、PPT 和原始验收清单保留基础版范围；当前功能以 README.md、公开交付说明及 RealtimeTrajectory 验证记录为准。
-已保存视频回放需自行补回 Content/Movies/GolfHead.mp4 和 GolfThird.mp4；工程实时运行不依赖这两段视频。
-文档和验证记录中的本机路径已用 <PROJECT_DIR>、<UE_ROOT>、<AUTHOR_HOME>、<AUTHOR_TEMP> 代称。
+GolfHeadCam｜当前视频复现、相机参数与畸变｜v1.1.0｜2026-10-18
 
-GolfHeadCam｜视频复现、相机内参与镜头畸变
-正式交付说明｜2026-10-16。原生序列、双视频与镜头对照均已输出并验证。
-
-当前工程已于 2026-10-17 改为实时球运动与历史轨迹。下面的帧数、解析轨迹验收和成片哈希描述原基础版；当前工程重新渲染时球会按实时碰撞运动，不应预期与原成片逐帧一致。原 MP4／PDF／PPT 保留历史内容，本次没有重新输出这些成片与报告。
+两段成片已经使用当前蓝图与实时球运动重新输出，轨迹采样实际位置。
 
 一、固定条件
 
@@ -55,7 +47,7 @@ MRQ：空间采样 1，时间采样 1，Engine Warm Up 30 帧，Render Warm Up 3
   视频 [5,6]：CinematicTime=4，收杆停留。
   动作触球 2.25 s 对应名义视频时间 3.25 s；按 60 fps 为名义第 195 帧。
   帧编号从 0 开始。动作与电影时间的运行采样最大误差约 1.113e-7 s；帧与动作对应以保存的序列及采样为依据。
-两条序列显式控制 CinematicMode、CinematicHeadView、CinematicTime 和球飞行开关。
+两条序列显式控制 CinematicMode、CinematicHeadView、CinematicTime 、球飞行开关和 ShowBallTrajectory=true。轨迹属性使用 Restore State，普通交互仍默认关闭。
 主动作序列使用无畸变基线，并关闭校验网格；相机切换轨直接绑定 HeadCamera 或 ThirdCamera 组件。
 CinematicTime 由运行中的蓝图 Tick 应用。普通编辑状态拖动 Sequencer 时间线，不能保证骨骼随时间更新；
 请通过 MRQ 复现序列，或在运行／模拟状态查看，不把静止的编辑器拖动预览误判为动作失效。
@@ -149,7 +141,7 @@ cx = 960.0 px，cy = 540.0 px，skew=0。
 再与 UE 原生材质输出比较：有效范围平均绝对误差约 1.235／255，像素误差第 95 百分位为 7／255；
 网格边缘距离中位数为 0 px，第 95 百分位约 0.955 px；实际变化像素占比约 43.57%，检查结果通过。
 图像采样、插值和 TAA 会影响像素差；不能把独立双精度公式的亚像素残差当成 GPU 图像的误差。
-组件安装参数已有 Final_Asset_Settings.json；保存的 HeadCamera 水平 FOV=100°、ThirdCamera FOV=60°，
+当前组件安装参数见 Deliverables/相机与导出参数.json；Final_Asset_Settings.json 为历史记录；当前 HeadCamera 水平 FOV=100°、ThirdCamera FOV=80°，
 两者约束 16:9，且不使用 Pawn Control Rotation。精确安装变换见“挥杆与相机说明.txt”。
 
 正式视频与验证
@@ -158,9 +150,12 @@ cx = 960.0 px，cy = 540.0 px，skew=0。
 两者均为 UE Movie Render Queue 原生 H.264 MP4，无音轨；1920×1080，完整解码 360 帧。
 名义帧率 60 fps，容器平均帧率 21600000/359999≈60.0001666671，实际时长 5.999967 s。
 该微小差异来自最后一个时间戳的舍入，不是缺帧；每视角另保留 360 张本地无损 PNG。
-头戴视频 SHA256：a4f3a533be926414c81557b57d9387d071fc9032d501d222da0101529d7b5a79
-第三视频 SHA256：38032e4296cd0bdcdac89e47bac62a4160501177646195f85327f48b015eb42f
-Video_Validation.json 保存媒体参数与全帧解码结果；ffprobe/OpenCV 仅用于核验，
-不是 UE 界面重渲染或游戏运行的依赖。Motion 运行采样对比了两个视角共有的 241 个动作时间点，
-覆盖 0～4 s，球、杆头和头戴相机的对应位置一致；视频主动作使用同一时间轨。
-独立副本中的完整动作、切换相机、暂停与 B/G 实际操作检查见 Standalone_Validation.json。
+头戴视频 SHA256：28a11c958fe77b6a8974cad94ff52b42b7e0dee2456fb0add096f9984cc2871b
+第三视频 SHA256：4b573660572574f2e063d3c7647362a06e437c13784ba90e13aca6c5cca70b8d
+FullRelease/Video_Validation.json 保存本次媒体参数与逐帧解码结果，共 19 项检查通过。
+ffprobe/OpenCV 只用于核验，不是 UE 界面重渲染或游戏运行依赖。
+FullRelease/Render_Runtime_Trace.json 每视角 241 个有效动作采样点，覆盖 0～4 s，
+两视角 2.25 s 发射、球最终位置一致，记录到反弹、人物根部不动、头戴安装变换恒定。
+本次使用临时输出目录 Saved/FullReleaseRender，成片复制到正式 Output 和 Content/Movies。
+保存的 Q_GolfViews 仍使用工程相对正式输出目录，重新渲染会覆盖同名输出，需保留旧版时请先改目录。
+所有新视频采用无畸变基线，静态对照沿用未改变的相机/材质参数；不声称本次重新做实体标定。

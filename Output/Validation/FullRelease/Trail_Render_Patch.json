@@ -1,0 +1,5 @@
+{
+  "compile": true,
+  "saved": true,
+  "scope": "Only UpdateBallTrajectoryVisibility; cinematic mode now honors explicit trajectory visibility. Defaults and interactive input unchanged."
+}

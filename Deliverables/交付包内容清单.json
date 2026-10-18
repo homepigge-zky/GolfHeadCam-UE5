@@ -1,81 +1,35 @@
 {
-  "created_utc": "2026-10-17T20:11:30.300489+00:00",
-  "delivery": "GolfHeadCam public GitHub delivery, all videos excluded",
-  "engine": "Unreal Engine 5.8.3",
-  "scope": "Editable native Blueprint project, report, slides, script, parameters, docs, still images and validation evidence. No video binaries, primary render frame sequences, engine, cache or packaged executable.",
-  "historical_scope": "Deliverables/实践报告.pdf, presentation slides/script and earlier validation retain baseline scope. Root 实验报告.pdf describes current Blueprint behavior. All videos are excluded.",
-  "source_manifest_files_verified": 569,
-  "excluded_video_files": [
+  "release": "v1.1.0",
+  "date": "2026-10-18",
+  "path_base": "repository root",
+  "repository": "https://github.com/homepigge-zky/GolfHeadCam-UE5",
+  "engine": "5.8.3",
+  "project_entry": "GolfHeadCam.uproject",
+  "report": "实验报告.pdf",
+  "video_files": [
     "Content/Movies/GolfHead.mp4",
     "Content/Movies/GolfThird.mp4",
     "Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4",
     "Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4"
   ],
-  "normalized_text_path_files": [
-    "Deliverables/相机与导出参数.json",
-    "Docs/相机控制台使用说明.txt",
-    "Docs/资产与依赖.txt",
-    "Output/Validation/Blueprint_Runtime_Validation.json",
-    "Output/Validation/Blueprint_Runtime_Validation.txt",
-    "Output/Validation/Delivery_Runtime_Validation.json",
-    "Output/Validation/Document_Validation.json",
-    "Output/Validation/Lens_Render_Validation.json",
-    "Output/Validation/Standalone_Validation.json",
-    "Output/Validation/Video_Validation.json",
-    "Output/Validation/BallTrajectory/Asset_Validation.json",
-    "Output/Validation/BallTrajectory/Geometry_Validation.json",
-    "Output/Validation/BallTrajectory/Standalone_Launch.json",
-    "Output/Validation/BallTrajectory/Standalone_Validation.json",
-    "Output/Validation/BallTrajectory/Validation.json",
-    "Output/Validation/FreeCamera/Runtime_Trace.json",
-    "Output/Validation/FreeCamera/Standalone_Launch.json",
-    "Output/Validation/FreeCamera/Standalone_Validation.json",
-    "Output/Validation/FreeCamera/Validation.json",
-    "Output/Validation/IntegratedConsole/Asset_Validation.json",
-    "Output/Validation/IntegratedConsole/Initial_Obstructed_Validation.json",
-    "Output/Validation/IntegratedConsole/Standalone_Launch.json",
-    "Output/Validation/IntegratedConsole/Standalone_Validation.json",
-    "Output/Validation/IntegratedConsole/Validation.json",
-    "Output/Validation/OrbitCamera/Validation.json",
-    "Output/Validation/RealtimeTrajectory/Validation.json",
-    "Output/Validation/ShoulderCamera/Validation.json",
-    "Output/Validation/UI/UI_Runtime_Trace.json",
-    "Output/Validation/UI/UI_Standalone_Validation.json",
-    "Output/Validation/UI/UI_Validation.json",
-    "Output/Validation/BallTrajectory/Session1/Runtime_Trace.json",
-    "Output/Validation/IntegratedConsole/Session1/Runtime_Trace.json",
-    "Output/Validation/IntegratedConsole/Session3/Runtime_Trace.json",
-    "Output/Validation/OrbitCamera/Session1/Validation.json",
-    "Output/Validation/OrbitCamera/Session2/Runtime_Trace.json",
-    "Output/Validation/OrbitCamera/Session2/Validation.json",
-    "Output/Validation/RealtimeTrajectory/Session4/Runtime_Trace.json",
-    "Output/Validation/ShoulderCamera/Session2/Runtime_Trace.json",
-    "Output/Validation/ShoulderCamera/Session3/Runtime_Trace.json"
+  "distinct_videos": 2,
+  "excluded": [
+    "engine",
+    "caches",
+    "temporary authoring scripts",
+    "full primary PNG frame sequences"
   ],
-  "text_document_notice": "Public delivery headers added to README.txt, Docs/*.txt, original checklist and presentation script. See README.md and Deliverables/公开交付说明.md.",
-  "validation_gates": [
-    {
-      "path": "Output/Validation/RealtimeTrajectory/Validation.json",
-      "passed": true,
-      "sha256": "a4662b3298aa600bf5115472d0603293117294fd15886e8ee78cd766b81726b6"
-    },
-    {
-      "path": "Output/Validation/RealtimeTrajectory/Asset_Validation.json",
-      "passed": true,
-      "sha256": "0dca5fd6dcb9a106a9c4f58b3ce22e833be65ae825df3f6e3cfe6fa283410710"
-    }
-  ],
-  "manifest_note": "SHA-256 covers every public file except this manifest and .git metadata. Engine asset binaries and uproject remain byte-identical to the source project.",
+  "note": "All tracked release files except this manifest are hashed. Git history and historical validation retain their original scope. ZIP packaging regenerates this manifest relative to the archive root.",
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 130,
-      "sha256": "aabe1d415804ac7dcb1ed68d03893281a4fb2e8db9bab2d9c4d47c0f9ba21b88"
+      "bytes": 143,
+      "sha256": "a0e5a0c536cc94c789a46e887f7724b5ec5aeb3a1ed04b162d410bfaf15a01b1"
     },
     {
       "path": ".gitignore",
-      "bytes": 674,
-      "sha256": "58ff22a7eee27752d61df0b2bde551e96c1a762d451f9ff83d2a7d59ea44664c"
+      "bytes": 923,
+      "sha256": "eba768832cce825db1ffe212e91d26f9eaf2a7c838683d282c9b782c37ae675f"
     },
     {
       "path": "Config/DefaultEditor.ini",
@@ -759,8 +713,8 @@
     },
     {
       "path": "Content/GolfHeadCam/Blueprints/BP_GolfGolfer.uasset",
-      "bytes": 1514351,
-      "sha256": "2c93d7ff73096a121588e098c8bec4653f20355c1f1176d25331a4b599cc7585"
+      "bytes": 1510122,
+      "sha256": "1c426e142092ec3f4a08e706d8578039341cd67655d3fa4fa723c95c438a37df"
     },
     {
       "path": "Content/GolfHeadCam/Blueprints/BP_GolfHUD.uasset",
@@ -884,13 +838,13 @@
     },
     {
       "path": "Content/GolfHeadCam/Sequences/LS_Golf_HeadCamera.uasset",
-      "bytes": 18619,
-      "sha256": "d21a08f8418f28a5b78a199d3cc406bd0dc86823f7d8f4cd530e9158ac7c3940"
+      "bytes": 25959,
+      "sha256": "5bd06faa0fff4f9c761dc95a1540c5c5c7fb1ac074e01d0473ddbe50408b8428"
     },
     {
       "path": "Content/GolfHeadCam/Sequences/LS_Golf_ThirdPerson.uasset",
-      "bytes": 18602,
-      "sha256": "8c3b6ea96dd62db9cdbab935e58223e04d4322830f1fd6748a6fb92a18eaecb8"
+      "bytes": 25942,
+      "sha256": "e5b7ba0d215470a0d0009f2483eb5b280891ef1a05e564c3404749b2c02eb250"
     },
     {
       "path": "Content/GolfHeadCam/UI/Media/MP_SavedGolf.uasset",
@@ -1118,9 +1072,19 @@
       "sha256": "bb8334767064b107ec4f4407ef1365e8b9e2dfeff5984e66d4a6232254ddd02a"
     },
     {
+      "path": "Content/Movies/GolfHead.mp4",
+      "bytes": 6367273,
+      "sha256": "28a11c958fe77b6a8974cad94ff52b42b7e0dee2456fb0add096f9984cc2871b"
+    },
+    {
+      "path": "Content/Movies/GolfThird.mp4",
+      "bytes": 2676259,
+      "sha256": "4b573660572574f2e063d3c7647362a06e437c13784ba90e13aca6c5cca70b8d"
+    },
+    {
       "path": "Content/Movies/README.txt",
-      "bytes": 334,
-      "sha256": "a1baf434a6fd56af0fe0ddfe90276f020a844ee291bf26ddd836c29bee1d7cf5"
+      "bytes": 507,
+      "sha256": "c12cf2b6ce33fa7fb43c4e4bd75235dc906329b6eac0132c1b43532a28dd62dd"
     },
     {
       "path": "Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
@@ -1484,63 +1448,73 @@
     },
     {
       "path": "Deliverables/公开交付说明.md",
-      "bytes": 3381,
-      "sha256": "238af179198a2f744f640bcab8c79d373976bab1f5528b66f801bab89262d99f"
+      "bytes": 1663,
+      "sha256": "5c87867301d460d1d294e45e8dcef6349dda3ea84c99f170e9ff7169f2ce79a8"
     },
     {
       "path": "Deliverables/实践报告.pdf",
-      "bytes": 9550782,
-      "sha256": "2b0434962b94c3487a18500c1edd7d8b3fcbf3c467a65318976613883fabd0e0"
+      "bytes": 4668657,
+      "sha256": "6f79dd40d591f0b0577217ea098d41400279beb65a0c73a96acd56e029970352"
     },
     {
       "path": "Deliverables/演示讲稿_约10分钟.txt",
-      "bytes": 8435,
-      "sha256": "9d40b8587d49e5293439b44d1b2b377071cf77d8b522caa5890ab5ce2ad6f5da"
+      "bytes": 7420,
+      "sha256": "b3b81d91cb04464a8933e900a0e9838b567e2dc45642c603596475c516d5d7fd"
     },
     {
       "path": "Deliverables/演示讲解_10页.pptx",
-      "bytes": 15397009,
-      "sha256": "bac770bb53c5ec4536729616642013077278be16be44210dbd5bf3180e76b2c2"
+      "bytes": 6986668,
+      "sha256": "f589effb89a85ac3fe818b69a8329e71c11dc771d907bb58a6f57b740c13c009"
     },
     {
       "path": "Deliverables/相机与导出参数.json",
-      "bytes": 6595,
-      "sha256": "68d9b418bc02447f7b447dc267e3b7f2f250ff9c0a1f3e3c036122e5ac2a67e9"
+      "bytes": 7402,
+      "sha256": "6ebef11011c6850daa8def7293ae58eefa8f9bb072e568c88524b4f9586b8f77"
     },
     {
       "path": "Deliverables/验收清单.txt",
-      "bytes": 7766,
-      "sha256": "089421cff71ecae4150c1ee2216eae907f11b7036a2df5f687a82cd30238c01b"
+      "bytes": 3960,
+      "sha256": "be8613daae3ce3b99044ffb40c1bbc6acec894154e64e9b27d73fb0cdfb01ee2"
     },
     {
       "path": "Docs/复现视频与相机参数.txt",
-      "bytes": 11359,
-      "sha256": "15c9e128a6cbb0130adbb14a2cffe7378f53730da56cf5e3f2465039ccc5d8df"
+      "bytes": 10857,
+      "sha256": "f0c5d01e41afa40d94761fc7d13975e22e8be05ed5cf53506a104043e982caac"
     },
     {
       "path": "Docs/挥杆与相机说明.txt",
-      "bytes": 18518,
-      "sha256": "b947fb92da8e41f27b7dde499eb0a5ac632d3eea830049fcc890e85bf048d9b3"
+      "bytes": 2440,
+      "sha256": "5bcd66a9886c22e7cc916c96eeddcc17f4e91a3e97b9b6e350a363e8619b2310"
     },
     {
       "path": "Docs/相机控制台使用说明.txt",
-      "bytes": 16783,
-      "sha256": "a59bce226d57d864980f326f1c63ea918901ff71e8620fb0aa7ad041e9657e40"
+      "bytes": 3669,
+      "sha256": "a43745c9dc2c857eabc817ae7fb18e9ba1944fbf310aab33dac9c7568a312cf6"
     },
     {
       "path": "Docs/自由第三人称相机说明.txt",
-      "bytes": 10517,
-      "sha256": "e997ab68b85b52caff2fe2637a3e7ae94fd36fa18c2a8cd722df76e735cd71ee"
+      "bytes": 1604,
+      "sha256": "4ca06549445c1ffb39b7a17c4a29aa7ae285e710e3c9329a6abe1e8f26406a93"
     },
     {
       "path": "Docs/资产与依赖.txt",
-      "bytes": 12067,
-      "sha256": "cf949edd115ecbe5d53e410a865b64e24e88dabf28912df1f187ad1ce906f999"
+      "bytes": 3096,
+      "sha256": "fde0f2c0d02ae4462026cfda5f53e4ff6826081112cfc6ab36e6139311472d30"
     },
     {
       "path": "GolfHeadCam.uproject",
       "bytes": 551,
       "sha256": "8c8de8d90a17c16571388f38cb2b562af90f6d071c78c875f0de825938e280d5"
+    },
+    {
+      "path": "Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4",
+      "bytes": 6367273,
+      "sha256": "28a11c958fe77b6a8974cad94ff52b42b7e0dee2456fb0add096f9984cc2871b"
+    },
+    {
+      "path": "Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4",
+      "bytes": 2676259,
+      "sha256": "4b573660572574f2e063d3c7647362a06e437c13784ba90e13aca6c5cca70b8d"
     },
     {
       "path": "Output/Validation/BallTrajectory/Asset_Validation.json",
@@ -1946,6 +1920,121 @@
       "path": "Output/Validation/FreeCamera/Validation.txt",
       "bytes": 5527,
       "sha256": "dcf1d6d972e4c6b5080319b679bfa30d4426083591af7f93a0f3bb144eb8c191"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Asset_Validation.json",
+      "bytes": 3437,
+      "sha256": "be69fd807d154b5af7437ff66da617fc3d2b4ea98ce2de8556f35a5f5ef9e3cc"
+    },
+    {
+      "path": "Output/Validation/FullRelease/FirstPerson_ContactSheet.png",
+      "bytes": 435257,
+      "sha256": "9b18eb5d44f55d8c7fb091cc38506e31e560638945776244b62d09cb26468663"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/FirstPerson_000.png",
+      "bytes": 510024,
+      "sha256": "ca578aa67ab0d654b0a9c7895d49b719a6624133fbf3e3386696239e1577e4cc"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/FirstPerson_102.png",
+      "bytes": 565322,
+      "sha256": "9f7d2f5158896833191f8b606b1acbb7d0d438d5638e535bc5f7a1f08cf9abf2"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/FirstPerson_162.png",
+      "bytes": 652033,
+      "sha256": "aae1ce0a31a8bb8a697cb93ae366e8e9a34e1543fd92dff1377fc48054c71c5d"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/FirstPerson_195.png",
+      "bytes": 535546,
+      "sha256": "05ca3d616742c098fe70d31dbf6db227aaa35a26b789e6490f049b77151d153f"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/FirstPerson_222.png",
+      "bytes": 1049678,
+      "sha256": "8cd39b17117a3b009dc213b6fa6a300b07d604e2711ef97c2f2e4ec41f181e20"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/FirstPerson_300.png",
+      "bytes": 1101638,
+      "sha256": "23406d0892ec2051add6a17c8fe9d071b23d718afac7e63ac4a53818793157a3"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/FirstPerson_359.png",
+      "bytes": 1106004,
+      "sha256": "365cdc39d1b541e4f0ee2e6bc0cc9d703c618adb53dfc2ed78fec67dfc9b885b"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/ThirdPerson_000.png",
+      "bytes": 515726,
+      "sha256": "48682344a5135e74f92ad4b066b357553e407aba1ed38fb441338361026a2ef2"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/ThirdPerson_102.png",
+      "bytes": 532487,
+      "sha256": "efa5e841c216b04528c7494dc921ee6002f8aacd7b4a387573751db012fc19ea"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/ThirdPerson_162.png",
+      "bytes": 543946,
+      "sha256": "1c8cf1fe935c0d6629839fe9413264c6559b3083bbee0c1a5099eda745ff35de"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/ThirdPerson_195.png",
+      "bytes": 526401,
+      "sha256": "3e178f5f45b46d19fd301b8a13806ccb4bffc6a035da89ecc1d580dc29b459f9"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/ThirdPerson_222.png",
+      "bytes": 556238,
+      "sha256": "216696f2fe431fe44a1f2726adb1d533863801be13e360bc228dc8f8ee165aa1"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/ThirdPerson_300.png",
+      "bytes": 537589,
+      "sha256": "1f0048162bb7eb6da3b51560fb9f756440d02991e8d528dadf36a2fcbce78812"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Frames/ThirdPerson_359.png",
+      "bytes": 540738,
+      "sha256": "5ad3178b8b962e401884818ea53cd0d0b86e8ed57d955ce426c878bea2a938f1"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Interactive_Smoke.json",
+      "bytes": 4457,
+      "sha256": "a1d86bb3e0b320716a7a82aec59d0261811fd101908be621cf6781342d9a63c1"
+    },
+    {
+      "path": "Output/Validation/FullRelease/RenderStatus.json",
+      "bytes": 250,
+      "sha256": "1ca9deb49ae1f1095f439e27ea8bddf12a26a0dcb780fd631428ccccfd039041"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Render_Configuration.json",
+      "bytes": 665,
+      "sha256": "9ace69886bfe95be3ecf62d1b89ac3a19d57cf75eb35c3cccccf2cc7c0c6dd48"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Render_Runtime_Trace.json",
+      "bytes": 385595,
+      "sha256": "9eaa458d7a0a86c5035a3d3dfccd099eb0ab989e91b72b3dbb47fd33cc4c9669"
+    },
+    {
+      "path": "Output/Validation/FullRelease/ThirdPerson_ContactSheet.png",
+      "bytes": 355957,
+      "sha256": "34c1b48cabcd22e4ee6c249f8ac30a8f7d5c4cc4fde015b52ac3282e23096131"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Trail_Render_Patch.json",
+      "bytes": 189,
+      "sha256": "ae5d5a4784a69e1f49488748e06f1bf81a47412671c46c787b70d6a764297a47"
+    },
+    {
+      "path": "Output/Validation/FullRelease/Video_Validation.json",
+      "bytes": 4491,
+      "sha256": "96b2a4519992d8f14841a985acd03d4a7be13a14d6b4e32a5799efa83fb5e085"
     },
     {
       "path": "Output/Validation/HeadCamera_Address.png",
@@ -2924,25 +3013,23 @@
     },
     {
       "path": "Output/Validation/Video_Validation.json",
-      "bytes": 1714,
-      "sha256": "4ebcb598cb51b6da1ad8fb56cf3e6ff614e9df75f482927db4e239d9151e6605"
+      "bytes": 4491,
+      "sha256": "96b2a4519992d8f14841a985acd03d4a7be13a14d6b4e32a5799efa83fb5e085"
     },
     {
       "path": "README.md",
-      "bytes": 6748,
-      "sha256": "a5245e154c202a03d7852043de899cf3fe3224e9d5cf2db8bcebb55249ed3828"
+      "bytes": 5054,
+      "sha256": "c2378acabb2ed7131e46dbb3bab776d60a130faa6132036a28190d2c0029057a"
     },
     {
       "path": "README.txt",
-      "bytes": 15877,
-      "sha256": "7baf9cb29aa81346fe5eea7f64c9763ae187ec20ea139031a3b9fef79b825876"
+      "bytes": 1668,
+      "sha256": "0743cbd5461cb64627eb327c97085c2909a5e86e7ee3ca224214b70d60f2c2ee"
     },
     {
       "path": "实验报告.pdf",
-      "bytes": 5473956,
-      "sha256": "eaea0430bddd5d3fbd038a24178d4313f4618d7fa03e3a3a4cbcc7b9d4a317d2"
+      "bytes": 4668657,
+      "sha256": "6f79dd40d591f0b0577217ea098d41400279beb65a0c73a96acd56e029970352"
     }
-  ],
-  "current_report": "实验报告.pdf: current five-page report including realtime flight and trajectory, shoulder orbit camera, inherited UI, lens model and evidence scope.",
-  "download_bundle": "GitHub Release ZIP: GolfHeadCam/ editable UE5 project and 实验报告.pdf. Separate archive manifest uses paths relative to the ZIP root."
+  ]
 }

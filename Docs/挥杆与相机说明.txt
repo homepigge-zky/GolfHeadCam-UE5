@@ -1,216 +1,33 @@
-【GitHub 公开交付版说明｜2026-10-17】
-本仓库按要求不收录任何视频文件，也不收录主视频逐帧渲染序列。
-下文中“视频已交付”“完整压缩包”等描述属于本地完整交付或历史验证范围，并不表示视频在此仓库中。
-报告、PPT 和原始验收清单保留基础版范围；当前功能以 README.md、公开交付说明及 RealtimeTrajectory 验证记录为准。
-已保存视频回放需自行补回 Content/Movies/GolfHead.mp4 和 GolfThird.mp4；工程实时运行不依赖这两段视频。
-文档和验证记录中的本机路径已用 <PROJECT_DIR>、<UE_ROOT>、<AUTHOR_HOME>、<AUTHOR_TEMP> 代称。
+GolfHeadCam｜挥杆、头戴绑定与实时球运动｜v1.1.0
 
-GolfHeadCam｜挥杆、球运动与头戴相机实现说明
-适用引擎：Unreal Engine 5.8.3
-交付说明更新｜2026-10-17（原基础版：2026-10-16）。基础版记录位于 Output/Validation，历史控制台／自由相机记录分别位于 UI／FreeCamera 子目录，本次集成控制台记录位于 IntegratedConsole 子目录。
+1. 资产与动作
+地图 /Game/GolfHeadCam/Maps/L_GolfPractice，角色 BP_GolfGolfer。
+AS_GolfSwing 为 4 秒原生 Animation Sequence，60 fps、241 个采样点、89 条骨骼轨。
+包含准备、上杆、下杆、收杆，基于 Epic Manny 骨架编排简化关键姿势，不是真人动作捕捉。
+人物根位置与朝向保持固定，机位操作只移动相机组件。
 
-一、运行入口与操作
+2. 固定附着
+HeadCamera 附着 GolferMesh 的 head；ClubRoot 附着 hand_r。
+头戴水平 FOV=100°，准备姿态向下约 55°，位于头骨前约 10 cm、上约 8 cm。
+骨骼与相机局部轴不同，组件局部 Pitch 不等于世界俯角。
+精确局部变换见 Deliverables/相机与导出参数.json；镜头随骨骼运动，不通过追球保持目标。
+收杆出现的手臂遮挡保留为真实视角结果。
+第三相机局部位置 (-65,-240,170) cm，旋转 (-14,85,0)°，水平 FOV=80°。
 
-打开 GolfHeadCam.uproject，运行 /Game/GolfHeadCam/Maps/L_GolfPractice。
-运行后鼠标默认环绕人物；按 Tab 显示鼠标，再点左下控制台“播放”开始；暂停后点“播放”继续，“重新开始”复位后重播。
-控制台还提供实时双视角、无畸变／桶形／枕形／任务参数、网格和已保存视频回放。
-详细按钮与系数见 Docs/相机控制台使用说明.txt。
-Space/R 重播；V 切换视角；P 暂停／恢复；B 切换头戴畸变；G 切换校验网格。
-校验网格只在头戴视角显示。Tab 在环绕与界面操作间切换；Esc 结束编辑器运行，Shift+F1 仍可释放编辑器鼠标。
-播放结束不自动循环；重播会将动画时间和依赖该时间的球位置一起复位。
+3. 实时球运动
+动作时间经过 2.25 s 时 LaunchRealtimeBall 只发射一次。
+原生 BallProjectileMovement 显式更新 GolfBall，禁止自动选择角色根组件。
+初速度 (650,0,380) cm/s，重力大小 980 cm/s²，反弹系数 0.42，摩擦 0.35。
+扫掠碰撞、反弹和子步进启用；最大步长 1/120 s、最大 16 次迭代，停止阈值 12 cm/s。
+每帧在运动后读取真实世界位置形成金色 ISM 线段，半径 0.8 cm、最多 2048 段，无碰撞。
+轨迹默认关闭；T 切换可见性，不清除已记录路径；重播与复位清空。
+暂停同步停止动画和球；动画结束后球仍在运动时也能暂停与继续，继续不会再次发射。
+不预计算未来弹道，不计算杆面冲量、空气阻力、自旋升力；发射条件属于可调仿真输入。
 
-二、资产与逻辑结构
-
-Blueprints/BP_GolfGolfer
-  GolferMesh：使用模板 SKM_Manny_Simple 骨骼网格体，播放 AS_GolfSwing。
-  HeadCamera：固定附着于 GolferMesh 的 head 骨骼。
-  ThirdCamera：附着于角色根部，默认右肩后方观察；鼠标环绕人物、WASDQE 直接移动，Tab 切换界面鼠标，Home 恢复启动机位。
-  ClubRoot：固定附着于 hand_r；杆身、握把、杆头都是其子组件。
-  GolfBall：角色蓝图内的球体组件，直径 4.27 cm，无碰撞求解。
-  CalibrationBoard：头戴相机前的校验网格，只在头戴视角且开关打开时显示。
-
-Animations/AS_GolfSwing
-  4 秒、60 fps 的原生 Animation Sequence，保存完整骨骼姿态。
-  动作为编排关键姿势并烘焙的简化演示；不是动作捕捉，也不宣称专业挥杆生物力学精度。
-
-Blueprints/BP_GolfHUD：BeginPlay 创建 WBP_GolfCameraConsole 并 AddToViewport，显示原生 UMG 控制台。
-UI/WBP_CameraControl：父 Widget Blueprint，保留可编辑界面与按钮事件；媒体播放由蓝图调用原生 MediaPlayer。
-UI/WBP_GolfCameraConsole：真实继承 WBP_CameraControl 的子 Widget Blueprint，是当前运行界面入口。
-UI/Media：两段相对 Content/Movies 路径的视频源、播放器、媒体纹理和 UI 材质。
-Materials/MI_HeadLens_Barrel、MI_HeadLens_Pincushion：新增桶形／枕形材质实例。
-Blueprints/BP_GolfGameMode：交互演示模式。
-Blueprints/BP_GolfRenderGameMode：离线视频输出模式，不创建默认角色或 HUD，避免隐藏场景中的高尔夫人物。
-Materials/M_HeadLensDistortion：原生材质图实现的镜头畸变。
-Materials/M_CalibrationGrid：原生材质图绘制的校验网格。
-Maps/L_GolfPractice：地面、练习垫、灯光及放置的 GolfPractice_Golfer 实例。
-
-三、蓝图执行流程
-
-Construction Script 和 BeginPlay
-  使用骨骼插槽名称 head、hand_r 建立相机和球杆附着，保持规定的局部安装变换。
-  设置初始视角并显示准备姿势。骨骼网格体持续更新姿态，避免头戴视角中人物离开视野后停止更新。
-
-ResetPose / PlaySwing / TogglePause
-  负责准备姿态、从头播放、播放速度及暂停／恢复。
-  暂停针对动作时间，不冻结整个世界；因此仍可查看另一个相机或切换畸变对照。
-
-ApplyCameraMode / ToggleCamera
-  明确设置两个 CameraComponent 的激活状态，使用所选视角；应用头戴 FOV。
-  同步更新网格显示状态。第三人称鼠标环绕使用角色上身固定参考点，不追踪球或动画骨骼。
-
-UIPlay / UIPause / UIHead / UIThird / UISetLensPreset
-  为控制台提供继续播放、单向暂停、指定视角和四种镜头选择；原快捷键控制函数保留。
-  WBP_CameraControl 打开视频面板时暂停实时场景；MediaPlayer 独立播放、暂停、重播，关闭后场景保持暂停。
-  这些交互按钮在电影模式下不改写 Sequencer 驱动的动作。
-
-UpdateBallFlight
-  读取动作时间，按下节公式计算球位置。交互播放与电影模式共用同一运动公式。
-
-ApplyDeliveryFrame / UpdateLensSettings / HandleLensInput
-  应用畸变开关与网格状态。交互模式读取 B/G；电影模式由 Sequencer 属性轨提供状态。
-
-电影模式
-  CinematicMode=True 时，CinematicTime 显式控制动作时间，CinematicHeadView 控制相机选择。
-  蓝图每帧将动画定位到给定时间，并计算同一时刻的球位置；不依靠手动按键录屏。
-  序列保存的是属性轨和相机切换轨，运行行为仍是蓝图与原生动画播放器。
-  CinematicTime 通过运行中的蓝图 Tick 应用；仅在普通编辑状态拖动 Sequencer 时间线，
-  不能保证骨骼预览随之更新。复现使用 MRQ，交互预览使用运行／模拟状态。
-
-四、击球与球飞行
-
-单位为 cm、s；默认人物朝 +Y，发射方向为角色局部 +X，世界重力沿 -Z。
-初始球心为角色根部局部 (7.777501,95.555308642,2.135) cm，球半径 2.135 cm。
-挥杆动作时间 2.25 s 触发一次发射；触发时刻与初速度仍是可调的简化击球参数，不从杆头碰撞冲量反求。
-发射后由原生 BallProjectileMovement 更新 GolfBall，使用扫掠碰撞和细分时间步。
-不会按 SwingTime 套用固定位置公式，也不会预先生成未来路线。实际接触到的地面／障碍物决定碰撞位置。
-默认局部初速度 (650,0,380) cm/s；BallGravity=980 cm/s²，对应默认世界重力下的尺度 1。
-可调参数：BallLaunchSpeedX/Y/Z、BallGravity、BallRestitution（默认 0.42）、BallSurfaceFriction（默认 0.35）。
-BallGravity / 980 用作运动组件的世界重力倍率；若更改世界重力，实际重力也相应改变。
-落地后会弹跳、摩擦减速并最终停止。该实现不包含空气阻力、自旋升力或球杆碰撞冲量模型。
-最多按 1/120 s 细分运动，最大迭代数 16，碰撞扫掠保持开启；没有自动注册角色根组件，运动对象明确是 GolfBall。
-BallTrailLastWorld 记录上次实际球心，RecordRealtimeBallTrail 将它连接到当前实际球心。
-ShowBallTrajectory 仅控制显示；ClearInstances 只在重置本次球路时调用，隐藏不会删除历史。
-PlaySwing／ResetPose 调用 ResetRealtimeBall；UIPlay／UIPause／TogglePause 同步球的模拟暂停状态。
-bBallInMotion 让播放和暂停按钮在挥杆结束后仍能控制尚未停止的球。
-关闭 bEnableBallFlight 时球恢复初始摆位、旧轨迹清空。
-基础版解析轨迹数值和以前导出的视频仍属于历史版本，不作为当前碰撞运动的数值结果。
-
-五、相机安装与坐标
-
-HeadCamera 的位姿由“角色世界变换 × 动画中的 head 骨骼变换 × 相机局部安装变换”确定。
-安装变换固定；没有自动追球、世界空间锁定球心或独立鼠标转向。
-准备姿势的设计安装位置在头部前方约 10 cm、上方约 8 cm，朝下观察击球区域。
-骨骼的局部轴不等于世界轴，不能把相机的局部 Pitch 直接当成世界下俯角。
-
-头戴水平 FOV=100°，输出画幅 16:9；当前交互第三相机水平 FOV=80°，基础版第三相机为 60°。
-基础版保存的组件相对变换（来自 Final_Asset_Settings.json；旋转按 Pitch、Yaw、Roll，单位度；自由观察会改变本次运行的 ThirdCamera 变换）：
-  HeadCamera 相对 head：位置 (9.614951, 8.458884, 0.000001) cm；旋转 (-0.000002, 134.999954, -89.999998)。
-  ClubRoot 相对 hand_r：位置 (-5, 4, 0) cm；旋转 (0, 90, -85.829559)。
-  ThirdCamera 相对角色根部：位置 (400, 480, 230) cm；旋转 (-10.813511, -131.633539, 0)。
-两个相机均约束 16:9 宽高比，均不使用 Pawn Control Rotation。
-HeadCamera 默认后处理权重为 0；B 在关闭／开启之间切换，控制台四项预设选择相应原生材质或关闭畸变。
-CalibrationBoard 位于头戴相机前方 100 cm，朝向与相机画面平行，板面覆盖约 240×135 cm。
-相机视场角与内参必须成套调整，不能只改变 FOV 后继续使用旧标定参数。
-详细内参、像素坐标约定、畸变公式与输出流程见“复现视频与相机参数.txt”。
-
-六、怎样修改和继续开发
-
-打开 BP_GolfGolfer，检查“类默认值”以及关卡实例是否有覆盖值：
-  SwingAnimation：原生动画资源。
-  SwingPlayRate：交互播放速度；1 为原速，现有运行范围限制为 0.1～3.0。
-  HeadCameraFOV：头戴水平 FOV；基础运行范围 30～130°，本交付的标定固定匹配 100°。
-  StartInHeadView：初始视角变量；当前交互启动流程会将其重置为 false，统一从第三人称待命开始。
-  bEnableBallFlight、BallImpactTime、BallLaunchSpeedX/Z、BallGravity、BallStartX/Y/Z：球运动设置。
-  LensDistortionEnabled、ShowCalibrationGrid：镜头／网格开关。
-  LensPresetIndex：界面选择状态，0 无畸变、1 桶形、2 枕形、3 任务参数。
-  CinematicMode、CinematicTime、CinematicHeadView：供已保存的 Sequencer 属性轨驱动。
-
-修改 HeadCamera 或 ClubRoot 的 Transform 可调整安装／握持，但必须重新检查所有动作阶段。
-修改杆头尺寸、动画、BallImpactTime 或球位置后，要重新核对触球几何；仅修改一个值不保证仍然接触。
-修改骨骼动作可在 AS_GolfSwing 查看关键姿态；需要继续编排时，可通过 Sequencer 的 FK Control Rig
-编辑并烘焙为新的 Animation Sequence，再替换 SwingAnimation，保留原动画作为对照。
-
-七、验证范围与限制
-
-基础版运行记录 Delivery_Runtime_Trace.json 对应的分析为 788 个采样点、37.339 秒记录跨度，
-11 项检查通过、0 项失败。两个视角共有 241 个唯一动作时间，覆盖 0～4 秒，匹配的几何状态一致。
-电影动作时间最大误差约 1.113e-7 秒；2.25 秒时球面与杆头表面的几何间隙约 2.013e-7 cm。
-该记录验证固定骨骼附着、相机选择、时间驱动、预设轨迹和接触几何；不代表真实碰撞物理精度。
-这段记录中的 Lens/Grid 开关只观察到关闭状态；启用效果由独立的四张对照渲染和图像分析另行检查，
-不能把本段采样写成 B/G 按键测试。交互分支的球位置采样只覆盖起止状态，不代替完整交互过程检查。
-基础版四个交付蓝图的图表检查均为 0 错误、0 警告，证据为 Final_Blueprint_Validation.json。
-基础版独立副本检查另见 Standalone_Validation.json：当时的 271 个核心文件与源工程哈希一致；
-通过已安装 UE 的 -game 模式运行，未启用作者 bridge、未提供运行时 Python 脚本。
-实际检查通过的 9 项为：准备姿态、Space 播放、P 暂停／恢复、V 切换、R 重播、
-G 在头戴视角显示网格、B 显示畸变变化、第三视角隐藏网格、动作到达收杆。
-这项独立验证覆盖了 B/G 交互效果；与前述仅记录关闭状态的运动轨迹检查分开解释。
-双视频均通过全帧解码：1920×1080、360 帧、标称 60 fps、实际时长 5.999967 秒；
-详见 Video_Validation.json。独立副本检查不是打包 EXE 或 cook 测试。
-更早的基础验证 443 点／13 项检查仅为历史记录，不替代后续版本结果。
-
-历史相机控制台版验证（不覆盖后续自由相机及本次集成控制台）：
-WBP_CameraControl、BP_GolfHUD、BP_GolfGolfer 三个新增或修改蓝图均为 0 错误、0 警告；
-37 项 UI 检查通过、0 失败、0 未观察，覆盖实际界面操作的状态与时间变化。
-干净副本的 281 个核心文件与源工程哈希一致，使用已安装 UE 的原生 -game 模式运行；
-没有作者 bridge 或作者脚本参数，双视频显示／播放／暂停及关闭返回暂停场景的操作检查通过。
-证据为 Output/Validation/UI/UI_Validation.json、UI_Asset_Validation.json、UI_Standalone_Validation.json。
-这项副本检查不是 cook 或打包 EXE 验证；UI 预设切换通过也不表示完成实体镜头标定。
-当前包名 GolfHeadCam_集成控制台版.zip；旧 GolfHeadCam_自由相机版.zip 为上一版历史包，不含本次集成更新。
-更早的 GolfHeadCam_相机控制台版.zip 和基础版压缩包也保留，分别对应各自版本。
-动作自然度、手部握持的精细程度、真实碰撞、空气阻力、自旋、滚动、曝光噪声、滚动快门等不在当前模型内。
-
-[自由第三人称相机说明 BEGIN]
-八、自由第三人称扩展
-
-ThirdCamera 默认位于角色右肩后方，运行后直接移动鼠标即可环绕人物；首次接管保持默认构图。
-Tab 释放鼠标点击界面，再按 Tab 返回环绕；无需按住右键。WASD 沿相机前／右方向移动，Q/E 按世界 Z 轴升降。
-Shift 为 3 倍移动速度。Home 在第三人称下恢复 BeginPlay 保存的肩后变换。
-F／UI 仍可开关自由模式与微调面板，退出时同时清除鼠标环绕状态；本次机位不跨运行保存。
-头戴视角、视频模态及电影模式拒绝这些导航输入，避免抢占头戴相机或影响导出。
-
-BP_GolfGolfer 原生蓝图函数：
-  InitializeFreeCamera：保存启动第三相机变换并初始化模式。
-  ToggleFreeCamera / StopFreeCamera：进入／退出自由第三人称。
-  SetFreeCameraCapture：环绕时隐藏并捕获鼠标，Tab 释放后恢复界面鼠标交互；不再以右键作为环绕条件。
-  HandleFreeCameraInput / ProcessFreeCameraNavigation / UpdateFreeCameraPose：处理切换、复位和相机移动。
-  ResetFreeCameraPose：恢复本次启动机位。
-  SetFreeCameraUIBlocked：视频面板打开时退出自由模式并屏蔽相机输入。
-
-变量 bFreeCamera 表示自由模式，bOrbitMouseActive 表示鼠标环绕状态；交互启动开启环绕，Tab 切换。
-人物整体位置和朝向不随导航输入改变，动画独立运行。FreeCameraMoveSpeed 默认 150 cm/s，
-FreeCameraLookSensitivity 默认 2.0；Shift 倍率为 3。Home 目标来自本次启动的 ThirdCameraHomeTransform。
-模式提示和视频输入屏蔽逻辑保留在父界面 WBP_CameraControl，由当前子界面 WBP_GolfCameraConsole 继承；
-打开视频设置输入屏蔽并停止环绕，关闭后解除屏蔽并保持界面操作；第三人称下按 Tab 可返回环绕。
-HeadCamera 的头骨附着与畸变标定不变。自由相机自身不修改动画时间、播放速率、球轨迹或暂停状态；
-视频打开沿用原有的暂停场景行为。电影模式不接受自由相机输入，不把交互机位写回原序列或已保存视频。
-
-上一节基础版和历史 UI 的验证数量保持原版本含义；以下为集成控制台升级前的自由相机版历史记录，目录为 Output/Validation/FreeCamera。
-该版两个修改蓝图均为 0 错误、0 警告；自由相机组合验收 84 项通过，含真实左 Shift 150→450 cm/s 补测。281 个核心文件干净副本哈希一致，原生 -game 机位与动画操作通过。具体证据和范围见 Validation.json、Asset_Validation.json、Standalone_Validation.json；并非打包 EXE 测试。
-本次集成控制台记录另见 Output/Validation/IntegratedConsole；不沿用上述历史验收数量。
-当前包名 GolfHeadCam_集成控制台版.zip；旧自由相机版、相机控制台版及基础版压缩包均作为历史版本保留。
-[自由第三人称相机说明 END]
-
-[球轨迹可视化说明 BEGIN]
-实时球飞行与历史轨迹（2026-10-17）
-
-运行后先按 T 开启轨迹，或按 Tab 显示鼠标后点击“显示实时轨迹（T）”。轨迹默认关闭。
-击球前没有预览曲线；球飞到哪里，金色轨迹就延伸到哪里，落地弹跳和滑动也会记录。
-轨迹读取 GolfBall 每帧的实际世界位置，不用发射参数预先生成整条曲线。
-隐藏轨迹只改变显示，后台继续记录本次击球；再次显示能看到已飞过的部分。重新开始／复位时清空旧轨迹。
-轨迹线半径默认 0.8 cm，最多保留 2048 段；超出时移除最早一段。线段本身无碰撞。
-球使用原生 ProjectileMovementComponent，根据初速度、世界重力、场景碰撞、反弹和摩擦实时更新。
-播放／暂停同时控制挥杆和球；即使四秒挥杆结束后球仍在运动，也能在界面暂停、继续，继续不会重发一球。
-打开视频面板会暂停球并隐藏轨迹；关闭后保持暂停。已有 MP4 仍是先前版本，不是本次实时运动的录像。
-鼠标环绕、Tab、WASDQE、Home 和人物骨骼附着保持原有作用，不因轨迹开关改变。
-实现保存在原生蓝图、运动组件、ISM 和材质中，没有自定义运行时 Python 或 C++。
-当前验收见 Output/Validation/RealtimeTrajectory；以前 BallTrajectory 的预测路径检查仅是历史记录。
-[球轨迹可视化说明 END]
-
-[肩后相机直接导航说明 BEGIN]
-肩后机位与鼠标环绕参数（2026-10-17）
-
-启动机位相对角色根位置 (-65,-240,170) cm，旋转 (Pitch=-14,Yaw=85,Roll=0)°，水平 FOV=80°；首次接管鼠标保持该画面。
-鼠标默认围绕角色根部局部 (0,0,115) cm 的上身参考点环绕；人物整体位置和朝向不随相机输入改变，挥杆动画可独立播放。
-Tab 显示鼠标以操作界面，再按 Tab 返回环绕；WASDQE、Shift 和 Home 保留。头戴、视频及电影模式不接受环绕输入。
-机位调整不改变动画时间、暂停状态、球运动或轨迹开关；既有报告、MP4 与历史验收数字保留原范围。
-[肩后相机直接导航说明 END]
+4. 导出与验证
+双视角序列显式开启轨迹，结束后恢复属性；普通交互启动仍默认关闭。
+电影模式通过 CinematicTime 驱动同一蓝图与动画；相机输入被屏蔽。
+本次两段视频各有 241 个动作遥测样本，覆盖 0～4 s，2.25 s 发射，检查反弹与固定头戴安装。
+FullRelease/Video_Validation.json：19 项；Asset_Validation.json：25 项；Interactive_Smoke.json：8 项。
+前一版本 28 项真实交互验收见 RealtimeTrajectory/Validation.json，测试障碍物未保存入地图。
+所有游戏逻辑为原生蓝图，临时编辑器脚本只用于制作和检查资产。

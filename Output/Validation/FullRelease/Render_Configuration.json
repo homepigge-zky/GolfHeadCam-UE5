@@ -1,0 +1,25 @@
+{
+  "views": {
+    "FirstPerson": {
+      "sequence": "/Game/GolfHeadCam/Sequences/LS_Golf_HeadCamera",
+      "frames": 360,
+      "fps": 60,
+      "actual_trail_visible": true
+    },
+    "ThirdPerson": {
+      "sequence": "/Game/GolfHeadCam/Sequences/LS_Golf_ThirdPerson",
+      "frames": 360,
+      "fps": 60,
+      "actual_trail_visible": true
+    }
+  },
+  "runtime": "Existing Blueprint + ProjectileMovement; Python records telemetry and submits native MRQ jobs only",
+  "output": "Saved/FullReleaseRender/{view}",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "movie_duration_seconds": 6,
+  "trajectory": "actual sampled ball positions",
+  "date": "2026-10-18"
+}

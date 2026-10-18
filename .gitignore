@@ -15,7 +15,7 @@
 Thumbs.db
 .DS_Store
 
-# All video files (case insensitive) and main render sequences
+# Exclude raw videos and full frame sequences; allow four delivered MP4 files below
 *.3[gG][pP]
 *.[aA][vV][iI]
 *.[bB][iI][kK]
@@ -34,10 +34,10 @@ Thumbs.db
 *.[vV][oO][bB]
 *.[wW][eE][bB][mM]
 *.[wW][mM][vV]
-/Output/FirstPerson/
-/Output/ThirdPerson/
+/Output/FirstPerson/*
+/Output/ThirdPerson/*
 
-# Local archives may contain excluded videos
+# Local release archives
 *.zip
 *.7z
 *.rar
@@ -49,3 +49,9 @@ Thumbs.db
 .env.*
 *.pem
 *.key
+
+# Current full release: two videos plus matching in-project playback copies
+!Content/Movies/GolfHead.mp4
+!Content/Movies/GolfThird.mp4
+!Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4
+!Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4
