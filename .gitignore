@@ -50,8 +50,9 @@ Thumbs.db
 *.pem
 *.key
 
-# Current full release: two videos plus matching in-project playback copies
-!Content/Movies/GolfHead.mp4
-!Content/Movies/GolfThird.mp4
-!Output/FirstPerson/LS_Golf_HeadCamera_HeadCamera.mp4
-!Output/ThirdPerson/LS_Golf_ThirdPerson_ThirdCamera.mp4
+# Local review materials remain unpublished until approved
+/Docs/
+/Deliverables/
+/Output/
+/实验报告.pdf
+*.docx
