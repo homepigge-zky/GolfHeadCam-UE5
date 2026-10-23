@@ -15,7 +15,7 @@
 Thumbs.db
 .DS_Store
 
-# Exclude raw videos and full frame sequences; allow four delivered MP4 files below
+# Exclude videos and full frame sequences
 *.3[gG][pP]
 *.[aA][vV][iI]
 *.[bB][iI][kK]
@@ -56,3 +56,6 @@ Thumbs.db
 /Output/
 /实验报告.pdf
 *.docx
+
+# Approved demonstration document
+!/演示材料/演示材料_相机配置与效果验证.docx
